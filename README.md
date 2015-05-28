@@ -360,7 +360,7 @@ The reward was entirely pseudorandom; there was no way to predict which Unite wo
 # C.J. <a name="cj"></a>
 
 # C.E.O. <a name="ceo"></a>
-- 
+
 # Misc <a name="misc"></a>
 [[back to top](#contents)]
 
