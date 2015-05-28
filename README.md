@@ -163,7 +163,7 @@ atkAcc = atkAcc + 50
 
 Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This is decided by the value of `randChance`, which is simply a pseudorandom integer between 0 and 99 (0 <= x < 99, to be exact).
 
-If `randChance` is less than `atkAcc`, the attack will hit. Otherwise, the attack will miss.
+If `randChance` is less than `atkAcc`, the attack will hit. Otherwise, the attack will miss. It's important to note, however, that `atkAcc` is capped at 95 -- so, any gag which wasn't mentioned in the Special Cases section in [Attack Accuracy](#atk-accuracy) can miss.
 
 ### Special Cases
 
@@ -347,7 +347,7 @@ Being Lureless significantly devalues Lure SOS cards.
 The reward was chosen like so:
 
 ```python
-resistanceMenu = [RESISTANCE_TOONUP, RESISTANCE_RESTOCK, RESISTANCE_MONEY, RESISTANCE_DANCE]
+resistanceMenu = [RESISTANCE_TOONUP, RESISTANCE_RESTOCK, RESISTANCE_MONEY]
 menuIndex = random.choice(resistanceMenu)
 itemIndex = random.choice(getItems(menuIndex))
 ```
