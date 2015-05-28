@@ -22,8 +22,6 @@
 - [C.E.O.](#ceo)
 - [Misc](#misc)
     - [Do some Shopkeepers sell more accurate gags?](#misc-1)
-- [Global Values](#global-values)
-    - [Battle Constants](#battle-constants)
 - [Credits](#credits)
 
 # Introduction <a name="intro"></a>
@@ -369,12 +367,6 @@ The reward was entirely pseudorandom; there was no way to predict which Unite wo
 ### Hypothesis
 
 No, there's no evidence that Shopkeepers had any impact on gag accuracy.
-
-# Global Values <a name="global-values"></a>
-[[back to top](#contents)]
-
-## Battle Constants <a name="battle-constants"></a>
-
 
 # Credits <a name="credits"></a>
 [[back to top](#contents)]
