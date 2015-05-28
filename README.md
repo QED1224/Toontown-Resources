@@ -314,6 +314,8 @@ Since 3 - 5 star Lure SOS cards are guaranteed to hit, the above probabilities r
 
 >The probability that Events A and B both occur is equal to the probability that Event A occurs times the probability that Event B occurs, given that A has occurred: P(A ∩ B) = P(A) P(B|A)
 
+(Source: [Probability Rules](http://stattrek.com/probability/probability-rules.aspx).)
+
 However, given that each round is calculated independent of any prior results, we note that P(B|A) = P(B). Thus, the probabilities can summarized as the following (note that the chance a cog stays lured is the *complement* of its `wakeupChance`):
 
 |   | 1 - 5 | 6     | 7     | 8     | 9     | 10    | 11    | 12    |
