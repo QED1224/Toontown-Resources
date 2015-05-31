@@ -338,6 +338,11 @@ However, given that each round is calculated independent of any prior results, w
 
 Being Lureless significantly devalues Lure SOS cards.
 
+### TODO
+
+- Verify the impact of any optional bonus on SOS cards
+- Update section to include all SOS Lure cards (not just 3 - 5 star) 
+
 ### Battle Simulations
 
 - [Maxed Lure; Lil' Oldman; Level 12 cog](http://pastebin.com/pr9LVZZ8)
