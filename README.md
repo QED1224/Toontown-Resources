@@ -27,6 +27,8 @@
 # Introduction <a name="intro"></a>
 [[back to top](#contents)]
 
+**This guide is still a work-in-progress; some key information is missing from currently present sections.**
+
 # Core Knowledge <a name="core-knowledge"></a>
 [[back to top](#contents)]
 
