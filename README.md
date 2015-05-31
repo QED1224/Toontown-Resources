@@ -167,6 +167,8 @@ If `randChance` is less than `atkAcc`, the attack will hit. Otherwise, the attac
 
 For all SOS Cards, `randChance` is assigned 0.
 
+## Fishing <a name="fishing"></a>
+
 # Toon-up <a name="toon-up"></a>
 [[back to top](#contents)]
 
