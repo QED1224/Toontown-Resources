@@ -172,6 +172,14 @@ For all SOS Cards, `randChoice` is assigned 0.
 
 ## Cog Attack Accuracy <a name="cog-atk-accuracy"></a>
 
+### Which attack will be used?
+
+### Which toon(s) will be attacked?
+
+### How much damage will be done?
+
+### Will the attack hit?
+
 ## Fishing <a name="fishing"></a>
 
 # Toon-up <a name="toon-up"></a>
