@@ -33,7 +33,7 @@
 # Core Knowledge <a name="core-knowledge"></a>
 [[back to top](#contents)]
 
-## Attack Accuracy <a name="atk-accuracy"></a>
+## Toon Attack Accuracy <a name="atk-accuracy"></a>
 
 `atkAcc` is a percentage which represents the likelihood of an attack performing to its highest degree. This is used in two ways:
 
