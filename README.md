@@ -135,7 +135,7 @@ Here's a summary of all possible defense values:
 
 There are two possible sources of bonus: multiple hits on the same cog and the Lured Ratio. 
 
-The former is simply 20 * [number of previous hits in the current round], given that the previous attack hit, the previous was not the same track as the current and one of the following is true:
+The former is simply 20 * [number of previous hits in the current round], given that the **previous attack hit**, **the previous was not the same track as the current** and one of the following is true:
 
 - the *previous* attack affected the group; or
 - the *current* attack affects the group; or
