@@ -110,7 +110,7 @@ So, if multiple toons use the same gag track on the same cog, the highest `track
 
 #### `tgtDef`
 
-In Toon-up calculations, `tgtDef` is always 0. For the other tracks, it's assigned the defense value of the strongest cog in battle.
+In Toon-up calculations, `tgtDef` is always 0. For the other tracks, it's assigned the defense value of the strongest cog among the attack's `targetList`. In other words, multi-cog attacks will always face the strongest `tgtDef` available since every active cog is in their `targetList`. For single-cog attacks it's based on the specific cog the attack has targeted.
 
 Here's a summary of all possible defense values:
 
