@@ -160,11 +160,11 @@ atkAcc = atkAcc + 50
 ```
 (Note: The Lured Ratio bonus does not apply to Lure, Toon-up or Drop gags.)
 
-### Hit or Miss: the impact of `randChance` <a name="hit-or-miss"></a>
+### Hit or Miss: the impact of `randChoice` <a name="hit-or-miss"></a>
 
-Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This is decided by the value of `randChance`, which is simply a pseudorandom integer between 0 and 99 (0 <= x < 99, to be exact).
+Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This is decided by the value of `randChoice`, which is simply a pseudorandom integer between 0 and 99 (0 <= x < 99, to be exact).
 
-If `randChance` is less than `atkAcc`, the attack will hit. Otherwise, the attack will miss. It's important to note, however, that `atkAcc` is capped at 95 -- so, any gag which wasn't mentioned in the Special Cases section in [Attack Accuracy](#atk-accuracy) can miss.
+If `randChoice` is less than `atkAcc`, the attack will hit. Otherwise, the attack will miss. It's important to note, however, that `atkAcc` is capped at 95 -- so, any gag which wasn't mentioned in the Special Cases section in [Attack Accuracy](#atk-accuracy) can miss.
 
 #### Special Cases
 
