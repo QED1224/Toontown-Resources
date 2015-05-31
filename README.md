@@ -168,7 +168,7 @@ If `randChoice` is less than `atkAcc`, the attack will hit. Otherwise, the attac
 
 #### Special Cases
 
-For all SOS Cards, `randChance` is assigned 0.
+For all SOS Cards, `randChoice` is assigned 0.
 
 ## Cog Attack Accuracy <a name="cog-atk-accuracy"></a>
 
