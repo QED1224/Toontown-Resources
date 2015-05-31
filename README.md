@@ -1,7 +1,8 @@
 # Contents <a name="contents"></a>
 - [Introduction](#intro)
 - [Core Knowledge](#core-knowledge)
-    - [Attack Accuracy](#atk-accuracy)
+    - [Toon Attack Accuracy](#atk-accuracy)
+    - [Cog Attack Accuracy](#cog-atk-accuracy)
     - [Fishing](#fishing)
 - [Toon-up](#toon-up)
     - [Did using Toon-up have any impact on other gag's damage or accuracy?](#tu-1)
@@ -168,6 +169,8 @@ If `randChance` is less than `atkAcc`, the attack will hit. Otherwise, the attac
 #### Special Cases
 
 For all SOS Cards, `randChance` is assigned 0.
+
+## Cog Attack Accuracy <a name="cog-atk-accuracy"></a>
 
 ## Fishing <a name="fishing"></a>
 
