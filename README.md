@@ -187,7 +187,7 @@ Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function uses th
     - if it's not, continue looping.
 4. Return `attackNum`
 
-Here's an example calculation using a **level 1 Flunky**:
+#### Here's an example calculation using a **level 1 Flunky**:
 
 **Before iteration starts**
 
