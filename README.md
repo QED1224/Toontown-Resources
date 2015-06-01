@@ -172,7 +172,66 @@ For all SOS Cards, `randChoice` is assigned 0.
 
 ## Cog Attack Accuracy <a name="cog-atk-accuracy"></a>
 
+The following four sections outline the calculations that are performed for each active cog in battle.
+
 ### Which attack will be used?
+
+There are two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represents the cog being used in the calculation, while the latter is a tuple containing the information for each of `theSuit`'s possible attacks.
+
+Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function uses the following process to determine which attack will be used:
+
+1. Generate a pseudorandom random integer `randNum` such that 0 <= `randNum` < 99 and set a variable `attackNum` to `None`.
+2. Loop through each possible attack, summing the frequencies associated with `theSuit`'s level. This sum is stored in a variable `count`.
+3. On each iteration, check if `randNum` is less than `count`
+    - if it is, set `attackNum` to an integer representing the number of iterations (that is, 0 for the first, 1 for the second, etc).
+    - if it's not, continue looping.
+4. Return `attackNum`
+
+Here's an example calculation using a **level 1 Flunky**:
+
+**Before iteration starts**
+
+```python
+attacks = [('PoundKey', (2, 2, 3, 4, 6), (75, 75, 80, 80, 90), (30, 35, 40, 45, 50)), ('Shred', (3, 4, 5, 6, 7), (50, 55, 60, 65, 70), (10, 15, 20, 25, 30)), ('ClipOnTie', (1, 1, 2, 2, 3), (75, 80, 85, 90, 95), (60, 50, 40, 30, 20))]
+randNum = 42
+attackNum = None
+count = 0
+index = 0
+```
+
+**Iteration 1**
+
+```python
+randNum = 42
+attack = ('PoundKey', (2, 2, 3, 4, 6), (75, 75, 80, 80, 90), (30, 35, 40, 45, 50))
+index = 0
+count = count + attack[3][theSuit.getLevel()] = 0 + 30 = 30
+42 < 30 => False
+index = index + 1
+```
+
+**Iteration 2**
+
+```python
+randNum = 42
+attack = ('Shred', (3, 4, 5, 6, 7), (50, 55, 60, 65, 70), (10, 15, 20, 25, 30))
+index = 1
+count = count + attack[3][theSuit.getLevel()] = 30 + 10 = 40
+42 < 40 => False
+index = index + 1
+```
+
+**Iteration 3**
+
+```python
+randNum = 42
+attack = ('ClipOnTie', (1, 1, 2, 2, 3), (75, 80, 85, 90, 95), (60, 50, 40, 30, 20))
+index = 2
+count = count + attack[3][theSuit.getLevel()] = 40 + 60 = 100
+42 < 100 => True
+Return attackNum = index = 2
+```
+Now, the attack name is `attacks[attackNum][0] = "ClipOnTie"`.
 
 ### Which toon(s) will be attacked?
 
