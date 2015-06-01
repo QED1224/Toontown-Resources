@@ -231,7 +231,7 @@ count = count + attack[3][theSuit.getLevel()] = 40 + 60 = 100
 42 < 100 => True
 Return attackNum = index = 2
 ```
-Now, the attack name is `attacks[attackNum][0] = "ClipOnTie"`.
+The attack name is now `attacks[attackNum][0]`, or "ClipOnTie". 
 
 ### Which toon(s) will be attacked?
 
