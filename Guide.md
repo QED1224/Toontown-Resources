@@ -7,6 +7,9 @@
 - [Toon-up](#toon-up)
     - [Did using Toon-up have any impact on other gag's damage or accuracy?](#tu-1)
 - [Trap](#trap)
+    - [Did using Trap give Lure an accuracy boost?](#trap-1)
+    - [Did Trap provide an accuracy bonus to other gag tracks, even when not activated?](#trap-2)
+    - [Did Trap's accuracy bonus and Organic Lure stack up?](#trap-3)
 - [Lure](#lure)
     - [What was the impact of using multiple Lure gags?](#lure-1)
 - [Sound](#sound)
@@ -220,10 +223,42 @@ For example, there would be no bonus applied if there were two toons in battle, 
 
 (Note: it appears that needing Laff was not a prerequisite for a Toon-up accuracy bonus.)
 
-### Battle Simulations
 
 # Trap <a name="trap"></a>
 [[back to top](#contents)]
+
+## Did using Trap give Lure an accuracy boost? <a name="trap-1"></a>
+
+Yes, Trap would give any Lure gag an accuracy boost that was used on the same turn. Trap gags always count as a hit on the cog, regardless if the Trap is actually triggered or not. If one again considers the conditions in the [bonus selection](#bonus), Trap meets the following conditions.
+
+- It is not the same track as Lure;
+- It always counts as a hit on the target;
+- The Lure and Trap affect the same target
+
+Multiple Traps do give multiple boosts, with an accuracy boost of up to +60 to the Lure being possible. Of course, this requires multiple cogs in play for the Traps to be layed out.
+
+### Battle Simulations
+
+- [TNT & Big Magnet (single target)](http://pastebin.com/r2nq09PP)
+- [2 Trapdoors & Small Magnet (2 targets)](http://pastebin.com/GaWL1GHT)
+- [1 TNT, 2 Trapdoors & Small Magnet (3 targets)](http://pastebin.com/JSm1Nz9S)
+
+## Did Trap provide an accuracy bonus to other gag tracks, even when not activated? <a name="trap-2"></a>
+
+Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not activated, Trap always counts as a hit on the cog. It would still meet the conditions given in the [bonus selection](#bonus), thus a +20 accuracy boost to the next gag targeting the cog. 
+
+### Battle Simulations
+
+- [Trapdoor & Grand Piano](http://pastebin.com/KUmPsjuS)
+
+## Did Trap's accuracy bonus and Organic Lure stack up? <a name="trap-3"></a>
+
+Yes, Organic Lure and the accuracy boost Trap provides do stack up. As listed in the AvLureBonusAccuracy chart, each Organic Lure gag gains +10 propAcc points compared to its original values. In combination with the +20 a single Trap would provide, this would combine for a total of +30 overall accuracy points.
+
+### Battle Simulations
+
+- [Organic Small Magnet (single target)](http://pastebin.com/EEW7qXAn)
+- [TNT & Organic Small Magnet (single target)](http://pastebin.com/s36873Qm)
 
 # Lure <a name="lure"></a>
 [[back to top](#contents)]
