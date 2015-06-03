@@ -316,7 +316,7 @@ If multiple toons with the same experience level in Lure (i.e., maxed) used the 
 # V.P. <a name="vp"></a>
 [[back to top](#contents)]
 
-## Did being Lureless impact the accuracy of Lure SOS cards? <a name="sos-1"></a>
+## Did being Lureless impact the accuracy of Lure SOS cards? <a name="vp-1"></a>
 
 ### Hypothesis
 
@@ -345,7 +345,7 @@ This means that `randChoice` would have to exceed 15 for the SOS to miss; howeve
 
 ### Battle Simulations
 
-## Did being Lureless impact the number of rounds Lure SOS cards would hold for? <a name="sos-2"></a>
+## Did being Lureless impact the number of rounds Lure SOS cards would hold for? <a name="vp-2"></a>
 
 ### Hypothesis
 
