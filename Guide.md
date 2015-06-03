@@ -415,8 +415,6 @@ Being Lureless significantly devalues Lure SOS cards.
 
 ## How was the C.F.O. reward chosen? <a name="cfo-1"></a>
 
-### Hypothesis
-
 The reward was chosen like so:
 
 ```python
@@ -433,6 +431,19 @@ The reward was entirely pseudorandom; there was no way to predict which Unite wo
 # C.J. <a name="cj"></a>
 
 ## How was the C.J. reward chosen? <a name="cj-1"></a>
+
+The first step in choosing a Summon was to establish a `preferredSummonType`. This was done in two steps:
+
+- The suit type was selected at random. This was known as the `preferredDept`.
+- The Summon type was selected at random with the following odds: 70% chance for a cog, 27% chance for a building and 3% for an invasion.
+
+The second step was to check for toons who already had the `preferredSummonType`. For those that did, the following algorithm was used to choose another Summon:
+
+- Using the `preferredDept` and a cog level based on the battle difficulty, try to give the toon a cog, building or invasion (in that order).
+- Using a cog level based on the battle difficulty, loop over every cog suit and try try to give the toon a cog, building or invasion (in that order).
+- Give the toon the weakest possible reward, checking suits in the following order: Boss, Law, Cash, Sell.
+- If the toon has all possible Summons, give them nothing.
+
 
 # C.E.O. <a name="ceo"></a>
 
