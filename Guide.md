@@ -23,6 +23,7 @@
 - [C.F.O.](#cfo)
     - [How was the C.F.O. reward chosen?](#cfo-1)
 - [C.J.](#cj)
+    - [How was the C.J. reward chosen?](#cj-1)
 - [C.E.O.](#ceo)
 - [Misc](#misc)
     - [Do some Shopkeepers sell more accurate gags?](#misc-1)
@@ -430,6 +431,8 @@ So, the overall type (i.e., Toon-up) of the Unite was picked at random, then the
 The reward was entirely pseudorandom; there was no way to predict which Unite would be won.
 
 # C.J. <a name="cj"></a>
+
+## How was the C.J. reward chosen? <a name="cj-1"></a>
 
 # C.E.O. <a name="ceo"></a>
 
