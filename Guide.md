@@ -229,7 +229,7 @@ For example, there would be no bonus applied if there were two toons in battle, 
 
 ## Did using Trap give Lure an accuracy boost? <a name="trap-1"></a>
 
-Yes, Trap would give any Lure gag an accuracy boost that was used on the same turn. Trap gags always count as a hit on the cog, regardless if the Trap is actually triggered or not. If one again considers the conditions in the [bonus selection](#bonus), Trap meets the following conditions.
+Yes, Trap would give any Lure gag an accuracy boost that was used on the same turn. Trap gags always count as a hit on the cog, regardless if the Trap is actually triggered or not. If one again considers the conditions in the [bonus section](#bonus), Trap meets the following conditions.
 
 - It is not the same track as Lure;
 - It always counts as a hit on the target;
@@ -245,7 +245,7 @@ Multiple Traps do give multiple boosts, with an accuracy boost of up to +60 to t
 
 ## Did Trap provide an accuracy bonus to other gag tracks, even when not activated? <a name="trap-2"></a>
 
-Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not activated, Trap always counts as a hit on the cog. It would still meet the conditions given in the [bonus selection](#bonus), thus a +20 accuracy boost to the next gag targeting the cog. 
+Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not activated, Trap always counts as a hit on the cog. It would still meet the conditions given in the [bonus section](#bonus), thus a +20 accuracy boost to the next gag targeting the cog. 
 
 ### Battle Simulations
 
