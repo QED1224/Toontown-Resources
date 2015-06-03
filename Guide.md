@@ -417,10 +417,6 @@ Being Lureless significantly devalues Lure SOS cards.
 
 Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite were selected at random.
 
-### Interpretation
-
-The reward was entirely pseudorandom; there was no way to predict which Unite would be won.
-
 # C.J. <a name="cj"></a>
 
 ## How was the C.J. reward chosen? <a name="cj-1"></a>
