@@ -254,7 +254,7 @@ Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not 
 
 ## Did Trap's accuracy bonus and Organic Lure stack up? <a name="trap-3"></a>
 
-Yes, Organic Lure and the accuracy boost Trap provides do stack up. As listed in the AvLureBonusAccuracy chart, each Organic Lure gag gains +10 propAcc points compared to its original values. In combination with the +20 a single Trap would provide, this would combine for a total of +30 overall accuracy points.
+Yes, Organic Lure and the accuracy boost Trap provides do stack up. As listed in the [`AvLureBonusAccuracy`](#propAcc) chart, each Organic Lure gag gains +10 propAcc points compared to its original values. In combination with the +20 a single Trap would provide, this would combine for a total of +30 overall accuracy points.
 
 ### Battle Simulations
 
