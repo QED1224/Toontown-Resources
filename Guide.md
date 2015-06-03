@@ -16,10 +16,9 @@
 - [Throw](#throw)
 - [Squirt](#squirt)
 - [Drop](#drop)
-- [SOS Cards](#sos-cards)
-    - [Did being Lureless impact the accuracy of Lure SOS cards?](#sos-1)
-    - [Did being Lureless impact the number of rounds Lure SOS cards would hold for?](#sos-2)
 - [V.P.](#vp)
+    - [Did being Lureless impact the accuracy of Lure SOS cards?](#vp-1)
+    - [Did being Lureless impact the number of rounds Lure SOS cards would hold for?](#vp-2)
 - [C.F.O.](#cfo)
     - [How was the C.F.O. reward chosen?](#cfo-1)
 - [C.J.](#cj)
@@ -314,7 +313,7 @@ If multiple toons with the same experience level in Lure (i.e., maxed) used the 
 # Drop <a name="drop"></a>
 [[back to top](#contents)] 
 
-# SOS Cards <a name="sos-cards"></a>
+# V.P. <a name="vp"></a>
 [[back to top](#contents)]
 
 ## Did being Lureless impact the accuracy of Lure SOS cards? <a name="sos-1"></a>
@@ -408,8 +407,6 @@ Being Lureless significantly devalues Lure SOS cards.
 
 - [Maxed Lure; Lil' Oldman; Level 12 cog](http://pastebin.com/pr9LVZZ8)
 - [Lureless; Lil' Oldman; Level 12 cog](http://pastebin.com/q8Q51Fm3)
-
-# V.P. <a name="vp"></a>
 
 # C.F.O. <a name="cfo"></a>
 
