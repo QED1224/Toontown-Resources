@@ -415,14 +415,7 @@ Being Lureless significantly devalues Lure SOS cards.
 
 ## How was the C.F.O. reward chosen? <a name="cfo-1"></a>
 
-The reward was chosen like so:
-
-```python
-resistanceMenu = [RESISTANCE_TOONUP, RESISTANCE_RESTOCK, RESISTANCE_MONEY]
-menuIndex = random.choice(resistanceMenu)
-itemIndex = random.choice(getItems(menuIndex))
-```
-So, the overall type (i.e., Toon-up) of the Unite was picked at random, then the subtype (i.e., +80) was picked at random.
+Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite were selected at random.
 
 ### Interpretation
 
