@@ -219,7 +219,7 @@ If the selected cog attack is a group attack, all active toons will be attacked.
 5. On each iteration, check if `randNum` is less than `count`
     - if it is, return an integer representing the number of iterations (that is, 0 for the first, 1 for the second, etc). In other words, a toon's damage contributions are directly proportional to its chance of being selected in this step.
     - if it's not, continue looping.
-6. If no toon was found by the above, a toon is selected at random. This, for eaxmple, could happen when a large pseudorandom integer is generated, but the battle damage is evenly distributed.
+6. If no toon was found by the above, a toon is selected at random. This, for example, could happen when a large pseudorandom integer is generated, but the battle damage is evenly distributed.
 
 In the other 25% of time, a toon is simply selected at random.
 
