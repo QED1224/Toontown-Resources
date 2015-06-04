@@ -221,7 +221,7 @@ If the selected cog attack is a group attack, all active toons will be attacked.
     - if it's not, continue looping.
 6. If no toon was found by the above, a toon is selected at random. This, for eaxmple, could happen when a large pseudorandom integer is generated, but the battle damage is evenly distributed.
 
-In the other 15% of time, a toon is simply selected at random.
+In the other 25% of time, a toon is simply selected at random.
 
 ### How much damage will be done?
 
