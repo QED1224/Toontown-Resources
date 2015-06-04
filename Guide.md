@@ -223,9 +223,11 @@ If the selected cog attack is a group attack, all active toons will be attacked.
 
 In the other 25% of time, a toon is simply selected at random.
 
-### How much damage will be done?
-
 ### Will the attack hit?
+
+To determine this, a pseudorandom integer `randChoice` is generated such that 0 <= `randChoice` < 99. If `randChoice` is less than the cog attack's accuracy, the cog attack will hit. Otherwise it will miss.
+
+(Attack accuracy/damage summary to be added.)
 
 ## Fishing <a name="fishing"></a>
 
