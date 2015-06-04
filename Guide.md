@@ -195,7 +195,7 @@ Considering the above, we may establish the following tables.
 **Cog Level vs. Attack Probability**
 
 | Flunky  | Clip On Tie | Pound Key | Shred |
-|---|:-------------:|:---------:|:-----:|
+|:---:|:-------------:|:---------:|:-----:|
 | 1 |     42%     |    30%    |  28%  |
 | 2 |    32.5%    |    35%    | 32.5% |
 | 3 |     24%     |    40%    |  36%  |
