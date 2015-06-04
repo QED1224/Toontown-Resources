@@ -192,7 +192,7 @@ Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function uses th
 
 Considering the above, we may establish the following tables.
 
-**Cog Level vs. Attack Probability**
+**Cog Level vs. Attack Usage Probability**
 
 | Flunky  | Clip On Tie | Pound Key | Shred |
 |:---:|:-------------:|:---------:|:-----:|
