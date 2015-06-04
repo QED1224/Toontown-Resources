@@ -190,9 +190,23 @@ Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function uses th
     - if it's not, continue looping.
 4. Return `attackNum`
 
+Considering the above, we may establish the following tables.
+
+**Cog Level vs. Attack Likelihood**
+
+Flunky:
+
+|   | Clip On Tie | Pound Key | Shred |
+|---|:-------------:|:---------:|:-----:|
+| 1 |     42%     |    30%    |  28%  |
+| 2 |    32.5%    |    35%    | 32.5% |
+| 3 |     24%     |    40%    |  36%  |
+| 4 |    16.5%    |    45%    | 38.5% |
+| 5 |     10%     |    50%    |  40%  |
+
 #### Example calculations
 
-- [Level 1 Flunky](http://pastebin.com/d9DmrzEZ)
+- [Level 1 Flunky](http://pastebin.com/wANyHgsx)
 
 ### Which toon(s) will be attacked?
 
