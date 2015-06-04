@@ -175,7 +175,7 @@ For all SOS Cards, `randChoice` is assigned 0.
 
 ## Cog Attack Accuracy <a name="cog-atk-accuracy"></a>
 
-The following four sections outline the calculations that are performed for each active cog in battle.
+The following three sections outline the calculations that are performed for each active cog in battle.
 
 ### Which attack will be used?
 
