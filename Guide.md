@@ -183,9 +183,9 @@ There are two variables used in the calculation of `atk` (the attack to be used)
 
 Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function uses the following process to determine which attack will be used:
 
-1. Generate a pseudorandom random integer `randNum` such that 0 <= `randNum` < 99 and set a variable `attackNum` to `None`.
+1. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` < 99 and set a variable `attackNum` to `None`.
 2. Loop through each possible attack, summing the frequencies associated with `theSuit`'s level. This sum is stored in a variable `count`.
-3. On each iteration, check if `randNum` is less than `count`
+3. On each iteration, check if `randNum` is less than `count`.
     - if it is, set `attackNum` to an integer representing the number of iterations (that is, 0 for the first, 1 for the second, etc).
     - if it's not, continue looping.
 4. Return `attackNum`
@@ -202,11 +202,26 @@ Considering the above, we may establish the following tables.
 | 4 |    16.5%    |    45%    | 38.5% |
 | 5 |     10%     |    50%    |  40%  |
 
+(More tables to be added.)
+
 #### Example calculations
 
 - [Level 1 Flunky](http://pastebin.com/wANyHgsx)
 
 ### Which toon(s) will be attacked?
+
+If the selected cog attack is a group attack, all active toons will be attacked. For single-toon attacks, 75% percent of the time the following algorithm is used to select a toon:
+
+1. Store the total amount of damage done by the active toons in a variable `totalDamage`.
+2. In a list, `dmgs`, store the relative contributions by each toon (contributed / `totalDamage` * 100).
+3. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` < 99.
+4. Loop over `dmgs`, summing the relative contributions by each toon. This sum is stored in a variable `count`.
+5. On each iteration, check if `randNum` is less than `count`
+    - if it is, return an integer representing the number of iterations (that is, 0 for the first, 1 for the second, etc). In other words, a toon's damage contributions are directly proportional to its chance of being selected in this step.
+    - if it's not, continue looping.
+6. If no toon was found by the above, a toon is selected at random. This, for eaxmple, could happen when a large pseudorandom integer is generated, but the battle damage is evenly distributed.
+
+In the other 15% of time, a toon is simply selected at random.
 
 ### How much damage will be done?
 
