@@ -462,7 +462,7 @@ The first step in choosing a Summon was to establish a `preferredSummonType`. Th
 The second step was to check for toons who already had the `preferredSummonType`. For those that did, the following algorithm was used to choose another Summon:
 
 - Using the `preferredDept` and a cog level based on the battle difficulty, try to give the toon a cog, building or invasion (in that order).
-- Using a cog level based on the battle difficulty, loop over every cog suit and try try to give the toon a cog, building or invasion (in that order).
+- Using a cog level based on the battle difficulty, loop over every cog suit and try to give the toon a cog, building or invasion (in that order).
 - Give the toon the weakest possible reward, checking suits in the following order: Boss, Law, Cash, Sell.
 - If the toon has all possible Summons, give them nothing.
 
