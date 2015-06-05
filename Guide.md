@@ -385,7 +385,7 @@ This means that `randChoice` would have to exceed 15 for the SOS to miss; howeve
 
 ### Hypothesis
 
-Yes, cogs were more likely to "wake up" early if the caller was Lureless. The probability associated with this event is called a cogs `wakeupChance`, which is calculated as follows:
+Yes, cogs were more likely to "wake up" early if the caller was Lureless. The probability associated with this event is called a cog's `wakeupChance`, which is calculated as follows:
 
 ```python
 wakeupChance = 100 - attackAcc * 2
