@@ -3,7 +3,6 @@
 - [Core Knowledge](#core-knowledge)
     - [Toon Attack Accuracy](#atk-accuracy)
     - [Cog Attack Accuracy](#cog-atk-accuracy)
-    - [Fishing](#fishing)
 - [Toon-up](#toon-up)
     - [Did using Toon-up have any impact on other gag's damage or accuracy?](#tu-1)
 - [Trap](#trap)
@@ -32,6 +31,7 @@
 - [C.E.O.](#ceo)
     - [How did the C.E.O. choose which attack to use?](#ceo-1)
     - [How did the C.E.O. choose which toon to attack?](#ceo-2)
+- [Fishing](#fishing)
 - [Misc](#misc)
     - [Do some Shopkeepers sell more accurate gags?](#misc-1)
 - [Credits](#credits)
@@ -236,8 +236,6 @@ In the other 25% of time, a toon is simply selected at random.
 To determine this, a pseudorandom integer `randChoice` is generated such that 0 <= `randChoice` < 99. If `randChoice` is less than the cog attack's accuracy, the cog attack will hit. Otherwise it will miss.
 
 (Attack accuracy/damage summary to be added.)
-
-## Fishing <a name="fishing"></a>
 
 # Toon-up <a name="toon-up"></a>
 [[back to top](#contents)]
@@ -491,6 +489,8 @@ The second step was to check for toons who already had the `preferredSummonType`
 ## How did the C.E.O. choose which attack to use? <a name="ceo-1"></a>
 
 ## How did the C.E.O. choose which toon to attack? <a name="ceo-2"></a>
+
+# Fishing <a name="fishing"></a>
 
 # Misc <a name="misc"></a>
 [[back to top](#contents)]
