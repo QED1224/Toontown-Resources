@@ -23,9 +23,15 @@
     - [How did the V.P. choose which toon to attack?](#vp-4)
 - [C.F.O.](#cfo)
     - [How was the C.F.O. reward chosen?](#cfo-1)
+    - [How did the C.F.O. choose which attack to use?](#cfo-2)
+    - [How did the C.F.O. choose which toon to attack?](#cfo-3)
 - [C.J.](#cj)
     - [How was the C.J. reward chosen?](#cj-1)
+    - [How did the C.J. choose which attack to use?](#cj-2)
+    - [How did the C.J. choose which toon to attack?](#cj-3)
 - [C.E.O.](#ceo)
+    - [How did the C.E.O. choose which attack to use?](#ceo-1)
+    - [How did the C.E.O. choose which toon to attack?](#ceo-2)
 - [Misc](#misc)
     - [Do some Shopkeepers sell more accurate gags?](#misc-1)
 - [Credits](#credits)
@@ -456,6 +462,10 @@ Being Lureless significantly devalues Lure SOS cards.
 
 Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite were selected at random.
 
+## How did the C.F.O. choose which attack to use? <a name="cfo-2"></a>
+
+## How did the C.F.O. choose which toon to attack? <a name="cfo-3"></a>
+
 # C.J. <a name="cj"></a>
 
 ## How was the C.J. reward chosen? <a name="cj-1"></a>
@@ -472,8 +482,15 @@ The second step was to check for toons who already had the `preferredSummonType`
 - Give the toon the weakest possible reward, checking suits in the following order: Boss, Law, Cash, Sell.
 - If the toon has all possible Summons, give them nothing.
 
+## How did the C.J. choose which attack to use? <a name="cj-2"></a>
+
+## How did the C.J. choose which toon to attack? <a name="cj-3"></a>
 
 # C.E.O. <a name="ceo"></a>
+
+## How did the C.E.O. choose which attack to use? <a name="ceo-1"></a>
+
+## How did the C.E.O. choose which toon to attack? <a name="ceo-2"></a>
 
 # Misc <a name="misc"></a>
 [[back to top](#contents)]
