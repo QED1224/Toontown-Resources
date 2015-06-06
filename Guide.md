@@ -27,7 +27,7 @@
     - [How did the C.F.O. choose which toon to attack?](#cfo-3)
 - [C.J.](#cj)
     - [How was the C.J. reward chosen?](#cj-1)
-    - [How did the C.J. choose which attack to use?](#cj-2)
+    - [How did the C.J. decide when to jump?](#cj-2)
     - [How did the prosecution choose which toon to attack?](#cj-3)
 - [C.E.O.](#ceo)
     - [How did the C.E.O. choose which attack to use?](#ceo-1)
@@ -482,7 +482,7 @@ The second step was to check for toons who already had the `preferredSummonType`
 - Give the toon the weakest possible reward, checking suits in the following order: Boss, Law, Cash, Sell.
 - If the toon has all possible Summons, give them nothing.
 
-## How did the C.J. choose which attack to use? <a name="cj-2"></a>
+## How did the C.J. decide when to jump? <a name="cj-2"></a>
 
 ## How did the prosecution choose which toon to attack? <a name="cj-3"></a>
 
