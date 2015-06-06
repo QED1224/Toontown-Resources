@@ -19,6 +19,8 @@
 - [V.P.](#vp)
     - [Did being Lureless impact the accuracy of Lure SOS cards?](#vp-1)
     - [Did being Lureless impact the number of rounds Lure SOS cards would hold for?](#vp-2)
+    - [How did the V.P. choose which attack to use?](#vp-3)
+    - [How did the V.P. choose which toon to attack?](#vp-4)
 - [C.F.O.](#cfo)
     - [How was the C.F.O. reward chosen?](#cfo-1)
 - [C.J.](#cj)
@@ -443,6 +445,10 @@ Being Lureless significantly devalues Lure SOS cards.
 
 - [Maxed Lure; Lil' Oldman; Level 12 cog](http://pastebin.com/pr9LVZZ8)
 - [Lureless; Lil' Oldman; Level 12 cog](http://pastebin.com/q8Q51Fm3)
+
+## How did the V.P. choose which attack to use? <a name="vp-3"></a>
+
+## How did the V.P. choose which toon to attack? <a name="vp-4"></a>
 
 # C.F.O. <a name="cfo"></a>
 
