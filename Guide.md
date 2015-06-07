@@ -456,6 +456,7 @@ Being Lureless significantly devalues Lure SOS cards.
 ## How did the V.P. choose which toon to attack? <a name="vp-4"></a>
 
 # C.F.O. <a name="cfo"></a>
+[[back to top](#contents)]
 
 ## How was the C.F.O. reward chosen? <a name="cfo-1"></a>
 
@@ -466,6 +467,7 @@ Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite w
 ## How did the C.F.O. choose which toon to attack? <a name="cfo-3"></a>
 
 # C.J. <a name="cj"></a>
+[[back to top](#contents)]
 
 ## How was the C.J. reward chosen? <a name="cj-1"></a>
 
@@ -488,12 +490,14 @@ The second step was to check for toons who already had the `preferredSummonType`
 ## How is the scale related to the jury? <a name="cj-4"></a>
 
 # C.E.O. <a name="ceo"></a>
+[[back to top](#contents)]
 
 ## How did the C.E.O. choose which attack to use? <a name="ceo-1"></a>
 
 ## How did the C.E.O. choose which toon to attack? <a name="ceo-2"></a>
 
 # Fishing <a name="fishing"></a>
+[[back to top](#contents)]
 
 # Misc <a name="misc"></a>
 [[back to top](#contents)]
