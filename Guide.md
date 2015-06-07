@@ -28,6 +28,7 @@
     - [How was the C.J. reward chosen?](#cj-1)
     - [How did the C.J. decide when to jump?](#cj-2)
     - [How did the prosecution choose which toon to attack?](#cj-3)
+    - [How is the scale related to the jury?](#cj-4)
 - [C.E.O.](#ceo)
     - [How did the C.E.O. choose which attack to use?](#ceo-1)
     - [How did the C.E.O. choose which toon to attack?](#ceo-2)
@@ -483,6 +484,8 @@ The second step was to check for toons who already had the `preferredSummonType`
 ## How did the C.J. decide when to jump? <a name="cj-2"></a>
 
 ## How did the prosecution choose which toon to attack? <a name="cj-3"></a>
+
+## How is the scale related to the jury? <a name="cj-4"></a>
 
 # C.E.O. <a name="ceo"></a>
 
