@@ -20,6 +20,7 @@
     - [Did being Lureless impact the number of rounds Lure SOS cards would hold for?](#vp-2)
     - [How did the V.P. choose which attack to use?](#vp-3)
     - [How did the V.P. choose which toon to attack?](#vp-4)
+    - [Was there a way to predict when the undercarriage would open?](#vp-5)
 - [C.F.O.](#cfo)
     - [How was the C.F.O. reward chosen?](#cfo-1)
     - [How did the C.F.O. choose which attack to use?](#cfo-2)
@@ -454,6 +455,8 @@ Being Lureless significantly devalues Lure SOS cards.
 ## How did the V.P. choose which attack to use? <a name="vp-3"></a>
 
 ## How did the V.P. choose which toon to attack? <a name="vp-4"></a>
+
+## Was there a way to predict when the undercarriage would open? <a name="vp-5"></a>
 
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
