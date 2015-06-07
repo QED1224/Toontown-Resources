@@ -145,7 +145,7 @@ Here's a summary of all possible defense values:
 |     11    |    -50    |
 |     12    |    -55    |
 
-*Tier 1 cogs (i.e., Cold Callers and Flunkies) have the lower value.
+*Tier 1 cogs (i.e., Cold Callers and Flunkies) have the less negative value.
 
 #### `bonus`
 
