@@ -456,6 +456,8 @@ Being Lureless significantly devalues Lure SOS cards.
 
 Excluding the undercarriage which had different logic (see the following question), the V.P. had three attacks: Throw Gears, Gear Shower and Jump with usage odds of 4/6, 1/6 and 1/6 respectively. During normal mode, the V.P. would choose at random from these three.
 
+Following dizziness, the V.P. would always use Gear Shower.
+
 ## How did the V.P. choose which toon to attack? <a name="vp-4"></a>
 
 ## Was there a way to predict when the undercarriage would open? <a name="vp-5"></a>
