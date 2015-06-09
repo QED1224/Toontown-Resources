@@ -35,7 +35,7 @@
     - [How did the C.E.O. choose which toon to attack?](#ceo-2)
 - [Fishing](#fishing)
 - [Misc](#misc)
-    - [Do some Shopkeepers sell more accurate gags?](#misc-1)
+    - [Did some Shopkeepers sell more accurate gags?](#misc-1)
     - [Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results?](#misc-2)
 - [Credits](#credits)
 
