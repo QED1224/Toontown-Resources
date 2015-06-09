@@ -36,7 +36,8 @@
 - [Fishing](#fishing)
 - [Misc](#misc)
     - [Did some Shopkeepers sell more accurate gags?](#misc-1)
-    - [Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results?](#misc-2)
+    - [When multiple gags of the same track were used on the same cog, how was accuracy calculated?](#misc-2)
+    - [Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results?](#misc-3)
 - [Credits](#credits)
 
 # Introduction <a name="intro"></a>
@@ -518,7 +519,9 @@ The second step was to check for toons who already had the `preferredSummonType`
 
 No, there's no evidence that Shopkeepers had any impact on gag accuracy.
 
-## Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-2"></a>
+## When multiple gags of the same track were used on the same cog, how was accuracy calculated? <a name="misc-2"></a>
+
+## Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-3"></a>
 
 # Credits <a name="credits"></a>
 [[back to top](#contents)]
