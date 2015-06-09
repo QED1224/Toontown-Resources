@@ -460,7 +460,11 @@ Following dizziness, the V.P. would always use Gear Shower.
 
 ## How did the V.P. choose which toon to attack? <a name="vp-4"></a>
 
+Throw Gears is the only attack which targeted a specific toon and the toon was selected at random.
+
 ## Was there a way to predict when the undercarriage would open? <a name="vp-5"></a>
+
+Yes, the undercarriage would open every 9 seconds that the V.P. was not dizzy. The side it opened on and the direction of the gears were random.
 
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
