@@ -93,38 +93,15 @@ For Lure gags, `propAcc` is initially assigned its `AvPropAccuracy` value, then 
 
 #### `trackExp`
 
-`trackExp` is determined based on two factors: `toonExpLvl` and `exp`.
-
-The following pseudocode outlines how `toonExpLvl` and `exp` are calculated:
-
-<input type="text" id="name" name="name"/>
+`trackExp` is calculated according to the following:
 
 ```python
-AttackExpPerTrack = [0, 10, 20, 30, 40, 50, 60]
-
-toonExpLvl = 0
-for amount in Levels[track]: # Preset experience levels.
-    if experience[track] >= amount: # The toon's experience level.
-        toonExpLvl = Levels[track].index(amount) # A value between 0 and 6.
-
-exp = AttackExpPerTrack[toonExpLvl]
-if track == HEAL: # If the track is Toon-up, `exp` is halved.
-    exp = exp * 0.5
-trackExp = exp
+if track == HEAL:
+    trackExp = ([gag level - 1] * 10) * 0.5
+else:
+    trackExp = [gag level - 1] * 10
 ```
-
-Now, once the current attack's `trackExp` is calculated, every other slated attack is checked like so:
-
-```python
-for otherAtk in toonAtkOrder: # For each toon's ID...
-    if otherAtk != attack[TOON_ID_COL]: # If `otherAtk` doesn't match the ID for the above attack...
-        nextAttack = toonAttacks[currOtherAtk] 
-        nextAtkTrack = getActualTrack(nextAttack) # The attack track (Lure, Drop, etc.)
-        if atkTrack == nextAtkTrack and attack[TGT_COL] == nextAttack[TGT_COL]: # If the tracks and targets match...
-            currTrackExp = toonTrackExp(nextAttack[TOON_ID_COL], atkTrack) # The `exp` for `nextAttack`.
-            trackExp = max(currTrackExp, trackExp) # `trackExp` is assigned the largest `exp`.
-```
-So, if multiple toons use the same gag track on the same cog, the highest `trackExp` is used in the `atkAcc` calculations for all of them.
+This is repeated for every gag within a particular track. So, if multiple toons use the same gag track on the same cog, the highest `trackExp` is used in the `atkAcc` calculations for all of them.
 
 #### `tgtDef`
 
