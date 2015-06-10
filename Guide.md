@@ -109,20 +109,9 @@ In Toon-up calculations, `tgtDef` is always 0. For the other tracks, it's assign
 
 Here's a summary of all possible defense values:
 
-| Cog Level |  Defense |
-|:---------:|:--------:|
-|     1     |     -2    |
-|     2     |     -5    |
-|     3     |    -10    |
-|     4     | -12/-15* |
-|     5     | -15/-20* |
-|     6     |    -25    |
-|     7     |    -30    |
-|     8     |    -35    |
-|     9     |    -40    |
-|     10    |    -45    |
-|     11    |    -50    |
-|     12    |    -55    |
+| Cog Level |  1 |  2 |  3  |    4    |    5    |  6  |  7  |  8  |  9  |  10 |  11 |  12 |
+|:---------:|:--:|:--:|:---:|:-------:|:-------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **tgtDef** | -2 | -5 | -10 | -12/-15* | -15/-20* | -25 | -30 | -35 | -40 | -45 | -50 | -55 |
 
 *Tier 1 cogs (i.e., Cold Callers and Flunkies) have the less negative value.
 
