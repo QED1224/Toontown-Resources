@@ -544,6 +544,10 @@ Yes, considering the ordering process outlined in the previous section, if multi
 
 Here, the attack order is 1, 2, 3 (by ID). This means that Toon 1's Safe is evaluated, then Toon 2's Safe is evaluated (but isn't assigned the result of 1 because it has a different target) and then Toon 3's Safe is evaluated (but isn't assigned the result of 2 because it has a different target). So, in this situation, it's possible for only one Safe to hit Cog A.
 
+## Battle Simulations:
+
+- [3 Safes](http://pastebin.com/BhZ14ZL6)
+- [3 Storm Clouds](http://pastebin.com/5fb8pbtA)
 
 # Credits <a name="credits"></a>
 [[back to top](#contents)]
