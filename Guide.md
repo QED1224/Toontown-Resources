@@ -117,15 +117,15 @@ Here's a summary of all possible defense values:
 
 #### `bonus`
 
-There are two possible sources of bonus: multiple hits on the same cog and the Lured Ratio. 
+There are two possible sources of bonus: PrevHits and the Lured Ratio. 
 
-The former is simply 20 * [number of previous hits in the current round], given that the **previous attack hit**, **the previous was not the same track as the current** and one of the following is true:
+PrevHits is `simply 20 * [number of previous hits in the current round]`, given that the **previous attack hit**, **the previous was not the same track as the current** and one of the following is true:
 
 - the *previous* attack affected the group; or
 - the *current* attack affects the group; or
 - the *current* and *previous* attacks affect the same target.
 
-The latter is calculated like so:
+The Lured Ratio is calculated like so:
 
 ```python
 luredRatio = ([number of cogs lured] / [total cogs]) * 100
