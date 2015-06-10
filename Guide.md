@@ -128,16 +128,7 @@ The former is simply 20 * [number of previous hits in the current round], given 
 The latter is calculated like so:
 
 ```python
-luredRatio = [number of cogs lured] / [total cogs]
-accAdjust = 100 * luredRatio
-atkAcc += accAdjust
-```
-So, for example, if there are 4 cogs in battle and two of them are lured, the bonus is:
-
-```python
-luredRatio = 2 / 4 = 0.5
-100 * luredRatio = 50
-atkAcc = atkAcc + 50
+luredRatio = ([number of cogs lured] / [total cogs]) * 100
 ```
 (Note: The Lured Ratio bonus does not apply to Lure, Toon-up or Drop gags.)
 
