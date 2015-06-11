@@ -124,8 +124,8 @@ In order for PrevHits to be applied, the followings conditions must be met
 - The previous attack hit; **and**
 - The previous attack was not the same track as the current; **and**
 - The previous attack affected the group; **or**
-- The *current* attack affects the group; **or**
-- the *current* and *previous* attacks affect the same target.
+- The current attack affects the group; **or**
+- The current and previous attacks affect the same target.
 
 Assuming the above is met, PrevHits is calculated like so:
 
