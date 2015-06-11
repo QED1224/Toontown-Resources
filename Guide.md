@@ -23,8 +23,7 @@
     - [Was there a way to predict when the undercarriage would open?](#vp-5)
 - [C.F.O.](#cfo)
     - [How was the C.F.O. reward chosen?](#cfo-1)
-    - [How did the C.F.O. choose which attack to use?](#cfo-2)
-    - [How did the C.F.O. choose which toon to attack?](#cfo-3)
+    - [How did the C.F.O. choose which toon to attack?](#cfo-2)
 - [C.J.](#cj)
     - [How was the C.J. reward chosen?](#cj-1)
     - [How did the C.J. decide when to jump?](#cj-2)
@@ -431,9 +430,9 @@ Yes, the undercarriage would open every 9 seconds that the V.P. was not dizzy. T
 
 Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite were selected at random.
 
-## How did the C.F.O. choose which attack to use? <a name="cfo-2"></a>
+## How did the C.F.O. choose which toon to attack? <a name="cfo-2"></a>
 
-## How did the C.F.O. choose which toon to attack? <a name="cfo-3"></a>
+At the start of the Crane Round, a list named `toonsToAttack` is created which contains the ID of every toon in the C.F.O. batttle sorted randomly. Toons are attacked according to this order: the toon at position 0 is attacked first and then its ID is appended to the end of the list. This cylcle repeats for the duration of the battle.
 
 # C.J. <a name="cj"></a>
 [[back to top](#contents)]
