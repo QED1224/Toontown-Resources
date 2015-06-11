@@ -276,8 +276,6 @@ Yes, Organic Lure and the accuracy boost Trap provides do stack up. As listed in
 
 ## What was the impact of using multiple Lure gags? <a name="lure-1"></a>
 
-### Hypothesis
-
 - When two lure gags were picked, the result of the weakest was calculated first.
 - There were two different options for the second gag:
     + The first Lure's result was applied to the second. However, when calculating whether or not the first would hit, the `trackExp` of the strongest gag was used.
@@ -292,14 +290,7 @@ The first option was applied when these conditions were met:
 
 The second option would be applied when the second Lure gag was single-cog and the first missed.
 
-### Interpretation
-
-Using multiple Lure gags (of varying levels) was only beneficial in two situations:
-
-- While training Lure, since the highest gag's `trackExp` would be applied to the weaker gag.
-- If the weaker Lure was multi-cog and the stronger Lure was single-cog (i.e., Small Magnet and $10 Bill). In this case, there seemed to have been two options:
-    + If the multi-cog Lure hit, the single-cog Lure did as well.
-    + If the multi-cog Lure missed, the single-cog Lure was evaluated independently (so its accuracy wasn't lowered).
+Rounds were stacked based on the Lure's target. So, multiple single-cog Lures only stacked rounds if they had the same target, while multiple multi-cog Lures always stacked. If a combination of single- and multi-cog Lures were used, rounds only stacked on the one target they overlapped on.
 
 If multiple toons with the same experience level in Lure (i.e., maxed) used the same Lure gag, there was no impact on accuracy.
 
