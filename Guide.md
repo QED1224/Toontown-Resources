@@ -432,7 +432,7 @@ Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite w
 
 ## How did the C.F.O. choose which toon to attack? <a name="cfo-2"></a>
 
-At the start of the Crane Round, a list named `toonsToAttack` is created which contains the ID of every toon in the C.F.O. batttle sorted randomly. Toons are attacked according to this order: the toon at position 0 is attacked first and then its ID is appended to the end of the list. This cylcle repeats for the duration of the battle.
+At the start of the Crane Round, a list named `toonsToAttack` was created which contained the ID of every toon in the C.F.O. batttle sorted randomly. Toons were then attacked according to this order: the toon at position 0 was attacked first and then its ID was appended to the end of the list. This cylcle repeated for the duration of the battle.
 
 # C.J. <a name="cj"></a>
 [[back to top](#contents)]
@@ -453,7 +453,11 @@ The second step was to check for toons who already had the `preferredSummonType`
 
 ## How did the C.J. decide when to jump? <a name="cj-2"></a>
 
+Every 15 seconds the C.J. had an 11% chance to jump. 
+
 ## How did the prosecution choose which toon to attack? <a name="cj-3"></a>
+
+Every cycle, each prosecuting cog had a 50/50 chance to either (1) attack a toon or (2) hit the scale. If option 1 was selected, a toon was chosen at random from a list of all toons in the battle. 
 
 ## How is the scale related to the jury? <a name="cj-4"></a>
 
