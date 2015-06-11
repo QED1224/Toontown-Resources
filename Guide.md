@@ -387,11 +387,11 @@ Since 3 - 5 star Lure SOS cards are guaranteed to hit, the above probabilities r
 However, given that each round is calculated independent of any prior results, we note that P(B|A) = P(B). Thus, the probabilities can summarized as the following (note that the chance a cog stays lured is the *complement* of its `wakeupChance`):
 
 |   | 1 - 5 | 6     | 7     | 8     | 9     | 10    | 11    | 12    |
-|---|-------|-------|-------|-------|-------|-------|-------|-------|
-| 1 |       |       |       |       |       |       |       | 100%  |
-| 2 |       | 90.0% | 80.0% | 70.0% | 60.0% | 50.0% | 40.0% | 30.0% |
-| 3 |       | 81.0% | 64.0% | 49.0% | 36.0% | 25.0% | 16.0% | 9.00% |
-| 4 | 100%  | 72.9% | 51.2% | 34.3% | 21.6% | 12.5% | 6.40% | 2.70% |
+|:---:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| 1 |   -    |   -    |    -   |    -   |  -  |  -   |    -  | 100%  |
+| 2 |   -    | 90.0% | 80.0% | 70.0% | 60.0% | 50.0% | 40.0% | 30.0% |
+| 3 |   -    | 81.0% | 64.0% | 49.0% | 36.0% | 25.0% | 16.0% | 9.00% |
+| 4 | 100%  | 72.9% | 51.2% | 34.3% | 21.6% | 12.5%  | 6.40% | 2.70% |
 
 (Only applicable to 3 - 5 star Lure SOS cards.)
 
