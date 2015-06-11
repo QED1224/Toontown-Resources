@@ -119,15 +119,23 @@ Here's a summary of all possible defense values:
 
 There are two possible sources of bonus: PrevHits and the Lured Ratio. 
 
-PrevHits is `simply 20 * [number of previous hits in the current round]`, given that the **previous attack hit**, **the previous was not the same track as the current** and one of the following is true:
+In order for PrevHits to be applied, the followings conditions must be met
 
-- the *previous* attack affected the group; or
-- the *current* attack affects the group; or
+- The previous attack hit; **and**
+- The previous attack was not the same track as the current; **and**
+- The previous attack affected the group; **or**
+- The *current* attack affects the group; **or**
 - the *current* and *previous* attacks affect the same target.
+
+Assuming the above is met, PrevHits is calculated like so:
+
+```
+20 * [number of previous hits to a given cog in the current round] 
+```
 
 The Lured Ratio is calculated like so:
 
-```python
+```
 luredRatio = ([number of cogs lured] / [total cogs]) * 100
 ```
 (Note: The Lured Ratio bonus does not apply to Lure, Toon-up or Drop gags.)
