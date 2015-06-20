@@ -94,7 +94,7 @@ For Lure gags, `propAcc` is initially assigned its `AvPropAccuracy` value, then 
 
 `trackExp` is calculated according to the following:
 
-```python
+```
 if track == Toon-up:
     trackExp = ([highest gag level in track - 1] * 10) * 0.5
 else:
@@ -281,7 +281,7 @@ When two or more Lure gags were picked, the result of the weakest was calculated
 
 2. If the current Lure gag was single-cog and the previous missed, the current was calculated independently. In other words, this was this only case in which sequential Lure gags could have different results.
 
-In either case, rounds were stacked based on the Lure's target. So, multiple single-cog Lures only stacked rounds if they had the same target, while multiple multi-cog Lures always stacked. If a combination of single- and multi-cog Lures were used, rounds only stacked on the one target they overlapped on.
+In either case, rounds were stacked based on the Lure's target. So, multiple single-cog Lures only stacked rounds if they had the same target, while multiple multi-cog Lures always stacked across all cogs. If a combination of single- and multi-cog Lures were used, rounds only stacked on the target(s) which overlapped.
 
 If multiple toons with the same experience level in Lure (i.e., maxed) used the same Lure gag, there was no impact on accuracy.
 
