@@ -482,14 +482,16 @@ No, there's no evidence that Shopkeepers had any impact on gag accuracy.
 
 The first aspect that must be understood is how toon attacks were ordered, in which there were three steps:
 
-1. Order all active toons by their ID.
+1. Order all active toons by their ID (lowest to highest).
 2. Order by track: Toon-up, Trap, Lure, Sound, Throw, Squirt and then Drop.
-3. Order by gag level. That is, the lowest level gag within a track always went first.
+3. Order by gag level (lowest to highest) within each track.
+
+From here, for all calculation purposes, attacks are considered in pairs (the previous attack and the current attack) within each track.
 
 Now, we need to cover four more sub-cases:
 
 1. Toon-up gags were always evaluated independently.
-2. Lure gags were only evaluated independently when using a combination of multi- and single-cog Lures, and a multi-cog Lure was the lowest level ([see here](#lure-1)). In all other cases, the result of the lowest Lure gag was applied to all subsequent Lures.
+2. Lure gags were only evaluated independently when using a combination of multi- and single-cog Lures, and a multi-cog Lure was the lowest level ([see the multi-Lure section for details](#lure-1)). In all other cases, the result of the lowest Lure gag was applied to all subsequent Lures.
 3. Sound gags always inherited the result of the lowest Sound gag used. 
 4. For all other tracks, if the previous gag in the particular track had the same target as the current, the current inherited the result of the previous.
 
