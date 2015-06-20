@@ -3,6 +3,8 @@
 - [Core Knowledge](#core-knowledge)
     - [Toon Attack Accuracy](#atk-accuracy)
     - [Cog Attack Accuracy](#cog-atk-accuracy)
+    - [Doodle Training and Tricks](#doodle-t&t)
+    - [Fishing and Probability](#fish-prob)
 - [Toon-up](#toon-up)
     - [Did using Toon-up have any impact on other gag's damage or accuracy?](#tu-1)
 - [Trap](#trap)
@@ -204,6 +206,10 @@ In the other 25% of time, a toon is simply selected at random.
 To determine this, a pseudorandom integer `randChoice` is generated such that 0 <= `randChoice` < 99. If `randChoice` is less than the cog attack's accuracy, the cog attack will hit. Otherwise it will miss.
 
 (Attack accuracy/damage summary to be added.)
+
+## Doodle Training and Tricks <a name="doodle-t&t"></a>
+
+## Fishing and Probability <a name="fish-prob"></a>
 
 # Toon-up <a name="toon-up"></a>
 [[back to top](#contents)]
