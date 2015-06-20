@@ -275,23 +275,17 @@ Yes, Organic Lure and the accuracy boost Trap provides do stack up. As listed in
 
 ## What was the impact of using multiple Lure gags? <a name="lure-1"></a>
 
-- When two lure gags were picked, the result of the weakest was calculated first.
-- There were two different options for the second gag:
-    + The first Lure's result was applied to the second. However, when calculating whether or not the first would hit, the `trackExp` of the strongest gag was used.
-    + Each Lure gag was calculated independently; that is, it was possible for one to hit and the other to miss.
+When two or more Lure gags were picked, the result of the weakest was calculated first using the highest possible value for `trackExp`. From here, there were two options for all subsequent Lure gags:
 
-The first option was applied when these conditions were met:
+1. If the current Lure gag was single-cog and the previous hit or the current Lure gag was multi-cog, the previous Lure's result was applied to the current.
 
-- the gag tracks were the same and the target cog was the same; or
-- the gag track was Lure and one of the following was true
-    + the second Lure gag was single-cog and the first hit; or
-    + the second Lure gag was multi-cog.
+2. If the current Lure gag was single-cog and the previous missed, the current was calculated independently. In other words, this was this only case in which sequential Lure gags could have different results.
 
-The second option would be applied when the second Lure gag was single-cog and the first missed.
-
-Rounds were stacked based on the Lure's target. So, multiple single-cog Lures only stacked rounds if they had the same target, while multiple multi-cog Lures always stacked. If a combination of single- and multi-cog Lures were used, rounds only stacked on the one target they overlapped on.
+In either case, rounds were stacked based on the Lure's target. So, multiple single-cog Lures only stacked rounds if they had the same target, while multiple multi-cog Lures always stacked. If a combination of single- and multi-cog Lures were used, rounds only stacked on the one target they overlapped on.
 
 If multiple toons with the same experience level in Lure (i.e., maxed) used the same Lure gag, there was no impact on accuracy.
+
+See the [section on multiple gag usage](#misc-2) for more general information.
 
 ### Battle Simulations
 
