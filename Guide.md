@@ -97,11 +97,11 @@ For Lure gags, `propAcc` is initially assigned its `AvPropAccuracy` value, then 
 `trackExp` is calculated according to the following:
 
 ```
-if track == Toon-up:
-    trackExp = ([highest gag level in track - 1] * 10) * 0.5
-else:
-    trackExp = [highest gag level in track - 1] * 10
+ trackExp = [highest gag level in track - 1] * 10
 ```
+
+If the track is Toon-up, the above result is halved. 
+
 This is repeated for every gag within a particular track. So, if multiple toons use the *same gag track* on the *same cog*, the highest `trackExp` is used in the `atkAcc` calculations for all of them.
 
 #### `tgtDef`
