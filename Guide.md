@@ -504,4 +504,4 @@ Here, the attack order is 1, 2, 3 (by ID). This means that Toon 1's Safe is eval
 # Credits <a name="credits"></a>
 [[back to top](#contents)]
 
-
+- Cell1234 (Patrick)
