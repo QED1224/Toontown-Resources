@@ -92,7 +92,7 @@ For all non-Lure gags, `propAcc` is simply the above pre-defined `AvPropAccuracy
 
 For Lure gags, `propAcc` is initially assigned its `AvPropAccuracy` value, then if the toon has Lure trees planted at a level greater than or equal to the gag level they're using **or** there's an active Lure interactive prop, `propAcc` is re-assigned a value from `AvLureBonusAccuracy`.
 
-#### `trackExp`
+#### `trackExp` <a name="trackExp"></a>
 
 `trackExp` is calculated according to the following:
 
@@ -102,7 +102,7 @@ if track == Toon-up:
 else:
     trackExp = [highest gag level in track - 1] * 10
 ```
-This is repeated for every gag within a particular track. So, if multiple toons use the same gag track on the same cog, the highest `trackExp` is used in the `atkAcc` calculations for all of them.
+This is repeated for every gag within a particular track. So, if multiple toons use the *same gag track* on the *same cog*, the highest `trackExp` is used in the `atkAcc` calculations for all of them.
 
 #### `tgtDef`
 
@@ -272,7 +272,7 @@ Yes, Organic Lure and the accuracy boost Trap provides do stack up. As listed in
 
 ## What was the impact of using multiple Lure gags? <a name="lure-1"></a>
 
-When two or more Lure gags were picked, the result of the weakest was calculated first using the highest possible value for `trackExp`. From here, there were two options for all subsequent Lure gags:
+When two or more Lure gags were picked, the result of the weakest was calculated first using the highest possible value for `trackExp` according to the details outlined in [its section](#trackExp). From here, there were two options for all subsequent Lure gags:
 
 1. If the current Lure gag was single-cog and the previous hit or the current Lure gag was multi-cog, the previous Lure's result was applied to the current.
 
