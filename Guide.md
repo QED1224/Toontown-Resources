@@ -222,8 +222,6 @@ Yes, considering the conditions outlined in the [bonus section](#bonus), Toon-up
 - The attack gag affected the group; or
 - Both gags affected the group.
 
-For example, there would be no bonus applied if there were two toons in battle, and they used Pixie Dust and Fruit Pie Slice because neither is a group attack.
-
 (Note: it appears that needing Laff was not a prerequisite for a Toon-up accuracy bonus.)
 
 # Trap <a name="trap"></a>
