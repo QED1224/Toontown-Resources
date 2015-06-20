@@ -46,6 +46,8 @@
 
 **This guide is still a work-in-progress; some key information is missing from currently present sections.**
 
+The information in this guide is primarily based on the source code of Toontown Online (timestamped 2013-07-02 T 6:22PM).
+
 # Core Knowledge <a name="core-knowledge"></a>
 [[back to top](#contents)]
 
