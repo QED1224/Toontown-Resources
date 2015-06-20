@@ -214,15 +214,9 @@ To determine this, a pseudorandom integer `randChoice` is generated such that 0 
 # Toon-up <a name="toon-up"></a>
 [[back to top](#contents)]
 
-## Did using Toon-up have any impact on other gag's damage or accuracy? <a name="tu-1"></a>
+## Did using Toon-up have any impact on other gag's accuracy? <a name="tu-1"></a>
 
-### Hypothesis
-
-Yes, Toon-up added a multi-hit-same-target bonus to `atkAcc` subject to the conditions outlined in the [bonus section](#bonus).
-
-### Interpretation
-
-Considering the conditions outlined in the [bonus section](#bonus), Toon-up would increase another gag's accuracy when one of the following was true:
+Yes, considering the conditions outlined in the [bonus section](#bonus), Toon-up would increase another gag's accuracy when one of the following was true:
 
 - The Toon-up gag affected the group; or
 - The attack gag affected the group; or
@@ -231,7 +225,6 @@ Considering the conditions outlined in the [bonus section](#bonus), Toon-up woul
 For example, there would be no bonus applied if there were two toons in battle, and they used Pixie Dust and Fruit Pie Slice because neither is a group attack.
 
 (Note: it appears that needing Laff was not a prerequisite for a Toon-up accuracy bonus.)
-
 
 # Trap <a name="trap"></a>
 [[back to top](#contents)]
