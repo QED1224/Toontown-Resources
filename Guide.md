@@ -328,7 +328,7 @@ wakeupChance = 100 - atkAcc * 2
 ```
 (See [Toon Attack Accuracy](#atk-accuracy) for information on `atkAcc`.)
 
-With the above in mind, it can also be useful to think in terms of `wakeupChance`'s probabilistic complement: The odds a given SOS card will hold for a specific number of rounds. In order to do so, we must apply the Rule of Multiplication:
+With the above in mind, it can also be useful to think in terms of `wakeupChance`'s probabilistic complement: The probability that a given SOS card will hold for a specific number of rounds. In order to do so, we must apply the Rule of Multiplication:
 
 >The probability that Events A and B both occur is equal to the probability that Event A occurs times the probability that Event B occurs, given that A has occurred: P(A ∩ B) = P(A) P(B|A)
 
