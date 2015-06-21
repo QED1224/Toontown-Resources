@@ -312,90 +312,35 @@ See the [section on multiple gag usage](#misc-2) for more general information.
 
 ## Did being Lureless impact the accuracy of Lure SOS cards? <a name="vp-1"></a>
 
-### Hypothesis
-
-To determine whether or not a gag will hit, variables `randChoice` and `atkAcc` are compared as follows:
-
-```python
-if randChoice < acc:
-    # HIT            
-else:
-    # MISS
-```
-
-(See Core Knowledge for definitions of `atkAcc` and `randChoice`.)
-
-When a Lureless toon uses Lil' Oldman, Nancy Gas or Stinky Ned, `atkAcc` has a minimum value of 15 (this occurs against a level 12 cog):
+Yes, a value of 0 is used for `trackExp` in all Lure SOS card accuracy calculations for Lureless toons (see [Toon Attack Accuracy](#atk-accuracy) for more information). In practice, this is only relevant for Des Traction and Dee Version, which will *always* miss against level 11 and 12 cogs as seen below.
 
 ```
-atkAcc = propAcc + trackExp + tgtDef + [optional bonus] -> attackAcc = 70 + 0 + (-55) + 0 = 15
+Level 11: atkAcc = 50 + 0 + (-50) = 0
+Level 12: atkAcc = 50 + 0 + (-55) = -5
 ```
-
-This means that `randChoice` would have to exceed 15 for the SOS to miss; however, as seen in Core Knowledge, `randChoice` is always assigned 0 when an SOS card is used.
-
-### Interpretation
-
-3 - 5 star Lure SOS cards were guaranteed to hit.
-
-### Battle Simulations
 
 ## Did being Lureless impact the number of rounds Lure SOS cards would hold for? <a name="vp-2"></a>
-
-### Hypothesis
 
 Yes, cogs were more likely to "wake up" early if the caller was Lureless. The probability associated with this event is called a cog's `wakeupChance`, which is calculated as follows:
 
 ```python
-wakeupChance = 100 - attackAcc * 2
+wakeupChance = 100 - atkAcc * 2
 ```
+(See [Toon Attack Accuracy](#atk-accuracy) for information on `atkAcc`.)
 
-`attackAcc` is calculated according the following formula (see Core Knowledge):
-
-```python
-attackAcc = propAcc + trackExp + tgtDef
-```
-
-This means that there are essentially two constants: `propAcc` (which is 70 for Lil' Oldman, Nancy Gas and Stinky Ned) and `trackExp` (which is 0 for a Lureless toon). With this in mind, we can calculate base probabilities by the value of `tgtDef`.
-
-Cog levels 1 - 5 have a maximum `tgtDef` of 20, which means that they also have a maximum `wakeupChance` of 0. So, Lil' Oldman, Nancy Gas and Stinky Ned should always hold for 4 rounds when the highest cog is less than or equal to level 5.
-
-For cog levels 6 - 12, we can establish base probabilities as follows,
-
-```
-6: attackAcc = 70 + 0 + (-25) = 45; wakeupChance = 100 - 45 * 2 = 10
-7: attackAcc = 70 + 0 + (-30) = 40; wakeupChance = 100 - 40 * 2 = 20
-8: attackAcc = 70 + 0 + (-35) = 35; wakeupChance = 100 - 35 * 2 = 30
-
-...
-
-12: attackAcc = 70 + 0 + (-55) = 15; wakeupChance = 100 - 15 * 2 = 70
-```
-
-Since 3 - 5 star Lure SOS cards are guaranteed to hit, the above probabilities represent the chance that the cogs will wake up after one round. Now, to calculate probabilities for the subsequent rounds, we may apply the Rule of Multiplication:
+With the above in mind, it can also be useful to think in terms of `wakeupChance`'s probabilistic complement: The odds a given SOS card will hold for a specific number of rounds. In order to do so, we must apply the Rule of Multiplication:
 
 >The probability that Events A and B both occur is equal to the probability that Event A occurs times the probability that Event B occurs, given that A has occurred: P(A ∩ B) = P(A) P(B|A)
 
 (Source: [Probability Rules](http://stattrek.com/probability/probability-rules.aspx).)
 
-However, given that each round is calculated independent of any prior results, we note that P(B|A) = P(B). Thus, the probabilities can summarized as the following (note that the chance a cog stays lured is the *complement* of its `wakeupChance`):
+However, given that each round is calculated independent of any prior results, we note that P(B|A) = P(B). Thus, the following equation can be used:
 
-|   | 1 - 5 | 6     | 7     | 8     | 9     | 10    | 11    | 12    |
-|:---:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| 1 |   -    |   -    |    -   |    -   |  -  |  -   |    -  | 100%  |
-| 2 |   -    | 90.0% | 80.0% | 70.0% | 60.0% | 50.0% | 40.0% | 30.0% |
-| 3 |   -    | 81.0% | 64.0% | 49.0% | 36.0% | 25.0% | 16.0% | 9.00% |
-| 4 | 100%  | 72.9% | 51.2% | 34.3% | 21.6% | 12.5%  | 6.40% | 2.70% |
+```
+Given (Max rounds for SOS - N) >= 0,
 
-(Only applicable to 3 - 5 star Lure SOS cards.)
-
-### Interpretation
-
-Being Lureless significantly devalues Lure SOS cards.
-
-### TODO
-
-- Verify the impact of any optional bonus on SOS cards
-- Update section to include all SOS Lure cards (not just 3 - 5 star) 
+P(N rounds) = [1 - (wakeupChance / 100)] ^ (N - 1)
+```
 
 ### Battle Simulations
 
