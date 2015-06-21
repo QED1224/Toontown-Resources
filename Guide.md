@@ -104,7 +104,7 @@ For Lure gags, `propAcc` is initially assigned its `AvPropAccuracy` value, then 
 
 If the track is Toon-up, the above result is halved. 
 
-This is repeated for every gag within a particular track. So, if multiple toons use the *same gag track* on the *same cog*, the highest `trackExp` is used in the `atkAcc` calculations for all of them.
+This is repeated for every gag within a particular track. So, if multiple toons use the *same gag track* on the *same cog*, the highest `trackExp` is used in the `atkAcc` calculations for all of them. The latter requirement is particularly important: In order for weaker gags to inherit an increased `trackExp`, the target(s) of the weaker and stronger gags *must* be the same. 
 
 #### `tgtDef`
 
