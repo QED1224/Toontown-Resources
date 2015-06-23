@@ -46,7 +46,7 @@
 
 **This guide is still a work-in-progress; some key information is missing from currently present sections.**
 
-The information in this guide is primarily based on the source code of Toontown Online (timestamped 2013-07-02 T 6:22PM).
+The information in this guide is primarily based on the source code of Toontown Online (timestamped 2013-07-02 T 6:22PM). It does not guarantee accuracy with regard to any Toontown private servers.
 
 # Core Knowledge <a name="core-knowledge"></a>
 [[back to top](#contents)]
@@ -55,8 +55,8 @@ The information in this guide is primarily based on the source code of Toontown 
 
 `atkAcc` is a percentage which represents the likelihood of an attack performing to its highest degree. This is used in two ways:
 
-1. For Lure SOS cards, it's used when calculating the odds that cogs "wake up early" each round.
-2. It's used when calculating the value of `atkHit`, which is a boolean value that represents whether or not an attack hit.
+1. For Lure SOS cards, it was used when calculating the odds that cogs "wake up early" each round.
+2. It was used when calculating the value of `atkHit`, which was a boolean value that represented whether or not an attack hit.
 
 ### Special Cases
 
