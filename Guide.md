@@ -92,7 +92,7 @@ atkAcc = propAcc + trackExp + tgtDef + bonus
 
 For all non-Lure gags, `propAcc` was simply the above pre-defined `AvPropAccuracy` value.
 
-For Lure gags, `propAcc` was initially assigned its `AvPropAccuracy` value, then if the toon had Lure trees planted at a level greater than or equal to the gag level they're using **or** there was an active Lure interactive prop, `propAcc` was re-assigned a value from `AvLureBonusAccuracy`.
+For Lure gags, `propAcc` was initially assigned its `AvPropAccuracy` value, then if the toon had Lure trees planted at a level greater than or equal to the gag level being used **or** there was an active Lure interactive prop, `propAcc` was re-assigned a value from `AvLureBonusAccuracy`.
 
 #### `trackExp` <a name="trackExp"></a>
 
