@@ -231,20 +231,20 @@ Yes, considering the conditions outlined in the [bonus section](#bonus), Toon-up
 
 ## Did using Trap give Lure an accuracy boost? <a name="trap-1"></a>
 
-Yes, Trap gags always count as a hit on the cog, regardless if the Trap is actually triggered or not. If one again considers the conditions in the [bonus section](#bonus), Trap meets the following conditions.
+Yes, Trap gags always counted as a hit on the cog, regardless if the Trap was actually triggered or not. If one again considers the conditions in the [bonus section](#bonus), Trap met the following conditions.
 
 - It is not the same track as Lure;
 - It always counts as a hit on the target
 
-Now, one of the following must also be true:
+Now, one of the following also needed to be true:
 
 - Both Lure and Trap are single-cog, and the target is the same.
 - The Trap is multi-cog.
 - The Lure is multi-cog.
 
-So, the only scenario in which Trap will not give Lure an accuracy boost is if both Lure and Trap are single-cog, and the target is different.
+So, the only scenario in which Trap did not give Lure an accuracy boost was if both Lure and Trap were single-cog, and the target was different.
 
-Multiple Traps do give multiple boosts, with an accuracy boost of up to +60 to the Lure being possible. Of course, this requires multiple cogs in play for the Traps to be layed out.
+Multiple Traps did give multiple boosts, with an accuracy boost of up to +60 to the Lure being possible. Of course, this required multiple cogs to be in play for the Traps to be layed out.
 
 ### Battle Simulations
 
@@ -312,7 +312,7 @@ See the [section on multiple gag usage](#misc-2) for more general information.
 
 ## Did being Lureless impact the accuracy of Lure SOS cards? <a name="vp-1"></a>
 
-Yes, a value of 0 is used for `trackExp` in all Lure SOS card accuracy calculations for Lureless toons (see [Toon Attack Accuracy](#atk-accuracy) for more information). In practice, this is only relevant for Des Traction and Dee Version, which will *always* miss against level 11 and 12 cogs as seen below.
+Yes, a value of 0 was used for `trackExp` in all Lure SOS card accuracy calculations for Lureless toons (see [Toon Attack Accuracy](#atk-accuracy) for more information). In practice, this was only relevant for Des Traction and Dee Version, which *always* missed against level 11 and 12 cogs as seen below.
 
 ```
 Level 11: atkAcc = 50 + 0 + (-50) = 0
