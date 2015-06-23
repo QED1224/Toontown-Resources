@@ -60,11 +60,11 @@ The information in this guide is primarily based on the source code of Toontown 
 
 ### Special Cases
 
-Fires, Trap and non-Drop/Lure SOS cards have 95%, 100% and 95% accuracy respectively. In addition, all three are always assigned an `atkHit` of 1, which means they are *guaranteed* to hit.
+Fires, Trap and non-Drop/Lure SOS cards have 95%, 100% and 95% accuracy respectively. In addition, all three are always assigned an `atkHit` of 1, which means they were *guaranteed* to hit.
 
 ### Equation
 
-A gag's overall accuracy is calculated using the following equation:
+A gag's overall accuracy was calculated using the following equation:
 
 ```python
 atkAcc = propAcc + trackExp + tgtDef + bonus
@@ -90,25 +90,25 @@ atkAcc = propAcc + trackExp + tgtDef + bonus
 |------|:--:|:--:|:--:|:--:|:--:|:--:|:---:|
 | Lure | 60 | 60 | 70 | 70 | 80 | 80 | 100 |
 
-For all non-Lure gags, `propAcc` is simply the above pre-defined `AvPropAccuracy` value.
+For all non-Lure gags, `propAcc` was simply the above pre-defined `AvPropAccuracy` value.
 
-For Lure gags, `propAcc` is initially assigned its `AvPropAccuracy` value, then if the toon has Lure trees planted at a level greater than or equal to the gag level they're using **or** there's an active Lure interactive prop, `propAcc` is re-assigned a value from `AvLureBonusAccuracy`.
+For Lure gags, `propAcc` was initially assigned its `AvPropAccuracy` value, then if the toon had Lure trees planted at a level greater than or equal to the gag level they're using **or** there was an active Lure interactive prop, `propAcc` was re-assigned a value from `AvLureBonusAccuracy`.
 
 #### `trackExp` <a name="trackExp"></a>
 
-`trackExp` is calculated according to the following:
+`trackExp` was calculated according to the following:
 
 ```
  trackExp = [highest gag level in track - 1] * 10
 ```
 
-If the track is Toon-up, the above result is halved. 
+If the track was Toon-up, the above result was halved. 
 
-This is repeated for every gag within a particular track. So, if multiple toons use the *same gag track* on the *same cog*, the highest `trackExp` is used in the `atkAcc` calculations for all of them. The latter requirement is particularly important: In order for weaker gags to inherit an increased `trackExp`, the target(s) of the weaker and stronger gags *must* be the same. 
+This was repeated for every gag within a particular track. So, if multiple toons used the *same gag track* on the *same cog*, the highest `trackExp` was used in the `atkAcc` calculations for all of them. The latter requirement is particularly important: In order for weaker gags to inherit an increased `trackExp`, the target(s) of the weaker and stronger gags had to be the same. 
 
 #### `tgtDef`
 
-In Toon-up calculations, `tgtDef` is always 0. For the other tracks, it's assigned the defense value of the strongest cog among the attack's `targetList`. In other words, multi-cog attacks will always face the strongest `tgtDef` available since every active cog is in their `targetList`. For single-cog attacks it's based on the specific cog the attack has targeted.
+In Toon-up calculations, `tgtDef` was always 0. For the other tracks, it was assigned the defense value of the strongest cog among the attack's `targetList`. In other words, multi-cog attacks always faced the strongest `tgtDef` available since every active cog was in their `targetList`. For single-cog attacks it was based on the specific cog the attack had targeted.
 
 Here's a summary of all possible defense values:
 
@@ -116,13 +116,13 @@ Here's a summary of all possible defense values:
 |:---------:|:--:|:--:|:---:|:-------:|:-------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **tgtDef** | -2 | -5 | -10 | -12/-15* | -15/-20* | -25 | -30 | -35 | -40 | -45 | -50 | -55 |
 
-*Tier 1 cogs (i.e., Cold Callers and Flunkies) have the less negative value.
+*Tier 1 cogs (i.e., Cold Callers and Flunkies) had the less negative value.
 
 #### `bonus`
 
-There are two possible sources of bonus: PrevHits and the Lured Ratio. 
+There were two possible sources of bonus: PrevHits and the Lured Ratio. 
 
-In order for PrevHits to be applied, the followings conditions must be met
+In order for PrevHits to be applied, the followings conditions had to be met
 
 - The previous attack hit; **and**
 - The previous attack was not the same track as the current; **and**
@@ -130,13 +130,13 @@ In order for PrevHits to be applied, the followings conditions must be met
 - The current attack affects the group; **or**
 - The current and previous attacks affect the same target.
 
-Assuming the above is met, PrevHits is calculated like so:
+Assuming the above was met, PrevHits was calculated like so:
 
 ```
 20 * [number of previous hits to a given cog in the current round] 
 ```
 
-The Lured Ratio is calculated like so:
+The Lured Ratio was calculated like so:
 
 ```
 luredRatio = ([number of cogs lured] / [total cogs]) * 100
@@ -145,23 +145,23 @@ luredRatio = ([number of cogs lured] / [total cogs]) * 100
 
 ### Hit or Miss: the impact of `randChoice` <a name="hit-or-miss"></a>
 
-Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This is decided by the value of `randChoice`, which is simply a pseudorandom integer between 0 and 99 (0 <= x < 99, to be exact).
+Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This was decided by the value of `randChoice`, which was simply a pseudorandom integer between 0 and 99 (0 <= x < 99, to be exact).
 
-If `randChoice` is less than `atkAcc`, the attack will hit. Otherwise, the attack will miss. It's important to note, however, that `atkAcc` is capped at 95 -- so, any gag which wasn't mentioned in the Special Cases section in [Attack Accuracy](#atk-accuracy) can miss.
+If `randChoice` was less than `atkAcc`, the attack hit. Otherwise, the attack missed. It's important to note, however, that `atkAcc` was capped at 95 -- so, any gag which wasn't mentioned in the Special Cases section in [Attack Accuracy](#atk-accuracy) could miss.
 
 #### Special Cases
 
-For all SOS Cards, `randChoice` is assigned 0.
+For all SOS Cards, `randChoice` was assigned 0.
 
 ## Cog Attack Accuracy <a name="cog-atk-accuracy"></a>
 
-The following three sections outline the calculations that are performed for each active cog in battle.
+The following three sections outline the calculations that were performed for each active cog in battle.
 
 ### Which attack will be used?
 
-There are two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represents the cog being used in the calculation, while the latter is a tuple containing the information for each of `theSuit`'s possible attacks.
+There are two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represented the cog being used in the calculation, while the latter was a tuple containing the information for each of `theSuit`'s possible attacks.
 
-Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function uses the following process to determine which attack will be used:
+Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function used the following process to determine which attack would be used:
 
 1. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` < 99 and set a variable `attackNum` to `None`.
 2. Loop through each possible attack, summing the frequencies associated with `theSuit`'s level. This sum is stored in a variable `count`.
@@ -190,7 +190,7 @@ Considering the above, we may establish the following tables.
 
 ### Which toon(s) will be attacked?
 
-If the selected cog attack is a group attack, all active toons will be attacked. For single-toon attacks, 75% percent of the time the following algorithm is used to select a toon:
+If the selected cog attack is a group attack, all active toons would be attacked. For single-toon attacks, 75% percent of the time the following algorithm was used to select a toon:
 
 1. Store the total amount of damage done by the active toons in a variable `totalDamage`.
 2. In a list, `dmgs`, store the relative contributions by each toon (contributed / `totalDamage` * 100).
@@ -201,11 +201,11 @@ If the selected cog attack is a group attack, all active toons will be attacked.
     - if it's not, continue looping.
 6. If no toon was found by the above, a toon is selected at random. This, for example, could happen when a large pseudorandom integer is generated, but the battle damage is evenly distributed.
 
-In the other 25% of time, a toon is simply selected at random.
+In the other 25% of time, a toon was simply selected at random.
 
 ### Will the attack hit?
 
-To determine this, a pseudorandom integer `randChoice` is generated such that 0 <= `randChoice` < 99. If `randChoice` is less than the cog attack's accuracy, the cog attack will hit. Otherwise it will miss.
+To determine this, a pseudorandom integer `randChoice` was generated such that 0 <= `randChoice` < 99. If `randChoice` was less than the cog attack's accuracy, the cog attack hit. Otherwise it missed.
 
 (Attack accuracy/damage summary to be added.)
 
@@ -254,7 +254,7 @@ Multiple Traps did give multiple boosts, with an accuracy boost of up to +60 to 
 
 ## Did Trap provide an accuracy bonus to other gag tracks, even when not activated? <a name="trap-2"></a>
 
-Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not activated, Trap always counts as a hit on the cog. It would still meet the conditions given in the [bonus section](#bonus), thus a +20 accuracy boost to the next gag targeting the cog. 
+Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not activated, Trap always counted as a hit on the cog. It would still meet the conditions given in the [bonus section](#bonus), thus a +20 accuracy boost to the next gag targeting the cog. 
 
 ### Battle Simulations
 
@@ -262,7 +262,7 @@ Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not 
 
 ## Did Trap's accuracy bonus and Organic Lure stack up? <a name="trap-3"></a>
 
-Yes, Organic Lure and the accuracy boost Trap provides do stack up. As listed in the [`AvLureBonusAccuracy`](#AvLureBonusAccuracy) chart, each Organic Lure gag gains +10 propAcc points compared to its original values. In combination with the +20 a single Trap would provide, this would combine for a total of +30 overall accuracy points.
+Yes, Organic Lure and the accuracy boost Trap provides did stack up. As listed in the [`AvLureBonusAccuracy`](#AvLureBonusAccuracy) chart, each Organic Lure gag gains +10 propAcc points compared to its original values. In combination with the +20 a single Trap would provide, this would combine for a total of +30 overall accuracy points.
 
 ### Battle Simulations
 
