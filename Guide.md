@@ -279,7 +279,7 @@ When two or more Lure gags were picked, the result of the weakest was calculated
 
 1. If the current Lure gag was single-cog and the previous hit or the current Lure gag was multi-cog, the previous Lure's result was applied to the current.
 
-2. If the current Lure gag was single-cog and the previous missed, the current was calculated independently. In other words, this was this only case in which sequential Lure gags could have different results.
+2. If the current Lure gag was single-cog, the previous was multi-cog *and* the previous missed, the current was calculated independently. In other words, this was this only case in which sequential Lure gags could have different results.
 
 In either case, rounds were stacked based on the Lure's target. So, multiple single-cog Lures only stacked rounds if they had the same target, while multiple multi-cog Lures always stacked across all cogs. If a combination of single- and multi-cog Lures were used, rounds only stacked on the target(s) which overlapped.
 
