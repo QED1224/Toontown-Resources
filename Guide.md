@@ -39,6 +39,7 @@
     - [Did some Shopkeepers sell more accurate gags?](#misc-1)
     - [When multiple gags of the same track were used on the same cog, how was accuracy calculated?](#misc-2)
     - [Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results?](#misc-3)
+    - [Did doodle tricks count as a stun in battle?](#misc-4)
 - [Credits](#credits)
 
 # Introduction <a name="intro"></a>
@@ -145,7 +146,7 @@ luredRatio = ([number of cogs lured] / [total cogs]) * 100
 
 ### Hit or Miss: the impact of `randChoice` <a name="hit-or-miss"></a>
 
-Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This was decided by the value of `randChoice`, which was simply a pseudorandom integer between 0 and 99 (0 <= x < 99, to be exact).
+Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This was decided by the value of `randChoice`, which was simply a pseudorandom integer between 0 and 99.
 
 If `randChoice` was less than `atkAcc`, the attack hit. Otherwise, the attack missed. It's important to note, however, that `atkAcc` was capped at 95 -- so, any gag which wasn't mentioned in the Special Cases section in [Attack Accuracy](#atk-accuracy) could miss.
 
@@ -163,7 +164,7 @@ There are two variables used in the calculation of `atk` (the attack to be used)
 
 Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function used the following process to determine which attack would be used:
 
-1. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` < 99 and set a variable `attackNum` to `None`.
+1. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` <= 99 and set a variable `attackNum` to `None`.
 2. Loop through each possible attack, summing the frequencies associated with `theSuit`'s level. This sum is stored in a variable `count`.
 3. On each iteration, check if `randNum` is less than `count`.
     - if it is, set `attackNum` to an integer representing the number of iterations (that is, 0 for the first, 1 for the second, etc).
@@ -194,7 +195,7 @@ If the selected cog attack is a group attack, all active toons would be attacked
 
 1. Store the total amount of damage done by the active toons in a variable `totalDamage`.
 2. In a list, `dmgs`, store the relative contributions by each toon (contributed / `totalDamage` * 100).
-3. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` < 99.
+3. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` <= 99.
 4. Loop over `dmgs`, summing the relative contributions by each toon. This sum is stored in a variable `count`.
 5. On each iteration, check if `randNum` is less than `count`
     - if it is, return an integer representing the number of iterations (that is, 0 for the first, 1 for the second, etc). In other words, a toon's damage contributions are directly proportional to its chance of being selected in this step.
@@ -205,7 +206,7 @@ In the other 25% of time, a toon was simply selected at random.
 
 ### Will the attack hit?
 
-To determine this, a pseudorandom integer `randChoice` was generated such that 0 <= `randChoice` < 99. If `randChoice` was less than the cog attack's accuracy, the cog attack hit. Otherwise it missed.
+To determine this, a pseudorandom integer `randChoice` was generated such that 0 <= `randChoice` <= 99. If `randChoice` was less than the cog attack's accuracy, the cog attack hit. Otherwise it missed.
 
 (Attack accuracy/damage summary to be added.)
 
@@ -447,6 +448,8 @@ Here, the attack order is 1, 2, 3 (by ID). This means that Toon 1's Safe is eval
 
 - [3 Safes](http://pastebin.com/BhZ14ZL6)
 - [3 Storm Clouds](http://pastebin.com/5fb8pbtA)
+
+## Did doodle tricks count as a stun in battle? <a name="misc-4"></a>
 
 # Credits <a name="credits"></a>
 [[back to top](#contents)]
