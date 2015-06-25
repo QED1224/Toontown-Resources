@@ -47,7 +47,7 @@
 
 **This guide is still a work-in-progress; some key information is missing from currently present sections.**
 
-The information in this guide is primarily based on the source code of Toontown Online (timestamped 2013-07-02 T 6:22PM). It does not guarantee accuracy with regard to any Toontown private servers.
+The information in this guide is primarily based on the source code of Toontown Online (timestamped 2013-07-02 T 6:22PM). It does not guarantee accuracy with regard to any Toontown private servers that have modified the battle system from Toontown Online.
 
 # Core Knowledge <a name="core-knowledge"></a>
 [[back to top](#contents)]
@@ -371,7 +371,7 @@ Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite w
 
 ## How did the C.F.O. choose which toon to attack? <a name="cfo-2"></a>
 
-At the start of the Crane Round, a list named `toonsToAttack` was created which contained the ID of every toon in the C.F.O. batttle sorted randomly. Toons were then attacked according to this order: the toon at position 0 was attacked first and then its ID was appended to the end of the list. This cylcle repeated for the duration of the battle.
+At the start of the Crane Round, a list named `toonsToAttack` was created which contained the ID of every toon in the C.F.O. battle sorted randomly. Toons were then attacked according to this order: the toon at position 0 was attacked first and then its ID was appended to the end of the list. This cylcle repeated for the duration of the battle.
 
 # C.J. <a name="cj"></a>
 [[back to top](#contents)]
