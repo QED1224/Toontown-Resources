@@ -436,13 +436,13 @@ Now, we need to cover four more sub-cases:
 
 ## Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-3"></a>
 
-Yes, considering the ordering process outlined in the previous section, if multiple gags of the same track and level were used, they were only ordered by toon ID within the particular track. This meant it was possible for "mismatches" to occur. For example, consider the following scenario with three toons (1 - 3) and two cogs (A and B):
+Yes, if multiple gags of the same track and level were used, the attack order was simply based on the order in which toons joined the battle. This meant it was possible for "mismatches" to occur. For example, consider the following scenario with three toons (1 - 3) and two cogs (A and B):
 
-- Toon 1 (ID = 1) uses a Safe on Cog A
-- Toon 2 (ID = 2) uses a Safe on Cog B
-- Toon 3 (ID = 3) uses a Safe on Cog A
+- Toon 1 (rightmost) uses a Safe on Cog A
+- Toon 2 (middle) uses a Safe on Cog B
+- Toon 3 (leftmost) uses a Safe on Cog A
 
-Here, the attack order is 1, 2, 3 (by ID). This means that Toon 1's Safe is evaluated, then Toon 2's Safe is evaluated (but isn't assigned the result of 1 because it has a different target) and then Toon 3's Safe is evaluated (but isn't assigned the result of 2 because it has a different target). So, in this situation, it's possible for only one Safe to hit Cog A.
+Here, the attack order is 1, 2, 3. This means that Toon 1's Safe is evaluated, then Toon 2's Safe is evaluated (but isn't assigned the result of 1 because it has a different target) and then Toon 3's Safe is evaluated (but isn't assigned the result of 2 because it has a different target). So, in this situation, it's possible for only one Safe to hit Cog A.
 
 ## Battle Simulations
 
