@@ -421,7 +421,7 @@ No, there's no evidence that Shopkeepers had any impact on gag accuracy.
 
 The first aspect that must be understood is how toon attacks were ordered, in which there were three steps:
 
-1. Order all active toons by their ID (lowest to highest).
+1. The position of each toon in battle, from right to left, represents the initial attack order.
 2. Order by track: Toon-up, Trap, Lure, Sound, Throw, Squirt and then Drop.
 3. Order by gag level (lowest to highest) within each track.
 
