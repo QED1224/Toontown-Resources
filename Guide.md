@@ -40,6 +40,7 @@
 - [Fishing](#fishing)
 - [Racing](#racing)
     - [Wall-riding: A track-by-track breakdown](#racing-1)
+- [Golfing](#golfing)
 - [Misc](#misc)
     - [Did some Shopkeepers sell more accurate gags?](#misc-1)
     - [When multiple gags of the same track were used on the same cog, how was accuracy calculated?](#misc-2)
@@ -314,6 +315,7 @@ See the [section on multiple gag usage](#misc-2) for more general information.
 [[back to top](#contents)]
 
 # Cogs <a name="cogs"></a>
+[[back to top](#contents)]
 
 ## Which cog was the most powerful? <a name="cogs-1"></a>
 
@@ -425,6 +427,9 @@ Every cycle, each prosecuting cog had a 50/50 chance to either (1) attack a toon
 [[back to top](#contents)]
 
 ## Wall-riding: A track-by-track breakdown <a name="racing-1"></a>
+
+# Golfing <a name="golfing"></a>
+[[back to top](#contents)]
 
 # Misc <a name="misc"></a>
 [[back to top](#contents)]
