@@ -17,6 +17,7 @@
 - [Throw](#throw)
 - [Squirt](#squirt)
 - [Drop](#drop)
+- [Cogs](#cogs)
 - [V.P.](#vp)
     - [Did being Lureless impact the accuracy of Lure SOS cards?](#vp-1)
     - [Did being Lureless impact the number of rounds Lure SOS cards would hold for?](#vp-2)
@@ -306,7 +307,9 @@ See the [section on multiple gag usage](#misc-2) for more general information.
 [[back to top](#contents)]
 
 # Drop <a name="drop"></a>
-[[back to top](#contents)] 
+[[back to top](#contents)]
+
+# Cogs <a name="cogs"></a>
 
 # V.P. <a name="vp"></a>
 [[back to top](#contents)]
