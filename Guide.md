@@ -38,6 +38,8 @@
     - [How did the C.E.O. choose which attack to use?](#ceo-1)
     - [How did the C.E.O. choose which toon to attack?](#ceo-2)
 - [Fishing](#fishing)
+- [Racing](#racing)
+    - [Wall-riding: A track-by-track breakdown](#racing-1)
 - [Misc](#misc)
     - [Did some Shopkeepers sell more accurate gags?](#misc-1)
     - [When multiple gags of the same track were used on the same cog, how was accuracy calculated?](#misc-2)
@@ -418,6 +420,11 @@ Every cycle, each prosecuting cog had a 50/50 chance to either (1) attack a toon
 
 # Fishing <a name="fishing"></a>
 [[back to top](#contents)]
+
+# Racing <a name="racing"></a>
+[[back to top](#contents)]
+
+## Wall-riding: A track-by-track breakdown <a name="racing-1"></a>
 
 # Misc <a name="misc"></a>
 [[back to top](#contents)]
