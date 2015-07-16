@@ -18,6 +18,7 @@
 - [Squirt](#squirt)
 - [Drop](#drop)
 - [Cogs](#cogs)
+    - [Which cog was the most powerful?](#cogs-1)
 - [V.P.](#vp)
     - [Did being Lureless impact the accuracy of Lure SOS cards?](#vp-1)
     - [Did being Lureless impact the number of rounds Lure SOS cards would hold for?](#vp-2)
@@ -31,7 +32,8 @@
     - [How was the C.J. reward chosen?](#cj-1)
     - [How did the C.J. decide when to jump?](#cj-2)
     - [How did the prosecution choose which toon to attack?](#cj-3)
-    - [How is the scale related to the jury?](#cj-4)
+    - [How was the scale related to the jury?](#cj-4)
+    - [What was the optimal scalers-to-stunners ratio?](#cj-5)
 - [C.E.O.](#ceo)
     - [How did the C.E.O. choose which attack to use?](#ceo-1)
     - [How did the C.E.O. choose which toon to attack?](#ceo-2)
@@ -311,6 +313,8 @@ See the [section on multiple gag usage](#misc-2) for more general information.
 
 # Cogs <a name="cogs"></a>
 
+## Which cog was the most powerful? <a name="cogs-1"></a>
+
 # V.P. <a name="vp"></a>
 [[back to top](#contents)]
 
@@ -401,7 +405,9 @@ Every 15 seconds the C.J. had an 11% chance to jump.
 
 Every cycle, each prosecuting cog had a 50/50 chance to either (1) attack a toon or (2) hit the scale. If option 1 was selected, a toon was chosen at random from a list of all toons in the battle. 
 
-## How is the scale related to the jury? <a name="cj-4"></a>
+## How was the scale related to the jury? <a name="cj-4"></a>
+
+## What was the optimal scalers-to-stunners ratio? <a name="cj-5"></a>
 
 # C.E.O. <a name="ceo"></a>
 [[back to top](#contents)]
