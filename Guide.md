@@ -335,7 +335,7 @@ With the above in mind, it can also be useful to think in terms of `wakeupChance
 
 (Source: [Probability Rules](http://stattrek.com/probability/probability-rules.aspx).)
 
-However, given that each round is calculated independent of any prior results, we note that P(B|A) = P(B). Thus, the following equation can be used:
+However, given that each round is calculated independent of any prior results, we note that P(B|A) = P(B). Thus, the following equation can be used to determine the probability that a single cog will stay lured for N rounds:
 
 ```python
 Given (Max rounds - N) >= 0,
