@@ -145,6 +145,8 @@
 
 ## First to Max
 
+- King Vadim - 01/26/2006
+
 ## Fastest to Max
 
 ## Notable Toons
@@ -154,7 +156,9 @@
 ## References
 - [Toontown Grand Prix](http://www.mmocentralforums.com/forums/showthread.php?t=125957)
 - [I took on Payden Full](http://www.mmocentralforums.com/forums/showthread.php?t=97009)
-- [10 Toons Maxed in GSW!!!](http://www.mmocentralforums.com/forums/showthread.php?t=147427) 
+- [10 Toons Maxed in GSW!!!](http://www.mmocentralforums.com/forums/showthread.php?t=147427)
+- [120s out tomorrow who is you guess on first!](http://www.mmocentralforums.com/forums/showthread.php?t=89149&page=4)
+- [119-120 List](http://www.mmocentralforums.com/forums/showthread.php?t=93080)
 
 # Bears - 12/20/2005
 [[back to top](#contents)]
