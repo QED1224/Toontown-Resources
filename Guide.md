@@ -218,6 +218,10 @@ To determine this, a pseudorandom integer `randChoice` was generated such that 0
 
 ## Doodle Training and Tricks <a name="doodle-t&t"></a>
 
+## How was Doodle trick experience calculated?
+
+Doodle tricks had similarities to how gags gained experience. Each time a successful trick was performed, that trick would gain +20 experience points. Each trick required 10000 experience points to fully max the trick. 10000 / 20 would require the doodle to perform 500 successful tricks, in order to max that particular trick. To max all tricks, it would require an overall total of 3500 successful tricks.
+
 ## Fishing and Probability <a name="fish-prob"></a>
 
 # Toon-up <a name="toon-up"></a>
