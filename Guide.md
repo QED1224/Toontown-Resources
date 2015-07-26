@@ -3,7 +3,7 @@
 - [Core Knowledge](#core-knowledge)
     - [Toon Attack Accuracy](#atk-accuracy)
     - [Cog Attack Accuracy](#cog-atk-accuracy)
-    - [Doodle Training and Tricks](#doodle-t&t)
+    - [Doodle Training and Tricks](#doodle-t&t)ma
     - [Fishing and Probability](#fish-prob)
 - [Toon-up](#toon-up)
     - [Did using Toon-up have any impact on other gag's damage or accuracy?](#tu-1)
@@ -240,7 +240,7 @@ Yes, Doodle tricks had individual accuracy values for each trick. These values w
 
 ## How did the game determine if the Doodle would successfuly perform the trick?
 
-To determine if a trick would be successful or not, the final accuracy of the trick being used would first be evaluated by taking the `maxApt` value of the trick, and multiplying it by the base accuracy value of the trick being used. The calculation would then be referred to as `cutoff`.
+To determine if a trick would be successful or not, the final accuracy of the trick being used would first be evaluated by taking the `aptitude` value of the trick, and multiplying it by the base accuracy value of the trick being used. The calculation would then be referred to as `cutoff`.
 
 If the Doodle was tired, `cutoff` was multiplied by 0.5. 
 
