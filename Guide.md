@@ -230,7 +230,7 @@ aptitude = trick experience / 10000
 
 ## Did Doodle tricks have base accuracy values to them?
 
-Yes, Doodle tricks had individual accuracy values for each trick. These values were used in determining the final accuracy value of the trick, referred to as `cutoff`. Below is a list of the base accuracy values for each trick.
+Yes, Doodle tricks had individual accuracy values for each trick. These values were used in determining the final accuracy value of the trick, referred to as `cutoff`. Below is a list of the base accuracy values for each trick. 
 
 | Trick  | Base accuracy value | 
 |:------:|:-------------:|
@@ -244,17 +244,21 @@ Yes, Doodle tricks had individual accuracy values for each trick. These values w
 
 ## How did the game determine if the Doodle would successfuly perform the trick?
 
-To determine if a trick would be successful or not, the final accuracy of the trick being used would first be evaluated by taking the `aptitude` value of the trick, and multiplying it by the base accuracy value of the trick being used. The calculation would then be referred to as `cutoff`. The following equation can be used to determine a trick's accuracy.
+To determine if a trick would be successful or not, the following equation could be used.
 
 ```python
-cutoff = aptitude * trickAccuracy
+cutoff = trickAcc*(minApt + ((maxApt - minApt) * aptitude))
 ```
 
-If the Doodle was tired, `cutoff` was multiplied by 0.5. In addition, much like how `atkAcc` capped out at 95 for gag accuracy, `aptitude` was capped out at 0.97 if the value exceeded such.
+`cutoff` is the end result of the following variables being calculated. `trickAcc` referred to the base accuracy value of the trick being used (see previous question). `minApt` and `maxApt` were predetermined values set by the Doodle's mood. If the Doodle was neutral, excited, playful or affectionate, `minApt = 0.5` and `maxApt = 0.97`. However, if the Doodle was bored, restless, lonely, sad, tired, hungry or angry, `minApt = 0.1` and `maxApt = 0.6`. `aptitude` was the value determined by taking the trick's experience / 10000.  
+
+If the Doodle was tired either at the Estate or the battle selection screen, `cutoff` was multiplied by 0.5. However, if the Doodle was only tired at the Estate, but had a positive mood on the battle selection screen, `minApt` and `maxApt` would still equal 0.5 and 0.97 respectively. 
+
+If the doodle had a negative emotion in both places (such as tired in both the Estate and battle selection screen), `minApt` and `maxApt` would equal 0.1 and 0.6, and cutoff would still be multiplied by 0.5. 
 
 Once the final value of `cutoff` was determined, an pseudo-RNG called `randVal` generated a value between 0.0 and 1.0. If `cutoff` was greater than `randVal`, the Doodle would successfully perform the trick. Otherwise, the Doodle would not perform the trick.
 
-Below is a table that shows the final `cutoff` value for each trick, assuming the doodle is maxed in said trick.
+Below is a table that shows the final `cutoff` value for each trick, assuming the doodle was maxed in said trick, and had no negative emotions on both the battle selection screen and the Estate.
 
 | Trick  | `cutoff` value | 
 |:------:|:-------------:|
