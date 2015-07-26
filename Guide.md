@@ -222,7 +222,11 @@ To determine this, a pseudorandom integer `randChoice` was generated such that 0
 
 Doodle tricks had similarities to how gags gained experience. Each time a successful trick was performed, that trick would gain +20 experience points. Each trick required 10000 experience points to fully max the trick. 10000 / 20 would require the Doodle to perform 500 successful tricks, in order to max that particular trick. To max all tricks, it would require an overall total of 3500 successful tricks.
 
-In addition, performing a successful trick would increase the `aptitiude` value of that trick by 0.0005. When a trick was fully maxed, the value capped out at 0.97.
+In addition, performing a successful trick would increase the `aptitiude` value of that trick by 0.0002. When a trick was fully maxed, `aptitude` capped out at 1.0. To determine the `aptitude` value a doodle has, the following equation could be used.
+
+```python
+aptitude = trick experience / 10000
+```
 
 ## Did Doodle tricks have base accuracy values to them?
 
@@ -240,9 +244,13 @@ Yes, Doodle tricks had individual accuracy values for each trick. These values w
 
 ## How did the game determine if the Doodle would successfuly perform the trick?
 
-To determine if a trick would be successful or not, the final accuracy of the trick being used would first be evaluated by taking the `aptitude` value of the trick, and multiplying it by the base accuracy value of the trick being used. The calculation would then be referred to as `cutoff`.
+To determine if a trick would be successful or not, the final accuracy of the trick being used would first be evaluated by taking the `aptitude` value of the trick, and multiplying it by the base accuracy value of the trick being used. The calculation would then be referred to as `cutoff`. The following equation can be used to determine a trick's accuracy.
 
-If the Doodle was tired, `cutoff` was multiplied by 0.5. 
+```python
+cutoff = aptitude * trickAccuracy
+```
+
+If the Doodle was tired, `cutoff` was multiplied by 0.5. In addition, much like how `atkAcc` capped out at 95 for gag accuracy, `aptitude` was capped out at 0.97 if the value exceeded such.
 
 Once the final value of `cutoff` was determined, an pseudo-RNG called `randVal` generated a value between 0.0 and 1.0. If `cutoff` was greater than `randVal`, the Doodle would successfully perform the trick. Otherwise, the Doodle would not perform the trick.
 
