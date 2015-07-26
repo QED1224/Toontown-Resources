@@ -3,7 +3,7 @@
 - [Core Knowledge](#core-knowledge)
     - [Toon Attack Accuracy](#atk-accuracy)
     - [Cog Attack Accuracy](#cog-atk-accuracy)
-    - [Doodle Training and Tricks](#doodle-t&t)ma
+    - [Doodle Training and Tricks](#doodle-t&t)
     - [Fishing and Probability](#fish-prob)
 - [Toon-up](#toon-up)
     - [Did using Toon-up have any impact on other gag's damage or accuracy?](#tu-1)
