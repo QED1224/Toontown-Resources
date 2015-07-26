@@ -222,7 +222,7 @@ To determine this, a pseudorandom integer `randChoice` was generated such that 0
 
 Doodle tricks had similarities to how gags gained experience. Each time a successful trick was performed, that trick would gain +20 experience points. Each trick required 10000 experience points to fully max the trick. 10000 / 20 would require the Doodle to perform 500 successful tricks, in order to max that particular trick. To max all tricks, it would require an overall total of 3500 successful tricks.
 
-In addition, performing a successful trick would increase the `aptitiude` value of that trick by 0.0002. When a trick was fully maxed, `aptitude` capped out at 1.0. To determine the `aptitude` value a doodle has, the following equation could be used.
+In addition, performing a successful trick would increase the `aptitiude` value of that trick by 0.002. When a trick was fully maxed, `aptitude` capped out at 1.0. To determine the `aptitude` value a doodle has, the following equation could be used.
 
 ```python
 aptitude = trick experience / 10000
