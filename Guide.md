@@ -220,7 +220,43 @@ To determine this, a pseudorandom integer `randChoice` was generated such that 0
 
 ## How was Doodle trick experience calculated?
 
-Doodle tricks had similarities to how gags gained experience. Each time a successful trick was performed, that trick would gain +20 experience points. Each trick required 10000 experience points to fully max the trick. 10000 / 20 would require the doodle to perform 500 successful tricks, in order to max that particular trick. To max all tricks, it would require an overall total of 3500 successful tricks.
+Doodle tricks had similarities to how gags gained experience. Each time a successful trick was performed, that trick would gain +20 experience points. Each trick required 10000 experience points to fully max the trick. 10000 / 20 would require the Doodle to perform 500 successful tricks, in order to max that particular trick. To max all tricks, it would require an overall total of 3500 successful tricks.
+
+In addition, performing a successful trick would increase the `aptitiude` value of that trick by 0.0005. When a trick was fully maxed, the value capped out at 0.97.
+
+## Did Doodle tricks have base accuracy values to them?
+
+Yes, Doodle tricks had individual accuracy values for each trick. These values were used in determining the final accuracy value of the trick, referred to as `cutoff`. Below is a list of the base accuracy values for each trick.
+
+| Trick  | Base accuracy value | 
+|:------:|:-------------:|
+| Jump | 1.0 | 
+| Beg | 0.9 |
+| Play Dead | 0.8 |
+| Rollover | 0.7 |
+| Backflip | 0.6 |
+| Dance | 0.5 |
+| Speak | 0.4 | 
+
+## How did the game determine if the Doodle would successfuly perform the trick?
+
+To determine if a trick would be successful or not, the final accuracy of the trick being used would first be evaluated by taking the `maxApt` value of the trick, and multiplying it by the base accuracy value of the trick being used. The calculation would then be referred to as `cutoff`.
+
+If the Doodle was tired, `cutoff` was multiplied by 0.5. 
+
+Once the final value of `cutoff` was determined, an pseudo-RNG called `randVal` generated a value between 0.0 and 1.0. If `cutoff` was greater than `randVal`, the Doodle would successfully perform the trick. Otherwise, the Doodle would not perform the trick.
+
+Below is a table that shows the final `cutoff` value for each trick, assuming the doodle is maxed in said trick.
+
+| Trick  | `cutoff` value | 
+|:------:|:-------------:|
+| Jump | 0.97 | 
+| Beg | 0.873 |
+| Play Dead | 0.776 |
+| Rollover | 0.679 |
+| Backflip | 0.582 |
+| Dance | 0.485 |
+| Speak | 0.388 | 
 
 ## Fishing and Probability <a name="fish-prob"></a>
 
