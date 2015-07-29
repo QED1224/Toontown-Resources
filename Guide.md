@@ -1,12 +1,12 @@
 # Contents <a name="contents"></a>
 - [Introduction](#intro)
 - [Core Knowledge](#core-knowledge)
-    - [Toon Attack Accuracy](#atk-accuracy)
-    - [Cog Attack Accuracy](#cog-atk-accuracy)
+    - [Toon Attack Accuracy](#toon-atk-acc)
+    - [Cog Attack Accuracy](#cog-atk-acc)
     - [Doodle Training and Tricks](#doodle-t&t)
     - [Fishing and Probability](#fish-prob)
 - [Toon-up](#toon-up)
-    - [Did using Toon-up have any impact on other gag's damage or accuracy?](#tu-1)
+    - [Did using Toon-up have any impact on other gag's damage or accuracy?](#toon-up-1)
 - [Trap](#trap)
     - [Did using Trap give Lure an accuracy boost?](#trap-1)
     - [Did Trap provide an accuracy bonus to other gag tracks, even when not activated?](#trap-2)
@@ -58,18 +58,18 @@ The information in this guide is primarily based on the source code of Toontown 
 # Core Knowledge <a name="core-knowledge"></a>
 [[back to top](#contents)]
 
-## Toon Attack Accuracy <a name="atk-accuracy"></a>
+## Toon Attack Accuracy <a name="toon-atk-acc"></a>
 
 `atkAcc` is a percentage which represents the likelihood of an attack performing to its highest degree. This is used in two ways:
 
 1. For Lure SOS cards, it was used when calculating the odds that cogs "wake up early" each round.
 2. It was used when calculating the value of `atkHit`, which was a boolean value that represented whether or not an attack hit.
 
-### Special Cases
+### Special Cases <a name="toon-atk-acc-1"></a>
 
 Fires, Trap and non-Drop/Lure SOS cards have 95%, 100% and 95% accuracy respectively. In addition, all three are always assigned an `atkHit` of 1, which means they were *guaranteed* to hit.
 
-### Equation
+### Equation <a name="toon-atk-acc-2"></a>
 
 A gag's overall accuracy was calculated using the following equation:
 
@@ -77,7 +77,7 @@ A gag's overall accuracy was calculated using the following equation:
 atkAcc = propAcc + trackExp + tgtDef + bonus
 ```
 
-#### `propAcc`
+#### `propAcc` <a name="toon-atk-acc-3"></a>
 
 **AvPropAccuracy (Gag track vs. Gag level):**
 
@@ -101,7 +101,7 @@ For all non-Lure gags, `propAcc` was simply the above pre-defined `AvPropAccurac
 
 For Lure gags, `propAcc` was initially assigned its `AvPropAccuracy` value, then if the toon had Lure trees planted at a level greater than or equal to the gag level being used **or** there was an active Lure interactive prop, `propAcc` was re-assigned a value from `AvLureBonusAccuracy`.
 
-#### `trackExp` <a name="trackExp"></a>
+#### `trackExp` <a name="toon-atk-acc-4"></a>
 
 `trackExp` was calculated according to the following:
 
@@ -113,7 +113,7 @@ If the track was Toon-up, the above result was halved.
 
 This was repeated for every gag within a particular track. So, if multiple toons used the *same gag track* on the *same cog*, the highest `trackExp` was used in the `atkAcc` calculations for all of them. The latter requirement is particularly important: In order for weaker gags to inherit an increased `trackExp`, the target(s) of the weaker and stronger gags had to be the same. 
 
-#### `tgtDef`
+#### `tgtDef` <a name="toon-atk-acc-5"></a>
 
 In Toon-up calculations, `tgtDef` was always 0. For the other tracks, it was assigned the defense value of the strongest cog among the attack's `targetList`. In other words, multi-cog attacks always faced the strongest `tgtDef` available since every active cog was in their `targetList`. For single-cog attacks it was based on the specific cog the attack had targeted.
 
@@ -125,7 +125,7 @@ Here's a summary of all possible defense values:
 
 *Tier 1 cogs (i.e., Cold Callers and Flunkies) had the less negative value.
 
-#### `bonus`
+#### `bonus` <a name="toon-atk-acc-6"></a>
 
 There were two possible sources of bonus: PrevHits and the Lured Ratio. 
 
@@ -150,21 +150,21 @@ luredRatio = ([number of cogs lured] / [total cogs]) * 100
 ```
 (Note: The Lured Ratio bonus does not apply to Lure, Toon-up or Drop gags.)
 
-### Hit or Miss: the impact of `randChoice` <a name="hit-or-miss"></a>
+### Hit or Miss: the impact of `randChoice` <a name="toon-atk-acc-7"></a>
 
 Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This was decided by the value of `randChoice`, which was simply a pseudorandom integer between 0 and 99.
 
 If `randChoice` was less than `atkAcc`, the attack hit. Otherwise, the attack missed. It's important to note, however, that `atkAcc` was capped at 95 -- so, any gag which wasn't mentioned in the Special Cases section in [Attack Accuracy](#atk-accuracy) could miss.
 
-#### Special Cases
+#### Special Cases <a name="toon-atk-acc-8"></a>
 
 For all SOS Cards, `randChoice` was assigned 0.
 
-## Cog Attack Accuracy <a name="cog-atk-accuracy"></a>
+## Cog Attack Accuracy <a name="cog-atk-acc"></a>
 
 The following three sections outline the calculations that were performed for each active cog in battle.
 
-### Which attack will be used?
+### Which attack will be used? <a name="cog-atk-acc-1"></a>
 
 There are two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represented the cog being used in the calculation, while the latter was a tuple containing the information for each of `theSuit`'s possible attacks.
 
@@ -195,7 +195,7 @@ Considering the above, we may establish the following tables.
 
 - [Level 1 Flunky](http://pastebin.com/wANyHgsx)
 
-### Which toon(s) will be attacked?
+### Which toon(s) will be attacked? <a name="cog-atk-acc-2"></a>
 
 If the selected cog attack is a group attack, all active toons would be attacked. For single-toon attacks, 75% percent of the time the following algorithm was used to select a toon:
 
@@ -210,15 +210,16 @@ If the selected cog attack is a group attack, all active toons would be attacked
 
 In the other 25% of time, a toon was simply selected at random.
 
-### Will the attack hit?
+### Will the attack hit? <a name="cog-atk-acc-3"></a>
 
 To determine this, a pseudorandom integer `randChoice` was generated such that 0 <= `randChoice` <= 99. If `randChoice` was less than the cog attack's accuracy, the cog attack hit. Otherwise it missed.
 
 (Attack accuracy/damage summary to be added.)
 
 ## Doodle Training and Tricks <a name="doodle-t&t"></a>
+[[back to top](#contents)]
 
-## How was Doodle trick experience calculated?
+## How was Doodle trick experience calculated? <a name="doodle-t&t-1"></a>
 
 Doodle tricks had similarities to how gags gained experience. Each time a successful trick was performed, that trick would gain +20 experience points. Each trick required 10000 experience points to fully max the trick. 10000 / 20 would require the Doodle to perform 500 successful tricks, in order to max that particular trick. To max all tricks, it would require an overall total of 3500 successful tricks.
 
@@ -228,7 +229,7 @@ In addition, performing a successful trick would increase the `aptitiude` value 
 aptitude = trick experience / 10000
 ```
 
-## Did Doodle tricks have base accuracy values to them?
+## Did Doodle tricks have base accuracy values to them? <a name="doodle-t&t-2"></a>
 
 Yes, Doodle tricks had individual accuracy values for each trick. These values were used in determining the final accuracy value of the trick, referred to as `cutoff`. Below is a list of the base accuracy values for each trick. 
 
@@ -242,7 +243,7 @@ Yes, Doodle tricks had individual accuracy values for each trick. These values w
 | Dance | 0.5 |
 | Speak | 0.4 | 
 
-## How did the game determine if the Doodle would successfuly perform the trick?
+## How did the game determine if the Doodle would successfuly perform the trick? <a name="doodle-t&t-3"></a>
 
 To determine if a trick would be successful or not, the following equation could be used.
 
@@ -273,13 +274,14 @@ Below is a table that shows the final `cutoff` value for each trick, assuming th
 | Speak | 0.388 | 
 
 ## Fishing and Probability <a name="fish-prob"></a>
+[[back to top](#contents)]
 
 # Toon-up <a name="toon-up"></a>
 [[back to top](#contents)]
 
-## Did using Toon-up have any impact on other gag's accuracy? <a name="tu-1"></a>
+## Did using Toon-up have any impact on other gag's accuracy? <a name="toon-up-1"></a>
 
-Yes, considering the conditions outlined in the [bonus section](#bonus), Toon-up would increase another gag's accuracy when one of the following was true:
+Yes, considering the conditions outlined in the [bonus section](#toon-atk-acc-6), Toon-up would increase another gag's accuracy when one of the following was true:
 
 - The Toon-up gag affected the group; or
 - The attack gag affected the group; or
@@ -292,7 +294,7 @@ Yes, considering the conditions outlined in the [bonus section](#bonus), Toon-up
 
 ## Did using Trap give Lure an accuracy boost? <a name="trap-1"></a>
 
-Yes, Trap gags always counted as a hit on the cog, regardless if the Trap was actually triggered or not. If one again considers the conditions in the [bonus section](#bonus), Trap met the following conditions.
+Yes, Trap gags always counted as a hit on the cog, regardless if the Trap was actually triggered or not. If one again considers the conditions in the [bonus section](#toon-atk-acc-6), Trap met the following conditions.
 
 - It is not the same track as Lure;
 - It always counts as a hit on the target
@@ -315,7 +317,7 @@ Multiple Traps did give multiple boosts, with an accuracy boost of up to +60 to 
 
 ## Did Trap provide an accuracy bonus to other gag tracks, even when not activated? <a name="trap-2"></a>
 
-Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not activated, Trap always counted as a hit on the cog. It would still meet the conditions given in the [bonus section](#bonus), thus a +20 accuracy boost to the next gag targeting the cog. 
+Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not activated, Trap always counted as a hit on the cog. It would still meet the conditions given in the [bonus section](#toon-atk-acc-6), thus a +20 accuracy boost to the next gag targeting the cog. 
 
 ### Battle Simulations
 
@@ -335,7 +337,7 @@ Yes, Organic Lure and the accuracy boost Trap provides did stack up. As listed i
 
 ## What was the impact of using multiple Lure gags? <a name="lure-1"></a>
 
-When two or more Lure gags were picked, the result of the weakest was calculated first using the highest possible value for `trackExp` according to the details outlined in [its section](#trackExp). From here, there were two options for all subsequent Lure gags:
+When two or more Lure gags were picked, the result of the weakest was calculated first using the highest possible value for `trackExp` according to the details outlined in [its section](#toon-atk-acc-4). From here, there were two options for all subsequent Lure gags:
 
 1. If the current Lure gag was single-cog and the previous hit or the current Lure gag was multi-cog, the previous Lure's result was applied to the current.
 
@@ -378,7 +380,7 @@ See the [section on multiple gag usage](#misc-2) for more general information.
 
 ## Did being Lureless impact the accuracy of Lure SOS cards? <a name="vp-1"></a>
 
-Yes, a value of 0 was used for `trackExp` in all Lure SOS card accuracy calculations for Lureless toons (see [Toon Attack Accuracy](#atk-accuracy) for more information). In practice, this was only relevant for Des Traction and Dee Version, which *always* missed against level 11 and 12 cogs as seen below.
+Yes, a value of 0 was used for `trackExp` in all Lure SOS card accuracy calculations for Lureless toons (see [Toon Attack Accuracy](#toon-atk-acc) for more information). In practice, this was only relevant for Des Traction and Dee Version, which *always* missed against level 11 and 12 cogs as seen below.
 
 ```
 Level 11: atkAcc = 50 + 0 + (-50) = 0
@@ -392,7 +394,7 @@ Yes, cogs were more likely to "wake up" early if the caller was Lureless. The pr
 ```python
 wakeupChance = 100 - atkAcc * 2
 ```
-(See [Toon Attack Accuracy](#atk-accuracy) for information on `atkAcc`.)
+(See [Toon Attack Accuracy](#toon-atk-acc) for information on `atkAcc`.)
 
 With the above in mind, it can also be useful to think in terms of `wakeupChance`'s probabilistic complement: The probability that a given SOS card will hold for a specific number of rounds. In order to do so, we must apply the Rule of Multiplication:
 
