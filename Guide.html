@@ -299,14 +299,14 @@
 <ul>
 <li><a href="#intro">Introduction</a></li>
 <li><a href="#core-knowledge">Core Knowledge</a><ul>
-<li><a href="#atk-accuracy">Toon Attack Accuracy</a></li>
-<li><a href="#cog-atk-accuracy">Cog Attack Accuracy</a></li>
+<li><a href="#toon-atk-acc">Toon Attack Accuracy</a></li>
+<li><a href="#cog-atk-acc">Cog Attack Accuracy</a></li>
 <li><a href="#doodle-t&amp;t">Doodle Training and Tricks</a></li>
 <li><a href="#fish-prob">Fishing and Probability</a></li>
 </ul>
 </li>
 <li><a href="#toon-up">Toon-up</a><ul>
-<li><a href="#tu-1">Did using Toon-up have any impact on other gag&#39;s damage or accuracy?</a></li>
+<li><a href="#toon-up-1">Did using Toon-up have any impact on other gag&#39;s damage or accuracy?</a></li>
 </ul>
 </li>
 <li><a href="#trap">Trap</a><ul>
@@ -374,18 +374,18 @@
 <p>The information in this guide is primarily based on the source code of Toontown Online (timestamped 2013-07-02 T 6:22PM). It does not guarantee accuracy with regard to any Toontown private servers that have modified the battle system from Toontown Online.</p>
 <h1 id="core-knowledge-a-name-core-knowledge-a-">Core Knowledge <a name="core-knowledge"></a></h1>
 <p>[<a href="#contents">back to top</a>]</p>
-<h2 id="toon-attack-accuracy-a-name-atk-accuracy-a-">Toon Attack Accuracy <a name="atk-accuracy"></a></h2>
+<h2 id="toon-attack-accuracy-a-name-toon-atk-acc-a-">Toon Attack Accuracy <a name="toon-atk-acc"></a></h2>
 <p><code style="font-family: Menlo;">atkAcc</code> is a percentage which represents the likelihood of an attack performing to its highest degree. This is used in two ways:</p>
 <ol>
 <li>For Lure SOS cards, it was used when calculating the odds that cogs &quot;wake up early&quot; each round.</li>
 <li>It was used when calculating the value of <code style="font-family: Menlo;">atkHit</code>, which was a boolean value that represented whether or not an attack hit.</li>
 </ol>
-<h3 id="special-cases">Special Cases</h3>
+<h3 id="special-cases-a-name-toon-atk-acc-1-a-">Special Cases <a name="toon-atk-acc-1"></a></h3>
 <p>Fires, Trap and non-Drop/Lure SOS cards have 95%, 100% and 95% accuracy respectively. In addition, all three are always assigned an <code style="font-family: Menlo;">atkHit</code> of 1, which means they were <em>guaranteed</em> to hit.</p>
-<h3 id="equation">Equation</h3>
+<h3 id="equation-a-name-toon-atk-acc-2-a-">Equation <a name="toon-atk-acc-2"></a></h3>
 <p>A gag&#39;s overall accuracy was calculated using the following equation:</p>
 <pre class="editor-colors lang-python"><div class="line"><span class="source python"><span>atkAcc</span><span>&nbsp;</span><span class="keyword operator assignment python"><span>=</span></span><span>&nbsp;</span><span>propAcc</span><span>&nbsp;</span><span class="keyword operator arithmetic python"><span>+</span></span><span>&nbsp;</span><span>trackExp</span><span>&nbsp;</span><span class="keyword operator arithmetic python"><span>+</span></span><span>&nbsp;</span><span>tgtDef</span><span>&nbsp;</span><span class="keyword operator arithmetic python"><span>+</span></span><span>&nbsp;</span><span>bonus</span></span></div></pre>
-<h4 id="-propacc-"><code style="font-family: Menlo;">propAcc</code></h4>
+<h4 id="-propacc-a-name-toon-atk-acc-3-a-"><code style="font-family: Menlo;">propAcc</code> <a name="toon-atk-acc-3"></a></h4>
 <p><strong>AvPropAccuracy (Gag track vs. Gag level):</strong></p>
 <table>
 <thead>
@@ -502,11 +502,11 @@
 </table>
 <p>For all non-Lure gags, <code style="font-family: Menlo;">propAcc</code> was simply the above pre-defined <code style="font-family: Menlo;">AvPropAccuracy</code> value.</p>
 <p>For Lure gags, <code style="font-family: Menlo;">propAcc</code> was initially assigned its <code style="font-family: Menlo;">AvPropAccuracy</code> value, then if the toon had Lure trees planted at a level greater than or equal to the gag level being used <strong>or</strong> there was an active Lure interactive prop, <code style="font-family: Menlo;">propAcc</code> was re-assigned a value from <code style="font-family: Menlo;">AvLureBonusAccuracy</code>.</p>
-<h4 id="-trackexp-a-name-trackexp-a-"><code style="font-family: Menlo;">trackExp</code> <a name="trackExp"></a></h4>
+<h4 id="-trackexp-a-name-toon-atk-acc-4-a-"><code style="font-family: Menlo;">trackExp</code> <a name="toon-atk-acc-4"></a></h4>
 <p><code style="font-family: Menlo;">trackExp</code> was calculated according to the following:</p>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;</span><span class="meta paragraph text"><span>trackExp&nbsp;=&nbsp;[highest&nbsp;gag&nbsp;level&nbsp;in&nbsp;track&nbsp;-&nbsp;1]&nbsp;*&nbsp;10</span></span></span></div></pre><p>If the track was Toon-up, the above result was halved.</p>
-<p>This was repeated for every gag within a particular track. So, if multiple toons used the <em>same gag track</em> on the <em>same cog</em>, the highest <code style="font-family: Menlo;">trackExp</code> was used in the <code style="font-family: Menlo;">atkAcc</code> calculations for all of them. The latter requirement is particularly important: In order for weaker gags to inherit an increased <code style="font-family: Menlo;">trackExp</code>, the target(s) of the weaker and stronger gags had to be the same.</p>
-<h4 id="-tgtdef-"><code style="font-family: Menlo;">tgtDef</code></h4>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;</span><span class="meta paragraph text"><span>trackExp&nbsp;=&nbsp;[highest&nbsp;gag&nbsp;level&nbsp;in&nbsp;track&nbsp;-&nbsp;1]&nbsp;*&nbsp;10</span></span></span></div></pre><p>If the track was Toon-up, the above result was halved. </p>
+<p>This was repeated for every gag within a particular track. So, if multiple toons used the <em>same gag track</em> on the <em>same cog</em>, the highest <code style="font-family: Menlo;">trackExp</code> was used in the <code style="font-family: Menlo;">atkAcc</code> calculations for all of them. The latter requirement is particularly important: In order for weaker gags to inherit an increased <code style="font-family: Menlo;">trackExp</code>, the target(s) of the weaker and stronger gags had to be the same. </p>
+<h4 id="-tgtdef-a-name-toon-atk-acc-5-a-"><code style="font-family: Menlo;">tgtDef</code> <a name="toon-atk-acc-5"></a></h4>
 <p>In Toon-up calculations, <code style="font-family: Menlo;">tgtDef</code> was always 0. For the other tracks, it was assigned the defense value of the strongest cog among the attack&#39;s <code style="font-family: Menlo;">targetList</code>. In other words, multi-cog attacks always faced the strongest <code style="font-family: Menlo;">tgtDef</code> available since every active cog was in their <code style="font-family: Menlo;">targetList</code>. For single-cog attacks it was based on the specific cog the attack had targeted.</p>
 <p>Here&#39;s a summary of all possible defense values:</p>
 <table>
@@ -546,8 +546,8 @@
 </tbody>
 </table>
 <p>*Tier 1 cogs (i.e., Cold Callers and Flunkies) had the less negative value.</p>
-<h4 id="-bonus-"><code style="font-family: Menlo;">bonus</code></h4>
-<p>There were two possible sources of bonus: PrevHits and the Lured Ratio.</p>
+<h4 id="-bonus-a-name-toon-atk-acc-6-a-"><code style="font-family: Menlo;">bonus</code> <a name="toon-atk-acc-6"></a></h4>
+<p>There were two possible sources of bonus: PrevHits and the Lured Ratio. </p>
 <p>In order for PrevHits to be applied, the followings conditions had to be met</p>
 <ul>
 <li>The previous attack hit; <strong>and</strong></li>
@@ -559,14 +559,14 @@
 <p>Assuming the above was met, PrevHits was calculated like so:</p>
 <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>20&nbsp;*&nbsp;[number&nbsp;of&nbsp;previous&nbsp;hits&nbsp;to&nbsp;a&nbsp;given&nbsp;cog&nbsp;in&nbsp;the&nbsp;current&nbsp;round]</span></span></span></div></pre><p>The Lured Ratio was calculated like so:</p>
 <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>luredRatio&nbsp;=&nbsp;([number&nbsp;of&nbsp;cogs&nbsp;lured]&nbsp;/&nbsp;[total&nbsp;cogs])&nbsp;*&nbsp;100</span></span></span></div></pre><p>(Note: The Lured Ratio bonus does not apply to Lure, Toon-up or Drop gags.)</p>
-<h3 id="hit-or-miss-the-impact-of-randchoice-a-name-hit-or-miss-a-">Hit or Miss: the impact of <code style="font-family: Menlo;">randChoice</code> <a name="hit-or-miss"></a></h3>
+<h3 id="hit-or-miss-the-impact-of-randchoice-a-name-toon-atk-acc-7-a-">Hit or Miss: the impact of <code style="font-family: Menlo;">randChoice</code> <a name="toon-atk-acc-7"></a></h3>
 <p>Once we&#39;ve calculated an attacks accuracy (<code style="font-family: Menlo;">atkAcc</code>), we need to determine whether or not it will hit its intended target. This was decided by the value of <code style="font-family: Menlo;">randChoice</code>, which was simply a pseudorandom integer between 0 and 99.</p>
-<p>If <code style="font-family: Menlo;">randChoice</code> was less than <code style="font-family: Menlo;">atkAcc</code>, the attack hit. Otherwise, the attack missed. It&#39;s important to note, however, that <code style="font-family: Menlo;">atkAcc</code> was capped at 95 -- so, any gag which wasn&#39;t mentioned in the Special Cases section in <a href="#atk-accuracy">Attack Accuracy</a> could miss.</p>
-<h4 id="special-cases">Special Cases</h4>
+<p>If <code style="font-family: Menlo;">randChoice</code> was less than <code style="font-family: Menlo;">atkAcc</code>, the attack hit. Otherwise, the attack missed. It&#39;s important to note, however, that <code style="font-family: Menlo;">atkAcc</code> was capped at 95 -- so, any gag which wasn&#39;t mentioned in the <a href="#toon-atk-acc-1">Special Cases section</a> could miss.</p>
+<h4 id="special-cases-a-name-toon-atk-acc-8-a-">Special Cases <a name="toon-atk-acc-8"></a></h4>
 <p>For all SOS Cards, <code style="font-family: Menlo;">randChoice</code> was assigned 0.</p>
-<h2 id="cog-attack-accuracy-a-name-cog-atk-accuracy-a-">Cog Attack Accuracy <a name="cog-atk-accuracy"></a></h2>
+<h2 id="cog-attack-accuracy-a-name-cog-atk-acc-a-">Cog Attack Accuracy <a name="cog-atk-acc"></a></h2>
 <p>The following three sections outline the calculations that were performed for each active cog in battle.</p>
-<h3 id="which-attack-will-be-used-">Which attack will be used?</h3>
+<h3 id="which-attack-will-be-used-a-name-cog-atk-acc-1-a-">Which attack will be used? <a name="cog-atk-acc-1"></a></h3>
 <p>There are two variables used in the calculation of <code style="font-family: Menlo;">atk</code> (the attack to be used): <code style="font-family: Menlo;">theSuit</code> and <code style="font-family: Menlo;">attacks</code>. The former represented the cog being used in the calculation, while the latter was a tuple containing the information for each of <code style="font-family: Menlo;">theSuit</code>&#39;s possible attacks.</p>
 <p>Once <code style="font-family: Menlo;">theSuit</code> and <code style="font-family: Menlo;">attacks</code> are assigned, the <code style="font-family: Menlo;">pickSuitAttack</code> function used the following process to determine which attack would be used:</p>
 <ol>
@@ -628,7 +628,7 @@
 <ul>
 <li><a href="http://pastebin.com/wANyHgsx">Level 1 Flunky</a></li>
 </ul>
-<h3 id="which-toon-s-will-be-attacked-">Which toon(s) will be attacked?</h3>
+<h3 id="which-toon-s-will-be-attacked-a-name-cog-atk-acc-2-a-">Which toon(s) will be attacked? <a name="cog-atk-acc-2"></a></h3>
 <p>If the selected cog attack is a group attack, all active toons would be attacked. For single-toon attacks, 75% percent of the time the following algorithm was used to select a toon:</p>
 <ol>
 <li>Store the total amount of damage done by the active toons in a variable <code style="font-family: Menlo;">totalDamage</code>.</li>
@@ -643,16 +643,17 @@
 <li>If no toon was found by the above, a toon is selected at random. This, for example, could happen when a large pseudorandom integer is generated, but the battle damage is evenly distributed.</li>
 </ol>
 <p>In the other 25% of time, a toon was simply selected at random.</p>
-<h3 id="will-the-attack-hit-">Will the attack hit?</h3>
+<h3 id="will-the-attack-hit-a-name-cog-atk-acc-3-a-">Will the attack hit? <a name="cog-atk-acc-3"></a></h3>
 <p>To determine this, a pseudorandom integer <code style="font-family: Menlo;">randChoice</code> was generated such that 0 &lt;= <code style="font-family: Menlo;">randChoice</code> &lt;= 99. If <code style="font-family: Menlo;">randChoice</code> was less than the cog attack&#39;s accuracy, the cog attack hit. Otherwise it missed.</p>
 <p>(Attack accuracy/damage summary to be added.)</p>
 <h2 id="doodle-training-and-tricks-a-name-doodle-t-t-a-">Doodle Training and Tricks <a name="doodle-t&amp;t"></a></h2>
-<h2 id="how-was-doodle-trick-experience-calculated-">How was Doodle trick experience calculated?</h2>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="how-was-doodle-trick-experience-calculated-a-name-doodle-t-t-1-a-">How was Doodle trick experience calculated? <a name="doodle-t&amp;t-1"></a></h2>
 <p>Doodle tricks had similarities to how gags gained experience. Each time a successful trick was performed, that trick would gain +20 experience points. Each trick required 10000 experience points to fully max the trick. 10000 / 20 would require the Doodle to perform 500 successful tricks, in order to max that particular trick. To max all tricks, it would require an overall total of 3500 successful tricks.</p>
 <p>In addition, performing a successful trick would increase the <code style="font-family: Menlo;">aptitiude</code> value of that trick by 0.002. When a trick was fully maxed, <code style="font-family: Menlo;">aptitude</code> capped out at 1.0. To determine the <code style="font-family: Menlo;">aptitude</code> value a doodle has, the following equation could be used.</p>
 <pre class="editor-colors lang-python"><div class="line"><span class="source python"><span>aptitude</span><span>&nbsp;</span><span class="keyword operator assignment python"><span>=</span></span><span>&nbsp;</span><span>trick</span><span>&nbsp;</span><span>experience</span><span>&nbsp;</span><span class="keyword operator arithmetic python"><span>/</span></span><span>&nbsp;</span><span class="constant numeric integer decimal python"><span>10000</span></span></span></div></pre>
-<h2 id="did-doodle-tricks-have-base-accuracy-values-to-them-">Did Doodle tricks have base accuracy values to them?</h2>
-<p>Yes, Doodle tricks had individual accuracy values for each trick. These values were used in determining the final accuracy value of the trick, referred to as <code style="font-family: Menlo;">cutoff</code>. Below is a list of the base accuracy values for each trick.</p>
+<h2 id="did-doodle-tricks-have-base-accuracy-values-to-them-a-name-doodle-t-t-2-a-">Did Doodle tricks have base accuracy values to them? <a name="doodle-t&amp;t-2"></a></h2>
+<p>Yes, Doodle tricks had individual accuracy values for each trick. These values were used in determining the final accuracy value of the trick, referred to as <code style="font-family: Menlo;">cutoff</code>. Below is a list of the base accuracy values for each trick. </p>
 <table>
 <thead>
 <tr>
@@ -691,12 +692,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="how-did-the-game-determine-if-the-doodle-would-successfuly-perform-the-trick-">How did the game determine if the Doodle would successfuly perform the trick?</h2>
+<h2 id="how-did-the-game-determine-if-the-doodle-would-successfuly-perform-the-trick-a-name-doodle-t-t-3-a-">How did the game determine if the Doodle would successfuly perform the trick? <a name="doodle-t&amp;t-3"></a></h2>
 <p>To determine if a trick would be successful or not, the following equation could be used.</p>
 <pre class="editor-colors lang-python"><div class="line"><span class="source python"><span>cutoff</span><span>&nbsp;</span><span class="keyword operator assignment python"><span>=</span></span><span>&nbsp;</span><span>trickAcc</span><span class="keyword operator arithmetic python"><span>*</span></span><span>(</span><span>minApt</span><span>&nbsp;</span><span class="keyword operator arithmetic python"><span>+</span></span><span>&nbsp;</span><span>(</span><span>(</span><span>maxApt</span><span>&nbsp;</span><span class="keyword operator arithmetic python"><span>-</span></span><span>&nbsp;</span><span>minApt</span><span>)</span><span>&nbsp;</span><span class="keyword operator arithmetic python"><span>*</span></span><span>&nbsp;</span><span>aptitude</span><span>)</span><span>)</span></span></div></pre>
 <p><code style="font-family: Menlo;">cutoff</code> is the end result of the following variables being calculated. <code style="font-family: Menlo;">trickAcc</code> referred to the base accuracy value of the trick being used (see previous question). <code style="font-family: Menlo;">minApt</code> and <code style="font-family: Menlo;">maxApt</code> were predetermined values set by the Doodle&#39;s mood. If the Doodle was neutral, excited, playful or affectionate, <code style="font-family: Menlo;">minApt = 0.5</code> and <code style="font-family: Menlo;">maxApt = 0.97</code>. However, if the Doodle was bored, restless, lonely, sad, tired, hungry or angry, <code style="font-family: Menlo;">minApt = 0.1</code> and <code style="font-family: Menlo;">maxApt = 0.6</code>. <code style="font-family: Menlo;">aptitude</code> was the value determined by taking the trick&#39;s experience / 10000.  </p>
-<p>If the Doodle was tired either at the Estate or the battle selection screen, <code style="font-family: Menlo;">cutoff</code> was multiplied by 0.5. However, if the Doodle was only tired at the Estate, but had a positive mood on the battle selection screen, <code style="font-family: Menlo;">minApt</code> and <code style="font-family: Menlo;">maxApt</code> would still equal 0.5 and 0.97 respectively.</p>
-<p>If the doodle had a negative emotion in both places (such as tired in both the Estate and battle selection screen), <code style="font-family: Menlo;">minApt</code> and <code style="font-family: Menlo;">maxApt</code> would equal 0.1 and 0.6, and cutoff would still be multiplied by 0.5.</p>
+<p>If the Doodle was tired either at the Estate or the battle selection screen, <code style="font-family: Menlo;">cutoff</code> was multiplied by 0.5. </p>
+<p>If the Doodle had a negative mood at the Estate, but had a positive mood on the battle selection screen, <code style="font-family: Menlo;">minApt</code> and <code style="font-family: Menlo;">maxApt</code> would still equal 0.5 and 0.97 respectively. </p>
+<p>If the Doodle had negative moods in both the Estate and the battle selection screen, <code style="font-family: Menlo;">minApt = 0.1</code> and <code style="font-family: Menlo;">maxApt = 0.6</code>. However, <code style="font-family: Menlo;">cutoff</code> would not be multiplied by 0.5 unless one of the negative moods was tired.</p>
 <p>Once the final value of <code style="font-family: Menlo;">cutoff</code> was determined, an pseudo-RNG called <code style="font-family: Menlo;">randVal</code> generated a value between 0.0 and 1.0. If <code style="font-family: Menlo;">cutoff</code> was greater than <code style="font-family: Menlo;">randVal</code>, the Doodle would successfully perform the trick. Otherwise, the Doodle would not perform the trick.</p>
 <p>Below is a table that shows the final <code style="font-family: Menlo;">cutoff</code> value for each trick, assuming the doodle was maxed in said trick, and had no negative emotions on both the battle selection screen and the Estate.</p>
 <table>
@@ -738,10 +740,11 @@
 </tbody>
 </table>
 <h2 id="fishing-and-probability-a-name-fish-prob-a-">Fishing and Probability <a name="fish-prob"></a></h2>
+<p>[<a href="#contents">back to top</a>]</p>
 <h1 id="toon-up-a-name-toon-up-a-">Toon-up <a name="toon-up"></a></h1>
 <p>[<a href="#contents">back to top</a>]</p>
-<h2 id="did-using-toon-up-have-any-impact-on-other-gag-s-accuracy-a-name-tu-1-a-">Did using Toon-up have any impact on other gag&#39;s accuracy? <a name="tu-1"></a></h2>
-<p>Yes, considering the conditions outlined in the <a href="#bonus">bonus section</a>, Toon-up would increase another gag&#39;s accuracy when one of the following was true:</p>
+<h2 id="did-using-toon-up-have-any-impact-on-other-gag-s-accuracy-a-name-toon-up-1-a-">Did using Toon-up have any impact on other gag&#39;s accuracy? <a name="toon-up-1"></a></h2>
+<p>Yes, considering the conditions outlined in the <a href="#toon-atk-acc-6">bonus section</a>, Toon-up would increase another gag&#39;s accuracy when one of the following was true:</p>
 <ul>
 <li>The Toon-up gag affected the group; or</li>
 <li>The attack gag affected the group; or</li>
@@ -751,7 +754,7 @@
 <h1 id="trap-a-name-trap-a-">Trap <a name="trap"></a></h1>
 <p>[<a href="#contents">back to top</a>]</p>
 <h2 id="did-using-trap-give-lure-an-accuracy-boost-a-name-trap-1-a-">Did using Trap give Lure an accuracy boost? <a name="trap-1"></a></h2>
-<p>Yes, Trap gags always counted as a hit on the cog, regardless if the Trap was actually triggered or not. If one again considers the conditions in the <a href="#bonus">bonus section</a>, Trap met the following conditions.</p>
+<p>Yes, Trap gags always counted as a hit on the cog, regardless if the Trap was actually triggered or not. If one again considers the conditions in the <a href="#toon-atk-acc-6">bonus section</a>, Trap met the following conditions.</p>
 <ul>
 <li>It is not the same track as Lure;</li>
 <li>It always counts as a hit on the target</li>
@@ -771,7 +774,7 @@
 <li><a href="http://pastebin.com/JSm1Nz9S">1 TNT, 2 Trapdoors &amp; Small Magnet (3 targets)</a></li>
 </ul>
 <h2 id="did-trap-provide-an-accuracy-bonus-to-other-gag-tracks-even-when-not-activated-a-name-trap-2-a-">Did Trap provide an accuracy bonus to other gag tracks, even when not activated? <a name="trap-2"></a></h2>
-<p>Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not activated, Trap always counted as a hit on the cog. It would still meet the conditions given in the <a href="#bonus">bonus section</a>, thus a +20 accuracy boost to the next gag targeting the cog.</p>
+<p>Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not activated, Trap always counted as a hit on the cog. It would still meet the conditions given in the <a href="#toon-atk-acc-6">bonus section</a>, thus a +20 accuracy boost to the next gag targeting the cog. </p>
 <h3 id="battle-simulations">Battle Simulations</h3>
 <ul>
 <li><a href="http://pastebin.com/KUmPsjuS">Trapdoor &amp; Grand Piano</a></li>
@@ -786,7 +789,7 @@
 <h1 id="lure-a-name-lure-a-">Lure <a name="lure"></a></h1>
 <p>[<a href="#contents">back to top</a>]</p>
 <h2 id="what-was-the-impact-of-using-multiple-lure-gags-a-name-lure-1-a-">What was the impact of using multiple Lure gags? <a name="lure-1"></a></h2>
-<p>When two or more Lure gags were picked, the result of the weakest was calculated first using the highest possible value for <code style="font-family: Menlo;">trackExp</code> according to the details outlined in <a href="#trackExp">its section</a>. From here, there were two options for all subsequent Lure gags:</p>
+<p>When two or more Lure gags were picked, the result of the weakest was calculated first using the highest possible value for <code style="font-family: Menlo;">trackExp</code> according to the details outlined in <a href="#toon-atk-acc-4">its section</a>. From here, there were two options for all subsequent Lure gags:</p>
 <ol>
 <li><p>If the current Lure gag was single-cog and the previous hit or the current Lure gag was multi-cog, the previous Lure&#39;s result was applied to the current.</p>
 </li>
@@ -819,11 +822,11 @@
 <h1 id="v-p-a-name-vp-a-">V.P. <a name="vp"></a></h1>
 <p>[<a href="#contents">back to top</a>]</p>
 <h2 id="did-being-lureless-impact-the-accuracy-of-lure-sos-cards-a-name-vp-1-a-">Did being Lureless impact the accuracy of Lure SOS cards? <a name="vp-1"></a></h2>
-<p>Yes, a value of 0 was used for <code style="font-family: Menlo;">trackExp</code> in all Lure SOS card accuracy calculations for Lureless toons (see <a href="#atk-accuracy">Toon Attack Accuracy</a> for more information). In practice, this was only relevant for Des Traction and Dee Version, which <em>always</em> missed against level 11 and 12 cogs as seen below.</p>
+<p>Yes, a value of 0 was used for <code style="font-family: Menlo;">trackExp</code> in all Lure SOS card accuracy calculations for Lureless toons (see <a href="#toon-atk-acc">Toon Attack Accuracy</a> for more information). In practice, this was only relevant for Des Traction and Dee Version, which <em>always</em> missed against level 11 and 12 cogs as seen below.</p>
 <pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Level&nbsp;11:&nbsp;atkAcc&nbsp;=&nbsp;50&nbsp;+&nbsp;0&nbsp;+&nbsp;(-50)&nbsp;=&nbsp;0</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Level&nbsp;12:&nbsp;atkAcc&nbsp;=&nbsp;50&nbsp;+&nbsp;0&nbsp;+&nbsp;(-55)&nbsp;=&nbsp;-5</span></span></span></div></pre><h2 id="did-being-lureless-impact-the-number-of-rounds-lure-sos-cards-would-hold-for-a-name-vp-2-a-">Did being Lureless impact the number of rounds Lure SOS cards would hold for? <a name="vp-2"></a></h2>
 <p>Yes, cogs were more likely to &quot;wake up&quot; early if the caller was Lureless. The probability associated with this event is called a cog&#39;s <code style="font-family: Menlo;">wakeupChance</code>, which is calculated as follows:</p>
 <pre class="editor-colors lang-python"><div class="line"><span class="source python"><span>wakeupChance</span><span>&nbsp;</span><span class="keyword operator assignment python"><span>=</span></span><span>&nbsp;</span><span class="constant numeric integer decimal python"><span>100</span></span><span>&nbsp;</span><span class="keyword operator arithmetic python"><span>-</span></span><span>&nbsp;</span><span>atkAcc</span><span>&nbsp;</span><span class="keyword operator arithmetic python"><span>*</span></span><span>&nbsp;</span><span class="constant numeric integer decimal python"><span>2</span></span></span></div></pre>
-<p>(See <a href="#atk-accuracy">Toon Attack Accuracy</a> for information on <code style="font-family: Menlo;">atkAcc</code>.)</p>
+<p>(See <a href="#toon-atk-acc">Toon Attack Accuracy</a> for information on <code style="font-family: Menlo;">atkAcc</code>.)</p>
 <p>With the above in mind, it can also be useful to think in terms of <code style="font-family: Menlo;">wakeupChance</code>&#39;s probabilistic complement: The probability that a given SOS card will hold for a specific number of rounds. In order to do so, we must apply the Rule of Multiplication:</p>
 <blockquote>
 <p>The probability that Events A and B both occur is equal to the probability that Event A occurs times the probability that Event B occurs, given that A has occurred: P(A ∩ B) = P(A) P(B|A)</p>
@@ -865,9 +868,9 @@
 <li>If the toon has all possible Summons, give them nothing.</li>
 </ul>
 <h2 id="how-did-the-c-j-decide-when-to-jump-a-name-cj-2-a-">How did the C.J. decide when to jump? <a name="cj-2"></a></h2>
-<p>Every 15 seconds the C.J. had an 11% chance to jump.</p>
+<p>Every 15 seconds the C.J. had an 11% chance to jump. </p>
 <h2 id="how-did-the-prosecution-choose-which-toon-to-attack-a-name-cj-3-a-">How did the prosecution choose which toon to attack? <a name="cj-3"></a></h2>
-<p>Every cycle, each prosecuting cog had a 50/50 chance to either (1) attack a toon or (2) hit the scale. If option 1 was selected, a toon was chosen at random from a list of all toons in the battle.</p>
+<p>Every cycle, each prosecuting cog had a 50/50 chance to either (1) attack a toon or (2) hit the scale. If option 1 was selected, a toon was chosen at random from a list of all toons in the battle. </p>
 <h2 id="how-was-the-scale-related-to-the-jury-a-name-cj-4-a-">How was the scale related to the jury? <a name="cj-4"></a></h2>
 <h2 id="what-was-the-optimal-scalers-to-stunners-ratio-a-name-cj-5-a-">What was the optimal scalers-to-stunners ratio? <a name="cj-5"></a></h2>
 <h1 id="c-e-o-a-name-ceo-a-">C.E.O. <a name="ceo"></a></h1>
@@ -897,7 +900,7 @@
 <ol>
 <li>Toon-up gags were always evaluated independently.</li>
 <li>Lure gags were only evaluated independently when using a combination of multi- and single-cog Lures, and a multi-cog Lure was the lowest level (<a href="#lure-1">see the multi-Lure section for details</a>). In all other cases, the result of the lowest Lure gag was applied to all subsequent Lures.</li>
-<li>Sound gags always inherited the result of the lowest Sound gag used.</li>
+<li>Sound gags always inherited the result of the lowest Sound gag used. </li>
 <li>For all other tracks, if the previous gag in the particular track had the same target as the current, the current inherited the result of the previous.</li>
 </ol>
 <h2 id="was-it-possible-for-two-gags-of-the-same-track-aiming-for-the-same-cog-to-have-different-hit-miss-results-a-name-misc-3-a-">Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-3"></a></h2>
