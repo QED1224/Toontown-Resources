@@ -154,7 +154,7 @@ luredRatio = ([number of cogs lured] / [total cogs]) * 100
 
 Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This was decided by the value of `randChoice`, which was simply a pseudorandom integer between 0 and 99.
 
-If `randChoice` was less than `atkAcc`, the attack hit. Otherwise, the attack missed. It's important to note, however, that `atkAcc` was capped at 95 -- so, any gag which wasn't mentioned in the Special Cases section in [Attack Accuracy](#atk-accuracy) could miss.
+If `randChoice` was less than `atkAcc`, the attack hit. Otherwise, the attack missed. It's important to note, however, that `atkAcc` was capped at 95 -- so, any gag which wasn't mentioned in the [Special Cases section](#toon-atk-acc-1) could miss.
 
 #### Special Cases <a name="toon-atk-acc-8"></a>
 
