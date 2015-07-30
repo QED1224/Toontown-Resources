@@ -325,22 +325,104 @@
 # Hall Of Fame
 [[back to top](#contents)]
 
-[Summary for each to be added]
+## The Dogfather
 
-- The Dogfather
-- Good ol' Lefty
-- Loopy Goopy Zooblefingers
-- Cool Corny Electrofoot
-- Matt Wild Horse
-- Payden Full
-- Miss Trixie Jabbermouth
-- Loosy Goosy
-- Skinny C.J. Electropretzel
-- Legendary Ninja Dog
-- Angel Beats
-- Dippy Zippy Sparklefish
-- Little Pearl Petalbee 
-- aj
-- Anarchy
-- Blinky Trickyspinner
-- Mr Red Bull
+**Bio**
+
+**Accomplishments**
+
+## Good ol' Lefty
+
+**Bio**
+
+**Accomplishments**
+
+## Loopy Goopy Zooblefingers
+
+**Bio**
+
+**Accomplishments**
+
+## Cool Corny Electrofoot
+
+**Bio**
+
+**Accomplishments**
+
+## Matt Wild Horse
+
+**Bio**
+
+**Accomplishments**
+
+## Payden Full
+
+**Bio**
+
+**Accomplishments**
+
+## Miss Trixie Jabbermouth
+
+**Bio**
+
+**Accomplishments**
+
+## Loosy Goosy
+
+**Bio**
+
+**Accomplishments**
+
+## Skinny C.J. Electropretzel
+
+**Bio**
+
+**Accomplishments**
+
+## Legendary Ninja Dog
+
+**Bio**
+
+**Accomplishments**
+
+## Angel Beats
+
+**Bio**
+
+**Accomplishments**
+
+## Dippy Zippy Sparklefish
+
+**Bio**
+
+**Accomplishments**
+
+## Little Pearl Petalbee
+
+**Bio**
+
+**Accomplishments**
+
+## aj
+
+**Bio**
+
+**Accomplishments**
+
+## Anarchy
+
+**Bio**
+
+**Accomplishments**
+
+## Blinky Trickyspinner
+
+**Bio**
+
+**Accomplishments**
+
+## Mr Red Bull
+
+**Bio**
+
+**Accomplishments**
