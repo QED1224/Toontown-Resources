@@ -227,7 +227,7 @@
 - Payden Full - 12/23/2006
 - Avalanche - 12/23/2006
 
-(Note: Due to the nature of Gardening, this list is less meaningful than the others because (a) many benefited from the work of a few combination finders who many not be represented here and (b) Cattlelog arrival date is a major factor.)
+(Note: Due to the nature of Gardening, this list is less meaningful than the others because (a) many benefited from the work of a few combination finders who are not necessarily represented here and (b) Cattlelog arrival date is a major factor.)
 
 ## Notable Toons
 
