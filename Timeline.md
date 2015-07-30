@@ -221,13 +221,24 @@
 
 ## First to Max
 
+- Matt Wild Horse - 12/23/2006
+- Charles - 12/23/2006
+- Moo Bunny - 12/23/2006
+- Payden Full - 12/23/2006
+- Avalanche - 12/23/2006
+
+(Note: Due to the nature of Gardening, this list is less meaningful than the others because (a) many benefited from the work of a few combination finders who many not be represented here and (b) Cattlelog arrival date is a major factor.)
+
 ## Notable Toons
 
 - Little Pearl PetalBee: Found 11 Bean Combinations
 
 ## References
 
+- [SPOILER - FOUND 8 bean flower search is DONE 5 of 5 found](http://www.mmocentralforums.com/forums/showthread.php?t=130024&page=6)
 - [Jelly Bean Combination Chart](http://www.mmocentralforums.com/forums/showthread.php?t=363995)
+- [Charles Maxes Gardening](http://www.mmocentralforums.com/forums/showthread.php?t=132094)
+- [Thank You, Flower Searchers!](http://www.mmocentralforums.com/forums/showthread.php?t=131952)
 
 # Pigs - 03/7/2007
 [[back to top](#contents)]
