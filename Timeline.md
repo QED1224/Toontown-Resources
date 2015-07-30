@@ -146,6 +146,11 @@
 ## First to Max
 
 - King Vadim - 01/26/2006
+- Loopy Goopy Zooblefingers - 01/28/2006
+- Good ol' Lefty - 01/28/2006
+- Black Pearl - 01/28/2006
+- Berry Cute Bunny - 01/28/2006
+- alondra - 01/28/2006
 
 ## Fastest to Max
 
@@ -154,11 +159,11 @@
 - Payden Full: Maxed 10 toons in Racing; widely considered one of the most skilled racers in Toontown's history.
 
 ## References
-- [Toontown Grand Prix](http://www.mmocentralforums.com/forums/showthread.php?t=125957)
-- [I took on Payden Full](http://www.mmocentralforums.com/forums/showthread.php?t=97009)
 - [10 Toons Maxed in GSW!!!](http://www.mmocentralforums.com/forums/showthread.php?t=147427)
 - [120s out tomorrow who is you guess on first!](http://www.mmocentralforums.com/forums/showthread.php?t=89149&page=4)
 - [119-120 List](http://www.mmocentralforums.com/forums/showthread.php?t=93080)
+- [Anyone else not get grand touring today?](http://www.mmocentralforums.com/forums/showthread.php?t=89205)
+- [January 27, 2006 sv1.0.18.39.test.v3](http://www.mmocentralforums.com/forums/showthread.php?t=89205)
 
 # Bears - 12/20/2005
 [[back to top](#contents)]
