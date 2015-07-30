@@ -11,7 +11,7 @@
 - [Chip 'n Dale's MiniGolf - 07/12/2007](#chip-n-dales-minigolf---07122007)
 - [Bossbot HQ - 03/6/2008](#bossbot-hq---0362008)
 - [Notable Clans](#notable-clans)
-- [Hall Of Fame](#hall-of-fame)
+- [Hall of Fame](#hall-of-fame)
 
 # Fishing - 11/14/2003
 [[back to top](#contents)]
@@ -327,102 +327,102 @@
 
 ## The Dogfather
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Good ol' Lefty
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Loopy Goopy Zooblefingers
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Cool Corny Electrofoot
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Matt Wild Horse
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Payden Full
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Miss Trixie Jabbermouth
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Loosy Goosy
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Skinny C.J. Electropretzel
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Legendary Ninja Dog
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Angel Beats
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Dippy Zippy Sparklefish
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Little Pearl Petalbee
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## aj
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Anarchy
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Blinky Trickyspinner
 
-**Bio**
+**Biography**
 
 **Accomplishments**
 
 ## Mr Red Bull
 
-**Bio**
+**Biography**
 
 **Accomplishments**
