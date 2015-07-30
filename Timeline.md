@@ -325,86 +325,6 @@
 # Hall of Fame
 [[back to top](#contents)]
 
-## The Dogfather
-
-**Biography**
-
-**Accomplishments**
-
-- Author of 19 widely used Toontown guides
-
-## Good ol' Lefty
-
-**Biography**
-
-**Accomplishments**
-
-## Loopy Goopy Zooblefingers
-
-**Biography**
-
-**Accomplishments**
-
-## Cool Corny Electrofoot
-
-**Biography**
-
-**Accomplishments**
-
-## Matt Wild Horse
-
-**Biography**
-
-**Accomplishments**
-
-## Payden Full
-
-**Biography**
-
-**Accomplishments**
-
-## Miss Trixie Jabbermouth
-
-**Biography**
-
-**Accomplishments**
-
-## Loosy Goosy
-
-**Biography**
-
-**Accomplishments**
-
-## Skinny C.J. Electropretzel
-
-**Biography**
-
-**Accomplishments**
-
-## Legendary Ninja Dog
-
-**Biography**
-
-**Accomplishments**
-
-## Angel Beats
-
-**Biography**
-
-**Accomplishments**
-
-## Dippy Zippy Sparklefish
-
-**Biography**
-
-**Accomplishments**
-
-## Little Pearl Petalbee
-
-**Biography**
-
-**Accomplishments**
-
 ## aj
 
 **Biography**
@@ -417,7 +337,67 @@
 
 **Accomplishments**
 
+## Angel Beats
+
+**Biography**
+
+**Accomplishments**
+
 ## Blinky Trickyspinner
+
+**Biography**
+
+**Accomplishments**
+
+## Cool Corny Electrofoot
+
+**Biography**
+
+**Accomplishments**
+
+## Dippy Zippy Sparklefish
+
+**Biography**
+
+**Accomplishments**
+
+## Good ol' Lefty
+
+**Biography**
+
+**Accomplishments**
+
+## Legendary Ninja Dog
+
+**Biography**
+
+**Accomplishments**
+
+## Little Pearl Petalbee
+
+**Biography**
+
+**Accomplishments**
+
+## Loopy Goopy Zooblefingers
+
+**Biography**
+
+**Accomplishments**
+
+## Loosy Goosy
+
+**Biography**
+
+**Accomplishments**
+
+## Matt Wild Horse
+
+**Biography**
+
+**Accomplishments**
+
+## Miss Trixie Jabbermouth
 
 **Biography**
 
@@ -428,3 +408,25 @@
 **Biography**
 
 **Accomplishments**
+
+## Payden Full
+
+**Biography**
+
+**Accomplishments**
+
+## Skinny C.J. Electropretzel
+
+**Biography**
+
+**Accomplishments**
+
+## The Dogfather
+
+**Biography**
+
+**Accomplishments**
+
+- Author of 19 widely used Toontown guides
+
+
