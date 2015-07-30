@@ -322,7 +322,7 @@
 
 [Content to be added]
 
-# Hall Of Fame
+# Hall of Fame
 [[back to top](#contents)]
 
 ## The Dogfather
@@ -330,6 +330,8 @@
 **Biography**
 
 **Accomplishments**
+
+- Author of 19 widely used Toontown guides
 
 ## Good ol' Lefty
 
