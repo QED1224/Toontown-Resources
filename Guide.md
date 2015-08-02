@@ -243,7 +243,7 @@ Yes, Doodle tricks had individual accuracy values for each trick. These values w
 | Dance | 0.5 |
 | Speak | 0.4 | 
 
-## How did the game determine if the Doodle would successfuly perform the trick? <a name="doodle-t&t-3"></a>
+## How did the game determine if the Doodle would successfully perform the trick? <a name="doodle-t&t-3"></a>
 
 To determine if a trick would be successful or not, the following equation could be used.
 
@@ -434,7 +434,7 @@ Yes, the undercarriage would open every 9 seconds that the V.P. was not dizzy. T
 
 ## How was the C.F.O. reward chosen? <a name="cfo-1"></a>
 
-Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite were selected at random.
+Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite were selected at random. As soon as Mata Hairy's first cutscene began, the reward was generated.
 
 ## How did the C.F.O. choose which toon to attack? <a name="cfo-2"></a>
 
@@ -527,6 +527,8 @@ Here, the attack order is 1, 2, 3. This means that Toon 1's Safe is evaluated, t
 - [3 Storm Clouds](http://pastebin.com/5fb8pbtA)
 
 ## Did doodle tricks count as a stun in battle? <a name="misc-4"></a>
+
+Yes, Doodle tricks counted as a stun in battles, provided that the trick was successful. Tricks counted as their own individual track, meaning they would satisfy the conditions listed in the [bonus section](#toon-atk-acc-6).
 
 # Credits <a name="credits"></a>
 [[back to top](#contents)]
