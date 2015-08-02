@@ -294,7 +294,7 @@ Yes, considering the conditions outlined in the [bonus section](#toon-atk-acc-6)
 
 ## Did using Trap give Lure an accuracy boost? <a name="trap-1"></a>
 
-Yes, Trap gags always counted as a hit on the cog, regardless if the Trap was actually triggered or not. If one again considers the conditions in the [bonus section](#toon-atk-acc-6), Trap met the following conditions.
+Yes, Trap gags always counted as a hit on the cog on the round it was used on, regardless if the Trap was actually triggered or not. If one again considers the conditions in the [bonus section](#toon-atk-acc-6), Trap met the following conditions.
 
 - It is not the same track as Lure;
 - It always counts as a hit on the target
