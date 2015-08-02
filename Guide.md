@@ -434,7 +434,7 @@ Yes, the undercarriage would open every 9 seconds that the V.P. was not dizzy. T
 
 ## How was the C.F.O. reward chosen? <a name="cfo-1"></a>
 
-Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite were selected at random. As soon as Mata Hairy's first cutscene began, the reward was generated.
+Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite were selected at random.
 
 ## How did the C.F.O. choose which toon to attack? <a name="cfo-2"></a>
 
