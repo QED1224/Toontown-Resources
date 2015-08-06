@@ -47,6 +47,8 @@
     - [Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results?](#misc-3)
     - [Did doodle tricks count as a stun in battle?](#misc-4)
 - [Credits](#credits)
+- [Appendix A: Cog Attack Frequencies](#appendix-a)
+- [Appendix B: Cog Attack Damages](#appendix-b)
 
 # Introduction <a name="intro"></a>
 [[back to top](#contents)]
@@ -189,11 +191,8 @@ atk_2 = "Shred", Freq = 0.1
 atk_3 = "Clip on Tie", Freq = 0.6
 
 P(atk_1) = (0 + 0.3) * (1 - (0 + 0)) = 0.3 * 1 = 0.30
-         
 P(atk_2) = (0 + 0.3 + 0.1) * ((1 - (0 + 0)) * (1 - (0 + 0.3))) = 0.4 * 0.7 = 0.28
-         
-P(atk_3) = (0 + 0.3 + 0.1 + 0.6) * ((1 - (0 + 0)) * (1 - (0 + 0.3)) * (1 - (0 + 0.3 + 0.1)))
-         = 1 * ((1 - 0) * (1 - 0.3) * (1 - 0.4)) = 1 * (0.7 * 0.6) = 0.42
+P(atk_3) = (0 + 0.3 + 0.1 + 0.6) * ((1 - (0 + 0)) * (1 - (0 + 0.3)) * (1 - (0 + 0.3 + 0.1))) = 1 * ((1 - 0) * (1 - 0.3) * (1 - 0.4)) = 1 * (0.7 * 0.6) = 0.42
 ```
 
 ### Which toon(s) will be attacked? <a name="cog-atk-acc-2"></a>
@@ -535,3 +534,9 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 [[back to top](#contents)]
 
 - Cell1234 (Patrick)
+
+# Appendix A: Cog Attack Frequencies <a name="appendix-a"></a>
+[[back to top](#contents)]
+
+# Appendix B: Cog Attack Damages <a name="appendix-b"></a>
+[[back to top](#contents)]
