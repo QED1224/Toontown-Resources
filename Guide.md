@@ -179,14 +179,14 @@ Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function used th
 
 Considering the above, we may establish the following formula:
 
-![equation](http://imgur.com/U5abKBZ.png)
+![equation](http://i.imgur.com/DpFtQIT.png)
 
-Where a<sub>0</sub> is always 0 and a<sub>1</sub> ... a<sub>n</sub> represent individual cog attack frequencies. For example, here's how one would perform the calculations for a level 1 Flunky:
+Where a<sub>0</sub> is always 0 and a<sub>1</sub> ... a<sub>n</sub> represent the individual frequencies for given cog attacks. For example, here's how one would perform the calculations for a level 1 Flunky:
 
 ```python
-a_1 = "Pound Key"
-a_2 = "Shred"
-a_3 = "Clip on Tie"
+a_1 = "Pound Key", Freq = 0.3
+a_2 = "Shred", Freq = 0.1
+a_3 = "Clip on Tie", Freq = 0.6
 
 P(a_1) = (0 + 0.3) * (1 - 0) = 0.30
 P(a_2) = (0 + 0.3 + .1) * ((1 - 0) * (1 - 0.3)) = 0.28
