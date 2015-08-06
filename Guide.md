@@ -179,7 +179,7 @@ Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function used th
 
 Considering the above, we may establish the following formula:
 
-![equation](http://www.sciweavers.org/upload/Tex2Img_1438879024/render.png)
+![equation](http://www.sciweavers.org/upload/Tex2Img_1438880313/render.png)
 
 Where a<sub>0</sub> is always 0 and a<sub>1</sub> ... a<sub>n</sub> represent individual cog attack frequencies. For example, here's how one would perform the calculations for a level 1 Flunky:
 
