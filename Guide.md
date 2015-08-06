@@ -177,19 +177,21 @@ Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function used th
     - if it's not, continue looping.
 4. Return `attackNum`
 
-Considering the above, we may establish the following tables.
+Considering the above, we may establish the following formula:
 
-**Cog Level vs. Attack Usage Probability**
+![equation](http://www.sciweavers.org/upload/Tex2Img_1438879024/render.png)
 
-| Flunky  | Clip On Tie | Pound Key | Shred |
-|:---:|:-------------:|:---------:|:-----:|
-| 1 |     42%     |    30%    |  28%  |
-| 2 |    32.5%    |    35%    | 32.5% |
-| 3 |     24%     |    40%    |  36%  |
-| 4 |    16.5%    |    45%    | 38.5% |
-| 5 |     10%     |    50%    |  40%  |
+Where a<sub>0</sub> is always 0 and a<sub>1</sub> ... a<sub>n</sub> represent individual cog attack frequencies. For example, here's how one would perform the calculations for a level 1 Flunky:
 
-(More tables to be added.)
+```python
+a_1 = "Pound Key"
+a_2 = "Shred"
+a_3 = "Clip on Tie"
+
+P(a_1) = (0 + 0.3) * (1 - 0) = 0.30
+P(a_2) = (0 + 0.3 + .1) * ((1 - 0) * (1 - 0.3)) = 0.28
+P(a_3) = (0 + 0.3 + 0.1 + 0.6) * ((1 - 0) * (1 - 0.3) * (1 - 0.4)) = .42
+```
 
 #### Example calculations
 
