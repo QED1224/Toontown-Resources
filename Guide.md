@@ -196,10 +196,6 @@ P(ark_3) = (0 + 0.3 + 0.1 + 0.6) * ((1 - (0 + 0)) * (1 - (0 + 0.3)) * (1 - (0 + 
          = 1 * ((1 - 0) * (1 - 0.3) * (1 - 0.4)) = 1 * (0.7 * 0.6) = 0.42
 ```
 
-#### Example calculations
-
-- [Level 1 Flunky](http://pastebin.com/wANyHgsx)
-
 ### Which toon(s) will be attacked? <a name="cog-atk-acc-2"></a>
 
 If the selected cog attack is a group attack, all active toons would be attacked. For single-toon attacks, 75% percent of the time the following algorithm was used to select a toon:
