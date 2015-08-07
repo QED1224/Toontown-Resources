@@ -25,6 +25,7 @@
     - [How did the V.P. choose which attack to use?](#vp-3)
     - [How did the V.P. choose which toon to attack?](#vp-4)
     - [Was there a way to predict when the undercarriage would open?](#vp-5)
+    - [Was the gag choice related decrease in SOS card performance intentional?](#vp-6)
 - [C.F.O.](#cfo)
     - [How was the C.F.O. reward chosen?](#cfo-1)
     - [How did the C.F.O. choose which toon to attack?](#cfo-2)
@@ -428,6 +429,8 @@ Throw Gears is the only attack which targeted a specific toon and the toon was s
 ## Was there a way to predict when the undercarriage would open? <a name="vp-5"></a>
 
 Yes, the undercarriage would open every 9 seconds that the V.P. was not dizzy. The side it opened on and the direction of the gears were random.
+
+## Was the gag choice related decrease in SOS card performance intentional? <a name="vp-6"></a>
 
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
