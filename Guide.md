@@ -437,10 +437,10 @@ While it's impossible to give a definitive answer without insider knowledge, one
 1. Cogs Miss, Toons Hit and gag restock SOS cards were given their own "type" (`NPC_COGS_MISS`, `NPC_TOONS_HIT` and `NPC_RESTOCK_GAGS` respectively) while all other SOS cards *were not*.
 2. Cogs Miss, Toons Hit and gag restock SOS cards *were not* added to the `toonAtkOrder` while all other SOS cards *were*.
 3. As a product of (2), no accuracy related calculations were conducted on Cogs Miss, Toons Hit and gag restock SOS cards.
-4. Toon-up, Trap, Lure, Sound and Drop SOS cards are explicitly converted from the `NPCSOS` track type to their actual track types for calculation purposes.
-5. Immediately following the calculation of `wakeupChance` is a check to see if the caller was an NPC (for gag credit purposes).
-6. `randChoice` is set to 0 for SOS cards.
-7. There's a `atkTrack == NPCSOS` conditonal check in `__calcToonAtkHit` which never evaluates to True.
+4. Toon-up, Trap, Lure, Sound and Drop SOS cards were explicitly converted from the `NPCSOS` track type to their actual track types for calculation purposes.
+5. There was a check to see if the caller was an NPC (for gag credit purposes) immediately following the calculation of `wakeupChance`.
+6. `randChoice` was set to 0 for SOS cards.
+7. There was a `atkTrack == NPCSOS` conditonal check in `__calcToonAtkHit` which never evaluated to True.
 
 With the above in mind -- especially (4) and (5) -- I think it's clear that Toon-up, Trap, Lure, Sound and Drop SOS cards *were* intended to be treated as "normal" attacks with the exception of `randChoice`. So, I think there's a good chance that the performance decreases were also intended.
 
