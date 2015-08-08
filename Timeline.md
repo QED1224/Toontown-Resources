@@ -314,13 +314,15 @@
 # Notable Clans
 [[back to top](#contents)]
 
-## Cold Callers Guild
+## Cold Callers Guild <a name="nc-1"></a>
 
 [Content to be added]
 
 ## Treasure Chest Box
 
 [Content to be added]
+
+# Notable Fansites
 
 # Hall of Fame
 [[back to top](#contents)]
@@ -331,17 +333,24 @@
 
 **Accomplishments**
 
+- Founder of the [Cold Callers Guild](#nc-1)
+
 ## Anarchy
 
 **Biography**
 
 **Accomplishments**
 
+- Founder of Toontown Central (now MMO Central)
+
 ## Angel Beats
 
 **Biography**
 
 **Accomplishments**
+
+- Soloed all 4 bosses
+- 
 
 ## Blinky Trickyspinner
 
@@ -355,11 +364,15 @@
 
 **Accomplishments**
 
+- Soloed all 4 bosses
+- 
 ## Dippy Zippy Sparklefish
 
 **Biography**
 
 **Accomplishments**
+
+- Soloed all 4 bosses
 
 ## Good ol' Lefty
 
@@ -367,11 +380,15 @@
 
 **Accomplishments**
 
+- Soloed all 4 bosses
+
 ## Legendary Ninja Dog
 
 **Biography**
 
 **Accomplishments**
+
+- Soloed all 4 bosses
 
 ## Little Pearl Petalbee
 
@@ -384,6 +401,7 @@
 **Biography**
 
 **Accomplishments**
+
 
 ## Loosy Goosy
 
