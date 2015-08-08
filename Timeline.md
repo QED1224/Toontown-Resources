@@ -350,13 +350,14 @@
 **Accomplishments**
 
 - Soloed all 4 bosses
-- 
 
 ## Blinky Trickyspinner
 
 **Biography**
 
 **Accomplishments**
+
+- First to solo the C.J.
 
 ## Cool Corny Electrofoot
 
@@ -365,7 +366,7 @@
 **Accomplishments**
 
 - Soloed all 4 bosses
-- 
+
 ## Dippy Zippy Sparklefish
 
 **Biography**
@@ -402,6 +403,7 @@
 
 **Accomplishments**
 
+- Soloed all 4 bosses
 
 ## Loosy Goosy
 
@@ -415,11 +417,15 @@
 
 **Accomplishments**
 
+- Maxed 18 toons in fishing
+
 ## Miss Trixie Jabbermouth
 
 **Biography**
 
 **Accomplishments**
+
+- First to solo the C.F.O. and V.P.
 
 ## Mr Red Bull
 
@@ -439,12 +445,16 @@
 
 **Accomplishments**
 
+- Soloed all 4 bosses
+- First to max SOS cards at 800
+
 ## The Dogfather
 
 **Biography**
 
 **Accomplishments**
 
+- Soloed all 4 bosses
 - Author of 19 widely used Toontown guides
 
 
