@@ -478,10 +478,6 @@ To summarize,
 - if you believe `atkTrack == NPCSOS` *does not contain* a typo, the following is required of you:
     1. You need to assume that `atkTrack == NPCSOS` is used as an error-checking conditional, which should never evaluate to True during normal execution.
 
-
-
-With the above in mind -- especially (4) and (5) -- I think it's clear that Toon-up, Trap, Lure, Sound and Drop SOS cards *were* intended to be treated as "normal" attacks with the exception of `randChoice`. So, I think there's a good chance that the performance decreases were also intended.
-
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
 
