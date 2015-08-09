@@ -445,7 +445,7 @@ if atkTrack == NPCSOS:
 Some will argue that the conditional expression shown above is a typo and that it should actually read `attack[TOON_TRACK_COL] == NPC_SOS`. This, on the surface, makes sense for a few reasons:
 
 1. As currently written, the above conditional expression will never evaluate to True. Or, in other words, it's completely unused during normal cirumstances.
-2. Simply changing `atkTrack` to `attack[TOON_TRACK_COL]`, alleviates all gag-related SOS card performance discrepancies (see [here](#vp-1) and [here](vp-2) for examples).
+2. Simply changing `atkTrack` to `attack[TOON_TRACK_COL]`, alleviates all gag-related SOS card performance discrepancies (see [here](#vp-1) and [here](#vp-2) for examples).
 3. Changing `atkTrack` to `attack[TOON_TRACK_COL]` introduces no apparent gag mechanic side effects.
 
 However, regardless of whether the above is ultimately a net-positive for gameplay purposes, there is significant evidence to support the claim that the above conditional expression *does not contain a typo*.
