@@ -467,7 +467,7 @@ The basis of this counterargument is that a "typo," by definition, implies a hig
     - In `__calcToonAtkHit`, `attack[TOON_TRACK_COL] == NPCSOS` is used to determine the value of `randChoice` long after the supposedly intended exit point.
 
 - There's evidence to support the notion that the developers were not actively trying to avoid gag-related performance discrepancies.
-    In `__addLuredSuitInfo`, the function which manages `wakeupChance`, there's conditional dedicated to detecting NPC SOS cards for skill credit purposes. However, they make no effort to avoid assigning `wakeupChance` to NPC SOS cards.
+    In `__addLuredSuitInfo`, the function which manages `wakeupChance`, there's a conditional expression dedicated to detecting NPC SOS cards for skill credit purposes. However, they make no effort to avoid assigning `wakeupChance` to NPC SOS cards.
 
 To summarize, 
 
