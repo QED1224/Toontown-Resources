@@ -465,6 +465,7 @@ The basis of this counterargument is that a "typo," by definition, implies a hig
 - There's evidence to support the notion that the developers intended execution of `__calcToonAtkHit` to extend beyond the condtional expression in question. 
     - In `__calcToonAtkHit`, there are two separate blocks of code dedicated to detecting when Drop is being used on lured cogs. Entry to the first is controlled by the expression ` elif atkTrack == DROP and attack[TOON_TRACK_COL] == NPCSOS`. Here, `atkTrack` and `attack[TOON_TRACK_COL] == NPCSOS` are explicitly distinguished from one another: The gag is Drop *and* it's an SOS.
     - In `__calcToonAtkHit`, `attack[TOON_TRACK_COL] == NPCSOS` is used to determine the value of `randChoice` long after the supposedly intended exit point.
+
 - There's evidence to support the notion that the developers were not actively trying to avoid gag-related performance discrepancies.
     In `__addLuredSuitInfo`, the function which manages `wakeupChance`, there's conditional dedicated to detecting NPC SOS cards for skill credit purposes. However, they make no effort to avoid assigning `wakeupChance` to NPC SOS cards.
 
