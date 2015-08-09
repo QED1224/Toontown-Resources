@@ -432,15 +432,53 @@ Yes, the undercarriage would open every 9 seconds that the V.P. was not dizzy. T
 
 ## Were the gag-related decreases in SOS card performance intentional? <a name="vp-6"></a>
 
-While it's impossible to give a definitive answer without insider knowledge, one thing is certain: Not all SOS cards were created equal. Here's what we know:
+While it's impossible to give a definitive answer without insider knowledge, here's what we know:
 
-1. Cogs Miss, Toons Hit and gag restock SOS cards were given their own "type" (`NPC_COGS_MISS`, `NPC_TOONS_HIT` and `NPC_RESTOCK_GAGS` respectively) while all other SOS cards *were not*.
-2. Cogs Miss, Toons Hit and gag restock SOS cards *were not* added to the `toonAtkOrder` while all other SOS cards *were*.
-3. As a product of (2), no accuracy related calculations were conducted on Cogs Miss, Toons Hit and gag restock SOS cards.
-4. Toon-up, Trap, Lure, Sound and Drop SOS cards were explicitly converted from the `NPCSOS` track type to their actual track types for calculation purposes.
-5. There was a check to see if the caller was an NPC (for gag credit purposes) immediately following the calculation of `wakeupChance`.
-6. `randChoice` was set to 0 for SOS cards.
-7. There was a `atkTrack == NPCSOS` conditonal check in `__calcToonAtkHit` which never evaluated to True.
+The primary point of disagreement is this simple section of code in `__calcToonAtkHit`:
+
+```python
+atkTrack, atkLevel = self.__getActualTrackLevel(attack)
+if atkTrack == NPCSOS:
+    return (1, 95)
+```
+
+Some will argue that the conditional expression shown above is a typo and that it should actually read `attack[TOON_TRACK_COL] == NPC_SOS`. This, on the surface, makes sense for a few reasons:
+
+1. As currently written, the above conditional expression will never evaluate to True. Or, in other words, it's completely unused during normal cirumstances.
+2. Simply changing `atkTrack` to `attack[TOON_TRACK_COL]`, alleviates all gag-related SOS card performance discrepancies (see [here](#vp-1) and [here](vp-2) for examples).
+3. Changing `atkTrack` to `attack[TOON_TRACK_COL]` introduces no apparent gag mechanic side effects.
+
+However, regardless of whether the above is ultimately a net-positive for gameplay purposes, there is significant evidence to support the claim that the above conditional expression *does not contain a typo*.
+
+The basis of this counterargument is that a "typo," by definition, implies a high-level oversight. And, as such, it should appear inconsistent with a considerable portion of the game's existing logic. Upon closer inspection, however, this doesn't seem to be the case. Here's why:
+
+- It's written the same way in multiple places. These include the `__createToonTargetList` and `__applyToonAttackDamages` functions in addition to `__calcToonAtkHit`. In all three cases, the expression appears to be used as an "early-termination" or "guard" conditional. That is, it represents something that *shouldn't* evaluate to True -- but, if it ever did, there's a reasonble solution offered. 
+    - In `__calcToonAtkHit`, the function returns immediately (with `(1, 95)` as its return value) if it evaluates to True.
+    - In `__createToonTargetList`, the function returns immediately (with `[]` as its return value) if it evaluates to True.
+    - In `__applyToonAttackDamages`, the function returns immediately (with 0 as its return value) if it evaluates to True.
+
+    As you can see, not only is it written the same way in multiple places, but it also appears to be used the same way.
+
+- There's evidence to support the notion that the developers were keenly and consistently aware of the differences between `atkTrack` and `attack[TOON_TRACK_COL]`.
+    - There were multiple functions (`__getActualTrackLevelHp`, `__getActualTrackLevel` and `__getActualTrack`) which were disigned to explicitly convert from `NPC_SOS` to other values. Moreover, `__getActualTrackLevel` is called immediately prior to all the three instances of the expression `atkTrack == NPCSOS`. Evidently supporting the claim that `atkTrack == NPCSOS` is used as a means of error checking.
+
+- There's evidence to support the notion that the developers intended execution of `__calcToonAtkHit` to extend beyond the condtional expression in question. 
+    - In `__calcToonAtkHit`, there are two separate blocks of code dedicated to detecting when Drop is being used on lured cogs. Entry to the first is controlled by the expression ` elif atkTrack == DROP and attack[TOON_TRACK_COL] == NPCSOS`. Here, `atkTrack` and `attack[TOON_TRACK_COL] == NPCSOS` are explicitly distinguished from one another: The gag is Drop *and* it's an SOS.
+    - In `__calcToonAtkHit`, `attack[TOON_TRACK_COL] == NPCSOS` is used to determine the value of `randChoice` long after the supposedly intended exit point.
+- There's evidence to support the notion that the developers were not actively trying to avoid gag-related performance discrepancies.
+    In `__addLuredSuitInfo`, the function which manages `wakeupChance`, there's conditional dedicated to detecting NPC SOS cards for skill credit purposes. However, they make no effort to avoid assigning `wakeupChance` to NPC SOS cards.
+
+To summarize, 
+
+- if you believe `atkTrack == NPCSOS` *contains* a typo, the following is required of you:
+    1. You need to assume that they made the same typo on 3 different occasions.
+    2. You need to assume that they incorrectly used the `__getActualTrackLevel` on 3 different occasions.
+    3. You need to assume that they intended on two core sections of `__calcToonAtkHit` never being used.
+    4. You need to assume that they checked for the "Drop on lured cogs scenario" *twice* for no reason in `__calcToonAtkHit`. (Since making the intended "typo fix" forces the game to use an otherwise unused error-checking block in `__calcToonAtkHp` to determine when Drop SOS should miss.)
+- if you believe `atkTrack == NPCSOS` *does not contain* a typo, the following is required of you:
+    1. You need to assume that `atkTrack == NPCSOS` is used as an error-checking conditional, which should never evaluate to True during normal execution.
+
+
 
 With the above in mind -- especially (4) and (5) -- I think it's clear that Toon-up, Trap, Lure, Sound and Drop SOS cards *were* intended to be treated as "normal" attacks with the exception of `randChoice`. So, I think there's a good chance that the performance decreases were also intended.
 
