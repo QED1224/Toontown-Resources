@@ -481,7 +481,7 @@ To summarize,
 - If you believe `atkTrack == NPCSOS` *does not contain* a typo, the following is required of you:
     1. You need to assume that `atkTrack == NPCSOS` is used as an error-checking conditional, which should never evaluate to True during normal execution.
 
-You're probably wondering which option is more likely, right? I believe that the `__getActualTrackLevel` holds the answer. If we can establish exactly what this function was designed to do, we can also provide a conclusive asnwer to the first part of this question. Let's take a look at it.
+You're probably wondering which option is more likely, right? I believe that the `__getActualTrackLevel` holds the answer. If we can establish exactly what this function was designed to do, we can also provide a conclusive answer to the first part of this question. Let's take a look at it.
 
 ```python
 # The first question that needs to be answered here is what are the possible 
