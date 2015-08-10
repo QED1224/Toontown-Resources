@@ -471,13 +471,65 @@ The basis of this counterargument is that a "typo," by definition, implies a hig
 
 To summarize, 
 
-- if you believe `atkTrack == NPCSOS` *contains* a typo, the following is required of you:
+- If you believe `atkTrack == NPCSOS` *contains* a typo, the following is required of you:
     1. You need to assume that they made the same typo on 3 different occasions.
     2. You need to assume that they incorrectly used the `__getActualTrackLevel` on 3 different occasions.
     3. You need to assume that they intended on two core sections of `__calcToonAtkHit` never being used.
     4. You need to assume that they checked for the "Drop on lured cogs scenario" *twice* for no reason in `__calcToonAtkHit`. (Since making the intended "typo fix" forces the game to use an otherwise unused error-checking block in `__calcToonAtkHp` to determine when Drop SOS should miss.)
-- if you believe `atkTrack == NPCSOS` *does not contain* a typo, the following is required of you:
+    
+
+- If you believe `atkTrack == NPCSOS` *does not contain* a typo, the following is required of you:
     1. You need to assume that `atkTrack == NPCSOS` is used as an error-checking conditional, which should never evaluate to True during normal execution.
+
+You're probably wondering which option is more likely, right? I believe that the `__getActualTrackLevel` holds the answer. If we can establish exactly what this function is designed to do, we can provide a conclusive asnwer to the first part of this question. Let's take a look at it.
+
+```python
+# The first question that needs to be answered here is what are the possible 
+# values of toonAttack[TOON_TRACK_COL]? Given that we know what should constitute
+# the toonAtkOrder, this is easy to answer: 
+# 
+# HEAL_TRACK = 0
+# TRAP_TRACK = 1
+# LURE_TRACK = 2
+# SOUND_TRACK = 3
+# THROW_TRACK = 4
+# SQUIRT_TRACK = 5
+# DROP_TRACK = 6
+# PETSOS = 96
+# NPCSOS = 97
+# FIRE = 100
+
+def __getActualTrackLevel(self, toonAttack):
+    if toonAttack[TOON_TRACK_COL] == NPCSOS:
+        # How do we get here? There's only one way: If toonAttack[TOON_TRACK_COL] == NPCSOS
+        track, level, hp = NPCToons.getNPCTrackLevelHp(toonAttack[TOON_TGT_COL])
+            if track != None:
+                # How do we get here? Any case in which track != None
+                # This is what *should* heppen for attack SOS cards;
+                # their "type" should converted from NPCSOS to track (atkTrack)
+                return (track, level) # return point: we're gone!
+            else:
+                # But wait ... what's this block for? This should *never* happen!
+                # How could we call an unknown SOS toon?! But ... what if it does?
+                self.notify.warning('No NPC with id: %d' % toonAttack[TOON_TGT_COL])
+    # How do we get here? There are two possible options:
+    # 1. toonAttack[TOON_TRACK_COL] is 0 - 6, 96 or 100 (fail toonAttack[TOON_TRACK_COL] == NPCSOS)
+    # 2. toonAttack[TOON_TRACK_COL] is 97! Yes, that's right, it's possible to return NPCSOS!
+    # This occurs if we pass toonAttack[TOON_TRACK_COL] == NPCSOS, but fail track != None
+    return (toonAttack[TOON_TRACK_COL], toonAttack[TOON_LVL_COL])
+```
+
+This means we know what the "mystery" conditional expression is designed to do! If `_getActualTrackLevel` ever returns `atkTrack == 97` (an error, essentially), it's supposed to catch it and terminate `__calcToonAtkHit` early. So, how can the "mystery" conditional contain a typo if it has a well-defined, consistenly used purpose?
+
+Now, you're probably thinking that we still haven't answered the original question -- and you're right. We know that (a) it's highly unlikely the "mystery" conditional expression contains a typo and (b) there's clear intent on the developer's part to have attack SOS cards be evaluated in a similar fashion to their regular counterparts. But, are the *performance discrepancies intentional*?
+
+This is a much more difficult question, as there are two reasonable schools of thought:
+
+1. No, it's likely that the performance discrepancies *were not intentional*. The fact that `randChoice` is altered gives clear indication that attack SOS cards were meant to be evaluated differently than their regular counterparts.
+
+2. Yes, it's likely that the performance discrepancies *were intentional*. It's highly unlikely that a development staff capable of creating such a sophisticated battle system would both fail to realize that setting `randChoice` to zero was ineffective *and* fail to correct it. They also made no apparent attempt at keeping `wakeupChance` from applying to SOS cards.
+
+You decide.
 
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
