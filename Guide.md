@@ -481,7 +481,7 @@ To summarize,
 - If you believe `atkTrack == NPCSOS` *does not contain* a typo, the following is required of you:
     1. You need to assume that `atkTrack == NPCSOS` is used as an error-checking conditional, which should never evaluate to True during normal execution.
 
-You're probably wondering which option is more likely, right? I believe that the `__getActualTrackLevel` holds the answer. If we can establish exactly what this function is designed to do, we can provide a conclusive asnwer to the first part of this question. Let's take a look at it.
+You're probably wondering which option is more likely, right? I believe that the `__getActualTrackLevel` holds the answer. If we can establish exactly what this function was designed to do, we can also provide a conclusive asnwer to the first part of this question. Let's take a look at it.
 
 ```python
 # The first question that needs to be answered here is what are the possible 
@@ -519,9 +519,9 @@ def __getActualTrackLevel(self, toonAttack):
     return (toonAttack[TOON_TRACK_COL], toonAttack[TOON_LVL_COL])
 ```
 
-This means we know what the "mystery" conditional expression is designed to do! If `_getActualTrackLevel` ever returns `atkTrack == 97` (an error, essentially), it's supposed to catch it and terminate `__calcToonAtkHit` early. So, how can the "mystery" conditional contain a typo if it has a well-defined, consistenly used purpose?
+This means we know what the "mystery" conditional expression was designed to do! If `_getActualTrackLevel` ever returned `atkTrack == 97` (an error, essentially), it was supposed to catch it and terminate `__calcToonAtkHit` early. So, how can the "mystery" conditional contain a typo if it had a well-defined, consistenly used purpose?
 
-Now, you're probably thinking that we still haven't answered the original question -- and you're right. We know that (a) it's highly unlikely the "mystery" conditional expression contains a typo and (b) there's clear intent on the developer's part to have attack SOS cards be evaluated in a similar fashion to their regular counterparts. But, are the *performance discrepancies intentional*?
+Now, you're probably thinking that we still haven't answered the original question -- and you're right. We know that (a) it's highly unlikely the "mystery" conditional expression contains a typo and (b) there's clear intent on the developer's part to have attack SOS cards be evaluated in a similar fashion to their regular counterparts. But, were the *performance discrepancies intentional*?
 
 This is a much more difficult question, as there are two reasonable schools of thought:
 
