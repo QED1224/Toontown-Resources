@@ -521,15 +521,19 @@ def __getActualTrackLevel(self, toonAttack):
 
 This means we know what the "mystery" conditional expression was designed to do! If `_getActualTrackLevel` ever returned `atkTrack == 97` (an error, essentially), it was supposed to catch it and terminate `__calcToonAtkHit` early. So, how can the "mystery" conditional contain a typo if it had a well-defined, consistenly used purpose?
 
-Now, you're probably thinking that we still haven't answered the original question -- and you're right. We know that (a) it's highly unlikely the "mystery" conditional expression contains a typo and (b) there's clear intent on the developer's part to have attack SOS cards be evaluated in a similar fashion to their regular counterparts. But, were the *performance discrepancies intentional*?
+Now, you're probably thinking that we still haven't answered the original question -- and you're right. We know that (a) it's highly unlikely the "mystery" conditional expression contains a typo and (b) there's clear intent on the developer's part to have attack SOS cards be evaluated in a similar fashion to their regular counterparts. But, were the *performance discrepancies intentional*? Here's what we know:
 
-This is a much more difficult question, as there are two reasonable schools of thought:
+- `randChoice` was deliberately set to 0 whenever an attack SOS card was used. This serves as pretty clear evidence that the developers, at the very least, wanted accuracy to be improved for SOS cards.
+- A user on a Toontown fansite reportedly received the following email in response to asking if SOS cards should be able to miss.
+   
+   > Thank you for your e-mail.
 
-1. No, it's likely that the performance discrepancies *were not intentional*. The fact that `randChoice` is altered gives clear indication that attack SOS cards were meant to be evaluated differently than their regular counterparts.
+   > 1. SOS drop cards are supposed to work 100% of the time. If you should encounter one that doesn't work, please submit a   bug report with a screen report attached so we can look into this for you further.
 
-2. Yes, it's likely that the performance discrepancies *were intentional*. It's highly unlikely that a development staff capable of creating such a sophisticated battle system would both fail to realize that setting `randChoice` to zero was ineffective *and* fail to correct it. They also made no apparent attempt at keeping `wakeupChance` from applying to SOS cards.
+   > 2. The stars at the bottom of the SOS cards are the potency. The more stars... The stronger the gag. The maximum number   of stars that you should be able to receive is five.
 
-You decide.
+   ([Original post can be found here.](http://www.mmocentralforums.com/forums/showpost.php?p=95226&postcount=15))
+
 
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
