@@ -11,6 +11,8 @@
 - [Chip 'n Dale's MiniGolf - 07/12/2007](#chip-n-dales-minigolf---07122007)
 - [Bossbot HQ - 03/6/2008](#bossbot-hq---0362008)
 - [Notable Clans](#notable-clans)
+- [Notable In-Game Bugs](#bugs)
+- [Notable Fansites](#fansites)
 - [Hall of Fame](#hall-of-fame)
 
 # Fishing - 11/14/2003
@@ -322,7 +324,21 @@
 
 [Content to be added]
 
-# Notable Fansites
+# Notable In-Game Bugs <a name="bugs"></a>
+
+## Fishing Trophies
+
+## Unlimited Trap SOS Cards
+
+## Goofy Speedway Trophies
+
+## Goofy Speedway Time Freeze
+
+## Rental Cannon Extra Laff
+
+## Unlimited Cog Building Summons
+
+# Notable Fansites <a name="fansites"></a>
 
 # Hall of Fame
 [[back to top](#contents)]
