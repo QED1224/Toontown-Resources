@@ -1,4 +1,5 @@
-# Contents
+# Contents <a name="contents"></a>
+
 - [Fishing - 11/14/2003](#fishing)
 - [Sellbot HQ - 12/19/2003](#sellbot)
 - [Black Cats - 10/29/2004](#black-cats)
@@ -342,7 +343,7 @@ Introduction date: 04/25/2006
 
 Fix date: TBD
 
-For some time following the release of Lawbot HQ, it was possible to use a single cog building summon to spawn multiple cog buildings (limited only by the number of buildings on a given street). This was accomplished by simply clicking the desired summon multiple times. Although you were given very little visual evidence that anything abnormal was occurring, the summon GUI was actually instantiating with every click. After clicking the summon a satisfactory number of times, the user could then close their book (without dismissing the summon pop-ups) and move down the street, summoning buildings as they went. However, a client crash would occur if too many were summoned in quick successio.
+For some time following the release of Lawbot HQ, it was possible to use a single cog building summon to spawn multiple cog buildings (limited only by the number of buildings on a given street). This was accomplished by simply clicking the desired summon multiple times. Although you were given very little visual evidence that anything abnormal was occurring, the summon GUI was actually instantiating with every click. After clicking the summon a satisfactory number of times, the user could then close their book (without dismissing the summon pop-ups) and move down the street, summoning buildings as they went. However, a client crash would occur if too many were summoned in quick succession.
 
 ### Related Discussion
 - [Neverending building drop...](http://www.mmocentralforums.com/forums/showthread.php?t=146817)
