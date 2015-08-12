@@ -333,7 +333,7 @@
 
 ## Goofy Speedway Trophies
 
-## Goofy Speedway Time Freeze
+[Note: toons who gained extra Laff..](http://www.mmocentralforums.com/forums/showpost.php?p=1926488&postcount=14)
 
 ## Multiple Cog Building Summons
 
