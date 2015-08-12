@@ -361,7 +361,7 @@ This was quite possibly the most impactful in-game bug Toontown ever saw, as it 
 5. Ejecting yourself from the Rental Cannon.
 6. While still in mid-air from the cannon, selecting a playground to teleport to *and*, before your toon disappeared into its blackhole, teleporting to your friend at the Toon HQ.
 7. Upon arriving at the Toon HQ, you were able to talk to an HQ Officer without losing the ability to move. This allowed for you to walk up to all 4 HQ Officers at the same time.
-8. After talking all 4 HQ Officers, you'd have a single task-selection GUI open, from which you'd select the desired Laff task (Note: you'd only have 20 seconds to compete this step due to the time-out mechanism).
+8. After talking to all 4 HQ Officers, you'd have a single task-selection GUI open, from which you'd select the desired Laff task (Note: you'd only have 20 seconds to compete this step due to the time-out mechanism).
 
 After doing the above, your Toontask page would show the same Laff task in all four slots. Once completed, you would gain 4x the reward.
 
@@ -369,7 +369,7 @@ After doing the above, your Toontask page would show the same Laff task in all f
 
 - [Is This a GM???](http://www.mmocentralforums.com/forums/showthread.php?t=153337)
 - [Has anyone seen????](http://www.mmocentralforums.com/forums/showthread.php?t=156873)
-- [Golfing 1](http://www.mmocentralforums.com/forums/showpost.php?p=1925193&postcount=5), [Golfing 2](http://www.mmocentralforums.com/forums/showpost.php?p=1925229&postcount=8), [Golfing 3](http://www.mmocentralforums.com/forums/showpost.php?p=1926465&postcount=12)
+- [Golfing](http://www.mmocentralforums.com/forums/showthread.php?p=1925193#post1925193)
 - [I saw the so called "Maxxed Toon"](http://www.mmocentralforums.com/forums/showthread.php?t=184408)
 - [So about this so called maxxed toon...](http://www.mmocentralforums.com/forums/showthread.php?t=184413)
 
