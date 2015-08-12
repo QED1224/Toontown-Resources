@@ -70,7 +70,7 @@ The information in this guide is primarily based on the source code of Toontown 
 
 ### Special Cases <a name="toon-atk-acc-1"></a>
 
-Fires, Trap and non-Drop/Lure SOS cards have 95%, 100% and 95% accuracy respectively. In addition, all three are always assigned an `atkHit` of 1, which means they were *guaranteed* to hit.
+Fires and Trap have 95% and 100% accuracy respectively. In addition, both are always assigned an `atkHit` of 1, which means they were *guaranteed* to hit.
 
 ### Equation <a name="toon-atk-acc-2"></a>
 
@@ -295,7 +295,7 @@ Yes, considering the conditions outlined in the [bonus section](#toon-atk-acc-6)
 
 ## Did using Trap give Lure an accuracy boost? <a name="trap-1"></a>
 
-Yes, Trap gags always counted as a hit on the cog on the round it was used on, regardless if the Trap was actually triggered or not. If one again considers the conditions in the [bonus section](#toon-atk-acc-6), Trap met the following conditions.
+Yes, Trap gags always counted as a hit on the cog for the round it was used on, regardless if the Trap was actually triggered or not. If one again considers the conditions in the [bonus section](#toon-atk-acc-6), Trap met the following conditions.
 
 - It is not the same track as Lure;
 - It always counts as a hit on the target
@@ -505,7 +505,7 @@ def __getActualTrackLevel(self, toonAttack):
         track, level, hp = NPCToons.getNPCTrackLevelHp(toonAttack[TOON_TGT_COL])
             if track != None:
                 # How do we get here? Any case in which track != None
-                # This is what *should* heppen for attack SOS cards;
+                # This is what *should* happen for attack SOS cards;
                 # their "type" should converted from NPCSOS to track (atkTrack)
                 return (track, level) # return point: we're gone!
             else:
