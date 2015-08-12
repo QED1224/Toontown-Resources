@@ -1,21 +1,21 @@
 # Contents
-- [Fishing - 11/14/2003](#fishing---11142003)
-- [Sellbot HQ - 12/19/2003](#sellbot-hq---12192003)
-- [Black Cats - 10/29/2004](#black-cats---10292004)
-- [Cashbot HQ - 02/17/2005](#cashbot-hq---02172005)
-- [Goofy Speedway - 07/15/2005](#goofy-speedway---07152005)
-- [Bears - 12/20/2005](#bears---12202005)
-- [Lawbot HQ - 04/25/2006](#lawbot-hq---04252006)
-- [Gardening - 07/14/2006](#gardening---07142006)
-- [Pigs - 03/7/2007](#pigs---0372007)
-- [Chip 'n Dale's MiniGolf - 07/12/2007](#chip-n-dales-minigolf---07122007)
-- [Bossbot HQ - 03/6/2008](#bossbot-hq---0362008)
-- [Notable Clans](#notable-clans)
+- [Fishing - 11/14/2003](#fishing)
+- [Sellbot HQ - 12/19/2003](#sellbot)
+- [Black Cats - 10/29/2004](#black-cats)
+- [Cashbot HQ - 02/17/2005](#cashbot)
+- [Goofy Speedway - 07/15/2005](#racing)
+- [Bears - 12/20/2005](#bears)
+- [Lawbot HQ - 04/25/2006](#lawbot)
+- [Gardening - 07/14/2006](#gardening)
+- [Pigs - 03/7/2007](#pigs)
+- [Chip 'n Dale's MiniGolf - 07/12/2007](#minigolf)
+- [Bossbot HQ - 03/6/2008](#bossbot)
+- [Notable Clans](#clans)
 - [Notable In-Game Bugs](#bugs)
 - [Notable Fansites](#fansites)
 - [Hall of Fame](#hall-of-fame)
 
-# Fishing - 11/14/2003
+# Fishing - 11/14/2003 <a name="fishing"></a>
 [[back to top](#contents)]
 
 ## First to Max
@@ -35,7 +35,7 @@
 * [Killer Whale!!! (70 Species)](http://www.mmocentralforums.com/forums/showthread.php?t=38830)
 * [ROLL CALL: Toons with 70 Species](http://www.mmocentralforums.com/forums/showthread.php?t=42607)
 
-# Sellbot HQ - 12/19/2003
+# Sellbot HQ - 12/19/2003 <a name="sellbot"></a>
 [[back to top](#contents)]
 
 ## First to Max
@@ -84,7 +84,7 @@
 - [I did it! I solo'd the VP!!](http://www.mmocentralforums.com/forums/showthread.php?t=62593)
 - [Toontown World Record Solo Achievements](http://www.gamingconnected.com/showthread.php?351-Toontown-World-Record-Solo-Achievements)
 
-# Black Cats - 10/29/2004
+# Black Cats - 10/29/2004 <a name="black-cats"></a>
 [[back to top](#contents)]
 
 ## First to Max
@@ -96,7 +96,7 @@
 - [116/117 Laff Black Cats](http://www.mmocentralforums.com/forums/showthread.php?t=62168&page=5)
 - [117 Laff Toons List - Ongoing](http://www.mmocentralforums.com/forums/showthread.php?t=55667&page=9)
 
-# Cashbot HQ - 02/17/2005
+# Cashbot HQ - 02/17/2005 <a name="cashbot"></a>
 [[back to top](#contents)]
 
 ## First to Max
@@ -142,7 +142,7 @@
 - [Waldo Hit Rb 50!!!!!!](http://www.mmocentralforums.com/forums/showthread.php?t=54965)
 - [Another 117! - The second?](http://www.mmocentralforums.com/forums/showthread.php?t=55487)
 
-# Goofy Speedway - 07/15/2005
+# Goofy Speedway - 07/15/2005 <a name="racing"></a>
 [[back to top](#contents)]
 
 ## First to Max
@@ -167,7 +167,7 @@
 - [Anyone else not get grand touring today?](http://www.mmocentralforums.com/forums/showthread.php?t=89205)
 - [January 27, 2006 sv1.0.18.39.test.v3](http://www.mmocentralforums.com/forums/showthread.php?t=89205)
 
-# Bears - 12/20/2005
+# Bears - 12/20/2005 <a name="bears"></a>
 [[back to top](#contents)]
 
 ## First to Max
@@ -181,7 +181,7 @@
 
 - [List of Top Bears](http://www.mmocentralforums.com/forums/showthread.php?t=92065)
 
-# Lawbot HQ - 04/25/2006
+# Lawbot HQ - 04/25/2006 <a name="lawbot"></a>
 [[back to top](#contents)]
 
 ## First to Max
@@ -218,7 +218,7 @@
 - [Lawbot HQ - Top Toons](http://www.mmocentralforums.com/forums/showthread.php?t=100704&page=44)
 - [BT solo's the CJ!](http://www.mmocentralforums.com/forums/showthread.php?t=142220)
 
-# Gardening - 07/14/2006
+# Gardening - 07/14/2006 <a name="gardening"></a>
 [[back to top](#contents)]
 
 ## First to Max
@@ -242,7 +242,7 @@
 - [Charles Maxes Gardening](http://www.mmocentralforums.com/forums/showthread.php?t=132094)
 - [Thank You, Flower Searchers!](http://www.mmocentralforums.com/forums/showthread.php?t=131952)
 
-# Pigs - 03/7/2007
+# Pigs - 03/7/2007 <a name="pigs"></a>
 [[back to top](#contents)]
 
 ## First to Max
@@ -255,7 +255,7 @@
 - [Congrats to ze first piggy to make 129!](http://www.mmocentralforums.com/forums/showthread.php?t=151081)
 - [70 fish for Matt Wilder Horse?](http://www.mmocentralforums.com/forums/showthread.php?t=151116)
 
-# Chip 'n Dale's MiniGolf - 07/12/2007
+# Chip 'n Dale's MiniGolf - 07/12/2007 <a name="minigolf"></a>
 [[back to top](#contents)]
 
 ## First to Max
@@ -270,7 +270,7 @@
 
 - [Roll Call: Maxxed Golf Toons](http://www.mmocentralforums.com/forums/showthread.php?t=161739)
 
-# Bossbot HQ - 03/6/2008
+# Bossbot HQ - 03/6/2008 <a name="bossbot"></a>
 [[back to top](#contents)]
 
 ## First to Max
@@ -313,7 +313,7 @@
 - [andrew solo CEO from start to finish!!!!](http://www.mmocentralforums.com/forums/showthread.php?t=182185)
 - [255 Pink Slips](http://www.mmocentralforums.com/forums/showthread.php?t=185151)
 
-# Notable Clans
+# Notable Clans <a name="clans"></a>
 [[back to top](#contents)]
 
 ## Cold Callers Guild <a name="nc-1"></a>
@@ -342,14 +342,14 @@ Introduction date: 04/25/2006
 
 Fix date: TBD
 
-For some time following the release of Lawbot HQ, it was possible to use a single cog building summon to spawn multiple cog buildings (limited only by the number of buildings on a given street). This was accomplished by simply clicking the desired summon multiple times. Although you were given very little visual evidence that anything abnormal was occurring, the summon GUI was actually instantiating with every click. After clicking the summon a satisfactory number of times, the user could then close their book (without dismissing the summon pop-ups) and move down the street, summoning buildings as they went. However, if too many were summoned in quick succession, a client crash would occur.
+For some time following the release of Lawbot HQ, it was possible to use a single cog building summon to spawn multiple cog buildings (limited only by the number of buildings on a given street). This was accomplished by simply clicking the desired summon multiple times. Although you were given very little visual evidence that anything abnormal was occurring, the summon GUI was actually instantiating with every click. After clicking the summon a satisfactory number of times, the user could then close their book (without dismissing the summon pop-ups) and move down the street, summoning buildings as they went. However, a client crash would occur if too many were summoned in quick successio.
 
 ### Related Discussion
 - [Neverending building drop...](http://www.mmocentralforums.com/forums/showthread.php?t=146817)
 
 # Notable Fansites <a name="fansites"></a>
 
-# Hall of Fame
+# Hall of Fame <a name="hall-of-fame"></a>
 [[back to top](#contents)]
 
 ## aj
