@@ -336,7 +336,16 @@
 
 ## Rental Cannon Extra Laff
 
-## Unlimited Cog Building Summons
+## Multiple Cog Building Summons
+
+Introduction date: 04/25/2006
+
+Fix date: TBD
+
+For some time following the release of Lawbot HQ, it was possible to use a single cog building summon to spawn multiple cog buildings (limited only be the number of buildings on a given street). This was accomplished by simply clicking the desired summon multiple times. Although you were given very little visual evidence that anything abnormal was occuring, the summon GUI was actually instantiating with every click -- allowing for the summon to be called multiple times.
+
+### Related Discussion
+- [Neverending building drop...](http://www.mmocentralforums.com/forums/showthread.php?t=146817)
 
 # Notable Fansites <a name="fansites"></a>
 
