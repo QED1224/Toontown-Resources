@@ -335,18 +335,43 @@
 
 ## Goofy Speedway Time Freeze
 
-## Rental Cannon Extra Laff
-
 ## Multiple Cog Building Summons
 
 Introduction date: 04/25/2006
 
 Fix date: TBD
 
-For some time following the release of Lawbot HQ, it was possible to use a single cog building summon to spawn multiple cog buildings (limited only by the number of buildings on a given street). This was accomplished by simply clicking the desired summon multiple times. Although you were given very little visual evidence that anything abnormal was occurring, the summon GUI was actually instantiating with every click. After clicking the summon a satisfactory number of times, the user could then close their book (without dismissing the summon pop-ups) and move down the street, summoning buildings as they went. However, a client crash would occur if too many were summoned in quick succession.
+For some time following the release of Lawbot HQ, it was possible to use a single cog building summon to spawn multiple cog buildings (limited only by the number of buildings on a given street). This was accomplished by simply clicking the desired summon multiple times. Although you were given very little visual evidence that anything abnormal was occurring, the summon GUI was actually instantiating with every click. After clicking the summon a satisfactory number of times, the user could then close their Shticker Book (without dismissing the summon pop-ups) and move down the street, summoning buildings as they went. However, a client crash would occur if too many were summoned in quick succession.
 
 ### Related Discussion
 - [Neverending building drop...](http://www.mmocentralforums.com/forums/showthread.php?t=146817)
+
+## Rental Cannon Extra Laff
+
+Introduction date: 09/26/2007
+
+Fix date: TBD
+
+This was quite possibly the most impactful in-game bug Toontown ever saw, as it allowed exploiters to gain 4x the Laff (server-side) for any Laff Toontask available at all four HQ Officers. The was accomplished by doing the following:
+
+1. Purchasing Rental Cannons.
+2. Having a friend wait inside a Toon HQ.
+3. Performing the first step of the well-known "flying" glitch at your Estate. That is, openning your Shticker Book in mid-air after jumping off of a fishing pier into the water below. This should have resulted in being able to move while the Shticker Book was open.
+4. Entering a Rental Cannon with the Shticker Book open.
+5. Ejecting yourself from the Rental Cannon.
+6. While still in mid-air from the cannon, selecting a playground to teleport to *and*, before your toon disappeared into its blackhole, teleporting to your friend at the Toon HQ.
+7. Upon arriving at the Toon HQ, you were able to talk to an HQ Officer without losing the ability to move. This allowed for you to walk up to all 4 HQ Officers at the same time.
+8. After talking all 4 HQ Officers, you'd have a single task-selection GUI open, from which you'd select the desired Laff task (Note: you'd only have 20 seconds to compete this step due to the time-out mechanism).
+
+After doing the above, your Toontask page would show the same Laff task in all four slots. Once completed, you would gain 4x the reward.
+
+### Related Discussion
+
+- [Is This a GM???](http://www.mmocentralforums.com/forums/showthread.php?t=153337)
+- [Has anyone seen????](http://www.mmocentralforums.com/forums/showthread.php?t=156873)
+- [Golfing 1](http://www.mmocentralforums.com/forums/showpost.php?p=1925193&postcount=5), [Golfing 2](http://www.mmocentralforums.com/forums/showpost.php?p=1925229&postcount=8), [Golfing 3](http://www.mmocentralforums.com/forums/showpost.php?p=1926465&postcount=12)
+- [I saw the so called "Maxxed Toon"](http://www.mmocentralforums.com/forums/showthread.php?t=184408)
+- [So about this so called maxxed toon...](http://www.mmocentralforums.com/forums/showthread.php?t=184413)
 
 # Notable Fansites <a name="fansites"></a>
 
