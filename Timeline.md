@@ -373,6 +373,11 @@ After doing the above, your Toontask page would show the same Laff task in all f
 - [I saw the so called "Maxxed Toon"](http://www.mmocentralforums.com/forums/showthread.php?t=184408)
 - [So about this so called maxxed toon...](http://www.mmocentralforums.com/forums/showthread.php?t=184413)
 
+## Rare In-Game Occurances
+
+- Dr. H.Knockenflicker
+- Wascally Wabbit
+
 # Notable Fansites <a name="fansites"></a>
 
 # Hall of Fame <a name="hall-of-fame"></a>
