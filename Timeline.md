@@ -328,6 +328,7 @@
 [Content to be added]
 
 # Notable In-Game Bugs <a name="bugs"></a>
+[[back to top](#contents)]
 
 ## Fishing Trophies
 
@@ -392,8 +393,10 @@ Notably, this bug allowed the toon to be one of two (joining Loopy Goopy Zooblef
 - [Gardening](http://www.mmocentralforums.com/forums/showpost.php?p=1547565&postcount=15)
 
 # Notable Fansites <a name="fansites"></a>
+[[back to top](#contents)]
 
 # Developers Spotted In-game <a name="devs"></a>
+[[back to top](#contents)]
 
 Bewteen 2007 and 2008, many Toontown developers were spotted in-game. Here are a few of the recorded sightings:
 
@@ -413,12 +416,6 @@ Bewteen 2007 and 2008, many Toontown developers were spotted in-game. Here are a
 
 <p align="center">
   <img src="http://i.imgur.com/LviS2on.png?1" height="200" width="300">
-</p>
-
-- Colonel Googlebrains (02/20/08):
-
-<p align="center">
-  <img src="http://i.imgur.com/mbpwzFa.png?1" height="200" width="300">
 </p>
 
 # Hall of Fame <a name="hall-of-fame"></a>
