@@ -597,6 +597,32 @@ Every cycle, each prosecuting cog had a 50/50 chance to either (1) attack a toon
 
 ## How was the scale related to the jury? <a name="cj-4"></a>
 
+When determining how the amount of Toon jurors affected the scale, the following formula was used.
+
+```python
+jurorsOver = self.numToonJurorsSeated - ToontownGlobals.LawbotBossJurorsForBalancedScale
+dmgAdjust = jurorsOver * ToontownGlobals.LawbotBossDamagePerJuror
+```
+`jurorsOver` was determined by taking the amount of Toon jurors seated and then subtracting it by the amount needed for a balanced scale (8 for non-modified servers). That amount was then multiplied by the damage amount each Toon juror done, which was set to 68 per toon juror. The result was then referred to as `dmgAdjust`. 
+
+The initial damage of the scale was calculated at 1350. `dmgAdjust` was then added to the initial damage of the scale. Given how the formula is calculated, we can establish the following ratios for the initial amount of evidence in the prosecution and defense pans, based on the amount of Toon jurors seated.
+
+| # Toon Jurors seated | Initial Toon Evidence | Initial Cog Evidence|
+|:---------------------:|:--------------:|:-------------:|
+| 0 | 806 | 1894 |
+| 1 | 874 | 1826 |
+| 2 | 942 | 1758 |
+| 3 | 1010 | 1690 |
+| 4 | 1078 | 1622 |
+| 5 | 1146 | 1554 |
+| 6 | 1214 | 1486 |
+| 7 | 1282 | 1418 |
+| 8 | 1350 | 1350 |
+| 9 | 1418 | 1282 |
+| 10 | 1486 | 1214 |
+| 11 | 1554 | 1146 |
+| 12 | 1622 | 1078 |
+
 ## What was the optimal scalers-to-stunners ratio? <a name="cj-5"></a>
 
 # C.E.O. <a name="ceo"></a>
