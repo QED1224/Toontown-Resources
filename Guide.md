@@ -411,6 +411,25 @@ Given (Max rounds - N) >= 0,
 P(N rounds) = [1 - (wakeupChance / 100)] ^ (N - 1)
 ```
 
+Here are some example calculations:
+
+```
+Given: a Lureless toon using Lil' Oldman
+Question: what is the probability that a level 12 cog will stay lured for 3 rounds?
+Answer: 
+
+1. atkAcc = 70 (propAcc) + 0 (trackExp) + (-55) (tgtDef) + 0 (bonus) = 15
+2. wakeupChance = 100 - (15 * 2) = 70
+3. P(3 rounds) = [1 - (70 / 100)] ^ (3 - 1) = 0.09
+
+Given: a Lureless toon using Lil' Oldman
+Question: what is the probability that 4 level 12 cogs will stay lured for 3 rounds?
+Answer:
+
+1. The probability that a single level 12 cog will stay lured for 3 rounds is 9.0%. 
+2. The probability that all 4 will stay lured for 3 rounds is (.09) ^ 4 = 0.00006561.
+```
+
 ### Battle Simulations
 
 - [Maxed Lure; Lil' Oldman; Level 12 cog](http://pastebin.com/pr9LVZZ8)
