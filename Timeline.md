@@ -12,9 +12,11 @@
 - [Chip 'n Dale's MiniGolf - 07/12/2007](#minigolf)
 - [Bossbot HQ - 03/6/2008](#bossbot)
 - [Notable Clans](#clans)
-- [Notable In-Game Bugs](#bugs)
+- [Notable In-game Bugs](#bugs)
 - [Notable Fansites](#fansites)
+- [Developers Spotted In-game](#devs)
 - [Hall of Fame](#hall-of-fame)
+
 
 # Fishing - 11/14/2003 <a name="fishing"></a>
 [[back to top](#contents)]
@@ -373,12 +375,13 @@ After doing the above, your Toontask page would show the same Laff task in all f
 - [I saw the so called "Maxxed Toon"](http://www.mmocentralforums.com/forums/showthread.php?t=184408)
 - [So about this so called maxxed toon...](http://www.mmocentralforums.com/forums/showthread.php?t=184413)
 
-## Rare In-Game Occurances
+## Unknown Bugs
 
 - Dr. H.Knockenflicker
-- Wascally Wabbit
 
 # Notable Fansites <a name="fansites"></a>
+
+# Developers Spotted In-game <a name="devs"></a>
 
 # Hall of Fame <a name="hall-of-fame"></a>
 [[back to top](#contents)]
@@ -512,5 +515,4 @@ After doing the above, your Toontask page would show the same Laff task in all f
 
 - Soloed all 4 bosses
 - Author of 19 widely used Toontown guides
-
 
