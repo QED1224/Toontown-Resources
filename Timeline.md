@@ -375,9 +375,21 @@ After doing the above, your Toontask page would show the same Laff task in all f
 - [I saw the so called "Maxxed Toon"](http://www.mmocentralforums.com/forums/showthread.php?t=184408)
 - [So about this so called maxxed toon...](http://www.mmocentralforums.com/forums/showthread.php?t=184413)
 
-## Unknown Bugs
+## Other Extra Laff Bugs
 
-- Dr. H.Knockenflicker
+- Dr.H.Knochenflicker
+
+Dr.H.Knochenflicker received an extra three Laff points at some point in 2004. The origin of the the extra Laff is disputed, but its owner claims to have gained it through a Toontask-related bug:
+
+> I think this had to do with some previous game updates on the server. So if that toon was just doing certain toon tasks, the game was updated and afterwards these toons could receive the tasks for gaining laff points again. I am just guessing, but this is somehow how it happened.
+
+Notably, this bug allowed the toon to be one of two (joining Loopy Goopy Zooblefingers) to achieve 121 Laff on the first day Lawbot HQ was released and one of two (joining Toon/Reign) toons to achieve 137 Laff, through in-game means, without completely maxing Toontown.
+
+### Related Discussion
+
+- [133!](http://www.mmocentralforums.com/forums/showthread.php?t=181114)
+- [more than 120 laff is possible](http://www.mmocentralforums.com/forums/showthread.php?t=75482)
+- [Gardening](http://www.mmocentralforums.com/forums/showpost.php?p=1547565&postcount=15)
 
 # Notable Fansites <a name="fansites"></a>
 
