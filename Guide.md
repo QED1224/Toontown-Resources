@@ -47,6 +47,7 @@
     - [When multiple gags of the same track were used on the same cog, how was accuracy calculated?](#misc-2)
     - [Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results?](#misc-3)
     - [Did doodle tricks count as a stun in battle?](#misc-4)
+    - [Did Fires count as a stun?](#misc-5)
 - [Credits](#credits)
 - [Appendix A: Cog Attack Frequencies](#appendix-a)
 - [Appendix B: Cog Attack Damages](#appendix-b)
@@ -685,6 +686,8 @@ Here, the attack order is 1, 2, 3. This means that Toon 1's Safe is evaluated, t
 ## Did doodle tricks count as a stun in battle? <a name="misc-4"></a>
 
 Yes, Doodle tricks counted as a stun in battles, provided that the trick was successful. Tricks counted as their own individual track, meaning they would satisfy the conditions listed in the [bonus section](#toon-atk-acc-6).
+
+## Did Fires count as a stun?<a name="misc-5"></a>
 
 # Credits <a name="credits"></a>
 [[back to top](#contents)]
