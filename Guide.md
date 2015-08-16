@@ -801,6 +801,286 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<th>Level 5</th>
 			<th>Level 6</th>
 		</tr>
+		<tr>
+			<td align="center">Fountain Pencil</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+		</tr>
+		<tr>
+			<td align="center">Rub-Out</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+		</tr>
+		<tr>
+			<td align="center">Finger Wag</td>
+			<td align="center">35</td>
+			<td align="center">30</td>
+			<td align="center">25</td>
+			<td align="center">20</td>
+			<td align="center">15</td>
+		</tr>
+		<tr>
+			<td align="center">Write Off</td>
+			<td align="center">5</td>
+			<td align="center">10</td>
+			<td align="center">15</td>
+			<td align="center">20</td>
+			<td align="center">25</td>
+		</tr>
+		<tr>
+			<td align="center">Fill With Lead</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+		</tr>
+		<tr>
+			<th>Yesman</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+		</tr>
+		<tr>
+			<td align="center">Rubber Stamp</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+		</tr>
+		<tr>
+			<td align="center">Razzle Dazzle</td>
+			<td align="center">25</td>
+			<td align="center">20</td>
+			<td align="center">15</td>
+			<td align="center">10</td>
+			<td align="center">5</td>
+		</tr>
+		<tr>
+			<td align="center">Synergy</td>
+			<td align="center">5</td>
+			<td align="center">10</td>
+			<td align="center">15</td>
+			<td align="center">20</td>
+			<td align="center">25</td>
+		</tr>
+		<tr>
+			<td align="center">Tee Off</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+		</tr>
+		<tr>
+			<th>Micromanager</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+		</tr>
+		<tr>
+			<td align="center">Demotion</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+		</tr>
+		<tr>
+			<td align="center">Finger Wag</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+		</tr>
+		<tr>
+			<td align="center">Fountain Pen</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+		</tr>
+		<tr>
+			<td align="center">Brain Storm</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+		</tr>
+		<tr>
+			<td align="center">Buzzword</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+		</tr>
+		<tr>
+			<th>Downsizer</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+		</tr>
+		<tr>
+			<td align="center">Canned</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+		</tr>
+		<tr>
+			<td align="center">Downsize</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+		</tr>
+		<tr>
+			<td align="center">Pinkslip</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+		</tr>
+		<tr>
+			<td align="center">Sacked</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+		</tr>
+		<tr>
+			<th>Head Hunter</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+		</tr>
+		<tr>
+			<td align="center">Fountain Pen</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+		</tr>
+		<tr>
+			<td align="center">Glower Power</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+		</tr>
+		<tr>
+			<td align="center">Half Windsor</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+		</tr>
+		<tr>
+			<td align="center">Head Shrink</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+		</tr>
+		<tr>
+			<td align="center">Rolodex</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+		</tr>
+		<tr>
+			<th>Corporate Raider</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+		</tr>
+		<tr>
+			<td align="center">Canned</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+		</tr>
+		<tr>
+			<td align="center">Evil Eye</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+		</tr>
+		<tr>
+			<td align="center">Play Hardball</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+		</tr>
+		<tr>
+			<td align="center">Rolodex</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+		</tr>
+		<tr>
+			<th>The Big Cheese</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+			<th>Level 12</th>
+		</tr>
+		<tr>
+			<td align="center">Tee Off</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+		</tr>
+		<tr>
+			<td align="center">Glower Power</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+		</tr>
 </table>
 
 # Appendix B: Cog Attack Damages <a name="appendix-b"></a>
@@ -853,4 +1133,5 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<th>Level 5</th>
 			<th>Level 6</th>
 		</tr>
+		
 </table>
