@@ -181,20 +181,30 @@ Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function used th
     - if it's not, continue looping.
 4. Return `attackNum`
 
-Considering the above, we may establish the following formula:
+Let's look at an example. Here's the output of an in-game simulation of the above algorithm for a Level 3 Yesman:
 
-![equation](http://i.imgur.com/aLbAbMT.png)
-
-Where a<sub>0</sub> is always 0 and a<sub>1</sub> ... a<sub>n</sub> represent the individual frequencies for given cog attacks. For example, here's how one would perform the calculations for a level 1 Flunky:
-
-```python
-atk_1 = "Pound Key", Freq = 0.3
-atk_2 = "Shred", Freq = 0.1
-atk_3 = "Clip on Tie", Freq = 0.6
-
-P(atk_1) = (0 + 0.3) * (1 - (0 + 0)) = 0.3 * 1 = 0.30
-P(atk_2) = (0 + 0.3 + 0.1) * ((1 - (0 + 0)) * (1 - (0 + 0.3))) = 0.4 * 0.7 = 0.28
-P(atk_3) = (0 + 0.3 + 0.1 + 0.6) * ((1 - (0 + 0)) * (1 - (0 + 0.3)) * (1 - (0 + 0.3 + 0.1))) = 1 * ((1 - 0) * (1 - 0.3) * (1 - 0.4)) = 1 * (0.7 * 0.6) = 0.42
+```
+:SuitBattleGlobals(debug): Entering pickSuitAttack...
+:SuitBattleGlobals(debug): attacks:
+(('RubberStamp', (2, 2, 3, 3, 4), (75, 75, 75, 75, 75), (35, 35, 35, 35, 35)),
+('RazzleDazzle', (1, 1, 1, 1, 1), (50, 50, 50, 50, 50), (25, 20, 15, 10, 5)),
+('Synergy', (4, 5, 6, 7, 8), (50, 60, 70, 80, 90), (5, 10, 15, 20, 25)),
+('TeeOff', (3, 3, 4, 4, 5), (50, 60, 70, 80, 90), (35, 35, 35, 35, 35)))
+:SuitBattleGlobals(debug): suitLevel: 0
+:SuitBattleGlobals(debug):
+        randNum: 44
+        count: 0
+        index: 0
+:SuitBattleGlobals(debug): Looping through attacks...
+:SuitBattleGlobals(debug):
+            count: 35
+            index: 0
+:SuitBattleGlobals(debug): 44 < 35?
+:SuitBattleGlobals(debug):
+            count: 60
+            index: 1
+:SuitBattleGlobals(debug): 44 < 60?
+:SuitBattleGlobals(debug): picking RazzleDazzle
 ```
 
 ### Which toon(s) will be attacked? <a name="cog-atk-acc-2"></a>
