@@ -175,7 +175,7 @@ There are two variables used in the calculation of `atk` (the attack to be used)
 ```
 relative level = cog level - base level
 ```
-Where "cog level" as the actual level of the cog and "base level" was the lowest possible level of the cog. From here, the `pickSuitAttack` function used the following process to determine which attack would be used:
+Where "cog level" was the actual level and "base level" was the lowest possible level. From here, the `pickSuitAttack` function used the following process to determine which attack would be used:
 
 1. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` <= 99.
 2. Loop through each possible attack, summing the frequencies associated with `theSuit`'s relative level. This sum is stored in a variable `count`.
