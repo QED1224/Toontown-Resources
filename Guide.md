@@ -170,21 +170,21 @@ The following three sections outline the calculations that were performed for ea
 
 ### Which attack will be used? <a name="cog-atk-acc-1"></a>
 
-There are two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represented the cog being used in the calculation, while the latter was a tuple containing the information for each of `theSuit`'s possible attacks. Also note that a "relative" cog level was used for frequency calculation purposes. This is calculated as follows.
+There are two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represented the cog being used in the calculation, while the latter was a tuple containing the information for each of `theSuit`'s possible attacks. Also note that a "relative" cog level was used for frequency calculation purposes. This was calculated as follows.
 
 ```
 relative level = cog level - base level
 ```
 Where "cog level" as the actual level of the cog and "base level" was the lowest possible level of the cog. From here, the `pickSuitAttack` function used the following process to determine which attack would be used:
 
-1. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` <= 99 and set a variable `attackNum` to `None`.
+1. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` <= 99.
 2. Loop through each possible attack, summing the frequencies associated with `theSuit`'s relative level. This sum is stored in a variable `count`.
 3. On each iteration, check if `randNum` is less than `count`.
-    - if it is, set `attackNum` to an integer representing the number of iterations (that is, 0 for the first, 1 for the second, etc).
+    - if it is, set `attackNum` to an integer representing the number of iterations.
     - if it's not, continue looping.
 4. Return `attackNum`
 
-Let's look at an example. Here's the output of an in-game simulation of the above algorithm for a Level 3 Yesman:
+Let's look at an example. Here's the output of a simulation of the above algorithm for a Level 3 Yesman:
 
 ```
 :SuitBattleGlobals(debug): Entering pickSuitAttack...
