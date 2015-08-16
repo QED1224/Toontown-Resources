@@ -229,7 +229,7 @@ Synergy: 249389 (4.98778%)
 TeeOff: 1749296 (34.98592%)
 ```
 
-So, for any cog and attack, P(attack) = Freq(attack). See [Appendix A](#appendix-a) for each cog attack's frequencies.
+So, for any cog, the probability that a given attack will be chosen is equal to the attack's frequency value as listed in [Appendix A](#appendix-a).
 
 ### Which toon(s) will be attacked? <a name="cog-atk-acc-2"></a>
 
