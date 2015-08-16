@@ -207,6 +207,27 @@ Let's look at an example. Here's the output of an in-game simulation of the abov
 :SuitBattleGlobals(debug): picking RazzleDazzle
 ```
 
+As you can see above,
+
+- `RubberStamp` had a 35% chance of being selected (0 <= `randNum` < 35)
+- `RazzleDazzle` had a 25% chance of being selected (35 <= `randNum` < 60)
+- `Synergy` had a 5% chance of being selected (60 <= `randNum` < 65)
+- `TeeOff` had a 35% chance of being selected (65 <= `randNum` < 99)
+
+In addition, since `randNum` has an equal chance to be any integer between 0 and 99, we would expect to see (roughly) the above percentages as the number of trials gets sufficiently large. Here are the results of simulating a Level 3 Yesman choosing an attack 5000000 times:
+
+```
+Cog: Yesman
+Level: 3
+Trials: 5000000
+RubberStamp: 1750610 (35.0122%)
+RazzleDazzle: 1250705 (25.0141%)
+Synergy: 249389 (4.98778%)
+TeeOff: 1749296 (34.98592%)
+```
+
+So, for any cog and attack, P(attack) = Freq(attack). See [Appendix A](#appendix-a) for each cog attack's frequencies.
+
 ### Which toon(s) will be attacked? <a name="cog-atk-acc-2"></a>
 
 If the selected cog attack is a group attack, all active toons would be attacked. For single-toon attacks, 75% percent of the time the following algorithm was used to select a toon:
