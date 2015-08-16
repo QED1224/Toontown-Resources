@@ -170,12 +170,15 @@ The following three sections outline the calculations that were performed for ea
 
 ### Which attack will be used? <a name="cog-atk-acc-1"></a>
 
-There are two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represented the cog being used in the calculation, while the latter was a tuple containing the information for each of `theSuit`'s possible attacks.
+There are two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represented the cog being used in the calculation, while the latter was a tuple containing the information for each of `theSuit`'s possible attacks. Also note that a "relative" cog level was used for frequency calculation purposes. This is calculated as follows.
 
-Once `theSuit` and `attacks` are assigned, the `pickSuitAttack` function used the following process to determine which attack would be used:
+```
+relative level = cog level - base level
+```
+Where "cog level" as the actual level of the cog and "base level" was the lowest possible level of the cog. From here, the `pickSuitAttack` function used the following process to determine which attack would be used:
 
 1. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` <= 99 and set a variable `attackNum` to `None`.
-2. Loop through each possible attack, summing the frequencies associated with `theSuit`'s level. This sum is stored in a variable `count`.
+2. Loop through each possible attack, summing the frequencies associated with `theSuit`'s relative level. This sum is stored in a variable `count`.
 3. On each iteration, check if `randNum` is less than `count`.
     - if it is, set `attackNum` to an integer representing the number of iterations (that is, 0 for the first, 1 for the second, etc).
     - if it's not, continue looping.
@@ -214,7 +217,7 @@ As you can see above,
 - `Synergy` had a 5% chance of being selected (60 <= `randNum` < 65)
 - `TeeOff` had a 35% chance of being selected (65 <= `randNum` < 99)
 
-In addition, since `randNum` has an equal chance to be any integer between 0 and 99, we would expect to see (roughly) the above percentages as the number of trials gets sufficiently large. Here are the results of simulating a Level 3 Yesman choosing an attack 5000000 times:
+In addition, since `randNum` had an equal chance to be any integer between 0 and 99, we would have expected to see (roughly) the above percentages as the number of trials got sufficiently large. Here are the results of simulating a Level 3 Yesman choosing an attack 5000000 times:
 
 ```
 Cog: Yesman
