@@ -697,6 +697,55 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 # Appendix A: Cog Attack Frequencies <a name="appendix-a"></a>
 [[back to top](#contents)]
 
+<table>
+		<tr>
+			<th colspan="6">Bossbots</th>
+		</tr>
+		<tr>
+			<th>Flunky</th>
+			<th>Level 1</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+		</tr>
+		<tr>
+			<td align="center">Pound Key</td>
+			<td align="center">30</td>
+			<td align="center">35</td>
+			<td align="center">40</td>
+			<td align="center">45</td>
+			<td align="center">50</td>
+		</tr>
+		<tr>
+			<td align="center">Shred</td>
+			<td align="center">10</td>
+			<td align="center">15</td>
+			<td align="center">20</td>
+			<td align="center">25</td>
+			<td align="center">30</td>
+		</tr>
+		<tr>
+			<td align="center">Clip-on Tie</td>
+			<td align="center">60</td>
+			<td align="center">50</td>
+			<td align="center">40</td>
+			<td align="center">30</td>
+			<td align="center">20</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Pencil Pusher</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+		</tr>
+</table>
+
 # Appendix B: Cog Attack Damages <a name="appendix-b"></a>
 [[back to top](#contents)]
 
@@ -747,4 +796,4 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<th>Level 5</th>
 			<th>Level 6</th>
 		</tr>
-	</table
+</table>
