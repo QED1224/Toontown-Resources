@@ -284,7 +284,7 @@ Yes, Doodle tricks had individual accuracy values for each trick. These values w
 To determine if a trick would be successful or not, the following equation could be used.
 
 ```python
-cutoff = trickAcc*(minApt + ((maxApt - minApt) * aptitude))
+cutoff = trickAcc * (minApt + ((maxApt - minApt) * aptitude))
 ```
 
 `cutoff` is the end result of the following variables being calculated. `trickAcc` referred to the base accuracy value of the trick being used (see previous question). `minApt` and `maxApt` were predetermined values set by the Doodle's mood. If the Doodle was neutral, excited, playful or affectionate, `minApt = 0.5` and `maxApt = 0.97`. However, if the Doodle was bored, restless, lonely, sad, tired, hungry or angry, `minApt = 0.1` and `maxApt = 0.6`. `aptitude` was the value determined by taking the trick's experience / 10000.  
@@ -307,7 +307,22 @@ Below is a table that shows the final `cutoff` value for each trick, assuming th
 | Rollover | 0.679 |
 | Backflip | 0.582 |
 | Dance | 0.485 |
-| Speak | 0.388 | 
+| Speak | 0.388 |
+
+Based on the above table, it's possible to quantitatively compare the effectiveness of each trick. Consider the following:
+
+```
+Expected Laff = cutoff * Laff Given
+
+0.970 * 10 = 9.7000 Laff (Jump)
+0.873 * 12 = 10.476 Laff (Beg)
+0.776 * 14 = 10.864 Laff (Play Dead)
+0.679 * 16 = 10.864 Laff (Rollover)
+0.582 * 18 = 10.476 Laff (Backflip)
+0.485 * 20 = 9.7000 Laff (Dance)
+0.388 * 22 = 8.5360 Laff (Speak)
+```
+As you can see, maxed Play Dead and Rollover are the most efficient tricks. Therefore Play Dead is likely the only trick worth training.
 
 ## Fishing and Probability <a name="fish-prob"></a>
 [[back to top](#contents)]
