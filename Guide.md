@@ -624,6 +624,14 @@ The initial damage of the scale was calculated at 1350. `dmgAdjust` was then add
 | 11 | 1554 | 1146 |
 | 12 | 1622 | 1078 |
 
+The above data can also be expressed through the following formulas:
+
+```
+Initial Cog Evidence = 1894 - 68 * (# toons seated)
+
+Initial Toon Evidence = 2700 - Initial Cog Evidence
+```
+
 ## What was the optimal scalers-to-stunners ratio? <a name="cj-5"></a>
 
 # C.E.O. <a name="ceo"></a>
