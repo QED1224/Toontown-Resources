@@ -1081,6 +1081,322 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">50</td>
 			<td align="center">50</td>
 		</tr>
+		<tr>
+			<th colspan="6">Lawbots</th>
+		</tr>
+		<tr>
+			<th>Bottomfeeder</th>
+			<th>Level 1</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+	        </tr>
+	        <tr>
+			<td align="center">Rubber Stamp</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<td align="center">Shred</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<td align="center">Watercooler</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+	        </tr>
+	        <tr>
+			<td align="center">Pick Pocket</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        <tr>
+			<th>Bloodsucker</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+	        </tr>
+	        <tr>
+			<td align="center">Eviction Notice</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<td align="center">Red Tape</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<td align="center">Withdrawl</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+	        </tr>
+	        <tr>
+			<td align="center">Liquidate</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        <tr>
+			<th>Double Talker</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+	        </tr>
+	        <tr>
+			<td align="center">Rubber Stamp</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+	        </tr>
+	        <tr>
+			<td align="center">Bounce Check</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+	        </tr>
+	        <tr>
+			<td align="center">Buzzword</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<td align="center">Double Talk</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+	        </tr>
+	        <tr>
+			<td align="center">Jargon</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+	        </tr>
+	        <tr>
+			<td align="center">Mumbo Jumbo</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<th>Ambulance Chaser</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+	        </tr>
+	        <tr>
+			<td align="center">Shake</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+	        </tr>
+	        <tr>
+			<td align="center">Red Tape</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+	        </tr>
+	        <tr>
+			<td align="center">Rolodex</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<td align="center">Hang Up</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+	        </tr>
+	        <tr>
+			<th>Backstabber</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+	        </tr>
+	        <tr>
+			<td align="center">Guilt Trip</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+	        </tr>
+	        <tr>
+			<td align="center">Restraining Order</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+	        </tr>
+	        <tr>
+			<td align="center">Finger Wag</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+	        </tr>
+	        <tr>
+			<th>Spin Doctor</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+	        </tr>
+	        <tr>
+			<td align="center">Paradigm Shift</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+	        </tr>
+	        <tr>
+			<td align="center">Quake</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<td align="center">Spin</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+	        </tr>
+	        <tr>
+			<td align="center">Write Off</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+	        </tr>
+	        <tr>
+			<th>Legal Eagle</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+	        </tr>
+	        <tr>
+			<td align="center">Evil Eye</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<td align="center">Jargon</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+	        </tr>
+	        <tr>
+			<td align="center">Legalese</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+			<td align="center">35</td>
+	        </tr>
+	        <tr>
+			<td align="center">Pecking Order</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+	        </tr>
+	        <tr>
+			<th>Big Wig</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+			<th>Level 12</th>
+	        </tr>
+	        <tr>
+			<td align="center">Power Trip</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        <tr>
+			<td align="center">Finger Wag</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        
 </table>
 
 # Appendix B: Cog Attack Damages <a name="appendix-b"></a>
