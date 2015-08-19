@@ -1081,7 +1081,10 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">50</td>
 			<td align="center">50</td>
 		</tr>
+		</table>
 		
+		
+		<table>
 		<tr>
 			<th colspan="6">Lawbots</th>
 		</tr>
@@ -1397,7 +1400,10 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">50</td>
 			<td align="center">50</td>
 	        </tr>
+	        </table>
 	        
+	        
+	        <table>
 	        <tr>
 			<th colspan="6">Cashbots</th>
 		</tr>
@@ -1691,6 +1697,333 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 	        </tr>
 	        <tr>
 			<td align="center">Tee-Off</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        </table>
+	        
+	        
+	        <table>
+	        <tr>
+			<th colspan="6">Sellbots</th>
+		</tr>
+		<tr>
+			<th>Cold Caller</th>
+			<th>Level 1</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+	        </tr>
+	        <tr>
+			<td align="center">Freeze Assets</td>
+			<td align="center">5</td>
+			<td align="center">10</td>
+			<td align="center">15</td>
+			<td align="center">20</td>
+			<td align="center">25</td>
+	        </tr>
+	        <tr>
+			<td align="center">Pound Key</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+	        </tr>
+	        <tr>
+			<td align="center">Double Talk</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+	        </tr>
+	        <tr>
+			<td align="center">Hot Air</td>
+			<td align="center">45</td>
+			<td align="center">40</td>
+			<td align="center">35</td>
+			<td align="center">30</td>
+			<td align="center">25</td>
+	        </tr>
+	        <tr>
+			<th>Telemarketer</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+	        </tr>
+	        <tr>
+			<td align="center">Clip-on Tie</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+	        </tr>
+	        <tr>
+			<td align="center">Pick Pocket</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+	        </tr>
+	        <tr>
+			<td align="center">Rolodex</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+	        </tr>
+	        <tr>
+			<td align="center">Double Talk</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+	        </tr>
+	        <tr>
+			<th>Name Dropper</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+	        </tr>
+	        <tr>
+			<td align="center">Razzle Dazzle</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+	        </tr>
+	        <tr>
+			<td align="center">Rolodex</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+			<td align="center">40</td>
+	        </tr>
+	        <tr>
+			<td align="center">Synergy</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+	        </tr>
+	        <tr>
+			<td align="center">Pick Pocket</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+	        </tr>
+	        <tr>
+			<th>Glad Hander</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+	        </tr>
+	        <tr>
+			<td align="center">Rubber Stamp</td>
+			<td align="center">40</td>
+			<td align="center">30</td>
+			<td align="center">20</td>
+			<td align="center">10</td>
+			<td align="center">5</td>
+	        </tr>
+	        <tr>
+			<td align="center">Fountain Pen</td>
+			<td align="center">40</td>
+			<td align="center">30</td>
+			<td align="center">20</td>
+			<td align="center">10</td>
+			<td align="center">5</td>
+	        </tr>
+	        <tr>
+			<td align="center">Filibuster</td>
+			<td align="center">10</td>
+			<td align="center">20</td>
+			<td align="center">30</td>
+			<td align="center">40</td>
+			<td align="center">45</td>
+	        </tr>
+	        <tr>
+			<td align="center">Schmooze</td>
+			<td align="center">10</td>
+			<td align="center">20</td>
+			<td align="center">30</td>
+			<td align="center">40</td>
+			<td align="center">45</td>
+	        </tr>
+	        <tr>
+			<th>Mover & Shaker</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+	        </tr>
+	        <tr>
+			<td align="center">Brain Storm</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+	        </tr>
+	        <tr>
+			<td align="center">Half Windsor</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<td align="center">Quake</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<td align="center">Shake</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+	        </tr>
+	        <tr>
+			<td align="center">Tremor</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<th>Two-Face</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+	        </tr>
+	        <tr>
+			<td align="center">Evil Eye</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+	        </tr>
+	        <tr>
+			<td align="center">Hang-up</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+	        </tr>
+	        <tr>
+			<td align="center">Razzle Dazzle</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+	        </tr>
+	        <tr>
+			<td align="center">Red Tape</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+	        </tr>
+	        <tr>
+			<th>The Mingler</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+	        </tr>
+	        <tr>
+			<td align="center">Buzzword</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+			<td align="center">20</td>
+	        </tr>
+	        <tr>
+			<td align="center">Paradigm Shift</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+			<td align="center">25</td>
+	        </tr>
+	        <tr>
+			<td align="center">Power Trip</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+			<td align="center">15</td>
+	        </tr>
+	        <tr>
+			<td align="center">Schmooze</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+			<td align="center">30</td>
+	        </tr>
+	        <tr>
+			<td align="center">Tee Off</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+			<td align="center">10</td>
+	        </tr>
+	        <tr>
+			<th>Mr. Hollywood</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+			<th>Level 12</th>
+	        </tr>
+	        <tr>
+			<td align="center">Power Trip</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        <tr>
+			<td align="center">Razzle Dazzle</td>
 			<td align="center">50</td>
 			<td align="center">50</td>
 			<td align="center">50</td>
