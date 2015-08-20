@@ -51,6 +51,7 @@
 - [Credits](#credits)
 - [Appendix A: Cog Attack Frequencies](#appendix-a)
 - [Appendix B: Cog Attack Damages](#appendix-b)
+- [Appendix C: Cog Attack Accuracy Values](#appendix-c)
 
 # Introduction <a name="intro"></a>
 [[back to top](#contents)]
@@ -250,7 +251,7 @@ In the other 25% of time, a toon was simply selected at random.
 
 To determine this, a pseudorandom integer `randChoice` was generated such that 0 <= `randChoice` <= 99. If `randChoice` was less than the cog attack's accuracy, the cog attack hit. Otherwise it missed.
 
-(Attack accuracy/damage summary to be added.)
+A list of attack accuracy values can be seen at [Appendix C](#appendix-c).
 
 ## Doodle Training and Tricks <a name="doodle-t&t"></a>
 [[back to top](#contents)]
@@ -2086,3 +2087,339 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 		</tr>
 		
 </table>
+
+# Appendix C: Cog Attack Accuracy Values <a name="appendix-c"></a>
+[[back to top](#contents)]
+
+<table>
+		<tr>
+			<th colspan="6">Bossbots</th>
+		</tr>
+		<tr>
+			<th>Flunky</th>
+			<th>Level 1</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+		</tr>
+		<tr>
+			<td align="center">Pound Key</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Shred</td>
+			<td align="center">50</td>
+			<td align="center">55</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+		</tr>
+		<tr>
+			<td align="center">Clip-on Tie</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+			<td align="center">95</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Pencil Pusher</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+		</tr>
+		<tr>
+			<td align="center">Fountain Pencil</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<td align="center">Rub-Out</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<td align="center">Finger Wag</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<td align="center">Write Off</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<td align="center">Fill With Lead</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<th>Yesman</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+		</tr>
+		<tr>
+			<td align="center">Rubber Stamp</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<td align="center">Razzle Dazzle</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+		</tr>
+		<tr>
+			<td align="center">Synergy</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Tee Off</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<th>Micromanager</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+		</tr>
+		<tr>
+			<td align="center">Demotion</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Finger Wag</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Fountain Pen</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Brain Storm</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+			<td align="center">5</td>
+		</tr>
+		<tr>
+			<td align="center">Buzzword</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<th>Downsizer</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+		</tr>
+		<tr>
+			<td align="center">Canned</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Downsize</td>
+			<td align="center">50</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+		</tr>
+		<tr>
+			<td align="center">Pinkslip</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+		</tr>
+		<tr>
+			<td align="center">Sacked</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+		</tr>
+		<tr>
+			<th>Head Hunter</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+		</tr>
+		<tr>
+			<td align="center">Fountain Pen</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Glower Power</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Half Windsor</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+		</tr>
+		<tr>
+			<td align="center">Head Shrink</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">95</td>
+		</tr>
+		<tr>
+			<td align="center">Rolodex</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+		</tr>
+		<tr>
+			<th>Corporate Raider</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+		</tr>
+		<tr>
+			<td align="center">Canned</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Evil Eye</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Play Hardball</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+		</tr>
+		<tr>
+			<td align="center">Rolodex</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">95</td>
+		</tr>
+		<tr>
+			<th>The Big Cheese</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+			<th>Level 12</th>
+		</tr>
+		<tr>
+			<td align="center">Tee Off</td>
+			<td align="center">55</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+		</tr>
+		<tr>
+			<td align="center">Glower Power</td>
+			<td align="center">55, 70, 60 *</td>
+			<td align="center">65, 75, 65 *</td>
+			<td align="center">75, 85, 70 *</td>
+			<td align="center">85, 90, 75 *</td>
+			<td align="center">95, 95, 80 *</td>
+		</tr>
+        </table>
+		
+		*Due to how The Big Cheese is coded, Glower Power has varying attack accuracies. 
+		
+		
