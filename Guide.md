@@ -242,13 +242,15 @@ Each active cog uses to following process to determine its target(s).
 If neither of the above were true, the following algorithm was used to select a toon:
 
 1. Store the total amount of damage done by the all toons *that attacked the current cog* in `totalDamage`.
-2. In a list, `dmgs`, store the relative contributions by each toon *that attacked the current cog* (contributed / `totalDamage` * 100).
+2. In a list, `dmgs`, store the relative contributions by each toon *that attacked the current cog* (contributed / `totalDamage`) * 100.
 3. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` <= 99.
 4. Loop over `dmgs`, summing the relative contributions by each toon. This sum is stored in a variable `count`.
 5. On each iteration, check if `randNum` is less than `count`
     - if it is, return an integer representing the number of iterations. In other words, a toon's damage contributions were directly proportional to its chance of being selected in this step.
     - if it's not, continue looping.
 6. If no toon was found by the above, a toon was selected at random.
+
+`totalDamage` and `dmgs` are reset every round.
 
 #### Battle Simulations
 
