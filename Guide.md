@@ -254,7 +254,7 @@ If neither of the above were true, the following algorithm was used to select a 
 
 ### Will the attack hit? <a name="cog-atk-acc-3"></a>
 
-To determine this, a pseudorandom integer `randChoice` was generated such that 0 <= `randChoice` <= 99. If `randChoice` was less than the cog attack's accuracy, the cog attack hit. Otherwise it missed.
+For every targeted toon, a pseudorandom integer `randChoice` was generated such that 0 <= `randChoice` <= 99. If `randChoice` was less than the cog attack's accuracy, the cog attack hit. Otherwise it missed.
 
 A list of attack accuracy values can be seen at [Appendix C](#appendix-c).
 
