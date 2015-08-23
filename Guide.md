@@ -234,18 +234,21 @@ So, for any cog, the probability that a given attack will be chosen is equal to 
 
 ### Which toon(s) will be attacked? <a name="cog-atk-acc-2"></a>
 
-If the selected cog attack is a group attack, all active toons would be attacked. For single-toon attacks, 75% percent of the time the following algorithm was used to select a toon:
+Each active cog uses to following process to determine its target(s).
 
-1. Store the total amount of damage done by the active toons in a variable `totalDamage`.
-2. In a list, `dmgs`, store the relative contributions by each toon (contributed / `totalDamage` * 100).
+- If the selected cog attack was a group attack, all active toons were attacked (see previous section).
+- If the current cog hadn't taken any damage or `randNum` was greater than 75, a toon was selected at random.
+
+If neither of the above were true, the following algorithm was used to select a toon:
+
+1. Store the total amount of damage done by the all toons *that attacked the current cog* in `totalDamage`.
+2. In a list, `dmgs`, store the relative contributions by each toon *that attacked the current cog* (contributed / `totalDamage` * 100).
 3. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` <= 99.
 4. Loop over `dmgs`, summing the relative contributions by each toon. This sum is stored in a variable `count`.
 5. On each iteration, check if `randNum` is less than `count`
     - if it is, return an integer representing the number of iterations (that is, 0 for the first, 1 for the second, etc). In other words, a toon's damage contributions are directly proportional to its chance of being selected in this step.
     - if it's not, continue looping.
-6. If no toon was found by the above, a toon is selected at random. This, for example, could happen when a large pseudorandom integer is generated, but the battle damage is evenly distributed.
-
-In the other 25% of time, a toon was simply selected at random.
+6. If no toon was found by the above, a toon is selected at random.
 
 ### Will the attack hit? <a name="cog-atk-acc-3"></a>
 
