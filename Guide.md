@@ -58,7 +58,7 @@
 
 **This guide is still a work-in-progress; some key information is missing from currently present sections.**
 
-The information in this guide is primarily based on the source code of Toontown Online (timestamped 2013-07-02 T 6:22PM). It does not guarantee accuracy with regard to any Toontown private servers that have modified the battle system from Toontown Online.
+The information in this guide is primarily based on the source code of Toontown Online. It does not guarantee accuracy with regard to any Toontown private servers that have modified the battle system from Toontown Online.
 
 # Core Knowledge <a name="core-knowledge"></a>
 [[back to top](#contents)]
