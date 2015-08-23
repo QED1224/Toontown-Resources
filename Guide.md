@@ -246,9 +246,11 @@ If neither of the above were true, the following algorithm was used to select a 
 3. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` <= 99.
 4. Loop over `dmgs`, summing the relative contributions by each toon. This sum is stored in a variable `count`.
 5. On each iteration, check if `randNum` is less than `count`
-    - if it is, return an integer representing the number of iterations (that is, 0 for the first, 1 for the second, etc). In other words, a toon's damage contributions are directly proportional to its chance of being selected in this step.
+    - if it is, return an integer representing the number of iterations. In other words, a toon's damage contributions were directly proportional to its chance of being selected in this step.
     - if it's not, continue looping.
-6. If no toon was found by the above, a toon is selected at random.
+6. If no toon was found by the above, a toon was selected at random.
+
+#### Battle Simulations
 
 ### Will the attack hit? <a name="cog-atk-acc-3"></a>
 
