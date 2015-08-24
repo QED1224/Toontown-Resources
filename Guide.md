@@ -182,7 +182,7 @@ Where "cog level" was the actual level and "base level" was the lowest possible 
 3. On each iteration, `randNum` was compared to `count`.
     - if `randNum` was less than `count`, `attackNum` was assigned an integer representing the number of completed iterations (starting at 0).
     - if `randNum` was greater than or equal to `count`, the loop continued.
-4. `attackNum` was returned
+4. `attackNum` was returned.
 
 Let's look at an example. Here's the output of a simulation of the above algorithm for a Level 3 Yesman:
 
@@ -193,19 +193,19 @@ Let's look at an example. Here's the output of a simulation of the above algorit
 ('RazzleDazzle', (1, 1, 1, 1, 1), (50, 50, 50, 50, 50), (25, 20, 15, 10, 5)),
 ('Synergy', (4, 5, 6, 7, 8), (50, 60, 70, 80, 90), (5, 10, 15, 20, 25)),
 ('TeeOff', (3, 3, 4, 4, 5), (50, 60, 70, 80, 90), (35, 35, 35, 35, 35)))
-:SuitBattleGlobals(debug): suitLevel: 0
+:SuitBattleGlobals(debug): suitLevel = 0
 :SuitBattleGlobals(debug):
-        randNum: 44
-        count: 0
-        index: 0
+        randNum = 44
+        count = 0
+        index = 0
 :SuitBattleGlobals(debug): Looping through attacks...
 :SuitBattleGlobals(debug):
-            count: 35
-            index: 0
+            count = 35
+            index = 0
 :SuitBattleGlobals(debug): 44 < 35?
 :SuitBattleGlobals(debug):
-            count: 60
-            index: 1
+            count = 60
+            index = 1
 :SuitBattleGlobals(debug): 44 < 60?
 :SuitBattleGlobals(debug): picking RazzleDazzle
 ```
@@ -250,10 +250,6 @@ If neither of the above were true, the following algorithm was used to select a 
 6. If no toon was found by the above, a toon was selected at random.
 
 `totalDamage` and `dmgs` were reset every round.
-
-#### Battle Simulations
-
-
 
 ### Will the attack hit? <a name="cog-atk-acc-3"></a>
 
