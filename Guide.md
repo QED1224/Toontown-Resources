@@ -40,7 +40,6 @@
     - [How did the C.E.O. choose which toon to attack?](#ceo-2)
 - [Fishing](#fishing)
 - [Racing](#racing)
-    - [Wall-riding: A track-by-track breakdown](#racing-1)
 - [Golfing](#golfing)
 - [Misc](#misc)
     - [Did some Shopkeepers sell more accurate gags?](#misc-1)
@@ -241,7 +240,7 @@ Each active cog uses to following process to determine its target(s).
 If neither of the above were true, the following algorithm was used to select a toon:
 
 1. The total amount of damage done to the current cog was stored in a variable `totalDamage`.
-2. The relative contributions by each toon (contributed / `totalDamage`) * 100 were stored in a list `dmgs`.
+2. The relative contributions by each toon, (contributed / `totalDamage`) * 100, were stored in a list `dmgs`.
 3. A pseudorandom integer `randNum` was generated such that 0 <= `randNum` <= 99.
 4. The values in `dmgs` were then iteratively summed. This sum was stored in a variable `count`.
 5. On each iteration, `randNum` was compared to `count`.
@@ -613,7 +612,6 @@ Now, you're probably thinking that we still haven't answered the original questi
 
    ([Original post can be found here.](http://www.mmocentralforums.com/forums/showpost.php?p=95226&postcount=15))
 
-
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
 
@@ -700,8 +698,6 @@ Initial Toon Evidence = 2700 - Initial Cog Evidence
 
 # Racing <a name="racing"></a>
 [[back to top](#contents)]
-
-## Wall-riding: A track-by-track breakdown <a name="racing-1"></a>
 
 # Golfing <a name="golfing"></a>
 [[back to top](#contents)]
