@@ -171,19 +171,18 @@ The following three sections outline the calculations that were performed for ea
 
 ### Which attack will be used? <a name="cog-atk-acc-1"></a>
 
-There are two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represented the cog being used in the calculation, while the latter was a tuple containing the information for each of `theSuit`'s possible attacks. Also note that a "relative" cog level was used for frequency calculation purposes. This was calculated as follows.
-
+There were two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represented the cog being used in the calculation, while the latter was a tuple containing the information for each of `theSuit`'s possible attacks. Also note that a "relative" cog level was used for frequency calculation purposes. This was calculated as follows.
 ```
 relative level = cog level - base level
 ```
 Where "cog level" was the actual level and "base level" was the lowest possible level. From here, the `pickSuitAttack` function used the following process to determine which attack would be used:
 
-1. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` <= 99.
-2. Loop through each possible attack, summing the frequencies associated with `theSuit`'s relative level. This sum is stored in a variable `count`.
-3. On each iteration, check if `randNum` is less than `count`.
-    - if it is, set `attackNum` to an integer representing the number of iterations.
-    - if it's not, continue looping.
-4. Return `attackNum`
+1. A pseudorandom integer `randNum` was generated such that 0 <= `randNum` <= 99.
+2. The attack frequencies associated with `theSuit`'s relative level were then iteratively summed. This sum was stored in a variable `count`.
+3. On each iteration, `randNum` was compared to `count`.
+    - if `randNum` was less than `count`, `attackNum` was assigned an integer representing the number of completed iterations (starting at 0).
+    - if `randNum` was greater than or equal to `count`, the loop continued.
+4. `attackNum` was returned
 
 Let's look at an example. Here's the output of a simulation of the above algorithm for a Level 3 Yesman:
 
@@ -241,18 +240,20 @@ Each active cog uses to following process to determine its target(s).
 
 If neither of the above were true, the following algorithm was used to select a toon:
 
-1. Store the total amount of damage done by the all toons *that attacked the current cog* in `totalDamage`.
-2. In a list, `dmgs`, store the relative contributions by each toon *that attacked the current cog* (contributed / `totalDamage`) * 100.
-3. Generate a pseudorandom integer `randNum` such that 0 <= `randNum` <= 99.
-4. Loop over `dmgs`, summing the relative contributions by each toon. This sum is stored in a variable `count`.
-5. On each iteration, check if `randNum` is less than `count`
-    - if it is, return an integer representing the number of iterations. In other words, a toon's damage contributions were directly proportional to its chance of being selected in this step.
-    - if it's not, continue looping.
+1. The total amount of damage done to the current cog was stored in a variable `totalDamage`.
+2. The relative contributions by each toon (contributed / `totalDamage`) * 100 were stored in a list `dmgs`.
+3. A pseudorandom integer `randNum` was generated such that 0 <= `randNum` <= 99.
+4. The values in `dmgs` were then iteratively summed. This sum was stored in a variable `count`.
+5. On each iteration, `randNum` was compared to `count`.
+    - if `randNum` was less than `count`, an integer representing the number of completed iterations was returned (starting at 0). 
+    - if `randNum` was greater than or equal to `count`, the loop continued.
 6. If no toon was found by the above, a toon was selected at random.
 
-`totalDamage` and `dmgs` are reset every round.
+`totalDamage` and `dmgs` were reset every round.
 
 #### Battle Simulations
+
+
 
 ### Will the attack hit? <a name="cog-atk-acc-3"></a>
 
