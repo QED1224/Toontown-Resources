@@ -611,6 +611,10 @@ Now, you're probably thinking that we still haven't answered the original questi
    > 2. The stars at the bottom of the SOS cards are the potency. The more stars... The stronger the gag. The maximum number   of stars that you should be able to receive is five.
 
    ([Original post can be found here.](http://www.mmocentralforums.com/forums/showpost.php?p=95226&postcount=15))
+   
+- The Toontown Player's Guide stated that Drop SOS cards had *near* perfect accuracy.
+
+  > ... Some of these Toons, like Professor Pete, will restock your gag supply, while others, like Clumsy Ned, will lend a hand by dropping pianos with near perfect accuracy ...
 
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
