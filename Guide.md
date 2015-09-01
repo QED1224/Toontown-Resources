@@ -732,13 +732,82 @@ Now, we need to cover four more sub-cases:
 
 ## Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-3"></a>
 
-Yes, if multiple gags of the same track and level were used, the attack order was simply based on the order in which toons joined the battle. This meant it was possible for "mismatches" to occur. For example, consider the following scenario with three toons (1 - 3) and two cogs (A and B):
+Yes, if multiple gags of the same track and level were used, the attack order was simply based on the order in which toons joined the battle. This meant it was possible for "mismatches" to occur. For example, consider the following scenario with three Trapless toons with maxed gags (1 - 3) and two level 12 cogs (A and B):
 
-- Toon 1 (rightmost) uses a Safe on Cog A
-- Toon 2 (middle) uses a Safe on Cog B
-- Toon 3 (leftmost) uses a Safe on Cog A
+```
+ B A
+3 2 1
+```
 
-Here, the attack order is 1, 2, 3. This means that Toon 1's Safe is evaluated, then Toon 2's Safe is evaluated (but isn't assigned the result of 1 because it has a different target) and then Toon 3's Safe is evaluated (but isn't assigned the result of 2 because it has a different target). So, in this situation, it's possible for only one Safe to hit Cog A.
+- Toon 1 uses a Safe on Cog A
+- Toon 2 uses a Safe on Cog B
+- Toon 3 uses a Safe on Cog A
+
+Here, the attack order is 1, 2, 3 which means:
+
+1. Toon 1's Safe is evaluated.
+2. Toon 2's Safe is evaluated, but isn't assigned the result of 1 because it has a different target.
+3. Toon 3's Safe is evaluated, but isn't assigned the result of 2 because it has a different target. 
+
+So, in this situation, it's possible for only one Safe to hit Cog A.
+
+At first glance this may appear to be rather undesirable, however it's important to fully understand the impact of independent calculations. There are two key areas to consider: expected damage and battle duration.
+
+Let's first look at the expected damage on cog A *without an attack mismatch*.
+
+```
+ B A
+3 2 1
+
+- Toon 1 uses Safe on cog A
+- Toon 2 uses Safe on cog A
+- Toon 3 uses Safe on cog B
+
+atkAcc = 50 + 60 + (-55) + 0 = 55
+
+P(Toon 1 and Toon 2 hit) = atkAcc / 100 = 0.55
+P(only Toon 1 hit or only Toon 2 hit) = 0 (shared calculation)
+P(Toon 1 and Toon 2 miss) = 1 - P(Toon 1 and Toon 2 hit) = 0.45
+P(at least Toon 1 or Toon 2 hit) = P(Toon 1 and Toon 2 hit) = 0.55
+```
+
+In this case, there's a 55% chance (both Safes hit) that damage is done to cog A and a 45% chance (both Safes miss) that no damage is done to cog A.
+
+Now, let's look at the expected damage on cog A *with an attack mismatch*.
+
+```
+ B A
+3 2 1
+
+- Toon 1 uses Safe on cog A
+- Toon 2 uses Safe on cog B
+- Toon 3 uses Safe on cog A
+
+atkAcc = 50 + 60 + (-55) + 0 = 55
+
+P(Toon 1 and Toon 3 hit) = (atkAcc / 100) ^ 2 = 0.3025
+P(only Toon 1 hit or only Toon 3 hit) = (0.45 * 0.55) * 2 = 0.495
+P(Toon 1 and Toon 3 miss) = (1 - P(Toon 1 and Toon 3 hit))^2 = 0.2025
+P(at least Toon 1 or Toon 3 hit) = 0.3025 + 0.495 = 0.7975
+```
+
+You'll note that there's a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease doesn't actually constitute an overall loss in expected damage: it's simply more evenly distributed. This is evident in the probability that at least one Safe hits, which is 79.75% vs. 55% *in favor of attack mismatches*. Consider the following contrived example:
+
+> Over 100 trials, you'll receive $200 each time two Safes hit cog A and $100 each time only one Safe hits cog A. However, if both Safes miss, you have to pay $200.
+
+Which option would you choose? Well, let's calculate your expected winnings.
+
+```
+(200 * 0.55) + (100 * 0) - (200 * 0.45) = $20 per trial (no mismatches)
+(200 * 0.3025) + (100 * 0.495) - (200 * 0.2025) = $69.5 per trial (mismatches)
+```
+
+If you chose no mismatches, your expected winning amount is $2000. In contrast, if you chose mismatches, your expected winning amount is $6950. There's a downside to this, though. By increasing the odds that at least one Safe hits cog A, you're necessarily making yourself more susceptible to cog attacks. The reasoning for this is pretty self-explanatory: attack mismatches allow for a case in which only one of two gags hit (which increases the expected damage), but this gives the cog another chance to attack. In other words, let's say that a cog attack animation is 20 seconds long. Then, over the course of 100 trials:
+
+- Without mismatches, there's a 45% chance of being attacked. That's 100 * 0.45 = 45 times or 900 seconds of animations.
+- With mismatches, there's a 69.75% chance (0.495 + 0.2025) of being attacked. That's 100 * 0.6975 = 69.75 times or 1395 seconds of animations.
+
+The final point to consider is that, even though attack mismatches increase the odds of being attacked, the increased expected damage associated with attack mismatches mean a shorter cog lifespan -- which means less opportunity to attack.
 
 ## Battle Simulations
 
