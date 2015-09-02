@@ -793,11 +793,10 @@ P(at least Toon 1 or Toon 3 hit) = 0.3025 + 0.495 = 0.7975
 
 You'll note that there's a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease doesn't actually constitute an overall loss in expected damage: it's simply more evenly distributed. This is evident in the probability that at least one Safe hits, which is 79.75% vs. 55% *in favor of attack mismatches*.
 
-With the above in mind, we can establish the following guidelines:
+With the above in mind, we can conclude that gag mismatches should be preferred in any of the following scenarios.
 
-- Prefer gag mismatches in any of the following scenarios.
-	- If both gags are the same and either could defeat the given cog in one round.
-- Prefer no gag mismatches in any of the following scenarios.
+- If either gag could defeat the given cog in one round.
+- Assuming maxed gags, when using any combination of Throw and Squirt.
 
 ## Battle Simulations
 
