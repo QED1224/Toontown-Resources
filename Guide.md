@@ -732,7 +732,7 @@ Now, we need to cover four more sub-cases:
 
 ## Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-3"></a>
 
-Yes, if multiple gags of the same track and level were used, the attack order was simply based on the order in which toons joined the battle. This meant it was possible for "mismatches" to occur. For example, consider the following scenario with three Trapless toons with maxed gags (1 - 3) and two level 12 cogs (A and B):
+Yes, do to how toon attacks are ordered (see previous question), it was possible for "mismatches" to occur. Essentially, this was caused by the fact that attacks are only considered in pairs. For example, consider the following scenario with three Trapless toons with maxed gags (1 - 3) and two level 12 cogs (A and B):
 
 ```
  B A
