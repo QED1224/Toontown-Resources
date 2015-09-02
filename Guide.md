@@ -803,7 +803,7 @@ With the above in mind, we can conclude that attack mismatches should be preferr
 - [Level 12 Big Wig; Whole Cream Pie + Birthday Cake](http://pastebin.com/gLBF00qr)
 - [Level 12 Big Wig; Safe + Safe](http://pastebin.com/bzugMzEs)
 - [Level 12 Big Wig; Storm Cloud + Storm Cloud](http://pastebin.com/9H3u0B4H)
-- [Level 5 Bottom Feeder; Safe + Safe](http://pastebin.com/kzzEfabh)
+- [Level 5 Bottom Feeder; Safe + Safe](http://pastebin.com/DM3tf9eg)
 
 ## Did doodle tricks count as a stun in battle? <a name="misc-4"></a>
 
