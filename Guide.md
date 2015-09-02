@@ -791,23 +791,84 @@ P(Toon 1 and Toon 3 miss) = (1 - P(Toon 1 and Toon 3 hit))^2 = 0.2025
 P(at least Toon 1 or Toon 3 hit) = 0.3025 + 0.495 = 0.7975
 ```
 
-You'll note that there's a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease doesn't actually constitute an overall loss in expected damage: it's simply more evenly distributed. This is evident in the probability that at least one Safe hits, which is 79.75% vs. 55% *in favor of attack mismatches*. Consider the following contrived example:
-
-> Over 100 trials, you'll receive $200 each time two Safes hit cog A and $100 each time only one Safe hits cog A. However, if both Safes miss, you have to pay $200.
-
-Which option would you choose? Well, let's calculate your expected winnings.
+You'll note that there's a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease doesn't actually constitute an overall loss in expected damage: it's simply more evenly distributed. This is evident in the probability that at least one Safe hits, which is 79.75% vs. 55% *in favor of attack mismatches*. With this in mind, consider the following simulations,
 
 ```
-(200 * 0.55) + (100 * 0) - (200 * 0.45) = $20 per trial (no mismatches)
-(200 * 0.3025) + (100 * 0.495) - (200 * 0.2025) = $69.5 per trial (mismatches)
+Gag: Safe + Safe (maxed exp)
+Cog: Level 12 Big Wig
+Battles: 500000
+
+No Mismatch:
+
+Average Cog Damage Taken Per Round: 44.93913
+Total Cog Damage Taken: 22469565
+Average Rounds Required: 3.636398
+Total Rounds Required: 1818199
+Both missed: 348302
+
+Mismatch:
+
+Average Cog Damage Taken Per Round: 49.092534
+Total Cog Damage Taken: 24546267
+Average Rounds Required: 3.88034
+Total Rounds Required: 1940170
+Both missed: 249316
 ```
 
-If you chose no mismatches, your expected winning amount is $2000. In contrast, if you chose mismatches, your expected winning amount is $6950. There's a downside to this, though. By increasing the odds that at least one Safe hits cog A, you're necessarily making yourself more susceptible to cog attacks. The reasoning for this is pretty self-explanatory: attack mismatches allow for a case in which only one of two gags hit (which increases the expected damage), but this gives the cog another chance to attack. In other words, let's say that a cog attack animation is 20 seconds long. Then, over the course of 100 trials:
+As you can see in the above, *avoiding attack mismatches* was sightly more efficient in terms of both rounds required and damage taken (even though "Both missed" was more likely). 
 
-- Without mismatches, there's a 45% chance of being attacked. That's 100 * 0.45 = 45 times or 900 seconds of animations.
-- With mismatches, there's a 69.75% chance (0.495 + 0.2025) of being attacked. That's 100 * 0.6975 = 69.75 times or 1395 seconds of animations.
+Now consider the following,
 
-The final point to consider is that, even though attack mismatches increase the odds of being attacked, the increased expected damage associated with attack mismatches mean a shorter cog lifespan -- which means less opportunity to attack.
+```
+Gag: Storm Cloud + Storm Cloud  (maxed exp)
+Cog: Level 12 Big Wig
+Battles: 500000
+
+No Mismatch:
+
+Average Cog Damage Taken: 18.854856
+Total Cog Damage Taken: 9427428
+Average Rounds Required: 2.105558
+Total Rounds Required: 1052779
+Both missed: 48881
+
+Mismatch:
+
+Average Cog Damage Taken: 17.277878
+Total Cog Damage Taken: 8638939
+Average Rounds Required: 2.013988
+Total Rounds Required: 1006994
+Both missed: 2478
+```
+
+Finally,
+
+```
+Gag: Whole Cream Pie + Birthday Cake (maxed exp)
+Cog: Level 12 Big Wig
+Battles: 500000
+
+No Mismatch:
+
+Average Cog Damage Taken: 23.08718
+Total Cog Damage Taken: 11543590
+Average Rounds Required: 2.353518
+Total Rounds Required: 1176759
+Both missed: 139003
+
+Mismatch:
+
+Average Cog Damage Taken: 22.261856
+Total Cog Damage Taken: 11130928
+Average Rounds Required: 2.305636
+Total Rounds Required: 1152818
+Both missed: 25095
+```
+
+Once again, *attack mismatches* were sightly more efficient in terms of both rounds required and damage taken.
+
+So, based on the above simulations, seeking out attack mismatches *is more efficient* with higher accuracy (i.e., Throw & Squirt) gags against a level 12 cog than avoiding them. However, avoiding attack mismatches was more efficient with Drop.
+
 
 ## Battle Simulations
 
