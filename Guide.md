@@ -791,9 +791,80 @@ P(Toon 1 and Toon 3 miss) = (1 - P(Toon 1 and Toon 3 hit))^2 = 0.2025
 P(at least Toon 1 or Toon 3 hit) = 0.3025 + 0.495 = 0.7975
 ```
 
-You'll note that there's a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease doesn't actually constitute an overall loss in expected damage: it's simply more evenly distributed. This is evident in the probability that at least one Safe hits, which is 79.75% vs. 55% *in favor of attack mismatches*.
+You'll note that there's a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease doesn't actually constitute an overall loss in expected damage: it's simply more evenly distributed. This is evident in the probability that at least one Safe hits, which is 79.75% vs. 55% *in favor of attack mismatches*. To further clarify the difference, let's take a closer look at the possible outcomes. 
+```
+HH = Both hit
+HM = First hit, second miss
+MH = First miss, second hit
+MM = Both miss
+```
+As you can see, there are three outcomes which result in damage to a cog: HH, HM and MH. However, without attack mismatches, accuracy inheritance eliminates both HM and MH. This loss of opportunity can only be offset by a large decrease to the probability of HH. For instance, in the above example there's a difference of 24.75%, which is just enough to make up for the loss (see [Level 12 Big Wig; Safe + Safe](http://pastebin.com/bzugMzEs)). Thus, the key factor is the fact that as the probability of HH increases, the difference between the probability of HH with and without attack mismatches decreases. Take, for example, maxed Storm Cloud:
 
-With the above in mind, we can conclude that attack mismatches should be preferred in any of the following scenarios.
+```
+ B A
+3 2 1
+
+atkAcc = 95 + 60 + (-55) + 0 = 100 (capped to 95).
+
+a) No mismatches
+
+- Toon 1 uses Storm Cloud on cog A
+- Toon 2 uses Storm Cloud on cog A
+- Toon 3 uses Storm Cloud on cog B
+
+P(Toon 1 and Toon 2 hit) = atkAcc / 100 = 0.95
+P(only Toon 1 hit or only Toon 2 hit) = 0 (shared calculation)
+P(Toon 1 and Toon 2 miss) = 1 - P(Toon 1 and Toon 2 hit) = 0.05
+P(at least Toon 1 or Toon 2 hit) = P(Toon 1 and Toon 2 hit) = 0.95
+
+b) Mismatches
+
+- Toon 1 uses Storm Cloud on cog A
+- Toon 2 uses Storm Cloud on cog B
+- Toon 3 uses Storm Cloud on cog A
+
+P(Toon 1 and Toon 3 hit) = (atkAcc / 100) ^ 2 = 0.9025
+P(only Toon 1 hit or only Toon 3 hit) = (0.05 * 0.95) * 2 = 0.095
+P(Toon 1 and Toon 3 miss) = (1 - P(Toon 1 and Toon 3 hit)) ^ 2 = 0.0025
+P(at least Toon 1 or Toon 3 hit) = P(Toon 1 and Toon 3 hit) = 0.9025 + 0.095 = 0.9975
+```
+
+As shown above, there's now only a 4.75% difference in the probability of HH. You might be tempted to point out that we also only saw a 4.75% increase in P(at least Toon 1 or Toon 2 hit), which is true, but there's another factor: one hit is significantly better than no hits. Think about it in terms of the number of possible ways to defeat a cog:
+
+```
+Cog HP = 200
+
+a) No mismatches
+
+1. HH + 32 = (80 + 80) + 32 = 192 (P = 0.95)
+2. 192 + (HH + 32) = 384 (P = 0.9025).
+
+b) Mismatches
+
+1. HH + 32 = (80 + 80) + 32 = 192 (P = 0.9025).
+2. 192 + (HH + 32) = 384 (P = 0.8145)
+
+OR
+
+1. HH + 32 = (80 + 80) + 32 = 192 (P = 0.9025).
+2. 192 + HM = 192 + 80 = 272 (P = 0.042869).
+
+OR
+
+1. HH + 20 = (80 + 80) + 20 = 180 (P = 0.9025).
+2. 192 + MH = 192 + 80 = 272 (P = 0.042869).
+
+OR
+
+1. MH = 80 (P = 0.0475).
+2. 80 + (HH + 32) = 272 (P = 0.042869).
+
+OR
+
+1. HM = 80 (P = 0.0475).
+2. 80 + (HH + 32) = (80 + 80) + 20 = 272 (P = 0.042869).
+```
+As you can see, attack mismatches give us 5 ways to win vs. 1 without them. With the above in mind, we can conclude that attack mismatches should be preferred in any of the following scenarios.
 
 - If either gag could defeat the given cog in one round.
 - Assuming maxed gags, when using any combination of Throw and Squirt.
