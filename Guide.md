@@ -791,89 +791,18 @@ P(Toon 1 and Toon 3 miss) = (1 - P(Toon 1 and Toon 3 hit))^2 = 0.2025
 P(at least Toon 1 or Toon 3 hit) = 0.3025 + 0.495 = 0.7975
 ```
 
-You'll note that there's a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease doesn't actually constitute an overall loss in expected damage: it's simply more evenly distributed. This is evident in the probability that at least one Safe hits, which is 79.75% vs. 55% *in favor of attack mismatches*. With this in mind, consider the following simulations,
+You'll note that there's a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease doesn't actually constitute an overall loss in expected damage: it's simply more evenly distributed. This is evident in the probability that at least one Safe hits, which is 79.75% vs. 55% *in favor of attack mismatches*.
 
-```
-Gag: Safe + Safe (maxed exp)
-Cog: Level 12 Big Wig
-Battles: 500000
+With the above in mind, we can establish the following guidelines:
 
-No Mismatch:
-
-Average Cog Damage Taken Per Round: 44.93913
-Total Cog Damage Taken: 22469565
-Average Rounds Required: 3.636398
-Total Rounds Required: 1818199
-Both missed: 348302
-
-Mismatch:
-
-Average Cog Damage Taken Per Round: 49.092534
-Total Cog Damage Taken: 24546267
-Average Rounds Required: 3.88034
-Total Rounds Required: 1940170
-Both missed: 249316
-```
-
-As you can see in the above, *avoiding attack mismatches* was sightly more efficient in terms of both rounds required and damage taken (even though "Both missed" was more likely). 
-
-Now consider the following,
-
-```
-Gag: Storm Cloud + Storm Cloud  (maxed exp)
-Cog: Level 12 Big Wig
-Battles: 500000
-
-No Mismatch:
-
-Average Cog Damage Taken: 18.854856
-Total Cog Damage Taken: 9427428
-Average Rounds Required: 2.105558
-Total Rounds Required: 1052779
-Both missed: 48881
-
-Mismatch:
-
-Average Cog Damage Taken: 17.277878
-Total Cog Damage Taken: 8638939
-Average Rounds Required: 2.013988
-Total Rounds Required: 1006994
-Both missed: 2478
-```
-
-Finally,
-
-```
-Gag: Whole Cream Pie + Birthday Cake (maxed exp)
-Cog: Level 12 Big Wig
-Battles: 500000
-
-No Mismatch:
-
-Average Cog Damage Taken: 23.08718
-Total Cog Damage Taken: 11543590
-Average Rounds Required: 2.353518
-Total Rounds Required: 1176759
-Both missed: 139003
-
-Mismatch:
-
-Average Cog Damage Taken: 22.261856
-Total Cog Damage Taken: 11130928
-Average Rounds Required: 2.305636
-Total Rounds Required: 1152818
-Both missed: 25095
-```
-
-Once again, *attack mismatches* were sightly more efficient in terms of both rounds required and damage taken.
-
-So, based on the above simulations, seeking out attack mismatches *is more efficient* with higher accuracy (i.e., Throw & Squirt) gags against a level 12 cog than avoiding them. However, avoiding attack mismatches was more efficient with Drop.
-
+-
 
 ## Battle Simulations
 
-- [3 Safes](http://pastebin.com/BhZ14ZL6)
-- [3 Storm Clouds](http://pastebin.com/5fb8pbtA)
+- [Level 12 Big Wig; Whole Cream Pie + Birthday Cake](http://pastebin.com/gLBF00qr)
+- [Level 12 Big Wig; Safe + Safe](http://pastebin.com/bzugMzEs)
+- [Level 12 Big Wig; Storm Cloud + Storm Cloud](http://pastebin.com/9H3u0B4H)
+- [Level 5 Bottom Feeder; Safe + Safe](http://pastebin.com/kzzEfabh)
 
 ## Did doodle tricks count as a stun in battle? <a name="misc-4"></a>
 
