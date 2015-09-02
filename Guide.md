@@ -851,7 +851,7 @@ OR
 
 OR
 
-1. HH + 20 = (80 + 80) + 20 = 180 (P = 0.9025).
+1. HH + 32 = 192 (P = 0.9025).
 2. 192 + MH = 192 + 80 = 272 (P = 0.042869).
 
 OR
@@ -862,7 +862,7 @@ OR
 OR
 
 1. HM = 80 (P = 0.0475).
-2. 80 + (HH + 32) = (80 + 80) + 20 = 272 (P = 0.042869).
+2. 80 + (HH + 32) = 272 (P = 0.042869).
 ```
 As you can see, attack mismatches give us 5 ways to win vs. 1 without them. With the above in mind, we can conclude that attack mismatches should be preferred in any of the following scenarios.
 
