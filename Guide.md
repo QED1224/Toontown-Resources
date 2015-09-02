@@ -795,7 +795,9 @@ You'll note that there's a 24.75% decrease (0.3025 vs. 0.55) to the odds that tw
 
 With the above in mind, we can establish the following guidelines:
 
--
+- Prefer gag mismatches in any of the following scenarios.
+	- If both gags are the same and either could defeat the given cog in one round.
+- Prefer no gag mismatches in any of the following scenarios.
 
 ## Battle Simulations
 
