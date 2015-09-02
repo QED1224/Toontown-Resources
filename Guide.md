@@ -2497,10 +2497,10 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 		
 <table>
 		<tr>
-			<th colspan="6">Bossbots</th>
+			<th colspan="6">Lawbots</th>
 		</tr>
 		<tr>
-			<th>Flunky</th>
+			<th>Bottom Feeder</th>
 			<th>Level 1</th>
 			<th>Level 2</th>
 			<th>Level 3</th>
@@ -2508,12 +2508,12 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<th>Level 5</th>
 		</tr>
 		<tr>
-			<td align="center">Pound Key</td>
-			<td align="center">75</td>
+			<td align="center">Rubber Stamp</td>
 			<td align="center">75</td>
 			<td align="center">80</td>
-			<td align="center">80</td>
+			<td align="center">85</td>
 			<td align="center">90</td>
+			<td align="center">95</td>
 		</tr>
 		<tr>
 			<td align="center">Shred</td>
@@ -2524,18 +2524,26 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">70</td>
 		</tr>
 		<tr>
-			<td align="center">Clip-on Tie</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
+			<td align="center">Watercooler</td>
 			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+		</tr>
+		<tr>
+			<td align="center">Pick Pocket</td>
+			<td align="center">25</td>
+			<td align="center">30</td>
+			<td align="center">35</td>
+			<td align="center">40</td>
+			<td align="center">45</td>
 		</tr>
 		<tr>
 			<th colspan="6"> </th>
 		</tr>
 		<tr>
-			<th>Pencil Pusher</th>
+			<th>Blood Sucker</th>
 			<th>Level 2</th>
 			<th>Level 3</th>
 			<th>Level 4</th>
@@ -2543,7 +2551,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<th>Level 6</th>
 		</tr>
 		<tr>
-			<td align="center">Fountain Pencil</td>
+			<td align="center">Eviction Notice</td>
 			<td align="center">75</td>
 			<td align="center">75</td>
 			<td align="center">75</td>
@@ -2551,7 +2559,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">75</td>
 		</tr>
 		<tr>
-			<td align="center">Rub-Out</td>
+			<td align="center">Red Tape</td>
 			<td align="center">75</td>
 			<td align="center">75</td>
 			<td align="center">75</td>
@@ -2559,31 +2567,26 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">75</td>
 		</tr>
 		<tr>
-			<td align="center">Finger Wag</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
+			<td align="center">Withdrawal</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
 		</tr>
 		<tr>
-			<td align="center">Write Off</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
+			<td align="center">Liquidate</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
 		</tr>
 		<tr>
-			<td align="center">Fill With Lead</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
+			<th colspan="6"> </th>
 		</tr>
 		<tr>
-			<th>Yesman</th>
+			<th>Double Talker</th>
 			<th>Level 3</th>
 			<th>Level 4</th>
 			<th>Level 5</th>
@@ -2592,22 +2595,6 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 		</tr>
 		<tr>
 			<td align="center">Rubber Stamp</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-		</tr>
-		<tr>
-			<td align="center">Razzle Dazzle</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-		</tr>
-		<tr>
-			<td align="center">Synergy</td>
 			<td align="center">50</td>
 			<td align="center">60</td>
 			<td align="center">70</td>
@@ -2615,7 +2602,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">90</td>
 		</tr>
 		<tr>
-			<td align="center">Tee Off</td>
+			<td align="center">Bounce Check</td>
 			<td align="center">50</td>
 			<td align="center">60</td>
 			<td align="center">70</td>
@@ -2623,7 +2610,42 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">90</td>
 		</tr>
 		<tr>
-			<th>Micromanager</th>
+			<td align="center">Buzz Word</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Double Talk</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Jargon</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Mumbo Jumbo</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Ambulance Chaser</th>
 			<th>Level 4</th>
 			<th>Level 5</th>
 			<th>Level 6</th>
@@ -2631,47 +2653,42 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<th>Level 8</th>
 		</tr>
 		<tr>
-			<td align="center">Demotion</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
+			<td align="center">Shake</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
 		</tr>
 		<tr>
-			<td align="center">Finger Wag</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
+			<td align="center">Red Tape</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
 		</tr>
 		<tr>
-			<td align="center">Fountain Pen</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
+			<td align="center">Rolodex</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
 		</tr>
 		<tr>
-			<td align="center">Brain Storm</td>
-			<td align="center">5</td>
-			<td align="center">5</td>
-			<td align="center">5</td>
-			<td align="center">5</td>
-			<td align="center">5</td>
+			<td align="center">Hang Up</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
 		</tr>
 		<tr>
-			<td align="center">Buzzword</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
+			<th colspan="6"> </th>
 		</tr>
 		<tr>
-			<th>Downsizer</th>
+			<th>Back Stabber</th>
 			<th>Level 5</th>
 			<th>Level 6</th>
 			<th>Level 7</th>
@@ -2679,7 +2696,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<th>Level 9</th>
 		</tr>
 		<tr>
-			<td align="center">Canned</td>
+			<td align="center">Guilt Trip</td>
 			<td align="center">60</td>
 			<td align="center">75</td>
 			<td align="center">80</td>
@@ -2687,31 +2704,26 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">90</td>
 		</tr>
 		<tr>
-			<td align="center">Downsize</td>
+			<td align="center">Restraining Order</td>
 			<td align="center">50</td>
 			<td align="center">65</td>
 			<td align="center">70</td>
 			<td align="center">75</td>
-			<td align="center">80</td>
+			<td align="center">90</td>
 		</tr>
 		<tr>
-			<td align="center">Pinkslip</td>
-			<td align="center">60</td>
+			<td align="center">Finger Wag</td>
+			<td align="center">50</td>
+			<td align="center">55</td>
 			<td align="center">65</td>
 			<td align="center">75</td>
 			<td align="center">80</td>
-			<td align="center">85</td>
 		</tr>
 		<tr>
-			<td align="center">Sacked</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
+			<th colspan="6"> </th>
 		</tr>
 		<tr>
-			<th>Head Hunter</th>
+			<th>Spin Doctor</th>
 			<th>Level 6</th>
 			<th>Level 7</th>
 			<th>Level 8</th>
@@ -2719,7 +2731,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<th>Level 10</th>
 		</tr>
 		<tr>
-			<td align="center">Fountain Pen</td>
+			<td align="center">Paradigm Shift</td>
 			<td align="center">60</td>
 			<td align="center">75</td>
 			<td align="center">80</td>
@@ -2727,15 +2739,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">90</td>
 		</tr>
 		<tr>
-			<td align="center">Glower Power</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Half Windsor</td>
+			<td align="center">Quake</td>
 			<td align="center">60</td>
 			<td align="center">65</td>
 			<td align="center">70</td>
@@ -2743,12 +2747,20 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">80</td>
 		</tr>
 		<tr>
-			<td align="center">Head Shrink</td>
-			<td align="center">65</td>
+			<td align="center">Spin</td>
+			<td align="center">70</td>
 			<td align="center">75</td>
 			<td align="center">80</td>
 			<td align="center">85</td>
-			<td align="center">95</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Write Off</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
 		</tr>
 		<tr>
 			<td align="center">Rolodex</td>
@@ -2759,7 +2771,10 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">80</td>
 		</tr>
 		<tr>
-			<th>Corporate Raider</th>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Legal Eagle</th>
 			<th>Level 7</th>
 			<th>Level 8</th>
 			<th>Level 9</th>
@@ -2767,7 +2782,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<th>Level 11</th>
 		</tr>
 		<tr>
-			<td align="center">Canned</td>
+			<td align="center">Evil Eye</td>
 			<td align="center">60</td>
 			<td align="center">75</td>
 			<td align="center">80</td>
@@ -2775,7 +2790,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">90</td>
 		</tr>
 		<tr>
-			<td align="center">Evil Eye</td>
+			<td align="center">Jargon</td>
 			<td align="center">60</td>
 			<td align="center">70</td>
 			<td align="center">75</td>
@@ -2783,23 +2798,26 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<td align="center">90</td>
 		</tr>
 		<tr>
-			<td align="center">Play Hardball</td>
-			<td align="center">60</td>
+			<td align="center">Legalese</td>
+			<td align="center">55</td>
 			<td align="center">65</td>
-			<td align="center">70</td>
 			<td align="center">75</td>
-			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">95</td>
 		</tr>
 		<tr>
-			<td align="center">Rolodex</td>
-			<td align="center">65</td>
+			<td align="center">Pecking Order</td>
+			<td align="center">70</td>
 			<td align="center">75</td>
 			<td align="center">80</td>
 			<td align="center">85</td>
 			<td align="center">95</td>
 		</tr>
 		<tr>
-			<th>The Big Cheese</th>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Big Wig</th>
 			<th>Level 8</th>
 			<th>Level 9</th>
 			<th>Level 10</th>
@@ -2807,19 +2825,19 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 			<th>Level 12</th>
 		</tr>
 		<tr>
-			<td align="center">Tee Off</td>
-			<td align="center">55</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
+			<td align="center">Power Trip</td>
 			<td align="center">75</td>
 			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+			<td align="center">95</td>
 		</tr>
 		<tr>
-			<td align="center">Glower Power</td>
-			<td align="center">55, 70, 60 *</td>
-			<td align="center">65, 75, 65 *</td>
-			<td align="center">75, 85, 70 *</td>
-			<td align="center">85, 90, 75 *</td>
-			<td align="center">95, 95, 80 *</td>
+			<td align="center">Finger Wag</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">85</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
 		</tr>
         </table>	
