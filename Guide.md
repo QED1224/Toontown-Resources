@@ -170,9 +170,17 @@ For all SOS Cards, `randChoice` was assigned 0.
 
 ## Gag Damage
 
-## HPBonus
+## `hpBonus`
 
-## Knock Back
+`hpBonus` applied in any case where multiple gags of the same track were used in the same round, on the same target. It was calculated as follows.
+
+```
+hpBonus = ceil(totalDmgs * 0.20)
+```
+Where `totalDmgs` represented the total amount of damage done by the particular track, on the particular target.
+
+
+## `kbBonus`
 
 ## Cog Attack Accuracy <a name="cog-atk-acc"></a>
 
