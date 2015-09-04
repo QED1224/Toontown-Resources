@@ -174,11 +174,12 @@ For all SOS Cards, `randChoice` was assigned 0.
 
 `hpBonus` applied in any case where multiple gags of the same track were used in the same round, on the same target. It was calculated as follows.
 
-```
+```python
 hpBonus = ceil(totalDmgs * 0.20)
 ```
 Where `totalDmgs` represented the total amount of damage done by the particular track, on the particular target.
 
+`hpBonus` did not apply to Lure or Trap gags.
 
 ## `kbBonus`
 
