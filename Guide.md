@@ -2,6 +2,7 @@
 - [Introduction](#intro)
 - [Core Knowledge](#core-knowledge)
     - [Toon Attack Accuracy](#toon-atk-acc)
+    - [Toon Attack Damage](#toon-atk-dmg)
     - [Cog Attack Accuracy](#cog-atk-acc)
     - [Doodle Training and Tricks](#doodle-t&t)
     - [Fishing and Probability](#fish-prob)
@@ -164,6 +165,14 @@ If `randChoice` was less than `atkAcc`, the attack hit. Otherwise, the attack mi
 #### Special Cases <a name="toon-atk-acc-8"></a>
 
 For all SOS Cards, `randChoice` was assigned 0.
+
+## Toon Attack Damage <a name="toon-atk-dmg"></a>
+
+## Gag Damage
+
+## HPBonus
+
+## Knock Back
 
 ## Cog Attack Accuracy <a name="cog-atk-acc"></a>
 
