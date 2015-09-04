@@ -26,6 +26,7 @@
     - [How did the V.P. choose which toon to attack?](#vp-4)
     - [Was there a way to predict when the undercarriage would open?](#vp-5)
     - [Were the gag-related decreases in SOS card performance intentional?](#vp-6)
+    - [How were the SOS toons chosen?](#vp-7)
 - [C.F.O.](#cfo)
     - [How was the C.F.O. reward chosen?](#cfo-1)
     - [How did the C.F.O. choose which toon to attack?](#cfo-2)
@@ -615,6 +616,10 @@ Now, you're probably thinking that we still haven't answered the original questi
 - The Toontown Player's Guide stated that Drop SOS cards had *near* perfect accuracy.
 
   > ... Some of these Toons, like Professor Pete, will restock your gag supply, while others, like Clumsy Ned, will lend a hand by dropping pianos with near perfect accuracy ...
+
+## How were the SOS toons chosen?  <a name="vp-7"></a>
+
+Upon entering the elevator, the game would return a list of all VP SOS toons via the .keys() method. The game would then use `random.choice` to pick an SOS from that list. In other words, the stars on the SOS card would not affect the chances of it being selected.
 
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
