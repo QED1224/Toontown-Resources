@@ -177,6 +177,8 @@ For all SOS Cards, `randChoice` was assigned 0.
 ```python
 hpBonus = ceil(totalDmgs * 0.20)
 ```
+([See definition of `ceil` here](https://docs.python.org/2/library/math.html#math.ceil))
+
 Where `totalDmgs` represented the total amount of damage done by the particular track, on the particular target.
 
 `hpBonus` did not apply to Lure or Trap gags.
