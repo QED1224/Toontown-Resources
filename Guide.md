@@ -183,6 +183,20 @@ Where `totalDmgs` represented the total amount of damage done by the particular 
 
 ## `kbBonus`
 
+## `"Carryover"`
+
+"Carryover" damage only applied to version 2.0 cogs. Every time an instance of damage was done, the game checked to see if the cog was dead. Once the first layer was destroyed, any further instances of damage done would bleed through to the skelecog layer. For all calculation purposes, the game calculated the instances of damages in the order of gag damage (Red), `hpBonus` (Yellow) and then `kbBonus` (Orange). 
+
+Suppose we have 3 toons use maxed Storm Clouds against a lured Level 12 The Big Cheese V2.0.
+
+```
+Toon 1 = 80 damage (Red). Is the cog destroyed? No, HP = 120.
+Toon 2 = 80 damage (Red). Is the cog destroyed? No, HP = 40.
+Toon 3 = 80 damage (Red). Is the cog destroyed? Yes, but it is a version 2.0, so revive it with max HP.
+hpBonus is calculated (240 * 0.20 = 48). Is the skelecog destroyed? No, HP = 152.
+kbBonus is calculated (240 * 0.5 = 120). Is the skelecog destroyed? No, HP = 32.
+```
+
 ## Cog Attack Accuracy <a name="cog-atk-acc"></a>
 
 The following three sections outline the calculations that were performed for each active cog in battle.
