@@ -33,8 +33,8 @@ Here's an example test suite:
 
 `default` will display all debug messages, while `cog-acc` will only display those in the specified methods. To set the active suite, either of the following can de done:
 
-- Manually edit the config file.
-- Say `~config suite <name>` in-game.
+- Manually edit the config file (i.e., add `suite <suite name>`).
+- Say `~config suite <suite name>` in-game.
 
 To configure the messages themselves, you first need to construct `NotifyMgr` with an instance of `Notify` inside the desired class `__init__` method:
 
@@ -64,4 +64,4 @@ self.notifyMgr.log("attack is Trap", whisper=True)
 self.notifyMgr.log("attack is Trap", whisper=True, suites=['Trap'])
 ```
 
-    This will ensure that the above message is only displayed when the `Trap` suite is active, even if another suite defines the encompassing method.
+This will ensure that the above message is only displayed when the `Trap` suite is active, even if another suite defines the encompassing method.
