@@ -11,8 +11,27 @@ There are two primary issues with Panda3D's stock `Notify` class:
 
 ## How does `NotifyMgr` address these issues?
 
-`NotifyMgr` acts as a wrapper around `Notify` which adds more advanced control. Central to its functionality is the notion of "test suites," (defined by json objects) which allow the user to create (and easily switch between) groupings of messages about a particular aspect of the game's logic. This gives the user control at the project, module, method and individual message levels.
+`NotifyMgr` acts as a wrapper around `Notify` which adds more advanced control. Central to its functionality is the notion of "test suites," (defined by JSON objects) which allow the user to create (and easily switch between) groupings of messages about a particular aspect of the game's logic. This gives the user control at the project, module, method and individual message levels.
 
 Here's an example test suite:
 
+
+```json
+{
+    "default": 
+    {
+        "files": [],
+        "methods": [],
+    },
+    "cog-acc":
+    {
+        "files": ["BattleCalculatorAI", "SuitBattleGlobals"],
+        "methods": ["__suitAtkHit", "pickSuitAttack", "__calcSuitAtkHp", "__calcSuitTarget"]
+    }
+}
+```
+`default` will display all debug messsages, while `cog-acc` will only display those in the specified methods. To set the active suite, either of the following can de done:
+
+- Manually edit the config file.
+- Say `config suite <name>` in-game.
 
