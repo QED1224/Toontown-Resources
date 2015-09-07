@@ -30,7 +30,8 @@ Here's an example test suite:
     }
 }
 ```
-`default` will display all debug messsages, while `cog-acc` will only display those in the specified methods. To set the active suite, either of the following can de done:
+
+`default` will display all debug messages, while `cog-acc` will only display those in the specified methods. To set the active suite, either of the following can de done:
 
 - Manually edit the config file.
 - Say `config suite <name>` in-game.
