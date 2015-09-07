@@ -36,3 +36,32 @@ Here's an example test suite:
 - Manually edit the config file.
 - Say `config suite <name>` in-game.
 
+To configure the messages themselves, you first need to construct `NotifyMgr` with an instance of `Notify` inside the desired class `__init__` method:
+
+```python
+from toontown.debug import NotifyMgr
+
+self.notifyMgr = NotifyMgr.NotifyMgr(self.notify)
+```
+
+From here, there are three use cases:
+
+- Regular logging:
+
+```python
+self.notifyMgr.log("attack is Trap")
+```
+
+- Regular + in-game:
+
+```python
+self.notifyMgr.log("attack is Trap", whisper=True)
+```
+
+- Suite-specific:
+
+```python
+self.notifyMgr.log("attack is Trap", whisper=True, suites=['Trap'])
+```
+
+This will ensure that the above message is only displayed when the `Trap` suite is active, even if another suite defines the encompassing method.
