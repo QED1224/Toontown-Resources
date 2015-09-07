@@ -68,4 +68,4 @@ In addition to behaving like the previous option, this will also send the messag
 self.notifyMgr.log("attack is Trap", suites=["Trap"])
 ```
 
-This will ensure that the above message is only logged (in any way) when the `Trap` suite is active, even if another suite defines the encompassing method. This is particularly useful for organizing large, multipurpose methods.
+This will ensure that the above message is only logged (in any way) when either the `Trap` or `default` suites are active, even if another suite defines the encompassing method. This is particularly useful for organizing large, multipurpose methods.
