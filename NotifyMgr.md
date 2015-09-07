@@ -52,16 +52,20 @@ From here, there are three use cases:
 self.notifyMgr.log("attack is Trap")
 ```
 
+This is equivalent to `self.notify.debug`, which means all configuration settings work the same way (levels, external files, etc).
+
 - Regular + in-game:
 
 ```python
 self.notifyMgr.log("attack is Trap", whisper=True)
 ```
 
+In addition to behaving like the previous option, this will also send the message to all toons via an in-game whisper.
+
 - Suite-specific:
 
 ```python
-self.notifyMgr.log("attack is Trap", whisper=True, suites=['Trap'])
+self.notifyMgr.log("attack is Trap", suites=["Trap"])
 ```
 
-This will ensure that the above message is only displayed when the `Trap` suite is active, even if another suite defines the encompassing method.
+This will ensure that the above message is only logged (in any way) when the `Trap` suite is active, even if another suite defines the encompassing method. This is particularly useful for organizing large, multipurpose methods.
