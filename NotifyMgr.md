@@ -18,10 +18,20 @@ Here's an example test suite:
 
 ```json
 {
-    "default": 
+    "default":
     {
         "files": [],
-        "methods": [],
+        "methods": []
+    },
+    "lure":
+    {
+        "files": ["BattleCalculatorAI"],
+        "methods": ["__calcToonAtkHit", "__addLuredSuitInfo"]
+    },
+    "knockback":
+    {
+        "files": ["BattleCalculatorAI"],
+        "methods": ["__addDmgToBonuses", "__processBonuses", "__postProcessToonAttacks", "__initRound"]
     },
     "cog-acc":
     {
@@ -31,9 +41,9 @@ Here's an example test suite:
 }
 ```
 
-`default` will display all debug messages, while `cog-acc` will only display those in the specified methods. To set the active suite, either of the following can de done:
+`default` will display all debug messages, while the other suites will only display messages in their specified methods. To set the active suite, either of the following can de done:
 
-- Manually edit the config file (i.e., add `suite <suite name>`).
+- Add `suite <suite name>` to the config file.
 - Say `~config suite <suite name>` in-game.
 
 To configure the messages themselves, you first need to construct `NotifyMgr` with an instance of `Notify` inside the desired class `__init__` method:
@@ -49,7 +59,7 @@ From here, there are three use cases:
 - Regular logging:
 
 ```python
-self.notifyMgr.log("attack is Trap")
+self.notifyMgr.log("attack is Lure")
 ```
 
 This is equivalent to `self.notify.debug`, which means all configuration settings work the same way (levels, external files, etc).
@@ -57,7 +67,7 @@ This is equivalent to `self.notify.debug`, which means all configuration setting
 - Regular + in-game:
 
 ```python
-self.notifyMgr.log("attack is Trap", whisper=True)
+self.notifyMgr.log("attack is Lure", whisper=True)
 ```
 
 In addition to behaving like the previous option, this will also send the message to all toons via an in-game whisper.
@@ -65,7 +75,7 @@ In addition to behaving like the previous option, this will also send the messag
 - Suite-specific:
 
 ```python
-self.notifyMgr.log("attack is Trap", suites=["Trap"])
+self.notifyMgr.log("attack is Lure", suites=["lure"])
 ```
 
-This will ensure that the above message is only logged (in any way) when either the `Trap` or `default` suites are active, even if another suite defines the encompassing method. This is particularly useful for organizing large, multipurpose methods.
+This will ensure that the above message is only logged when either the `lure` or `default` suites are active, even if another suite includes the message's encompassing method. This is particularly useful for organizing large, multipurpose methods.
