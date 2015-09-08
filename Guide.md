@@ -185,6 +185,34 @@ Where `totalDmgs` represented the total amount of damage done by the particular 
 
 ## `kbBonus`
 
+`kbBonus` was affected by a long-standing bug, which was essentially caused by the fact that `kbBonus` was assigned based on cog position instead of cog ID. This meant that `kbBonus` was dependent on consistent ordering. For example, consider the following situation:
+
+```
+D C B A
+
+   1
+```
+
+Here, we have four *lured* cogs (D, C, B, and A) against 1 toon. This cog ordering was represented by a list named `activeSuits` (that is, `[A, B, C, D]`). There were, however, other representations including `suits`, `joiningSuits` and `pendingSuits` -- none of which were guaranteed to be ordered in the same way.
+
+Now, consider that Toon 1 uses a Wedding Cake on cog C (index 2).
+
+```python
+:BattleCalculatorAI(debug): activeSuits = [A, B, C, D]
+:BattleCalculatorAI(debug): suits = [A, D, B, C]
+```
+
+In the above, `activeSuits` is ordered as expected and would result in cog C getting the bonus. However, the game actually used the ordering of `suits`!
+
+```python
+:BattleCalculatorAI(debug): track = 4
+:BattleCalculatorAI(debug): tgtPos = suits.index(C) = 3
+:BattleCalculatorAI(debug): kbBonuses[tgtPos][track] = [0, 100.0]
+:BattleCalculatorAI(debug): Applying kbBonus (100.0 * 0.5 dmg) to activeSuit at tgtPos 3
+:BattleCalculatorAI(debug): activeSuit C takes 100.0 damage
+```
+As you can see, it used the index of cog C from `suits` on the cog at the same index in `activeSuits`, which was cog D.
+
 ## `"Carryover"`
 
 "Carryover" damage only applied to version 2.0 cogs. Every time an instance of damage was done, the game checked to see if the cog was dead. Once the first layer was destroyed, any further instances of damage done would bleed through to the skelecog layer. For all calculation purposes, the game calculated the instances of damages in the order of gag damage (Red), `hpBonus` (Yellow) and then `kbBonus` (Orange). 
