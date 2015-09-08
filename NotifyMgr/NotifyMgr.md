@@ -20,28 +20,25 @@ Here's an example test suite:
 {
     "default":
     {
-        "files": [],
-        "methods": []
     },
     "lure":
     {
-        "files": ["BattleCalculatorAI"],
-        "methods": ["__calcToonAtkHit", "__addLuredSuitInfo"]
+        "BattleCalculatorAI": ["__calcToonAtkHit", "__addLuredSuitInfo"]
     },
     "knockback":
     {
-        "files": ["BattleCalculatorAI"],
-        "methods": ["__addDmgToBonuses", "__processBonuses", "__postProcessToonAttacks", "__initRound"]
+        "BattleCalculatorAI": ["__addDmgToBonuses", "__processBonuses", "__postProcessToonAttacks", "__initRound"],
+        "DistributedBattleBaseAI": ["getMembers", "addSuit"]
     },
     "cog-acc":
     {
-        "files": ["BattleCalculatorAI", "SuitBattleGlobals"],
-        "methods": ["__suitAtkHit", "pickSuitAttack", "__calcSuitAtkHp", "__calcSuitTarget"]
+        "BattleCalculatorAI": ["__suitAtkHit", "__calcSuitAtkHp", "__calcSuitTarget"],
+        "SuitBattleGlobals": ["pickSuitAttack"]
     }
 }
 ```
 
-`default` will display all debug messages, while the other suites will only display messages in their specified methods. To set the active suite, either of the following can de done:
+`default` will display all debug messages, while the other suites will only display messages in their specified filesor methods. To set the active suite, either of the following can de done:
 
 - Add `suite <suite name>` to the config file.
 - Say `~config suite <suite name>` in-game.
