@@ -1,0 +1,16 @@
+{
+    "lure":
+    {
+        "BattleCalculatorAI": ["__calcToonAtkHit", "__addLuredSuitInfo"]
+    },
+    "knockback":
+    {
+        "BattleCalculatorAI": ["__applyToonAttackDamages", "__addDmgToBonuses", "__processBonuses", "__postProcessToonAttacks", "__initRound"],
+        "DistributedBattleBaseAI": ["__adjustDone", "addSuit"]
+    },
+    "cog-acc":
+    {
+        "BattleCalculatorAI": ["__suitAtkHit", "__calcSuitAtkHp", "__calcSuitTarget"],
+        "SuitBattleGlobals": ["pickSuitAttack"]
+    }
+}
