@@ -195,7 +195,7 @@ D C B A
 
 Here, we have four *lured* cogs (D, C, B, and A) against 1 toon. This cog ordering was represented by a list named `activeSuits` (that is, `[A, B, C, D]`). There were, however, other representations including `suits`, `joiningSuits` and `pendingSuits` -- none of which were guaranteed to be ordered in the same way.
 
-Now, consider that Toon 1 uses a Wedding Cake on cog C (index 2).
+Now, consider that Toon 1 uses a Birthday Cake on cog C (index 2).
 
 ```python
 :BattleCalculatorAI(debug): activeSuits = [A, B, C, D]
