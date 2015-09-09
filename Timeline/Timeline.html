@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>Timeline</title>
+      <style>.markdown-preview, .markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 16px; line-height: 1.6; word-wrap: break-word; overflow: scroll; box-sizing: border-box; padding: 20px; background-color: rgb(255, 255, 255); }
+.markdown-preview > :first-child, .markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview > :last-child, .markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview a:not([href]), .markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview .absent, .markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview .anchor, .markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview .anchor:focus, .markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview h1, .markdown-preview[data-use-github-style] h1, .markdown-preview h2, .markdown-preview[data-use-github-style] h2, .markdown-preview h3, .markdown-preview[data-use-github-style] h3, .markdown-preview h4, .markdown-preview[data-use-github-style] h4, .markdown-preview h5, .markdown-preview[data-use-github-style] h5, .markdown-preview h6, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview h1 .octicon-link, .markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview h2 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview h3 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview h4 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview h5 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview h6 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview h1:hover .anchor, .markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview h2:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview h3:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview h4:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview h5:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview h6:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview h6:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview h1 tt, .markdown-preview[data-use-github-style] h1 tt, .markdown-preview h2 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview h3 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview h4 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview h5 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview h6 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview h1 code, .markdown-preview[data-use-github-style] h1 code, .markdown-preview h2 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview h3 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview h4 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview h5 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview h6 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview h1, .markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview h1 .anchor, .markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview h2, .markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview h2 .anchor, .markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview h3, .markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview h3 .anchor, .markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview h4, .markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview h4 .anchor, .markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview h5, .markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview h5 .anchor, .markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview h6, .markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview h6 .anchor, .markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview p, .markdown-preview[data-use-github-style] p, .markdown-preview blockquote, .markdown-preview[data-use-github-style] blockquote, .markdown-preview ul, .markdown-preview[data-use-github-style] ul, .markdown-preview ol, .markdown-preview[data-use-github-style] ol, .markdown-preview dl, .markdown-preview[data-use-github-style] dl, .markdown-preview table, .markdown-preview[data-use-github-style] table, .markdown-preview pre, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview hr, .markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview ul, .markdown-preview[data-use-github-style] ul, .markdown-preview ol, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview ul.no-list, .markdown-preview[data-use-github-style] ul.no-list, .markdown-preview ol.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview ul ul, .markdown-preview[data-use-github-style] ul ul, .markdown-preview ul ol, .markdown-preview[data-use-github-style] ul ol, .markdown-preview ol ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview ol ul, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview li > p, .markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview dl, .markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview dl dt, .markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview dl dd, .markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview blockquote, .markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview blockquote > :first-child, .markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview blockquote > :last-child, .markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview table, .markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: normal; }
+.markdown-preview table th, .markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview table th, .markdown-preview[data-use-github-style] table th, .markdown-preview table td, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview table tr, .markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview table tr:nth-child(2n), .markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview img, .markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview .emoji, .markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview span.frame, .markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview span.frame > span, .markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview span.frame span img, .markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview span.frame span span, .markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview span.align-center, .markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview span.align-center > span, .markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview span.align-center span img, .markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview span.align-right, .markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview span.align-right > span, .markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview span.align-right span img, .markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview span.float-left, .markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview span.float-left span, .markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview span.float-right, .markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview span.float-right > span, .markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview code, .markdown-preview[data-use-github-style] code, .markdown-preview tt, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview code::before, .markdown-preview[data-use-github-style] code::before, .markdown-preview tt::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview code::after, .markdown-preview[data-use-github-style] code::after, .markdown-preview tt::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: ' '; }
+.markdown-preview code br, .markdown-preview[data-use-github-style] code br, .markdown-preview tt br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview del code, .markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview pre > code, .markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview .highlight, .markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview .highlight pre, .markdown-preview[data-use-github-style] .highlight pre, .markdown-preview pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview .highlight pre, .markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview pre, .markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview pre code, .markdown-preview[data-use-github-style] pre code, .markdown-preview pre tt, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview pre code::before, .markdown-preview[data-use-github-style] pre code::before, .markdown-preview pre tt::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview pre code::after, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview pre tt::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview kbd, .markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview, .markdown-preview[data-use-github-style], .markdown-preview code, .markdown-preview[data-use-github-style] code { color: rgb(51, 51, 51); }
+.markdown-preview h1, .markdown-preview[data-use-github-style] h1, .markdown-preview h2, .markdown-preview[data-use-github-style] h2, .markdown-preview h3, .markdown-preview[data-use-github-style] h3, .markdown-preview h4, .markdown-preview[data-use-github-style] h4, .markdown-preview h5, .markdown-preview[data-use-github-style] h5, .markdown-preview h6, .markdown-preview[data-use-github-style] h6 { -webkit-font-smoothing: antialiased; cursor: text; }
+.markdown-preview > h1:first-child, .markdown-preview[data-use-github-style] > h1:first-child, .markdown-preview > h1:first-child + h2, .markdown-preview[data-use-github-style] > h1:first-child + h2, .markdown-preview > h2:first-child, .markdown-preview[data-use-github-style] > h2:first-child, .markdown-preview > h3:first-child, .markdown-preview[data-use-github-style] > h3:first-child, .markdown-preview > h4:first-child, .markdown-preview[data-use-github-style] > h4:first-child, .markdown-preview > h5:first-child, .markdown-preview[data-use-github-style] > h5:first-child, .markdown-preview > h6:first-child, .markdown-preview[data-use-github-style] > h6:first-child { margin-top: 0px; padding-top: 0px; }
+.markdown-preview a, .markdown-preview[data-use-github-style] a, .markdown-preview a code, .markdown-preview[data-use-github-style] a code { color: rgb(65, 131, 196); }
+.markdown-preview a:first-child h1, .markdown-preview[data-use-github-style] a:first-child h1, .markdown-preview a:first-child h2, .markdown-preview[data-use-github-style] a:first-child h2, .markdown-preview a:first-child h3, .markdown-preview[data-use-github-style] a:first-child h3, .markdown-preview a:first-child h4, .markdown-preview[data-use-github-style] a:first-child h4, .markdown-preview a:first-child h5, .markdown-preview[data-use-github-style] a:first-child h5, .markdown-preview a:first-child h6, .markdown-preview[data-use-github-style] a:first-child h6 { margin-top: 0px; padding-top: 0px; }
+.markdown-preview h1 + p, .markdown-preview[data-use-github-style] h1 + p, .markdown-preview h2 + p, .markdown-preview[data-use-github-style] h2 + p, .markdown-preview h3 + p, .markdown-preview[data-use-github-style] h3 + p, .markdown-preview h4 + p, .markdown-preview[data-use-github-style] h4 + p, .markdown-preview h5 + p, .markdown-preview[data-use-github-style] h5 + p, .markdown-preview h6 + p, .markdown-preview[data-use-github-style] h6 + p { margin-top: 0px; }
+.markdown-preview li p.first, .markdown-preview[data-use-github-style] li p.first { display: inline-block; }
+.markdown-preview ul li > :first-child, .markdown-preview[data-use-github-style] ul li > :first-child, .markdown-preview ol li > :first-child, .markdown-preview[data-use-github-style] ol li > :first-child, .markdown-preview ul li ul:first-of-type, .markdown-preview[data-use-github-style] ul li ul:first-of-type, .markdown-preview ol li ul:first-of-type, .markdown-preview[data-use-github-style] ol li ul:first-of-type { margin-top: 0px; }
+.markdown-preview ol > li, .markdown-preview[data-use-github-style] ol > li { list-style-type: decimal; }
+.markdown-preview ul > li, .markdown-preview[data-use-github-style] ul > li { list-style-type: disc; }
+.markdown-preview dl dt:first-child, .markdown-preview[data-use-github-style] dl dt:first-child { padding: 0px; }
+.markdown-preview dl dt > :first-child, .markdown-preview[data-use-github-style] dl dt > :first-child { margin-top: 0px; }
+.markdown-preview dl dt > :last-child, .markdown-preview[data-use-github-style] dl dt > :last-child { margin-bottom: 0px; }
+.markdown-preview dl dd > :first-child, .markdown-preview[data-use-github-style] dl dd > :first-child { margin-top: 0px; }
+.markdown-preview dl dd > :last-child, .markdown-preview[data-use-github-style] dl dd > :last-child { margin-bottom: 0px; }
+.markdown-preview blockquote p, .markdown-preview[data-use-github-style] blockquote p { font-size: 16px; line-height: 1.5; }
+.markdown-preview pre.editor-colors, .markdown-preview[data-use-github-style] pre.editor-colors { padding: 16px; overflow: auto; font-size: 84%; line-height: 1.45; border-radius: 3px; background-color: rgb(29, 31, 33); }
+.markdown-preview pre.editor-colors, .markdown-preview[data-use-github-style] pre.editor-colors { margin-bottom: 16px; word-break: normal; }
+.markdown-preview code, .markdown-preview[data-use-github-style] code, .markdown-preview tt, .markdown-preview[data-use-github-style] tt, .markdown-preview pre.editor-colors, .markdown-preview[data-use-github-style] pre.editor-colors { font-family: Consolas, 'Liberation Mono', Courier, monospace; }
+.markdown-preview .emoji, .markdown-preview[data-use-github-style] .emoji { height: 20px; width: 20px; }
+.markdown-preview code { text-shadow: none; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 1px dashed rgba(250, 128, 114, 0.5);
+}
+
+pre.editor-colors,
+.host {
+  background-color: #1d1f21;
+  color: #c5c8c6;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: rgba(197, 200, 198, 0.2);
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: rgba(197, 200, 198, 0.2);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: rgba(197, 200, 198, 0.1);
+}
+pre.editor-colors .gutter,
+.host .gutter {
+  background-color: #292c2f;
+}
+pre.editor-colors .gutter .cursor-line,
+.host .gutter .cursor-line {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+pre.editor-colors .line-number.cursor-line-no-selection,
+.host .line-number.cursor-line-no-selection {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #fba0e3;
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #c5c8c6;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-color: #ffffff;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #444444;
+}
+pre.editor-colors .source.gfm,
+.host .source.gfm {
+  color: #999;
+}
+pre.editor-colors .gfm .markup.heading,
+.host .gfm .markup.heading {
+  color: #eee;
+}
+pre.editor-colors .gfm .link,
+.host .gfm .link {
+  color: #555;
+}
+pre.editor-colors .gfm .variable.list,
+.host .gfm .variable.list,
+pre.editor-colors .gfm .support.quote,
+.host .gfm .support.quote {
+  color: #555;
+}
+pre.editor-colors .gfm .link .entity,
+.host .gfm .link .entity {
+  color: #ddd;
+}
+pre.editor-colors .gfm .raw,
+.host .gfm .raw {
+  color: #aaa;
+}
+pre.editor-colors .markdown .paragraph,
+.host .markdown .paragraph {
+  color: #999;
+}
+pre.editor-colors .markdown .heading,
+.host .markdown .heading {
+  color: #eee;
+}
+pre.editor-colors .markdown .raw,
+.host .markdown .raw {
+  color: #aaa;
+}
+pre.editor-colors .markdown .link,
+.host .markdown .link {
+  color: #555;
+}
+pre.editor-colors .markdown .link .string,
+.host .markdown .link .string {
+  color: #555;
+}
+pre.editor-colors .markdown .link .string.title,
+.host .markdown .link .string.title {
+  color: #ddd;
+}
+.bracket-matcher .region {
+  border-bottom: 1px solid #f8de7e;
+  margin-top: -1px;
+  opacity: .7;
+}
+.comment {
+  color: #7C7C7C;
+}
+.entity {
+  color: #FFD2A7;
+}
+.entity.name.type {
+  text-decoration: underline;
+  color: #FFFFB6;
+}
+.entity.other.inherited-class {
+  color: #9B5C2E;
+}
+.keyword {
+  color: #96CBFE;
+}
+.keyword.control {
+  color: #96CBFE;
+}
+.keyword.operator {
+  color: #EDEDED;
+}
+.storage {
+  color: #CFCB90;
+}
+.storage.modifier {
+  color: #96CBFE;
+}
+.constant {
+  color: #99CC99;
+}
+.constant.numeric {
+  color: #FF73FD;
+}
+.variable {
+  color: #C6C5FE;
+}
+.invalid.deprecated {
+  text-decoration: underline;
+  color: #FD5FF1;
+}
+.invalid.illegal {
+  color: #FD5FF1;
+  background-color: rgba(86, 45, 86, 0.75);
+}
+.string .source,
+.string .meta.embedded.line {
+  color: #EDEDED;
+}
+.string .punctuation.section.embedded {
+  color: #00A0A0;
+}
+.string .punctuation.section.embedded .source {
+  color: #00A0A0;
+}
+.string {
+  color: #A8FF60;
+}
+.string .constant {
+  color: #00A0A0;
+}
+.string.regexp {
+  color: #E9C062;
+}
+.string.regexp .constant.character.escape,
+.string.regexp .source.ruby.embedded,
+.string.regexp .string.regexp.arbitrary-repetition {
+  color: #FF8000;
+}
+.string.regexp.group {
+  color: #C6A24F;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.string.regexp.character-class {
+  color: #B18A3D;
+}
+.string .variable {
+  color: #8A9A95;
+}
+.support {
+  color: #FFFFB6;
+}
+.support.function {
+  color: #DAD085;
+}
+.support.constant {
+  color: #FFD2A7;
+}
+.support.type.property-name.css {
+  color: #EDEDED;
+}
+.source .entity.name.tag,
+.source .punctuation.tag {
+  color: #96CBFE;
+}
+.source .entity.other.attribute-name {
+  color: #C6C5FE;
+}
+.entity.other.attribute-name {
+  color: #C6C5FE;
+}
+.entity.name.tag.namespace,
+.entity.other.attribute-name.namespace {
+  color: #E18964;
+}
+.meta.preprocessor.c {
+  color: #8996A8;
+}
+.meta.preprocessor.c .keyword {
+  color: #AFC4DB;
+}
+.meta.cast {
+  color: #676767;
+}
+.meta.sgml.html .meta.doctype,
+.meta.sgml.html .meta.doctype .entity,
+.meta.sgml.html .meta.doctype .string,
+.meta.xml-processing,
+.meta.xml-processing .entity,
+.meta.xml-processing .string {
+  color: #494949;
+}
+.meta.tag .entity,
+.meta.tag > .punctuation,
+.meta.tag.inline .entity {
+  color: #C6C5FE;
+}
+.meta.tag .name,
+.meta.tag.inline .name,
+.meta.tag > .punctuation {
+  color: #96CBFE;
+}
+.meta.selector.css .entity.name.tag {
+  text-decoration: underline;
+  color: #96CBFE;
+}
+.meta.selector.css .entity.other.attribute-name.tag.pseudo-class {
+  color: #8F9D6A;
+}
+.meta.selector.css .entity.other.attribute-name.id {
+  color: #8B98AB;
+}
+.meta.selector.css .entity.other.attribute-name.class {
+  color: #62B1FE;
+}
+.meta.property-group .support.constant.property-value.css,
+.meta.property-value .support.constant.property-value.css {
+  color: #F9EE98;
+}
+.meta.preprocessor.at-rule .keyword.control.at-rule {
+  color: #8693A5;
+}
+.meta.property-value .support.constant.named-color.css,
+.meta.property-value .constant {
+  color: #87C38A;
+}
+.meta.constructor.argument.css {
+  color: #8F9D6A;
+}
+.meta.diff,
+.meta.diff.header {
+  color: #F8F8F8;
+  background-color: #0E2231;
+}
+.meta.separator {
+  color: #60A633;
+  background-color: #242424;
+}
+.meta.line.entry.logfile,
+.meta.line.exit.logfile {
+  background-color: rgba(238, 238, 238, 0.16);
+}
+.meta.line.error.logfile {
+  background-color: #751012;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><h1 id="contents-a-name-contents-a-">Contents <a name="contents"></a></h1>
+<ul>
+<li><a href="#fishing">Fishing - 11/14/2003</a></li>
+<li><a href="#sellbot">Sellbot HQ - 12/19/2003</a></li>
+<li><a href="#black-cats">Black Cats - 10/29/2004</a></li>
+<li><a href="#cashbot">Cashbot HQ - 02/17/2005</a></li>
+<li><a href="#racing">Goofy Speedway - 07/15/2005</a></li>
+<li><a href="#bears">Bears - 12/20/2005</a></li>
+<li><a href="#lawbot">Lawbot HQ - 04/25/2006</a></li>
+<li><a href="#gardening">Gardening - 07/14/2006</a></li>
+<li><a href="#pigs">Pigs - 03/7/2007</a></li>
+<li><a href="#minigolf">Chip &#39;n Dale&#39;s MiniGolf - 07/12/2007</a></li>
+<li><a href="#bossbot">Bossbot HQ - 03/6/2008</a></li>
+<li><a href="#clans">Notable Clans</a></li>
+<li><a href="#bugs">Notable In-game Bugs</a></li>
+<li><a href="#fansites">Notable Fansites</a></li>
+<li><a href="#devs">Developers Spotted In-game</a></li>
+<li><a href="#hall-of-fame">Hall of Fame</a></li>
+</ul>
+<h1 id="fishing-11-14-2003-a-name-fishing-a-">Fishing - 11/14/2003 <a name="fishing"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="first-to-max">First to Max</h2>
+<ul>
+<li>Dizzy Wonderdoodle - 09/29/2004</li>
+<li>Loosy Goosy - 09/30/2004</li>
+<li>FancyFrank - 10/26/2004</li>
+<li>Lady Lily Lemonmuffin - 10/31/2004</li>
+</ul>
+<h2 id="notable-toons">Notable Toons</h2>
+<ul>
+<li>Matt Wild Horse: Maxed a total of 18 toons in Fishing and authored a comprehensive guide on fishing (<a href="http://www.mmocentralforums.com/forums/showthread.php?t=167513">&quot;The Fishing Plan&quot;</a>).</li>
+<li>Batleth: Created the first guide to document every fish species (<a href="http://www.mmocentralforums.com/forums/showthread.php?t=29846">&quot;The Fishing Guide&quot;</a>).</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=38830">Killer Whale!!! (70 Species)</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=42607">ROLL CALL: Toons with 70 Species</a></li>
+</ul>
+<h1 id="sellbot-hq-12-19-2003-a-name-sellbot-a-">Sellbot HQ - 12/19/2003 <a name="sellbot"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="first-to-max">First to Max</h2>
+<ul>
+<li>alondra - 04/21/2004</li>
+<li>Black Pearl 04/21/2004</li>
+<li>Big Mo Mo Giggleflipper - 04/23/2004</li>
+<li>Loosy Goosy - 04/23/2004</li>
+<li>scott - 04/23/2004</li>
+<li>Szlin Peaches n Cream - 04/23/2004 </li>
+</ul>
+<h2 id="first-to-solo">First to Solo</h2>
+<ul>
+<li>Miss Trixie Jabbermouth - 05/28/2005</li>
+</ul>
+<h2 id="first-to-max-sos-cards">First to Max SOS Cards</h2>
+<ul>
+<li>Skinny C.J. Electropretzel - 08/31/2007</li>
+</ul>
+<h2 id="fastest-to-max">Fastest to Max</h2>
+<h2 id="fastest-solo">Fastest Solo</h2>
+<ul>
+<li>Doctor Frizzy Dark (Doctor Frizzy) - 15:49</li>
+</ul>
+<h2 id="fastest-pie-round">Fastest Pie Round</h2>
+<ul>
+<li>Fallen Gladiator (Doctor Frizzy) - 5:01</li>
+</ul>
+<h2 id="no-damage-pie-round">No Damage Pie Round</h2>
+<ul>
+<li>Legendary Ninja Dog</li>
+<li>Doc Quackenheimer</li>
+<li>Super Fleabag (Dippy Zippy Sparklefish)</li>
+<li>Angel Beats</li>
+<li>Good ol&#39; Lefty</li>
+<li>Master Jake Electrowoof</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=159618">800 sos cards!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=25359">level 49 Holly &amp; 108</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=15131">It&#39;s a...Mr.Hollywood!!!!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=25265">Hollywood Level 50!!!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=25447">Congrats Holly 50&#39;s!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=62593">I did it! I solo&#39;d the VP!!</a></li>
+<li><a href="http://www.gamingconnected.com/showthread.php?351-Toontown-World-Record-Solo-Achievements">Toontown World Record Solo Achievements</a></li>
+</ul>
+<h1 id="black-cats-10-29-2004-a-name-black-cats-a-">Black Cats - 10/29/2004 <a name="black-cats"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="first-to-max">First to Max</h2>
+<ul>
+<li>Black Pearl - 07/19/2005</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=62168&amp;page=5">116/117 Laff Black Cats</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=55667&amp;page=9">117 Laff Toons List - Ongoing</a></li>
+</ul>
+<h1 id="cashbot-hq-02-17-2005-a-name-cashbot-a-">Cashbot HQ - 02/17/2005 <a name="cashbot"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="first-to-max">First to Max</h2>
+<ul>
+<li>Waldo - 03/10/2005</li>
+<li>Angies Hunny Bunny - 03/11/2005</li>
+<li>Miss Trixie Jabbermouth - 03/13/2005</li>
+<li>Big Mo Mo Giggleflipper - 03/14/2005</li>
+<li>Ugly Fuzzyzilla - 03/15/2005</li>
+<li>alondra - 03/15/2005</li>
+</ul>
+<h2 id="first-to-solo">First to Solo</h2>
+<ul>
+<li>Miss Trixie Jabbermouth - 05/14/2005</li>
+</ul>
+<h2 id="most-unites-collected">Most Unites Collected</h2>
+<ul>
+<li>Kit T. Kat - 3455</li>
+</ul>
+<h2 id="fastest-to-max">Fastest to Max</h2>
+<h2 id="fastest-solo">Fastest Solo</h2>
+<ul>
+<li>Angel Beats - 19:14</li>
+</ul>
+<h2 id="fastest-crane-round">Fastest Crane Round</h2>
+<ul>
+<li>Angel Beats - 3:34</li>
+</ul>
+<h2 id="no-damage-crane-round">No Damage Crane Round</h2>
+<ul>
+<li>Super Fleabag (Dippy Zippy Sparklefish)</li>
+<li>Angel Beats</li>
+<li>Good ol&#39; Lefty</li>
+<li>Legendary Ninja Dog</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=345252">Kit T. Kat&#39;s Final final unite count</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=56377">Sid Just HIT RB!!!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=55323">Miss Trixie Jabbermouth IS A RB 50!!!!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=55350">Big Mo Mo Giggleflipper Turns Robber Baron 50</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=54965">Waldo Hit Rb 50!!!!!!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=55487">Another 117! - The second?</a></li>
+</ul>
+<h1 id="goofy-speedway-07-15-2005-a-name-racing-a-">Goofy Speedway - 07/15/2005 <a name="racing"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="first-to-max">First to Max</h2>
+<ul>
+<li>King Vadim - 01/26/2006</li>
+<li>Loopy Goopy Zooblefingers - 01/28/2006</li>
+<li>Good ol&#39; Lefty - 01/28/2006</li>
+<li>Black Pearl - 01/28/2006</li>
+<li>Berry Cute Bunny - 01/28/2006</li>
+<li>alondra - 01/28/2006</li>
+</ul>
+<h2 id="fastest-to-max">Fastest to Max</h2>
+<h2 id="notable-toons">Notable Toons</h2>
+<ul>
+<li>Payden Full: Maxed 10 toons in Racing; widely considered one of the most skilled racers in Toontown&#39;s history.</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=147427">10 Toons Maxed in GSW!!!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=89149&amp;page=4">120s out tomorrow who is you guess on first!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=93080">119-120 List</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=89205">Anyone else not get grand touring today?</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=89205">January 27, 2006 sv1.0.18.39.test.v3</a></li>
+</ul>
+<h1 id="bears-12-20-2005-a-name-bears-a-">Bears - 12/20/2005 <a name="bears"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="first-to-max">First to Max</h2>
+<ul>
+<li>Bear Belly - 04/09/2006</li>
+<li>Papa Panda - 04/11/2006</li>
+<li>Troubles Bruin - 04/16/2006</li>
+<li>Unbearably Cute - 04/19/2006</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=92065">List of Top Bears</a></li>
+</ul>
+<h1 id="lawbot-hq-04-25-2006-a-name-lawbot-a-">Lawbot HQ - 04/25/2006 <a name="lawbot"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="first-to-max">First to Max</h2>
+<ul>
+<li>alondra - 05/11/06</li>
+<li>Payden Full - 05/13/06</li>
+<li>Bear Belly - 05/14/06</li>
+<li>bluedog - 05/15/06</li>
+<li>Miss Fancy - 05/15/06</li>
+<li>Little Pearl PetalBee - 05/15/06</li>
+</ul>
+<h2 id="first-to-solo">First to Solo</h2>
+<ul>
+<li>Blinky Trickyspinner - 03/26/2007</li>
+</ul>
+<h2 id="fastest-to-max">Fastest to Max</h2>
+<h2 id="fastest-solo">Fastest Solo</h2>
+<ul>
+<li>Legendary Ninja Dog - 19:55 (BWeight6)</li>
+</ul>
+<h2 id="fastest-scale-round">Fastest Scale Round</h2>
+<ul>
+<li>Angel Beats - 4:28</li>
+</ul>
+<h2 id="no-damage-scale-round">No Damage Scale Round</h2>
+<ul>
+<li>Dippy Zippy Sparklefish</li>
+<li>Angel Beats</li>
+<li>Legendary Ninja Dog</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=100704&amp;page=44">Lawbot HQ - Top Toons</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=142220">BT solo&#39;s the CJ!</a></li>
+</ul>
+<h1 id="gardening-07-14-2006-a-name-gardening-a-">Gardening - 07/14/2006 <a name="gardening"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="first-to-max">First to Max</h2>
+<ul>
+<li>Matt Wild Horse - 12/23/2006</li>
+<li>Charles - 12/23/2006</li>
+<li>Moo Bunny - 12/23/2006</li>
+<li>Payden Full - 12/23/2006</li>
+<li>Avalanche - 12/23/2006</li>
+</ul>
+<p>(Note: Due to the nature of Gardening, this list is less meaningful than the others because (a) many benefited from the work of a few combination finders who are not necessarily represented here and (b) Cattlelog arrival date is a major factor.)</p>
+<h2 id="notable-toons">Notable Toons</h2>
+<ul>
+<li>Little Pearl PetalBee: Found 11 Bean Combinations</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=130024&amp;page=6">SPOILER - FOUND 8 bean flower search is DONE 5 of 5 found</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=363995">Jelly Bean Combination Chart</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=132094">Charles Maxes Gardening</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=131952">Thank You, Flower Searchers!</a></li>
+</ul>
+<h1 id="pigs-03-7-2007-a-name-pigs-a-">Pigs - 03/7/2007 <a name="pigs"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="first-to-max">First to Max</h2>
+<ul>
+<li>Tub O Lard - 06/21/2007</li>
+<li>Matt Wilder Horse (Matt Wild Horse) - 06/21/2007</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=151081">Congrats to ze first piggy to make 129!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=151116">70 fish for Matt Wilder Horse?</a></li>
+</ul>
+<h1 id="chip-n-dale-s-minigolf-07-12-2007-a-name-minigolf-a-">Chip &#39;n Dale&#39;s MiniGolf - 07/12/2007 <a name="minigolf"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="first-to-max">First to Max</h2>
+<ul>
+<li>Payden Full - 08/18/2007</li>
+<li>GG Remix - 08/20/2007</li>
+<li>Loopy Goopy Zooblefingers - 08/20/2007</li>
+<li>Papa Panda - 08/21/07</li>
+<li>Teal Dawn - 08/22/07</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=161739">Roll Call: Maxxed Golf Toons</a></li>
+</ul>
+<h1 id="bossbot-hq-03-6-2008-a-name-bossbot-a-">Bossbot HQ - 03/6/2008 <a name="bossbot"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="first-to-max">First to Max</h2>
+<ul>
+<li>Ambear - 03/25/2008</li>
+<li>Beautifully Broken - 03/25/2008</li>
+<li>Snappy Hulatwist Blak - 03/25/2008</li>
+<li>Lady Ladybug McSnoop - 03/25/2008</li>
+<li>Oink Fest - 03/28/2008 </li>
+</ul>
+<h2 id="first-to-solo">First to Solo</h2>
+<ul>
+<li>andrew - 03/17/2008</li>
+</ul>
+<h2 id="first-to-max-fires">First to Max Fires</h2>
+<ul>
+<li>George - 04/09/2008</li>
+</ul>
+<h2 id="fastest-to-max">Fastest to Max</h2>
+<h2 id="fastest-solo">Fastest Solo</h2>
+<ul>
+<li>Angel Beats - 60:01</li>
+</ul>
+<h2 id="fastest-seltzer-round">Fastest Seltzer Round</h2>
+<ul>
+<li>Angel Beats - 27:18</li>
+</ul>
+<h2 id="no-damage-seltzer-round">No Damage Seltzer Round</h2>
+<ul>
+<li>Legendary Ninja Dog</li>
+<li>Super Fleabag (Dippy Zippy Sparklefish)</li>
+<li>Angel Beats</li>
+<li>Legendary Ninja Dog</li>
+<li>Master Jake Electrowoof</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=180934">BBHQ Top Toons!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=182185">andrew solo CEO from start to finish!!!!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=185151">255 Pink Slips</a></li>
+</ul>
+<h1 id="notable-clans-a-name-clans-a-">Notable Clans <a name="clans"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="cold-callers-guild-a-name-nc-1-a-">Cold Callers Guild <a name="nc-1"></a></h2>
+<p>[Content to be added]</p>
+<h2 id="treasure-chest-box">Treasure Chest Box</h2>
+<p>[Content to be added]</p>
+<h1 id="notable-in-game-bugs-a-name-bugs-a-">Notable In-Game Bugs <a name="bugs"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="fishing-trophies">Fishing Trophies</h2>
+<h2 id="unlimited-trap-sos-cards">Unlimited Trap SOS Cards</h2>
+<h2 id="goofy-speedway-trophies">Goofy Speedway Trophies</h2>
+<p><a href="http://www.mmocentralforums.com/forums/showpost.php?p=1926488&amp;postcount=14">Note: toons who gained extra Laff..</a></p>
+<h2 id="multiple-cog-building-summons">Multiple Cog Building Summons</h2>
+<p>Introduction date: 04/25/2006</p>
+<p>Fix date: TBD</p>
+<p>For some time following the release of Lawbot HQ, it was possible to use a single cog building summon to spawn multiple cog buildings (limited only by the number of buildings on a given street). This was accomplished by simply clicking the desired summon multiple times. Although you were given very little visual evidence that anything abnormal was occurring, the summon GUI was actually instantiating with every click. After clicking the summon a satisfactory number of times, the user could then close their Shticker Book (without dismissing the summon pop-ups) and move down the street, summoning buildings as they went. However, a client crash would occur if too many were summoned in quick succession.</p>
+<h3 id="related-discussion">Related Discussion</h3>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=146817">Neverending building drop...</a></li>
+</ul>
+<h2 id="rental-cannon-extra-laff">Rental Cannon Extra Laff</h2>
+<p>Introduction date: 09/26/2007</p>
+<p>Fix date: TBD</p>
+<p>This was quite possibly the most impactful in-game bug Toontown ever saw, as it allowed exploiters to gain 4x the Laff (server-side) for any Laff Toontask available at all four HQ Officers. The was accomplished by doing the following:</p>
+<ol>
+<li>Purchasing Rental Cannons.</li>
+<li>Having a friend wait inside a Toon HQ.</li>
+<li>Performing the first step of the well-known &quot;flying&quot; glitch at your Estate. That is, openning your Shticker Book in mid-air after jumping off of a fishing pier into the water below. This should have resulted in being able to move while the Shticker Book was open.</li>
+<li>Entering a Rental Cannon with the Shticker Book open.</li>
+<li>Ejecting yourself from the Rental Cannon.</li>
+<li>While still in mid-air from the cannon, selecting a playground to teleport to <em>and</em>, before your toon disappeared into its blackhole, teleporting to your friend at the Toon HQ.</li>
+<li>Upon arriving at the Toon HQ, you were able to talk to an HQ Officer without losing the ability to move. This allowed for you to walk up to all 4 HQ Officers at the same time.</li>
+<li>After talking to all 4 HQ Officers, you&#39;d have a single task-selection GUI open, from which you&#39;d select the desired Laff task (Note: you&#39;d only have 20 seconds to compete this step due to the time-out mechanism).</li>
+</ol>
+<p>After doing the above, your Toontask page would show the same Laff task in all four slots. Once completed, you would gain 4x the reward.</p>
+<h3 id="related-discussion">Related Discussion</h3>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=153337">Is This a GM???</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=156873">Has anyone seen????</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?p=1925193#post1925193">Golfing</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=184408">I saw the so called &quot;Maxxed Toon&quot;</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=184413">So about this so called maxxed toon...</a></li>
+</ul>
+<h2 id="other-extra-laff-bugs">Other Extra Laff Bugs</h2>
+<ul>
+<li>Dr.H.Knochenflicker</li>
+</ul>
+<p>Dr.H.Knochenflicker received an extra three Laff points at some point in 2004. The origin of the the extra Laff is disputed, but its owner claims to have gained it through a Toontask-related bug:</p>
+<blockquote>
+<p>I think this had to do with some previous game updates on the server. So if that toon was just doing certain toon tasks, the game was updated and afterwards these toons could receive the tasks for gaining laff points again. I am just guessing, but this is somehow how it happened.</p>
+</blockquote>
+<p>Notably, this bug allowed the toon to be one of two (joining Loopy Goopy Zooblefingers) to achieve 121 Laff on the first day Lawbot HQ was released and one of two (joining Toon/Reign) toons to achieve 137 Laff, through in-game means, without completely maxing Toontown.</p>
+<h3 id="related-discussion">Related Discussion</h3>
+<ul>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=181114">133!</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showthread.php?t=75482">more than 120 laff is possible</a></li>
+<li><a href="http://www.mmocentralforums.com/forums/showpost.php?p=1547565&amp;postcount=15">Gardening</a></li>
+</ul>
+<h1 id="notable-fansites-a-name-fansites-a-">Notable Fansites <a name="fansites"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h1 id="developers-spotted-in-game-a-name-devs-a-">Developers Spotted In-game <a name="devs"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<p>Bewteen 2007 and 2008, many Toontown developers were spotted in-game. Here are a few of the recorded sightings:</p>
+<ul>
+<li>Perhaps the most well-known and personable dev, Wascally Wabbitt (02/17/07):</li>
+</ul>
+<p align="center">
+  <img src="http://i.imgur.com/X86W7Ga.png?1" height="200" width="300">
+</p>
+
+<ul>
+<li>Another commonly sighted dev, Flappy (03/01/08):</li>
+</ul>
+<p align="center">
+  <img src="http://i.imgur.com/MXaDkGA.png?1" height="200" width="300">
+</p>
+
+<ul>
+<li>Miss Fancy Funnybump (02/14/08):</li>
+</ul>
+<p align="center">
+  <img src="http://i.imgur.com/LviS2on.png?1" height="200" width="300">
+</p>
+
+<h1 id="hall-of-fame-a-name-hall-of-fame-a-">Hall of Fame <a name="hall-of-fame"></a></h1>
+<p>[<a href="#contents">back to top</a>]</p>
+<h2 id="aj">aj</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>Founder of the <a href="#nc-1">Cold Callers Guild</a></li>
+</ul>
+<h2 id="anarchy">Anarchy</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>Founder of Toontown Central (now MMO Central)</li>
+</ul>
+<h2 id="angel-beats">Angel Beats</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>Soloed all 4 bosses</li>
+</ul>
+<h2 id="blinky-trickyspinner">Blinky Trickyspinner</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>First to solo the C.J.</li>
+</ul>
+<h2 id="cool-corny-electrofoot">Cool Corny Electrofoot</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>Soloed all 4 bosses</li>
+</ul>
+<h2 id="dippy-zippy-sparklefish">Dippy Zippy Sparklefish</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>Soloed all 4 bosses</li>
+</ul>
+<h2 id="good-ol-lefty">Good ol&#39; Lefty</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>Soloed all 4 bosses</li>
+</ul>
+<h2 id="legendary-ninja-dog">Legendary Ninja Dog</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>Soloed all 4 bosses</li>
+</ul>
+<h2 id="little-pearl-petalbee">Little Pearl Petalbee</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<h2 id="loopy-goopy-zooblefingers">Loopy Goopy Zooblefingers</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>Soloed all 4 bosses</li>
+</ul>
+<h2 id="loosy-goosy">Loosy Goosy</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<h2 id="matt-wild-horse">Matt Wild Horse</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>Maxed 18 toons in fishing</li>
+</ul>
+<h2 id="miss-trixie-jabbermouth">Miss Trixie Jabbermouth</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>First to solo the C.F.O. and V.P.</li>
+</ul>
+<h2 id="mr-red-bull">Mr Red Bull</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<h2 id="payden-full">Payden Full</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<h2 id="skinny-c-j-electropretzel">Skinny C.J. Electropretzel</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>Soloed all 4 bosses</li>
+<li>First to max SOS cards at 800</li>
+</ul>
+<h2 id="the-dogfather">The Dogfather</h2>
+<p><strong>Biography</strong></p>
+<p><strong>Accomplishments</strong></p>
+<ul>
+<li>Soloed all 4 bosses</li>
+<li>Author of 19 widely used Toontown guides</li>
+</ul></body>
+</html>
