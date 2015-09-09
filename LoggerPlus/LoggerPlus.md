@@ -1,5 +1,7 @@
 ## LoggerPlus
 
+A simple logging utility for Toontown.
+
 ## Configuration
 
 There are two steps to configuring `LoggerPlus`.
@@ -51,4 +53,4 @@ logger.log(msg, whisper=False, whisperOnly=False, suites=[]):
 - `msg`: The message to be logged.
 - `whisper`: If True, `msg` will also be sent via an in-game whisper.
 - `whisperOnly`: If True, `msg` will only be sent via an in-game whisper.
-- `suites`: A list of test suites that `msg` is associated with. If provided, it will ensure that that `msg` is only logged when one of its suite is active, even if another suite includes the message's encompassing method.
+- `suites`: A list of test suites that `msg` is associated with. If provided, it will ensure that that `msg` is only logged when one of its suites is active, even if another suite includes the message's encompassing method.
