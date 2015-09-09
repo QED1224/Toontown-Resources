@@ -47,10 +47,10 @@ There are two steps to configuring `LoggerPlus`.
 ```python
 from debug.LoggerPlusGlobal import logger
 
-logger.log(msg, whisper=False, whisperOnly=False, suites=[]):
+logger.log(msg, whisper=False, whisperOnly=False, suites=[])
 ```
 
 - `msg`: The message to be logged.
-- `whisper`: If True, `msg` will also be sent via an in-game whisper.
-- `whisperOnly`: If True, `msg` will only be sent via an in-game whisper.
-- `suites`: A list of test suites that `msg` is associated with. If provided, it will ensure that that `msg` is only logged when one of its suites is active, even if another suite includes the message's encompassing method.
+- `whisper` (optional): If True, `msg` will also be sent via an in-game whisper.
+- `whisperOnly` (optional): If True, `msg` will only be sent via an in-game whisper.
+- `suites` (optional): A list of test suites that `msg` is associated with. If provided, it will ensure that that `msg` is only logged when one of its suites is active, even if another suite includes the message's encompassing method.
