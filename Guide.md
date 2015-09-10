@@ -249,27 +249,30 @@ Where "cog level" was the actual level and "base level" was the lowest possible 
 Let's look at an example. Here's the output of a simulation of the above algorithm for a Level 3 Yesman:
 
 ```
-:SuitBattleGlobals(debug): Entering pickSuitAttack...
-:SuitBattleGlobals(debug): attacks:
-(('RubberStamp', (2, 2, 3, 3, 4), (75, 75, 75, 75, 75), (35, 35, 35, 35, 35)),
-('RazzleDazzle', (1, 1, 1, 1, 1), (50, 50, 50, 50, 50), (25, 20, 15, 10, 5)),
-('Synergy', (4, 5, 6, 7, 8), (50, 60, 70, 80, 90), (5, 10, 15, 20, 25)),
-('TeeOff', (3, 3, 4, 4, 5), (50, 60, 70, 80, 90), (35, 35, 35, 35, 35)))
-:SuitBattleGlobals(debug): suitLevel = 0
-:SuitBattleGlobals(debug):
-        randNum = 44
-        count = 0
-        index = 0
-:SuitBattleGlobals(debug): Looping through attacks...
-:SuitBattleGlobals(debug):
-            count = 35
-            index = 0
-:SuitBattleGlobals(debug): 44 < 35?
-:SuitBattleGlobals(debug):
-            count = 60
-            index = 1
-:SuitBattleGlobals(debug): 44 < 60?
-:SuitBattleGlobals(debug): picking RazzleDazzle
+:SuitBattleGlobals(LP): Entering pickSuitAttack...
+:SuitBattleGlobals(LP): Attacks ...
+:SuitBattleGlobals(LP): RubberStamp with freq = 35
+:SuitBattleGlobals(LP): RazzleDazzle with freq = 25
+:SuitBattleGlobals(LP): Synergy with freq = 5
+:SuitBattleGlobals(LP): TeeOff with freq = 35
+:SuitBattleGlobals(LP): 
+	randNum = 60
+	count = 0
+	index = 0
+:SuitBattleGlobals(LP): Looping through attacks...
+:SuitBattleGlobals(LP): 
+	count = 35 (RubberStamp)
+	index = 0
+:SuitBattleGlobals(LP): 60 < 35? => False
+:SuitBattleGlobals(LP): 
+	count = 60 (RubberStamp + RazzleDazzle)
+	index = 1
+:SuitBattleGlobals(LP): 60 < 60? => False
+:SuitBattleGlobals(LP): 
+	count = 65 (RubberStamp + RazzleDazzle + Synergy)
+	index = 2
+:SuitBattleGlobals(LP): 60 < 65? => True
+:SuitBattleGlobals(LP): Picking Synergy...
 ```
 
 As you can see above,
