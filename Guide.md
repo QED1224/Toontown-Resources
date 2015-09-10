@@ -1287,7 +1287,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 		</table>
 		
 		
-		<table>
+<table>
 		<tr>
 			<th colspan="6">Lawbots</th>
 		</tr>
@@ -1605,8 +1605,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 	        </tr>
 	        </table>
 	        
-	        
-	        <table>
+<table>
 	        <tr>
 			<th colspan="6">Cashbots</th>
 		</tr>
@@ -1908,8 +1907,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 	        </tr>
 	        </table>
 	        
-	        
-	        <table>
+<table>
 	        <tr>
 			<th colspan="6">Sellbots</th>
 		</tr>
