@@ -2,6 +2,12 @@
 
 A simple logging utility for Toontown.
 
+## Installation
+
+1. Create debugging.json in your config directory.
+2. Place the debug directory top-level in your Toontown directory (i.e., the same level as config).
+3. See the Configuration and Usage sections below
+
 ## Configuration
 
 There are two steps to configuring `LoggerPlus`.
