@@ -5,7 +5,7 @@
     - [Toon Attack Damage](#toon-atk-dmg)
     - [Cog Attack Accuracy](#cog-atk-acc)
     - [Doodle Training and Tricks](#doodle-t&t)
-    - [Fishing and Probability](#fish-prob)
+    - [Fishing](#fishing)
 - [Toon-up](#toon-up)
     - [Did using Toon-up have any impact on other gag's damage or accuracy?](#toon-up-1)
 - [Trap](#trap)
