@@ -5,7 +5,7 @@
     - [Toon Attack Damage](#toon-atk-dmg)
     - [Cog Attack Accuracy](#cog-atk-acc)
     - [Doodle Training and Tricks](#doodle-t&t)
-    - [Fishing](#fishing)
+    - [Fishing](#fishing-main)
 - [Toon-up](#toon-up)
     - [Did using Toon-up have any impact on other gag's damage or accuracy?](#toon-up-1)
 - [Trap](#trap)
@@ -167,6 +167,7 @@ If `randChoice` was less than `atkAcc`, the attack hit. Otherwise, the attack mi
 For all SOS Cards, `randChoice` was assigned 0.
 
 ## Toon Attack Damage <a name="toon-atk-dmg"></a>
+[[back to top](#contents)]
 
 ## Gag Damage
 
@@ -394,7 +395,7 @@ Expected Laff = cutoff * Laff Given
 ```
 As you can see, maxed Play Dead and Rollover are the most efficient tricks. Therefore Play Dead is likely the only trick worth training.
 
-## Fishing and Probability <a name="fish-prob"></a>
+## Fishing <a name="fishing-main"></a>
 [[back to top](#contents)]
 
 # Toon-up <a name="toon-up"></a>
