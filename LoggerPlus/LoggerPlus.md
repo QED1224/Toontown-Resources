@@ -15,22 +15,22 @@ There are two steps to configuring `LoggerPlus`.
 - Creating your test suites in debugging.json:
 
  ```json
-        {
-            "lure":
-            {
-                "BattleCalculatorAI": ["__calcToonAtkHit", "__addLuredSuitInfo"]
-            },
-            "knockback":
-            {
-                "BattleCalculatorAI": ["__applyToonAttackDamages", "__addDmgToBonuses", "__processBonuses", "__postProcessToonAttacks", "__initRound"],
-        "DistributedBattleBaseAI": ["__adjustDone", "addSuit"]
-             },
-             "cog-acc":
-             {
-                 "BattleCalculatorAI": ["__suitAtkHit", "__calcSuitAtkHp", "__calcSuitTarget"],
-                 "SuitBattleGlobals": ["pickSuitAttack"]
-            }
-        }
+ {
+     "lure":
+     {
+         "BattleCalculatorAI": ["__calcToonAtkHit", "__addLuredSuitInfo"]
+     },
+     "knockback":
+     {
+         "BattleCalculatorAI": ["__applyToonAttackDamages", "__addDmgToBonuses", "__processBonuses", "__postProcessToonAttacks", "__initRound"],
+         "DistributedBattleBaseAI": ["__adjustDone", "addSuit"]
+     },
+     "cog-acc":
+     {
+         "BattleCalculatorAI": ["__suitAtkHit", "__calcSuitAtkHp", "__calcSuitTarget"],
+         "SuitBattleGlobals": ["pickSuitAttack"]
+     }
+}
 ```
 
 - The Panda3D configuration file (.prc):
@@ -51,28 +51,28 @@ There are two steps to configuring `LoggerPlus`.
 
 ## Usage
 
-```python
-from debug.LoggerPlusGlobal import logger
+- Import from `LoggerPlusGlobal`:
 
-logger.log(msg, whisper=False, whisperOnly=False, suites=[])
-```
+     ```python
+    from debug.LoggerPlusGlobal import logger
+   ```
 
 - `msg`: The message to be logged.
 
      ```python
-     logger.log("This is a very detailed log message")
+    logger.log("This is a very detailed log message")
     ```
 
 - `whisper` (optional): If True, `msg` will be sent via an in-game whisper in addition to external outputs.
 
      ```python
-     logger.log("This is a very detailed log message", whisper=1)
+    logger.log("This is a very detailed log message", whisper=1)
     ```
 
 - `whisperOnly` (optional): If True, `msg` will *only* be sent via an in-game whisper.
         
      ```python
-     logger.log("Less detailed log message", whisperOnly=1)
+    logger.log("Less detailed log message", whisperOnly=1)
     ```
     
     Since whispers have limited space, it can be useful to specify whisper-only versions of messages.
@@ -80,5 +80,5 @@ logger.log(msg, whisper=False, whisperOnly=False, suites=[])
 - `suites` (optional): A list of test suites that `msg` is associated with. If provided, it will ensure that that `msg` is only logged when one of its suites is active, even if another suite includes the message's encompassing method.
 
      ```python
-     logger.log("This is a very detailed log message", suites=["suite1", "suite2"])
+    logger.log("This is a very detailed log message", suites=["suite1", "suite2"])
     ```
