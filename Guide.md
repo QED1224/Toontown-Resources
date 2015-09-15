@@ -443,6 +443,31 @@ In other words, the odds of selecting each item type were 92% (`QuestItem`), 5% 
 
 ### `FishItem`
 
+Every fish had three components: genus, species and weight. Genus and species were randomly selected from a list, `fishList`, which was formed as follows.
+
+- `rarity`:
+
+```python
+rarity = int(ceil(10 * (1 - pow(diceRoll, RodRarityFactor))))
+if rarity <= 0:
+    rarity = 1
+```
+Where `diceRoll` was a pseudorandom real number such that 0.0 <= `diceRoll` < 1.0 and `RodRarityFactor` was given by the following table.
+
+|   Rod    | `RodRarityFactor` | 
+|:--------:|:-----------------:|
+| Twig     | 1 / 4.3           | 
+| Bamboo   | 1 / (4.3 * 0.975) |
+| Hardwood | 1 / (4.3 * 0.95)  |
+| Steel    | 1 / (4.3 * 0.90)  |
+| Gold     | 1 / (4.3 * 0.85)  |
+
+- `rodDict`:
+
+- `rarityDict`:
+
+- `fishList`:
+
 ### `JellybeanItem`
 
 ### `BootItem`
