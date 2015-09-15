@@ -408,12 +408,7 @@ As you can see, maxed Play Dead and Rollover are the most efficient tricks. Ther
 
 ### `itemType`
 
-`itemType` was the primamry factor in determining the result of a successful cast. The possible types were as follows.
-
-- `JellybeanItem`
-- `FishItem`
-- `BootItem` 
-- `QuestItem` 
+`itemType` was the primamry factor in determining the result of a successful cast. The possible types were `JellybeanItem`, `FishItem`, `BootItem` and `QuestItem`. 
 
 Each item was assigned a probability (its `cutoff`) of being selected via a dictionary named `SortedProbabilityCutoffs`:
 
