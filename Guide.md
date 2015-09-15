@@ -237,6 +237,7 @@ kbBonus is calculated (240 * 0.5 = 120). Is the skelecog destroyed? No, HP = 32.
 ```
 
 ## Cog Attack Accuracy <a name="cog-atk-acc"></a>
+[[back to top](#contents)]
 
 The following three sections outline the calculations that were performed for each active cog in battle.
 
