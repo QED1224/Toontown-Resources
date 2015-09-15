@@ -41,6 +41,7 @@
     - [How did the C.E.O. choose which attack to use?](#ceo-1)
     - [How did the C.E.O. choose which toon to attack?](#ceo-2)
 - [Fishing](#fishing)
+	- [Was using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod?](#fishing-1)
 - [Racing](#racing)
 - [Golfing](#golfing)
 - [Misc](#misc)
@@ -734,6 +735,8 @@ Initial Toon Evidence = 2700 - Initial Cog Evidence
 
 # Fishing <a name="fishing"></a>
 [[back to top](#contents)]
+
+## Was using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod? <a name="fishing-1"></a>
 
 # Racing <a name="racing"></a>
 [[back to top](#contents)]
