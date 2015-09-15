@@ -333,7 +333,7 @@ A list of attack accuracy values can be seen at [Appendix C](#appendix-c).
 ## Doodle Training and Tricks <a name="doodle-t&t"></a>
 [[back to top](#contents)]
 
-## How was Doodle trick experience calculated? <a name="doodle-t&t-1"></a>
+### How was Doodle trick experience calculated? <a name="doodle-t&t-1"></a>
 
 Doodle tricks had similarities to how gags gained experience. Each time a successful trick was performed, that trick would gain +20 experience points. Each trick required 10000 experience points to fully max the trick. 10000 / 20 would require the Doodle to perform 500 successful tricks, in order to max that particular trick. To max all tricks, it would require an overall total of 3500 successful tricks.
 
@@ -343,7 +343,7 @@ In addition, performing a successful trick would increase the `aptitiude` value 
 aptitude = trick experience / 10000
 ```
 
-## Did Doodle tricks have base accuracy values to them? <a name="doodle-t&t-2"></a>
+### Did Doodle tricks have base accuracy values to them? <a name="doodle-t&t-2"></a>
 
 Yes, Doodle tricks had individual accuracy values for each trick. These values were used in determining the final accuracy value of the trick, referred to as `cutoff`. Below is a list of the base accuracy values for each trick. 
 
@@ -357,7 +357,7 @@ Yes, Doodle tricks had individual accuracy values for each trick. These values w
 | Dance | 0.5 |
 | Speak | 0.4 | 
 
-## How did the game determine if the Doodle would successfully perform the trick? <a name="doodle-t&t-3"></a>
+### How did the game determine if the Doodle would successfully perform the trick? <a name="doodle-t&t-3"></a>
 
 To determine if a trick would be successful or not, the following equation could be used.
 
@@ -404,6 +404,39 @@ As you can see, maxed Play Dead and Rollover are the most efficient tricks. Ther
 
 ## Fishing <a name="fishing-main"></a>
 [[back to top](#contents)]
+
+### `itemType`
+
+`itemType` was the primamry factor in determining the result of a successful cast. The possible types were as follows.
+
+- `JellybeanItem`
+- `FishItem`
+- `BootItem` 
+- `QuestItem` 
+
+Each item was assigned a probability (its `cutoff`) of being selected via a dictionary named `SortedProbabilityCutoffs`:
+
+```python
+ProbabilityDict = {94: FishItem, 92: QuestItem, 95: JellybeanItem, 100: BootItem}
+SortedProbabilityCutoffs = ProbabilityDict.keys()
+SortedProbabilityCutoffs.sort()
+```
+Now, `itemType` was assigned according to the following algorithm:
+
+1. A pseudorandom real number, `rand`, was generated such that 0.0 <= `rand` < 100.0.
+2. Each `cutoff` in `SortedProbabilityCutoffs` was then compared to `rand`.
+    - if `rand` was less than or equal to `cutoff`, `itemType` was assigned `ProbabilityDict[cutoff]`.
+    - if `rand` was greater than `cutoff`, the loop continued.
+
+In other words, the odds of selecting each item type were 92% (`QuestItem`), 5% (`BootItem`), 2% (`FishItem`) and 1% (`JellybeanItem`).
+
+### `QuestItem`
+
+### `FishItem`
+
+### `JellybeanItem`
+
+### `BootItem`
 
 # Toon-up <a name="toon-up"></a>
 [[back to top](#contents)]
