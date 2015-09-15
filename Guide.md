@@ -432,6 +432,19 @@ In other words, the odds of selecting each item type were 92% (`QuestItem`), 5% 
 
 ### `QuestItem`
 
+`QuestItem` served two purposes:
+
+- If there was an active Fishing quest, the following calculation was done to determine if the quest item would be found:
+
+    ```python
+   questItemFound = False
+   minChance = questClass.getPercentChance()
+   chance = random.randint(minChance - 40, 100)
+   if chance <= minChance:
+       questItemFound = True
+    ```
+- If there was not an active Fishing quest or `questItemFound == False`,  `QuestItem` used the same process as `FishItem` (see next section).
+
 ### `FishItem`
 
 ### `JellybeanItem`
