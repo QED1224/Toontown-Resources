@@ -40,6 +40,7 @@
 - [C.E.O.](#ceo)
     - [How did the C.E.O. choose which attack to use?](#ceo-1)
     - [How did the C.E.O. choose which toon to attack?](#ceo-2)
+    - [How did the C.E.O. decide to continue moving or not?](#ceo-3)
 - [Fishing](#fishing)
 	- [Was using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod?](#fishing-1)
 - [Racing](#racing)
@@ -753,6 +754,10 @@ Initial Toon Evidence = 2700 - Initial Cog Evidence
 ## How did the C.E.O. choose which attack to use? <a name="ceo-1"></a>
 
 ## How did the C.E.O. choose which toon to attack? <a name="ceo-2"></a>
+
+## How did the C.E.O. decide to continue moving or not? <a name="ceo-3"></a>
+
+If the C.E.O. was moving towards a toon on a table, and that particular toon hopped off the table, `random.random()` generated a number between 0.0 and 1.0. If `random.random()` was less than 0.5, the C.E.O. would stop moving towards that table and use his directed golf attack. Otherwise, the C.E.O. would run over that table and stop on top of it.
 
 # Fishing <a name="fishing"></a>
 [[back to top](#contents)]
