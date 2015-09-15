@@ -186,7 +186,14 @@ Where `totalDmgs` represented the total amount of damage done by the particular 
 
 ## `kbBonus`
 
-`kbBonus` was affected by a long-standing bug, which was essentially caused by the fact that `kbBonus` was assigned based on cog position instead of cog ID. This meant that `kbBonus` was dependent on consistent ordering. For example, consider the following situation:
+`kbBonus` should have applied in any case in which a lured target was attacked with Throw or Squirt. It was calculated as follows.
+
+```python
+kbBonus = totalDmgs * 0.50
+```
+Where `totalDmgs` represented the total amount of damage done on the particular lured target.
+
+However `kbBonus` was affected by a long-standing bug, which was essentially caused by the fact that `kbBonus` was assigned based on cog position instead of cog ID. This meant that `kbBonus` was dependent on consistent ordering. For example, consider the following situation:
 
 ```
 D C B A
