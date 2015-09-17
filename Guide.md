@@ -410,23 +410,7 @@ As you can see, maxed Play Dead and Rollover are the most efficient tricks. Ther
 
 ### `itemType`
 
-`itemType` was the primamry factor in determining the result of a successful cast. The possible types were `JellybeanItem`, `FishItem`, `BootItem` and `QuestItem`. 
-
-Each item was assigned a probability (its `cutoff`) of being selected via a dictionary named `SortedProbabilityCutoffs`:
-
-```python
-ProbabilityDict = {94: FishItem, 92: QuestItem, 95: JellybeanItem, 100: BootItem}
-SortedProbabilityCutoffs = ProbabilityDict.keys()
-SortedProbabilityCutoffs.sort()
-```
-Now, `itemType` was assigned according to the following algorithm:
-
-1. A pseudorandom real number, `rand`, was generated such that 0.0 <= `rand` < 100.0.
-2. Each `cutoff` in `SortedProbabilityCutoffs` was then compared to `rand`.
-    - if `rand` was less than or equal to `cutoff`, `itemType` was assigned `ProbabilityDict[cutoff]`.
-    - if `rand` was greater than `cutoff`, the loop continued.
-
-In other words, the odds of selecting each item type were 92% (`QuestItem`), 5% (`BootItem`), 2% (`FishItem`) and 1% (`JellybeanItem`).
+`itemType` was the primary factor in determining the result of a successful cast. The possible types were `JellybeanItem` (1%), `FishItem` (2%), `BootItem` (5%) and `QuestItem` (92%).
 
 ### `QuestItem`
 
@@ -436,12 +420,12 @@ In other words, the odds of selecting each item type were 92% (`QuestItem`), 5% 
 
     ```python
    questItemFound = False
-   minChance = questClass.getPercentChance()
+   minChance = questClass.getPercentChance() # Quest rarity %
    chance = random.randint(minChance - 40, 100)
    if chance <= minChance:
        questItemFound = True
     ```
-- If there was not an active Fishing quest or the item was not found,  `QuestItem` used the same process as `FishItem` (see next section).
+- If there was not an active Fishing quest or the quest item was not found,  `QuestItem` used the same process as `FishItem` (see next section).
 
 ### `FishItem`
 
