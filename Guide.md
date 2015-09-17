@@ -441,7 +441,7 @@ In other words, the odds of selecting each item type were 92% (`QuestItem`), 5% 
    if chance <= minChance:
        questItemFound = True
     ```
-- If there was not an active Fishing quest or `questItemFound == False`,  `QuestItem` used the same process as `FishItem` (see next section).
+- If there was not an active Fishing quest or the item was not found,  `QuestItem` used the same process as `FishItem` (see next section).
 
 ### `FishItem`
 
