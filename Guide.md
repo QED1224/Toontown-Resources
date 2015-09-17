@@ -456,7 +456,19 @@ Where `diceRoll` was a pseudorandom real number such that 0.0 <= `diceRoll` < 1.
 
 ### `JellybeanItem`
 
+In this case, Jellybeans were awarded according to the following table.
+ 
+|   Rod    | Jellybeans | 
+|:--------:|:----------:|
+| Twig     | 10         | 
+| Bamboo   | 20         |
+| Hardwood | 30         |
+| Steel    | 75         |
+| Gold     | 150        |
+
 ### `BootItem`
+
+In this case, a boot was caught.
 
 # Toon-up <a name="toon-up"></a>
 [[back to top](#contents)]
