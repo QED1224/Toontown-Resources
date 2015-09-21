@@ -214,7 +214,7 @@ Now, consider that Toon 1 uses a Birthday Cake on cog C (index 2).
 
 In the above, `activeSuits` is ordered as expected and would result in cog C getting the bonus. However, the game actually used the ordering of `suits`!
 
-```python
+```
 :BattleCalculatorAI(debug): track = 4
 :BattleCalculatorAI(debug): tgtPos = suits.index(C) = 3
 :BattleCalculatorAI(debug): kbBonuses[tgtPos][track] = [0, 100.0]
@@ -598,7 +598,7 @@ With the above in mind, it can also be useful to think in terms of `wakeupChance
 
 However, given that each round is calculated independent of any prior results, we note that P(B|A) = P(B). Thus, the following equation can be used to determine the probability that a single cog will stay lured for N rounds:
 
-```python
+```
 Given (Max rounds - N) >= 0,
 
 P(N rounds) = [1 - (wakeupChance / 100)] ^ (N - 1)
