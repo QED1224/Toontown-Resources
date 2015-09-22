@@ -10,3 +10,5 @@
 - [ ] cj-5
 - [ ] cogs-1
 - [ ] fishing-1
+- [ ] Appendix B
+- [ ] Appendix C
