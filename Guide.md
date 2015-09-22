@@ -453,13 +453,15 @@ After the calculation of `rarity`, the possible fish were narrowed by pond locat
 After selecting a genus and species, the fish's weight was calculated according to the following process:
 
 ```python
+minWeight = max(minFishWeight, minRodWeight)
+maxWeight = min(maxFishWeight, maxRodWeight)
 randNumA = random.random() # A real number between 0.0 and 1.0
 randNumB = random.random() # A real number between 0.0 and 1.0
 randNum = (randNumA + randNumB) / 2.0
 randWeight = minWeight + (maxWeight - minWeight) * randNum
 randWeight = int(round(randWeight * 16))
 ```
-Where `minWeight` and `maxWeight` represented the fish's minimum and maximum weight respectively.
+Where `minWeight` and `maxWeight` represented the fish's minimum and maximum weight respectively, and `minRodWeight`
 
 If no `fishList` was associated with the calculated `rarity` value, a Balloon Fish weighing 0lbs was caught.
 
