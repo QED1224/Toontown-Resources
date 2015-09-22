@@ -1,8 +1,6 @@
 
 ## In Progress
 
-- [ ] fishing-main
-
 ## On Deck
 
 - [ ] toon-atk-dmg (Gag damage)
