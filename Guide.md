@@ -207,7 +207,7 @@ Here, we have four *lured* cogs (D, C, B, and A) against 1 toon. This cog orderi
 
 Now, consider that Toon 1 uses a Birthday Cake on cog C (index 2).
 
-```python
+```
 :BattleCalculatorAI(debug): activeSuits = [A, B, C, D]
 :BattleCalculatorAI(debug): suits = [A, D, B, C]
 ```
