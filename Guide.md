@@ -446,11 +446,22 @@ Where `diceRoll` was a pseudorandom real number such that 0.0 <= `diceRoll` < 1.
 | Steel    | 1 / (4.3 * 0.90)  |
 | Gold     | 1 / (4.3 * 0.85)  |
 
-- `rodDict`:
+- `fishList`: 
 
-- `rarityDict`:
+After the calculation of `rarity`, the possible fish were narrowed by pond location and rod used. Then, the possible fish were further subdivided into multiple `fishList`s, each associated with a particular `rarity` value. All possible combinations can be [seen here](http://pastebin.com/as4BKA3E). 
 
-- `fishList`:
+After selecing a genus and species, the fish's weight was calculated according to the following process:
+
+```python
+randNumA = random.random() # A real number between 0.0 and 1.0
+randNumB = random.random() # A real number between 0.0 and 1.0
+randNum = (randNumA + randNumB) / 2.0
+randWeight = minWeight + (maxWeight - minWeight) * randNum
+randWeight = int(round(randWeight * 16))
+```
+Where `minWeight` and `maxWeight` represented the fish's minimum and maximum weight respectively.
+
+If no `fishList` was associated with the calculated `rarity` value, a Balloon Fish weighing 0lbs was caught.
 
 ### `JellybeanItem`
 
