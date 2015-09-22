@@ -59,8 +59,6 @@
 # Introduction <a name="intro"></a>
 [[back to top](#contents)]
 
-**This guide is still a work-in-progress; some key information is missing from currently present sections.**
-
 The information in this guide is primarily based on the source code of Toontown Online. It does not guarantee accuracy with regard to any Toontown private servers that have modified the battle system from Toontown Online.
 
 # Core Knowledge <a name="core-knowledge"></a>
