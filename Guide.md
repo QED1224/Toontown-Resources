@@ -450,7 +450,7 @@ Where `diceRoll` was a pseudorandom real number such that 0.0 <= `diceRoll` < 1.
 
 After the calculation of `rarity`, the possible fish were narrowed by pond location and rod used. Then, the possible fish were further subdivided into multiple `fishList`s, each associated with a particular `rarity` value. All possible combinations can be [seen here](http://pastebin.com/as4BKA3E). 
 
-After selecing a genus and species, the fish's weight was calculated according to the following process:
+After selecting a genus and species, the fish's weight was calculated according to the following process:
 
 ```python
 randNumA = random.random() # A real number between 0.0 and 1.0
