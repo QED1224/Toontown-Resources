@@ -791,7 +791,7 @@ The first aspect that must be understood is how toon attacks were ordered, in wh
 2. Order by track: Toon-up, Trap, Lure, Sound, Throw, Squirt and then Drop.
 3. Order by gag level (lowest to highest) within each track.
 
-From here, for all calculation purposes, attacks are considered in pairs (the previous attack and the current attack) within each track.
+From here, for all calculation purposes, attacks were considered in pairs (the previous attack and the current attack) within each track.
 
 Now, we need to cover four more sub-cases:
 
