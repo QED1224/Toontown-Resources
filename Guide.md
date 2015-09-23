@@ -42,6 +42,7 @@
 - [Fishing](#fishing)
 	- [Was using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod?](#fishing-1)
 - [Racing](#racing)
+- [Gardening](#gardening)
 - [Golfing](#golfing)
 - [Misc](#misc)
     - [Did some Shopkeepers sell more accurate gags?](#misc-1)
@@ -814,6 +815,9 @@ In order for a Twig Rod to have `rarity = 10`, `diceRoll` must be less than 0.00
 Since `rarity` is determined first before picking a fish (and the fish being picked from that `fishList` is done randomly), a Twig Rod has a much lower chance to hit a `rarity` value of 10 than a Gold Rod. 
 
 # Racing <a name="racing"></a>
+[[back to top](#contents)]
+
+# Gardening <a name="gardening"></a>
 [[back to top](#contents)]
 
 # Golfing <a name="golfing"></a>
