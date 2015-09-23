@@ -721,8 +721,8 @@ Every cycle, each prosecuting cog had a 50/50 chance to either (1) attack a toon
 When determining how the amount of Toon jurors affected the scale, the following formula was used.
 
 ```python
-jurorsOver = self.numToonJurorsSeated - ToontownGlobals.LawbotBossJurorsForBalancedScale
-dmgAdjust = jurorsOver * ToontownGlobals.LawbotBossDamagePerJuror
+jurorsOver = self.numToonJurorsSeated - 8
+dmgAdjust = jurorsOver * 68
 ```
 `jurorsOver` was determined by taking the amount of Toon jurors seated and then subtracting it by the amount needed for a balanced scale (8 for non-modified servers). That amount was then multiplied by the damage amount each Toon juror done, which was set to 68 per toon juror. The result was then referred to as `dmgAdjust`. 
 
