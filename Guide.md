@@ -2516,6 +2516,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">75</td>
 		</tr>
 		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
 			<th>Yesman</th>
 			<th>Level 3</th>
 			<th>Level 4</th>
@@ -2554,6 +2557,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">70</td>
 			<td align="center">80</td>
 			<td align="center">90</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
 		</tr>
 		<tr>
 			<th>Micromanager</th>
@@ -2604,6 +2610,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">90</td>
 		</tr>
 		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
 			<th>Downsizer</th>
 			<th>Level 5</th>
 			<th>Level 6</th>
@@ -2642,6 +2651,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">50</td>
 			<td align="center">50</td>
 			<td align="center">50</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
 		</tr>
 		<tr>
 			<th>Head Hunter</th>
@@ -2692,6 +2704,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">80</td>
 		</tr>
 		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
 			<th>Corporate Raider</th>
 			<th>Level 7</th>
 			<th>Level 8</th>
@@ -2730,6 +2745,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">80</td>
 			<td align="center">85</td>
 			<td align="center">95</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
 		</tr>
 		<tr>
 			<th>The Big Cheese</th>
@@ -3149,6 +3167,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">95</td>
 			<td align="center">95</td>
 	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
 	        <tr>
 			<th>Penny Pincher</th>
 			<th>Level 2</th>
@@ -3181,6 +3202,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">50</td>
 			<td align="center">50</td>
 	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
 	        <tr>
 			<th>Tightwad</th>
 			<th>Level 3</th>
@@ -3229,6 +3253,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">75</td>
 			<td align="center">75</td>
 	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
 	        <tr>
 			<th>Bean Counter</th>
 			<th>Level 4</th>
@@ -3269,6 +3296,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">95</td>
 			<td align="center">95</td>
 	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
 	        <tr>
 			<th>Number Cruncher</th>
 			<th>Level 5</th>
@@ -3309,6 +3339,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">50</td>
 			<td align="center">50</td>
 	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
 	        <tr>
 			<th>Money Bags</th>
 			<th>Level 6</th>
@@ -3341,6 +3374,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">85</td>
 			<td align="center">90</td>
 	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
 	        <tr>
 			<th>Loan Shark</th>
 			<th>Level 7</th>
@@ -3381,6 +3417,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">85</td>
 			<td align="center">95</td>
 	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
 	        <tr>
 			<th>Robber Baron</th>
 			<th>Level 8</th>
