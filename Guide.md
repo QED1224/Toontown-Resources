@@ -374,7 +374,7 @@ If the Doodle had a negative mood at the Estate, but had a positive mood on the 
 
 If the Doodle had negative moods in both the Estate and the battle selection screen, `minApt = 0.1` and `maxApt = 0.6`. However, `cutoff` would not be multiplied by 0.5 unless one of the negative moods was tired.
 
-Once the final value of `cutoff` was determined, an pseudo-RNG called `randVal` generated a value between 0.0 and 1.0. If `cutoff` was greater than `randVal`, the Doodle would successfully perform the trick. Otherwise, the Doodle would not perform the trick.
+Once the final value of `cutoff` was determined, a pseudorandom number, `randVal`, was generated such that 0.0 <= `randVal` < 1.0. If `cutoff` was greater than `randVal`, the Doodle would successfully perform the trick. Otherwise, the Doodle would not perform the trick.
 
 Below is a table that shows the final `cutoff` value for each trick, assuming the doodle was maxed in said trick, and had no negative emotions on both the battle selection screen and the Estate.
 
