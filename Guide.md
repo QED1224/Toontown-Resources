@@ -36,7 +36,6 @@
     - [How did the C.J. decide when to jump?](#cj-2)
     - [How did the prosecution choose which toon to attack?](#cj-3)
     - [How was the scale related to the jury?](#cj-4)
-    - [What was the optimal scalers-to-stunners ratio?](#cj-5)
 - [C.E.O.](#ceo)
     - [How did the C.E.O. choose which attack to use?](#ceo-1)
     - [How did the C.E.O. choose which toon to attack?](#ceo-2)
@@ -751,8 +750,6 @@ Initial Cog Evidence = 1894 - 68 * (# toons seated)
 
 Initial Toon Evidence = 2700 - Initial Cog Evidence
 ```
-
-## What was the optimal scalers-to-stunners ratio? <a name="cj-5"></a>
 
 # C.E.O. <a name="ceo"></a>
 [[back to top](#contents)]
