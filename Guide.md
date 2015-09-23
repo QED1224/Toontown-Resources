@@ -19,7 +19,6 @@
 - [Squirt](#squirt)
 - [Drop](#drop)
 - [Cogs](#cogs)
-    - [Which cog was the most powerful?](#cogs-1)
 - [V.P.](#vp)
     - [Did being Lureless impact the accuracy of Lure SOS cards?](#vp-1)
     - [Did being Lureless impact the number of rounds Lure SOS cards would hold for?](#vp-2)
@@ -598,8 +597,6 @@ See the [section on multiple gag usage](#misc-2) for more general information.
 
 # Cogs <a name="cogs"></a>
 [[back to top](#contents)]
-
-## Which cog was the most powerful? <a name="cogs-1"></a>
 
 # V.P. <a name="vp"></a>
 [[back to top](#contents)]
