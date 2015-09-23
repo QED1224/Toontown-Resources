@@ -73,7 +73,7 @@ The information in this guide is primarily based on the source code of Toontown 
 
 ### Special Cases <a name="toon-atk-acc-1"></a>
 
-Fires and Trap have 95% and 100% accuracy respectively. In addition, both are always assigned an `atkHit` of 1, which means they were *guaranteed* to hit.
+Fires and Trap have 95% and 100% accuracy respectively. In addition, both were always assigned an `atkHit` of 1, which means they were *guaranteed* to hit.
 
 ### Equation <a name="toon-atk-acc-2"></a>
 
@@ -401,7 +401,7 @@ Expected Laff = cutoff * Laff Given
 0.485 * 20 = 9.7000 Laff (Dance)
 0.388 * 22 = 8.5360 Laff (Speak)
 ```
-As you can see, maxed Play Dead and Rollover are the most efficient tricks. Therefore Play Dead is likely the only trick worth training.
+As you can see, maxed Play Dead and Rollover were the most efficient tricks. Therefore Play Dead was likely the only trick worth training, since it maximized the work-reward ratio.
 
 ## Fishing <a name="fishing-main"></a>
 [[back to top](#contents)]
@@ -505,9 +505,9 @@ Yes, Trap gags always counted as a hit on the cog for the round it was used on, 
 
 Now, one of the following also needed to be true:
 
-- Both Lure and Trap are single-cog, and the target is the same.
-- The Trap is multi-cog.
-- The Lure is multi-cog.
+- Both Lure and Trap were single-cog, and the target was the same.
+- The Trap was multi-cog.
+- The Lure was multi-cog.
 
 So, the only scenario in which Trap did not give Lure an accuracy boost was if both Lure and Trap were single-cog, and the target was different.
 
