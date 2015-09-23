@@ -781,7 +781,18 @@ Initial Toon Evidence = 2700 - Initial Cog Evidence
 
 ## How did the C.E.O. choose which attack to use? <a name="ceo-1"></a>
 
-## How did the C.E.O. choose which toon to attack? <a name="ceo-2"></a>
+## How did the C.E.O. choose which toon(s) to attack? <a name="ceo-2"></a>
+
+Every time a toon recorded a hit on the C.E.O., its ID and associated damage were added to `threatDict` (a Python dictionary) which tracked the amount damage done by each toon. A golf ball hit was worth 0.1 and a Seltzer Bottle hit was worth the damage indicated in-game.
+
+Each time a Directed Attack was chosen (see previous question), assuming there were unflattened toons, the C.E.O. had a 10% chance to attack a toon at random. In the other 90% of time, the toon who had inflicted the most damage was chosen. In the case of a tie, a toon was selected at random from a list of toons who had dealt the same amount of damage.
+
+Once a toon was picked, an attack was chosen based on the state of the toon:
+
+- If the toon was roaming, the Swinging attack was used.
+- If the toon was on a table, there was a 25% chance that Throw Gears was used and a 75% chance that the C.E.O. would roll over the occupied table.
+
+After the attack was completed, the toon's damage total in `threatDict` was reduced by 25%.
 
 ## How did the C.E.O. decide to continue moving or not? <a name="ceo-3"></a>
 
