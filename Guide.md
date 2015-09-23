@@ -802,7 +802,7 @@ Now, we need to cover four more sub-cases:
 
 ## Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-3"></a>
 
-Yes, do to how toon attacks are ordered (see previous question), it was possible for "mismatches" to occur. Essentially, this was caused by the fact that attacks are only considered in pairs. For example, consider the following scenario with three Trapless toons with maxed gags (1 - 3) and two level 12 cogs (A and B):
+Yes, do to how toon attacks were ordered (see previous question), it was possible for "mismatches" to occur. Essentially, this was caused by the fact that attacks were only considered in pairs. For example, consider the following scenario with three Trapless toons with maxed gags (1 - 3) and two level 12 cogs (A and B):
 
 ```
  B A
@@ -815,11 +815,11 @@ Yes, do to how toon attacks are ordered (see previous question), it was possible
 
 Here, the attack order is 1, 2, 3 which means:
 
-1. Toon 1's Safe is evaluated.
-2. Toon 2's Safe is evaluated, but isn't assigned the result of 1 because it has a different target.
-3. Toon 3's Safe is evaluated, but isn't assigned the result of 2 because it has a different target. 
+1. Toon 1's Safe was evaluated.
+2. Toon 2's Safe was evaluated, but wasn't assigned the result of 1 because it had a different target.
+3. Toon 3's Safe was evaluated, but wasn't assigned the result of 2 because it had a different target. 
 
-So, in this situation, it's possible for only one Safe to hit Cog A.
+So, in this situation, it was possible for only one Safe to hit Cog A.
 
 At first glance this may appear to be rather undesirable, however it's important to fully understand the impact of independent calculations. There are two key areas to consider: expected damage and battle duration.
 
@@ -841,7 +841,7 @@ P(Toon 1 and Toon 2 miss) = 1 - P(Toon 1 and Toon 2 hit) = 0.45
 P(at least Toon 1 or Toon 2 hit) = P(Toon 1 and Toon 2 hit) = 0.55
 ```
 
-In this case, there's a 55% chance (both Safes hit) that damage is done to cog A and a 45% chance (both Safes miss) that no damage is done to cog A.
+In this case, there was a 55% chance (both Safes hit) that damage was done to cog A and a 45% chance (both Safes miss) that no damage was done
 
 Now, let's look at the expected damage on cog A *with an attack mismatch*.
 
@@ -861,14 +861,14 @@ P(Toon 1 and Toon 3 miss) = (1 - P(Toon 1 and Toon 3 hit))^2 = 0.2025
 P(at least Toon 1 or Toon 3 hit) = 0.3025 + 0.495 = 0.7975
 ```
 
-You'll note that there's a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease doesn't actually constitute an overall loss in expected damage: it's simply more evenly distributed. This is evident in the probability that at least one Safe hits, which is 79.75% vs. 55% *in favor of attack mismatches*. To further clarify the difference, let's take a closer look at the possible outcomes. 
+You'll note that there was a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease didn't actually constitute an overall loss in expected damage: it was simply more evenly distributed. This is evident in the probability that at least one Safe hit, which was 79.75% vs. 55% *in favor of attack mismatches*. To further clarify the difference, let's take a closer look at the possible outcomes. 
 ```
 HH = Both hit
 HM = First hit, second miss
 MH = First miss, second hit
 MM = Both miss
 ```
-As you can see, there are three outcomes which result in damage to a cog: HH, HM and MH. However, without attack mismatches, accuracy inheritance eliminates both HM and MH. This loss of opportunity can only be offset by a large decrease to the probability of HH. For instance, in the above example there's a difference of 24.75%, which is just enough to make up for the loss (see [Level 12 Big Wig; Safe + Safe](http://pastebin.com/bzugMzEs)). Thus, the key factor is the fact that as the probability of HH increases, the difference between the probability of HH with and without attack mismatches decreases. Take, for example, maxed Storm Cloud:
+As you can see, there were three outcomes which resulted in damage to a cog: HH, HM and MH. However, without attack mismatches, accuracy inheritance eliminated both HM and MH. This loss of opportunity could only be offset by a large increase in the probability of HH. For instance, in the above example there's a difference of 24.75%, which was just enough to make up for the loss (see [Level 12 Big Wig; Safe + Safe](http://pastebin.com/bzugMzEs)). Thus, the key factor was the fact that as the probability of HH increased, the difference between the probability of HH with and without attack mismatches decreased. Take, for example, maxed Storm Cloud:
 
 ```
  B A
@@ -899,7 +899,7 @@ P(Toon 1 and Toon 3 miss) = (1 - P(Toon 1 and Toon 3 hit)) ^ 2 = 0.0025
 P(at least Toon 1 or Toon 3 hit) = P(Toon 1 and Toon 3 hit) = 0.9025 + 0.095 = 0.9975
 ```
 
-As shown above, there's now only a 4.75% difference in the probability of HH. You might be tempted to point out that we also only saw a 4.75% increase in P(at least Toon 1 or Toon 2 hit), which is true, but there's another factor: one hit is significantly better than no hits. Think about it in terms of the number of possible ways to defeat a cog:
+As shown above, in this case there was only a 4.75% difference in the probability of HH. You might be tempted to point out that we also only saw a 4.75% increase in P(at least Toon 1 or Toon 2 hit), which is true, but there's another factor: one hit was significantly better than no hits. Think about it in terms of the number of possible ways to defeat a cog:
 
 ```
 Cog HP = 200
@@ -934,10 +934,10 @@ OR
 1. HM = 80 (P = 0.0475).
 2. 80 + (HH + 32) = 272 (P = 0.042869).
 ```
-As you can see, attack mismatches give us 5 ways to win vs. 1 without them. With the above in mind, we can conclude that attack mismatches should be preferred in any of the following scenarios.
+As you can see, attack mismatches gave us 5 ways to win vs. only 1 without them. With the above in mind, we can conclude that attack mismatches should have been preferred in any of the following scenarios.
 
-- If either gag could defeat the given cog in one round.
-- Assuming maxed gags, when using any combination of Throw and Squirt.
+- If either gag was capable of defeating the given cog in one round.
+- Assuming maxed gags, when any combination of Throw and Squirt was used.
 
 ## Battle Simulations
 
