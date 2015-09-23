@@ -783,7 +783,7 @@ Initial Toon Evidence = 2700 - Initial Cog Evidence
 
 ## How did the C.E.O. choose which toon(s) to attack? <a name="ceo-2"></a>
 
-Every time a toon recorded a hit on the C.E.O., its ID and associated damage were added to `threatDict` (a Python dictionary) which tracked the amount damage done by each toon. A golf ball hit was worth 0.1 and a Seltzer Bottle hit was worth the damage indicated in-game.
+Every time a toon recorded a hit on the C.E.O., its ID and associated damage were added to `threatDict`, a Python dictionary which tracked the amount damage done by each toon. A golf ball hit was worth 0.1 and a Seltzer Bottle hit was worth the damage indicated in-game.
 
 Each time a Directed Attack was chosen (see previous question), assuming there were unflattened toons, the C.E.O. had a 10% chance to attack a toon at random. In the other 90% of time, the toon who had inflicted the most damage was chosen. In the case of a tie, a toon was selected at random from a list of toons who had dealt the same amount of damage.
 
