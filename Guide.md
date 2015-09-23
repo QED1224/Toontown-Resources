@@ -53,7 +53,7 @@
 - [Credits](#credits)
 - [Appendix A: Cog Attack Frequencies](#appendix-a)
 - [Appendix B: Cog Attack Damages](#appendix-b)
-- [Appendix C: Cog Attack Accuracy Values](#appendix-c)
+- [Appendix C: Cog Attack Accuracies](#appendix-c)
 
 # Introduction <a name="intro"></a>
 [[back to top](#contents)]
