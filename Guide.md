@@ -601,9 +601,11 @@ wakeupChance = 100 - atkAcc * 2
 
 With the above in mind, it can also be useful to think in terms of `wakeupChance`'s probabilistic complement: The probability that a given SOS card will hold for a specific number of rounds. In order to do so, we must apply the Rule of Multiplication:
 
->The probability that Events A and B both occur is equal to the probability that Event A occurs times the probability that Event B occurs, given that A has occurred: P(A ∩ B) = P(A) P(B|A)
+> If events A and B come from the same sample space, the probability that both A and B occur is equal to the probability the event A occurs times the probability that B occurs, given that A has occurred.
+> 
+> P(A ∩ B) = P(A) P(B|A)
 
-(Source: [Probability Rules](http://stattrek.com/probability/probability-rules.aspx).)
+   (Source: [Probability Rules](http://stattrek.com/statistics/dictionary.aspx?definition=Multiplication_rule).)
 
 However, given that each round is calculated independent of any prior results, we note that P(B|A) = P(B). Thus, the following equation can be used to determine the probability that a single cog will stay lured for N rounds:
 
