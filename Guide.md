@@ -221,7 +221,7 @@ In the above, `activeSuits` is ordered as expected and would result in cog C get
 ```
 As you can see, it used the index of cog C from `suits` on the cog at the same index in `activeSuits`, which was cog D.
 
-## `"Carryover"`
+## Carryover
 
 "Carryover" damage only applied to version 2.0 cogs. Every time an instance of damage was done, the game checked to see if the cog was dead. Once the first layer was destroyed, any further instances of damage done would bleed through to the skelecog layer. For all calculation purposes, the game calculated the instances of damages in the order of gag damage (Red), `hpBonus` (Yellow) and then `kbBonus` (Orange). 
 
@@ -461,7 +461,6 @@ randNum = (randNumA + randNumB) / 2.0
 randWeight = minWeight + (maxWeight - minWeight) * randNum
 randWeight = int(round(randWeight * 16))
 ```
-Where `minWeight` and `maxWeight` represented the fish's minimum and maximum weight respectively, and `minRodWeight`
 
 If no `fishList` was associated with the calculated `rarity` value, a Balloon Fish weighing 0lbs was caught.
 
