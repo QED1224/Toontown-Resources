@@ -170,6 +170,29 @@ For all SOS Cards, `randChoice` was assigned 0.
 
 ## Gag Damage
 
+Gag damage was based on the amount of experience earned in a particular track. The following three steps outline the process that was used to convert from experience earned to damage.
+
+- `expVal`:
+
+```python
+expVal = min(exp, maxE)
+```
+`exp` and `maxE` represented the amount of experience earned and the maximum amount of experience possible for the gag being used, respectively.
+
+- `expPerHp`:
+
+```python
+expPerHp = float(maxE - minE + 1) / float(maxD - minD + 1)
+```
+`minE` was the minimum amount of experience necessary to gain access to the gag being used. `minD` and `maxD` were the minimum and maximum amount of damage for the gag being used, respectively.
+
+- Finally, `damage`:
+
+```python
+damage = floor((expVal - minE) / expPerHp) + minD
+```
+
+
 ## `hpBonus`
 
 `hpBonus` applied in any case where multiple gags of the same track were used in the same round, on the same target. It was calculated as follows.
