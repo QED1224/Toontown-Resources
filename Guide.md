@@ -803,6 +803,19 @@ If the C.E.O. was moving towards a toon on a table, and that particular toon hop
 
 ## Was using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod? <a name="fishing-1"></a>
 
+No, infact using a Twig Rod was less beneficial to catch light-weight Ultra Rares than a Gold Rod. In order for any rod to obtain an Ultra Rare Fish, the `rarity` value had to equal 10. Given how `rarity` is calculated [see Fishing for more details](#fishing-main), we can figure out the bare minimum `diceRoll` number for Twig Rod and Gold Rod to have a `rarity` value of 10. Assume `diceRoll` = X.
+
+```python
+Twig Rod
+rarity = int(ceil(10 * (1 - pow(X, 1 / 4.3)))) = 9 => X = 0.000050119
+
+Gold Rod
+rarity = int(ceil(10 * (1 - pow(X, 1 / (4.3 * 0.85))))) = 9 => X = 0.0002213
+```
+In order for a Twig Rod to have `rarity = 10`, `diceRoll` must be less than 0.000050119. But for a Gold Rod to have `rarity = 10`, `diceRoll` must less than 0.0002213. 
+
+Since `rarity` is determined first before picking a fish (and the fish being picked from that `fishList` is done randomly), a Twig Rod has a much lower chance to hit a `rarity` value of 10 than a Gold Rod. 
+
 # Racing <a name="racing"></a>
 [[back to top](#contents)]
 
