@@ -3173,9 +3173,9 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">85, 90, 75 *</td>
 			<td align="center">95, 95, 80 *</td>
 		</tr>
-        </table>
+</table>
 		
-* The Big Cheese was coded with three unused attacks. They were CigarSmoke, FloodTheMarket and SongAnd Dance. However, when the game selected one of these attacks, The Big Cheese would instead use his programmed default attack, which was Glower Power. Despite this, the game would still use the accuracy and damage values of the move that was internally selected (see [Cog Attack Accuracy](#cog-atk-acc) for more information), thus allowing Glower Power to have varying damage and accuracy values for the same level.
+\* The Big Cheese was coded with three unused attacks. They were CigarSmoke, FloodTheMarket and SongAnd Dance. However, when the game selected one of these attacks, The Big Cheese would instead use his programmed default attack, which was Glower Power. Despite this, the game would still use the accuracy and damage values of the move that was internally selected (see [Cog Attack Accuracy](#cog-atk-acc) for more information), thus allowing Glower Power to have varying damage and accuracy values for the same level.
 		
 <table>
 		<tr>
