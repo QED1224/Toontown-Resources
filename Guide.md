@@ -2436,6 +2436,393 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 		<tr>
 			<th colspan="7"> </th>
 		</tr>
+		
+		<tr>
+    			<th colspan="2">Pencil Pusher</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 2</th>
+    			<th>Level 3</th>
+    			<th>Level 4</th>
+    			<th>Level 5</th>
+    			<th>Level 6</th>
+  		</tr>
+		<tr>
+    			<td align="center">Fountain Pen</td>
+    			<td align="center">Single</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">9</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Rub-Out</td>
+    			<td align="center">Single</td>
+    			<td align="center">4</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+    			<td align="center">8</td>
+    			<td align="center">12</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Finger Wag</td>
+    			<td align="center">Single</td>
+    			<td align="center">1</td>
+    			<td align="center">2</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Write-Off</td>
+    			<td align="center">Single</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">8</td>
+    			<td align="center">10</td>
+    			<td align="center">12</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Fill With Lead</td>
+    			<td align="center">Single</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		
+		<tr>
+    			<th colspan="2">Yesman</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 3</th>
+    			<th>Level 4</th>
+    			<th>Level 5</th>
+    			<th>Level 6</th>
+    			<th>Level 7</th>
+  		</tr>
+		<tr>
+    			<td align="center">Rubber Stamp</td>
+    			<td align="center">Single</td>
+    			<td align="center">2</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Razzle Dazzle</td>
+    			<td align="center">Single</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Synergy</td>
+    			<td align="center">Group</td>
+    			<td align="center">4</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
+    			<td align="center">8</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Tee-Off</td>
+    			<td align="center">Single</td>
+    			<td align="center">3</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">4</td>
+    			<td align="center">5</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		
+		<tr>
+    			<th colspan="2">Micromanager</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 4</th>
+    			<th>Level 5</th>
+    			<th>Level 6</th>
+    			<th>Level 7</th>
+    			<th>Level 8</th>
+  		</tr>
+		<tr>
+    			<td align="center">Demotion</td>
+    			<td align="center">Single</td>
+    			<td align="center">6</td>
+    			<td align="center">8</td>
+    			<td align="center">12</td>
+    			<td align="center">15</td>
+    			<td align="center">18</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Finger Wag</td>
+    			<td align="center">Single</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">9</td>
+    			<td align="center">12</td>
+    			<td align="center">15</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Fountain Pen</td>
+    			<td align="center">Single</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">8</td>
+    			<td align="center">10</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Brain Storm</td>
+    			<td align="center">Single</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">9</td>
+    			<td align="center">12</td>
+    			<td align="center">15</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Buzz Word</td>
+    			<td align="center">Single</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">9</td>
+    			<td align="center">12</td>
+    			<td align="center">15</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		
+		<tr>
+    			<th colspan="2">Downsizer</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 5</th>
+    			<th>Level 6</th>
+    			<th>Level 7</th>
+    			<th>Level 8</th>
+    			<th>Level 9</th>
+  		</tr>
+		<tr>
+    			<td align="center">Canned</td>
+    			<td align="center">Single</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+    			<td align="center">8</td>
+    			<td align="center">10</td>
+    			<td align="center">12</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Downsize</td>
+    			<td align="center">Single</td>
+    			<td align="center">8</td>
+    			<td align="center">9</td>
+    			<td align="center">11</td>
+    			<td align="center">13</td>
+    			<td align="center">15</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Pink Slip</td>
+    			<td align="center">Single</td>
+    			<td align="center">4</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
+    			<td align="center">8</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Sacked</td>
+    			<td align="center">Single</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
+    			<td align="center">8</td>
+    			<td align="center">9</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		
+		<tr>
+    			<th colspan="2">Head Hunter</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 6</th>
+    			<th>Level 7</th>
+    			<th>Level 8</th>
+    			<th>Level 9</th>
+    			<th>Level 10</th>
+  		</tr>
+		<tr>
+    			<td align="center">Fountain Pen</td>
+    			<td align="center">Single</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+    			<td align="center">8</td>
+    			<td align="center">10</td>
+    			<td align="center">12</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Glower Power</td>
+    			<td align="center">Single</td>
+    			<td align="center">7</td>
+    			<td align="center">8</td>
+    			<td align="center">10</td>
+    			<td align="center">12</td>
+    			<td align="center">13</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Half Windsor</td>
+    			<td align="center">Single</td>
+    			<td align="center">8</td>
+    			<td align="center">10</td>
+    			<td align="center">12</td>
+    			<td align="center">14</td>
+    			<td align="center">16</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Head Shrink</td>
+    			<td align="center">Single</td>
+    			<td align="center">10</td>
+    			<td align="center">12</td>
+    			<td align="center">15</td>
+    			<td align="center">18</td>
+    			<td align="center">21</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Rolodex</td>
+    			<td align="center">Single</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
+    			<td align="center">8</td>
+    			<td align="center">9</td>
+    			<td align="center">10</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+    			<th colspan="2">Corporate Raider</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 7</th>
+    			<th>Level 8</th>
+    			<th>Level 9</th>
+    			<th>Level 10</th>
+    			<th>Level 11</th>
+  		</tr>
+		<tr>
+    			<td align="center">Canned</td>
+    			<td align="center">Single</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
+    			<td align="center">8</td>
+    			<td align="center">9</td>
+    			<td align="center">10</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Evil Eye</td>
+    			<td align="center">Single</td>
+    			<td align="center">12</td>
+    			<td align="center">15</td>
+    			<td align="center">18</td>
+    			<td align="center">21</td>
+    			<td align="center">24</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Play Hardball</td>
+    			<td align="center">Single</td>
+    			<td align="center">7</td>
+    			<td align="center">8</td>
+    			<td align="center">12</td>
+    			<td align="center">15</td>
+    			<td align="center">16</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Power Tie</td>
+    			<td align="center">Single</td>
+    			<td align="center">10</td>
+    			<td align="center">12</td>
+    			<td align="center">14</td>
+    			<td align="center">16</td>
+    			<td align="center">18</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+    			<th colspan="2">The Big Cheese</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 8</th>
+    			<th>Level 9</th>
+    			<th>Level 10</th>
+    			<th>Level 11</th>
+    			<th>Level 12</th>
+  		</tr>
+		<tr>
+    			<td align="center">Glower Power</td>
+    			<td align="center">Single</td>
+    			<td align="center">10, 14, 14</td>
+    			<td align="center">12, 16, 15,</td>
+    			<td align="center">15, 18, 17</td>
+    			<td align="center">18, 20, 19</td>
+    			<td align="center">20, 22, 20</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Tee-Off</td>
+    			<td align="center">Single</td>
+    			<td align="center">8</td>
+    			<td align="center">11</td>
+    			<td align="center">14</td>
+    			<td align="center">17</td>
+    			<td align="center">20</td>
+  		</tr>
 </table>
 
 # Appendix C: Cog Attack Accuracies <a name="appendix-c"></a>
@@ -2786,10 +3173,10 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">85, 90, 75 *</td>
 			<td align="center">95, 95, 80 *</td>
 		</tr>
-</table>
-
-\*The Big Cheese was coded with three unused attacks. They were CigarSmoke, FloodTheMarket and SongAnd Dance. However, when the game selected one of these attacks, The Big Cheese would instead use his programmed default attack, which was Glower Power. Despite this, the game would still use the accuracy and damage values of the move that was internally selected (see [Cog Attack Accuracy](#cog-atk-acc) for more information), thus allowing Glower Power to have varying damage and accuracy values for the same level.
-
+        </table>
+		
+* The Big Cheese was coded with three unused attacks. They were CigarSmoke, FloodTheMarket and SongAnd Dance. However, when the game selected one of these attacks, The Big Cheese would instead use his programmed default attack, which was Glower Power. Despite this, the game would still use the accuracy and damage values of the move that was internally selected (see [Cog Attack Accuracy](#cog-atk-acc) for more information), thus allowing Glower Power to have varying damage and accuracy values for the same level.
+		
 <table>
 		<tr>
 			<th colspan="6">Lawbots</th>
