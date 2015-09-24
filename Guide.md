@@ -65,14 +65,14 @@ The information in this guide is primarily based on the source code of Toontown 
 
 ## Toon Attack Accuracy <a name="toon-atk-acc"></a>
 
-`atkAcc` is a percentage which represents the likelihood of an attack performing to its highest degree. This is used in two ways:
+`atkAcc` was a percentage which represented the likelihood of an attack performing to its highest degree. This was used in two ways:
 
-1. For Lure SOS cards, it was used when calculating the odds that cogs "wake up early" each round.
+1. For Lure SOS cards, it was used when calculating the odds that cogs "wake up" early each round.
 2. It was used when calculating the value of `atkHit`, which was a boolean value that represented whether or not an attack hit.
 
 ### Special Cases <a name="toon-atk-acc-1"></a>
 
-Fires and Trap have 95% and 100% accuracy respectively. In addition, both were always assigned an `atkHit` of 1, which means they were *guaranteed* to hit.
+Fires and Trap have 95% and 100% accuracy respectively. In addition, both were always assigned an `atkHit` of 1, which meant they were *guaranteed* to hit.
 
 ### Equation <a name="toon-atk-acc-2"></a>
 
