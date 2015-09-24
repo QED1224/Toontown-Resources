@@ -60,7 +60,7 @@
 
 ## Goals
 
-This guide [started out](http://www.mmocentralforums.com/forums/showthread.php?t=368256) as an attempt to answer some long-standing questions about the battle system in Disney's Toontown Online. However, it has since grown far larger than anticipated; it has answered a total of 27 questions, many of which expand beyond the battle system itself. That said, the number one goal remains the same: to offer *accurate* information about Toontown's various mechanics. Suggestions or questions about the quality of our content are always welcome.
+This guide started out as an attempt to answer some long-standing questions about the battle system in Disney's Toontown Online. However, it has since grown far larger than anticipated; it has answered a total of 27 questions, many of which expand beyond the battle system itself. That said, the number one goal remains the same: to offer *accurate* information about Toontown's various mechanics. Suggestions or questions about the quality of our content are always welcome.
 
 ## Private Servers
 
@@ -704,7 +704,7 @@ While it's impossible to give a definitive answer without insider knowledge, her
 
    > 2. The stars at the bottom of the SOS cards are the potency. The more stars... The stronger the gag. The maximum number   of stars that you should be able to receive is five.
 
-   ([Original post can be found here.](http://www.mmocentralforums.com/forums/showpost.php?p=95226&postcount=15))
+   ([Original post can be found here.](https://gyazo.com/38a8efa05345441c711e95420f59cb40))
    
 - The Toontown Player's Guide stated that Drop SOS cards had *near* perfect accuracy.
 
