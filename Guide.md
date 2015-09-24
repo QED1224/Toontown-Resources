@@ -3472,7 +3472,7 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 	        </tr>
 	        <tr>
 			<td align="center">Freeze Assets</td>
-			<td align="center"90</td>
+			<td align="center">90</td>
 			<td align="center">90</td>
 			<td align="center">90</td>
 			<td align="center">90</td>
