@@ -2407,31 +2407,31 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
     			<th>Level 5</th>
   		</tr>
 		<tr>
-    			<td>Pound Key</td>
-    			<td>Single</td>
-    			<td>2</td>
-    			<td>2</td>
-    			<td>3</td>
-    			<td>4</td>
-    			<td>6</td>
+    			<td align="center">Pound Key</td>
+    			<td align="center">Single</td>
+    			<td align="center">2</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
   		</tr>
   		<tr>
-    			<td>Shred</td>
-    			<td>Single</td>
-    			<td>3</td>
-    			<td>4</td>
-    			<td>5</td>
-    			<td>6</td>
-    			<td>7</td>
+    			<td align="center">Shred</td>
+    			<td align="center">Single</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
   		</tr>
   		<tr>
-    			<td>Clip-on Tie</td>
-    			<td>Single</td>
-    			<td>1</td>
-    			<td>1</td>
-    			<td>2</td>
-    			<td>2</td>
-    			<td>3</td>
+    			<td align="center">Clip-on Tie</td>
+    			<td align="center">Single</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+    			<td align="center">2</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
   		</tr>
 		<tr>
 			<th colspan="7"> </th>
