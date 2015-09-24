@@ -58,7 +58,19 @@
 # Introduction <a name="intro"></a>
 [[back to top](#contents)]
 
-The information in this guide is primarily based on the source code of Toontown Online. It does not guarantee accuracy with regard to any Toontown private servers that have modified the battle system from Toontown Online.
+## Goals
+
+This guide [started out](http://www.mmocentralforums.com/forums/showthread.php?t=368256) as an attempt to answer some long-standing questions about the battle system in Disney's Toontown Online. However, it has since grown far larger than anticipated; it has answered a total of 27 questions, many of which expand beyond the battle system itself. That said, the number one goal remains the same: to offer *accurate* information about Toontown's various mechanics. Suggestions or questions about the quality of our content are always welcome.
+
+## Private Servers
+
+The information used in this guide is primarily based on the source code of Toontown Online and, as such, it neither guarantees accuracy with regard to any private servers that have modified the battle system nor aims to keep up with any of their future changes.
+
+## About the Authors
+
+- Cell1234:
+
+- QED1224: I played Toontown from August of 2005 until its official close on September 19, 2013 (you may have known me as either Reign or Super Fireball Thunderroni). I'm still a huge fan of the game and its history, and you can find me on many of its online forums as "QED".
 
 # Core Knowledge <a name="core-knowledge"></a>
 [[back to top](#contents)]
@@ -72,7 +84,7 @@ The information in this guide is primarily based on the source code of Toontown 
 
 ### Special Cases <a name="toon-atk-acc-1"></a>
 
-Fires and Trap have 95% and 100% accuracy respectively. In addition, both were always assigned an `atkHit` of 1, which meant they were *guaranteed* to hit.
+Fires and Trap had 95% and 100% accuracy respectively. In addition, both were always assigned an `atkHit` of 1, which meant they were *guaranteed* to hit.
 
 ### Equation <a name="toon-atk-acc-2"></a>
 
