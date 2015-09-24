@@ -64,7 +64,7 @@ This guide [started out](http://www.mmocentralforums.com/forums/showthread.php?t
 
 ## Private Servers
 
-The information used in this guide is primarily based on the source code of Toontown Online and, as such, it neither guarantees accuracy with regard to any private servers that have modified the battle system nor aims to keep up with any of their future changes.
+The information used in this guide is primarily based on the source code of Toontown Online and, as such, it neither guarantees accuracy with regard to any private servers nor aims to keep up with any of their future changes.
 
 ## About the Authors
 
