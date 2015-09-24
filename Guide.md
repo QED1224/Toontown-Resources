@@ -2391,52 +2391,51 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 
 <table>
 		<tr>
-			<th colspan="6">Bossbots</th>
-		</tr>
+    			<th colspan="7">Bossbots</th>
+  		</tr>
+  		<tr>
+    			<th colspan="2">Flunky</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
 		<tr>
-			<th>Flunky</th>
-			<th>Level 1</th>
-			<th>Level 2</th>
-			<th>Level 3</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-		</tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 1</th>
+    			<th>Level 2</th>
+    			<th>Level 3</th>
+    			<th>Level 4</th>
+    			<th>Level 5</th>
+  		</tr>
 		<tr>
-			<td align="center">Pound Key</td>
-			<td align="center">2</td>
-			<td align="center">2</td>
-			<td align="center">3</td>
-			<td align="center">4</td>
-			<td align="center">6</td>
-		</tr>
+    			<td>Pound Key</td>
+    			<td>Single</td>
+    			<td>2</td>
+    			<td>2</td>
+    			<td>3</td>
+    			<td>4</td>
+    			<td>6</td>
+  		</tr>
+  		<tr>
+    			<td>Shred</td>
+    			<td>Single</td>
+    			<td>3</td>
+    			<td>4</td>
+    			<td>5</td>
+    			<td>6</td>
+    			<td>7</td>
+  		</tr>
+  		<tr>
+    			<td>Clip-on Tie</td>
+    			<td>Single</td>
+    			<td>1</td>
+    			<td>1</td>
+    			<td>2</td>
+    			<td>2</td>
+    			<td>3</td>
+  		</tr>
 		<tr>
-			<td align="center">Shred</td>
-			<td align="center">3</td>
-			<td align="center">4</td>
-			<td align="center">5</td>
-			<td align="center">6</td>
-			<td align="center">7</td>
+			<th colspan="7"> </th>
 		</tr>
-		<tr>
-			<td align="center">Clip-on Tie</td>
-			<td align="center">1</td>
-			<td align="center">1</td>
-			<td align="center">2</td>
-			<td align="center">2</td>
-			<td align="center">3</td>
-		</tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-		<tr>
-			<th>Pencil Pusher</th>
-			<th>Level 2</th>
-			<th>Level 3</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-		</tr>
-		
 </table>
 
 # Appendix C: Cog Attack Accuracies <a name="appendix-c"></a>
