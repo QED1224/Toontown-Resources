@@ -72,7 +72,7 @@ The information used in this guide is primarily based on the source code of Toon
 
 ## About the Authors
 
-- Cell1234:
+- Cell1234: I have been playing Toontown since 2003, just a bit before SBHQ came out. While I had some breaks, I always enjoyed the game and the people I met on it. I'm usually known as Patrick on forums, but I go by Cell1234 on Reddit.
 
 - QED1224: I played Toontown from August of 2005 until its official close on September 19, 2013 (you may have known me as either Reign or Super Fireball Thunderroni). I'm still a huge fan of the game and its history, and you can find me on many of its online forums as "QED".
 
