@@ -1036,6 +1036,8 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 [[back to top](#contents)]
 
 ## Sellbots <a name="atk-freq-sell"></a>
+[[back to top](#contents)]
+
 <table>
 	        <tr>
 			<th colspan="6">Sellbots</th>
@@ -1384,6 +1386,8 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 </table>
 
 ## Cashbots <a name="atk-freq-cash"></a>
+[[back to top](#contents)]
+
 <table>
 	        <tr>
 			<th colspan="6">Cashbots</th>
@@ -1708,6 +1712,8 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 </table>
 
 ## Lawbots <a name="atk-freq-law"></a>
+[[back to top](#contents)]
+
 <table>
 		<tr>
 			<th colspan="6">Lawbots</th>
@@ -2048,6 +2054,8 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 </table>
 	        
 ## Bossbots <a name="atk-freq-boss"></a>
+[[back to top](#contents)]
+
 <table>
 		<tr>
 			<th colspan="6">Bossbots</th>
