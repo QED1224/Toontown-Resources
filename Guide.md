@@ -1011,11 +1011,15 @@ As you can see, attack mismatches gave us 5 ways to win vs. only 1 without them.
 
 Yes, Doodle tricks counted as a stun in battles, provided that the trick was successful. Tricks counted as their own individual track, meaning they would satisfy the conditions listed in the [bonus section](#toon-atk-acc-6).
 
+### Battle Simulations
+
+- [Jump & Grand Piano](http://pastebin.com/x4g9dZuZ)
+
 ## Did Fires count as a stun?<a name="misc-5"></a>
 
 Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-target gags. Fires would not count as a stun for single target gags.
 
-## Battle Simulations
+### Battle Simulations
 
 -[1 Fire & Hypno Goggles](http://pastebin.com/yqU1WxdX)
 
