@@ -96,7 +96,7 @@ The information used in this guide is primarily based on the source code of Toon
 
 Fires and Trap had 95% and 100% accuracy respectively. In addition, both were always assigned an `atkHit` of 1, which meant they were *guaranteed* to hit.
 
-### Equation <a name="toon-atk-acc-2"></a>
+## Equation <a name="toon-atk-acc-2"></a>
 
 A gag's overall accuracy was calculated using the following equation:
 
@@ -104,7 +104,9 @@ A gag's overall accuracy was calculated using the following equation:
 atkAcc = propAcc + trackExp + tgtDef + bonus
 ```
 
-#### `propAcc` <a name="toon-atk-acc-3"></a>
+### `propAcc` <a name="toon-atk-acc-3"></a>
+
+For all gags, `propAcc` was assigned a value from `AvPropAccuracy`. For Lure gags, `propAcc` was re-assigned a value from `AvLureBonusAccuracy` if the toon had Lure trees planted at a level equal to (or greater than) the gag level being used or there was an active Lure interactive prop. See the tables below for all possible values.
 
 <table>
   <tr>
@@ -218,11 +220,7 @@ atkAcc = propAcc + trackExp + tgtDef + bonus
   </tr>
 </table>
 
-For all non-Lure gags, `propAcc` was simply the above pre-defined `AvPropAccuracy` value.
-
-For Lure gags, `propAcc` was initially assigned its `AvPropAccuracy` value, then if the toon had Lure trees planted at a level greater than or equal to the gag level being used **or** there was an active Lure interactive prop, `propAcc` was re-assigned a value from `AvLureBonusAccuracy`.
-
-#### `trackExp` <a name="toon-atk-acc-4"></a>
+### `trackExp` <a name="toon-atk-acc-4"></a>
 
 `trackExp` was calculated according to the following:
 
@@ -234,7 +232,7 @@ If the track was Toon-up, the above result was halved.
 
 This was repeated for every gag within a particular track. So, if multiple toons used the *same gag track* (outside of Toon-up and Trap) on the *same target*, the highest `trackExp` was used in the `atkAcc` calculations for all of them. The latter requirement is particularly important: In order for weaker gags to inherit an increased `trackExp`, the target(s) of the weaker and stronger gags had to be the same. 
 
-#### `tgtDef` <a name="toon-atk-acc-5"></a>
+### `tgtDef` <a name="toon-atk-acc-5"></a>
 
 In Toon-up calculations, `tgtDef` was always 0. For the other tracks, it was assigned the defense value of the strongest cog among the attack's `targetList`. In other words, multi-cog attacks always faced the strongest `tgtDef` available since every active cog was in their `targetList`. For single-cog attacks it was based on the specific cog the attack had targeted.
 
@@ -246,7 +244,7 @@ Here's a summary of all possible defense values:
 
 *Tier 1 cogs (i.e., Cold Callers and Flunkies) had the less negative value.
 
-#### `bonus` <a name="toon-atk-acc-6"></a>
+### `bonus` <a name="toon-atk-acc-6"></a>
 
 There were two possible sources of bonus: PrevHits and the Lured Ratio. 
 
@@ -271,7 +269,7 @@ luredRatio = ([number of cogs lured] / [total cogs]) * 100
 ```
 (Note: The Lured Ratio bonus does not apply to Lure, Toon-up or Drop gags.)
 
-### Hit or Miss: the impact of `randChoice` <a name="toon-atk-acc-7"></a>
+## Hit or Miss: the impact of `randChoice` <a name="toon-atk-acc-7"></a>
 
 Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This was decided by the value of `randChoice`, which was simply a pseudorandom integer between 0 and 99.
 
