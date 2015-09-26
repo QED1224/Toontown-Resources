@@ -74,7 +74,7 @@ This guide started out as an attempt to answer some long-standing questions abou
 
 ## Private Servers
 
-The information used in this guide is primarily based on the source code of Toontown Online and, as such, it neither guarantees accuracy with regard to any private servers nor aims to keep up with any of their future changes.
+The information used in this guide is primarily based on the source code of Toontown Online and, as such, it neither guarantees accuracy with regard to any private servers that have modified any of the coding, nor aims to keep up with any of their future changes.
 
 ## About the Authors
 
@@ -781,7 +781,7 @@ b.
 
 ## How did the V.P. choose which attack to use? <a name="vp-3"></a>
 
-Excluding the undercarriage which had different logic (see the following question), the V.P. had three attacks: Throw Gears, Gear Shower and Jump with usage odds of 4/6, 1/6 and 1/6 respectively. During normal mode, the V.P. would choose at random from these three.
+Excluding the undercarriage which had different logic (see two questions below), the V.P. had three attacks: Throw Gears, Gear Shower and Jump with usage odds of 4/6, 1/6 and 1/6 respectively. During normal mode, the V.P. would choose at random from these three.
 
 Following dizziness, the V.P. would always use Gear Shower.
 
@@ -825,7 +825,7 @@ Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite w
 
 ## How did the C.F.O. choose which toon to attack? <a name="cfo-2"></a>
 
-At the start of the Crane Round, a list named `toonsToAttack` was created which contained the ID of every toon in the C.F.O. battle sorted randomly. Toons were then attacked according to this order: the toon at position 0 was attacked first and then its ID was appended to the end of the list. This cylcle repeated for the duration of the battle.
+At the start of the Crane Round, a list named `toonsToAttack` was created which contained the ID of every toon in the C.F.O. battle sorted randomly. Toons were then attacked according to this order: the toon at position 0 was attacked first and then its ID was appended to the end of the list. This cycle repeated for the duration of the battle.
 
 # C.J. <a name="cj"></a>
 [[back to top](#contents)]
@@ -917,7 +917,7 @@ If the C.E.O. was moving towards a toon on a table, and that particular toon hop
 
 ## Was using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod? <a name="fishing-1"></a>
 
-No, infact using a Twig Rod was less beneficial to catch light-weight Ultra Rares than a Gold Rod. In order for any rod to obtain an Ultra Rare Fish, the `rarity` value had to equal 10. Given how `rarity` was calculated ([see Fishing for more details](#fishing-main)), we can figure out the bare minimum `diceRoll` number for Twig Rod and Gold Rod to have a `rarity` value of 10. Assume `diceRoll` = X.
+No, infact using a Twig Rod was *less* beneficial to catch light-weight Ultra Rares than a Gold Rod. In order for any rod to obtain an Ultra Rare Fish, the `rarity` value had to equal 10. Given how `rarity` was calculated ([see Fishing for more details](#fishing-main)), we can figure out the bare minimum `diceRoll` number for Twig Rod and Gold Rod to have a `rarity` value of 10. Assume `diceRoll` = X.
 
 ```
 Twig Rod
@@ -965,7 +965,7 @@ Now, we need to cover four more sub-cases:
 
 ## Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-3"></a>
 
-Yes, do to how toon attacks were ordered (see previous question), it was possible for "mismatches" to occur. Essentially, this was caused by the fact that attacks were only considered in pairs. For example, consider the following scenario with three Trapless toons with maxed gags (1 - 3) and two level 12 cogs (A and B):
+Yes, due to how toon attacks were ordered (see previous question), it was possible for "mismatches" to occur. Essentially, this was caused by the fact that attacks were only considered in pairs. For example, consider the following scenario with three Trapless toons with maxed gags (1 - 3) and two level 12 cogs (A and B):
 
 ```
  B A
