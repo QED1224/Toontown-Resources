@@ -50,7 +50,6 @@
     - [Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results?](#misc-3)
     - [Did doodle tricks count as a stun in battle?](#misc-4)
     - [Did Fires count as a stun?](#misc-5)
-- [Credits](#credits)
 - [Appendix A: Cog Attack Frequencies](#appendix-a)
 	- [Sellbots](#atk-freq-sell)
 	- [Cashbots](#atk-freq-cash)
@@ -1127,11 +1126,6 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 ### Battle Simulations
 
 - [1 Fire & Hypno Goggles](http://pastebin.com/yqU1WxdX)
-
-# Credits <a name="credits"></a>
-[[back to top](#contents)]
-
-- Cell1234 (Patrick)
 
 # Appendix A: Cog Attack Frequencies <a name="appendix-a"></a>
 
