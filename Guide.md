@@ -57,7 +57,15 @@
 	- [Lawbots](#atk-freq-law)
 	- [Bossbots](#atk-freq-boss)
 - [Appendix B: Cog Attack Damages](#appendix-b)
+	- [Sellbots](#atk-dmg-sell)
+	- [Cashbots](#atk-dmg-cash)
+	- [Lawbots](#atk-dmg-law)
+	- [Bossbots](#atk-dmg-boss)
 - [Appendix C: Cog Attack Accuracies](#appendix-c)
+	- [Sellbots](#atk-acc-sell)
+	- [Cashbots](#atk-acc-cash)
+	- [Lawbots](#atk-acc-law)
+	- [Bossbots](#atk-acc-boss)
 
 # Introduction <a name="intro"></a>
 [[back to top](#contents)]
@@ -74,7 +82,7 @@ The information used in this guide is primarily based on the source code of Toon
 
 - Cell1234: I have been playing Toontown since 2003, just a bit before SBHQ came out. While I had some breaks, I always enjoyed the game and the people I met on it. I'm usually known as Patrick on forums, but I go by Cell1234 on Reddit.
 
-- QED1224: I played Toontown from August of 2005 until its official close on September 19, 2013 (you may have known me as either Reign or Super Fireball Thunderroni). I'm still a huge fan of the game and its history, and you can find me on many of its online forums as "QED".
+- QED1224: I played Toontown from August of 2005 until its official close on September 19, 2013 (you may have known me as either Reign or Super Fireball Thunderroni). I'm still a huge fan of the game and its history, and you can find me on many of its online forums as QED.
 
 # Core Knowledge <a name="core-knowledge"></a>
 [[back to top](#contents)]
@@ -1033,7 +1041,6 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 - Cell1234 (Patrick)
 
 # Appendix A: Cog Attack Frequencies <a name="appendix-a"></a>
-[[back to top](#contents)]
 
 ## Sellbots <a name="atk-freq-sell"></a>
 [[back to top](#contents)]
@@ -2404,6 +2411,17 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 </table>
 
 # Appendix B: Cog Attack Damages <a name="appendix-b"></a>
+
+## Sellbots <a name="atk-dmg-sell"></a>
+[[back to top](#contents)]
+
+## Cashbots <a name="atk-dmg-cash"></a>
+[[back to top](#contents)]
+
+## Lawbots <a name="atk-dmg-law"></a>
+[[back to top](#contents)]
+
+## Bossbots <a name="atk-dmg-boss"></a>
 [[back to top](#contents)]
 
 <table>
@@ -2453,7 +2471,6 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 		<tr>
 			<th colspan="7"> </th>
 		</tr>
-		
 		<tr>
     			<th colspan="2">Pencil Pusher</th>
     			<th colspan="5">Damage</th>
@@ -2516,10 +2533,6 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<th colspan="7"> </th>
 		</tr>
 		<tr>
-			<th colspan="7"> </th>
-		</tr>
-		
-		<tr>
     			<th colspan="2">Yesman</th>
     			<th colspan="5">Damage</th>
   		</tr>
@@ -2571,10 +2584,6 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 		<tr>
 			<th colspan="7"> </th>
 		</tr>
-		<tr>
-			<th colspan="7"> </th>
-		</tr>
-		
 		<tr>
     			<th colspan="2">Micromanager</th>
     			<th colspan="5">Damage</th>
@@ -2637,10 +2646,6 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<th colspan="7"> </th>
 		</tr>
 		<tr>
-			<th colspan="7"> </th>
-		</tr>
-		
-		<tr>
     			<th colspan="2">Downsizer</th>
     			<th colspan="5">Damage</th>
   		</tr>
@@ -2692,10 +2697,6 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 		<tr>
 			<th colspan="7"> </th>
 		</tr>
-		<tr>
-			<th colspan="7"> </th>
-		</tr>
-		
 		<tr>
     			<th colspan="2">Head Hunter</th>
     			<th colspan="5">Damage</th>
@@ -2843,6 +2844,1034 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 </table>
 
 # Appendix C: Cog Attack Accuracies <a name="appendix-c"></a>
+
+## Sellbots <a name="atk-acc-sell"></a>
+[[back to top](#contents)]
+
+<table>
+	        <tr>
+			<th colspan="6">Sellbots</th>
+		</tr>
+		<tr>
+			<th>Cold Caller</th>
+			<th>Level 1</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+	        </tr>
+	        <tr>
+			<td align="center">Freeze Assets</td>
+			<td align="center">90</td>
+			<td align="center">90</td>
+			<td align="center">90</td>
+			<td align="center">90</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<td align="center">Pound Key</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<td align="center">Double Talk</td>
+			<td align="center">50</td>
+			<td align="center">55</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+	        </tr>
+	        <tr>
+			<td align="center">Hot Air</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        <tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Telemarketer</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+	        </tr>
+	        <tr>
+			<td align="center">Clip-on Tie</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+	        </tr>
+	        <tr>
+			<td align="center">Pick Pocket</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+	        </tr>
+	        <tr>
+			<td align="center">Rolodex</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        <tr>
+			<td align="center">Double Talk</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Name Dropper</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+	        </tr>
+	        <tr>
+			<td align="center">Razzle Dazzle</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<td align="center">Rolodex</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<td align="center">Synergy</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        <tr>
+			<td align="center">Pick Pocket</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Glad Hander</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+	        </tr>
+	        <tr>
+			<td align="center">Rubber Stamp</td>
+			<td align="center">90</td>
+			<td align="center">70</td>
+			<td align="center">50</td>
+			<td align="center">30</td>
+			<td align="center">10</td>
+	        </tr>
+	        <tr>
+			<td align="center">Fountain Pen</td>
+			<td align="center">70</td>
+			<td align="center">60</td>
+			<td align="center">50</td>
+			<td align="center">40</td>
+			<td align="center">30</td>
+	        </tr>
+	        <tr>
+			<td align="center">Filibuster</td>
+			<td align="center">30</td>
+			<td align="center">40</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+	        </tr>
+	        <tr>
+			<td align="center">Schmooze</td>
+			<td align="center">55</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">85</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Mover & Shaker</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+	        </tr>
+	        <tr>
+			<td align="center">Brain Storm</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<td align="center">Half Windsor</td>
+			<td align="center">50</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+	        </tr>
+	        <tr>
+			<td align="center">Quake</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+	        </tr>
+	        <tr>
+			<td align="center">Shake</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<td align="center">Tremor</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        <tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Two-Face</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+	        </tr>
+	        <tr>
+			<td align="center">Evil Eye</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<td align="center">Hang-up</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<td align="center">Razzle Dazzle</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+	        </tr>
+	        <tr>
+			<td align="center">Red Tape</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>The Mingler</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+	        </tr>
+	        <tr>
+			<td align="center">Buzzword</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<td align="center">Paradigm Shift</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<td align="center">Power Trip</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+	        </tr>
+	        <tr>
+			<td align="center">Schmooze</td>
+			<td align="center">55</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">85</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<td align="center">Tee Off</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Mr. Hollywood</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+			<th>Level 12</th>
+	        </tr>
+	        <tr>
+			<td align="center">Power Trip</td>
+			<td align="center">55</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">85</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<td align="center">Razzle Dazzle</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+			<td align="center">95</td>
+	        </tr>
+</table>
+
+## Cashbots <a name="atk-acc-cash"></a>
+[[back to top](#contents)]
+
+<table>
+	        <tr>
+			<th colspan="6">Cashbots</th>
+		</tr>
+		<tr>
+			<th>Short Change</th>
+			<th>Level 1</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+	        </tr>
+	        <tr>
+			<td align="center">Watercooler</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        <tr>
+			<td align="center">Bounce Check</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<td align="center">Clip-On Tie</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+	        <tr>
+			<td align="center">Pick Pocket</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Penny Pincher</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+	        </tr>
+	        <tr>
+			<td align="center">Bounce Check</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+	        </tr>
+	        <tr>
+			<td align="center">Freeze Assets</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+	        </tr>
+	        <tr>
+			<td align="center">Finger Wag</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Tightwad</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+	        </tr>
+	        <tr>
+			<td align="center">Fired</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+	        </tr>
+	        <tr>
+			<td align="center">Glower Power</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<td align="center">Finger Wag</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+	        </tr>
+	        <tr>
+			<td align="center">Freeze Assets</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+	        </tr>
+	        <tr>
+			<td align="center">Bounce Check</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Bean Counter</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+	        </tr>
+	        <tr>
+			<td align="center">Audit</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<td align="center">Calculate</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+	        </tr>
+	        <tr>
+			<td align="center">Tabulate</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+	        </tr>
+	        <tr>
+			<td align="center">Write-Off</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Number Cruncher</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+	        </tr>
+	        <tr>
+			<td align="center">Audit</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<td align="center">Calculate</td>
+			<td align="center">50</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+	        </tr>
+	        <tr>
+			<td align="center">Crunch</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+	        </tr>
+	        <tr>
+			<td align="center">Tabulate</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+			<td align="center">50</td>
+	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Money Bags</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+	        </tr>
+	        <tr>
+			<td align="center">Liquidate</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<td align="center">Market Crash</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+	        </tr>
+	        <tr>
+			<td align="center">Power Tie</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Loan Shark</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+	        </tr>
+	        <tr>
+			<td align="center">Bite</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<td align="center">Chomp</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+	        </tr>
+	        <tr>
+			<td align="center">Play Hardball</td>
+			<td align="center">55</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">85</td>
+			<td align="center">95</td>
+	        </tr>
+	        <tr>
+			<td align="center">Write-Off</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">95</td>
+	        </tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+	        <tr>
+			<th>Robber Baron</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+			<th>Level 12</th>
+	        </tr>
+	        <tr>
+			<td align="center">Power Trip</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+	        </tr>
+	        <tr>
+			<td align="center">Tee-Off</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+	        </tr>
+</table>
+
+## Lawbots <a name="atk-acc-law"></a>
+[[back to top](#contents)]
+
+<table>
+		<tr>
+			<th colspan="6">Lawbots</th>
+		</tr>
+		<tr>
+			<th>Bottom Feeder</th>
+			<th>Level 1</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+		</tr>
+		<tr>
+			<td align="center">Rubber Stamp</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+			<td align="center">95</td>
+		</tr>
+		<tr>
+			<td align="center">Shred</td>
+			<td align="center">50</td>
+			<td align="center">55</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+		</tr>
+		<tr>
+			<td align="center">Watercooler</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+		</tr>
+		<tr>
+			<td align="center">Pick Pocket</td>
+			<td align="center">25</td>
+			<td align="center">30</td>
+			<td align="center">35</td>
+			<td align="center">40</td>
+			<td align="center">45</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Blood Sucker</th>
+			<th>Level 2</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+		</tr>
+		<tr>
+			<td align="center">Eviction Notice</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<td align="center">Red Tape</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<td align="center">Withdrawal</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+			<td align="center">95</td>
+		</tr>
+		<tr>
+			<td align="center">Liquidate</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Double Talker</th>
+			<th>Level 3</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+		</tr>
+		<tr>
+			<td align="center">Rubber Stamp</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Bounce Check</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Buzz Word</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Double Talk</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Jargon</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Mumbo Jumbo</td>
+			<td align="center">50</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Ambulance Chaser</th>
+			<th>Level 4</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+		</tr>
+		<tr>
+			<td align="center">Shake</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<td align="center">Red Tape</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<td align="center">Rolodex</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<td align="center">Hang Up</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+			<td align="center">75</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Back Stabber</th>
+			<th>Level 5</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+		</tr>
+		<tr>
+			<td align="center">Guilt Trip</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Restraining Order</td>
+			<td align="center">50</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Finger Wag</td>
+			<td align="center">50</td>
+			<td align="center">55</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Spin Doctor</th>
+			<th>Level 6</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+		</tr>
+		<tr>
+			<td align="center">Paradigm Shift</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Quake</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+		</tr>
+		<tr>
+			<td align="center">Spin</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Write Off</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Rolodex</td>
+			<td align="center">60</td>
+			<td align="center">65</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Legal Eagle</th>
+			<th>Level 7</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+		</tr>
+		<tr>
+			<td align="center">Evil Eye</td>
+			<td align="center">60</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Jargon</td>
+			<td align="center">60</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">90</td>
+		</tr>
+		<tr>
+			<td align="center">Legalese</td>
+			<td align="center">55</td>
+			<td align="center">65</td>
+			<td align="center">75</td>
+			<td align="center">85</td>
+			<td align="center">95</td>
+		</tr>
+		<tr>
+			<td align="center">Pecking Order</td>
+			<td align="center">70</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">95</td>
+		</tr>
+		<tr>
+			<th colspan="6"> </th>
+		</tr>
+		<tr>
+			<th>Big Wig</th>
+			<th>Level 8</th>
+			<th>Level 9</th>
+			<th>Level 10</th>
+			<th>Level 11</th>
+			<th>Level 12</th>
+		</tr>
+		<tr>
+			<td align="center">Power Trip</td>
+			<td align="center">75</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+			<td align="center">95</td>
+		</tr>
+		<tr>
+			<td align="center">Finger Wag</td>
+			<td align="center">80</td>
+			<td align="center">85</td>
+			<td align="center">85</td>
+			<td align="center">85</td>
+			<td align="center">90</td>
+		</tr>
+</table>
+
+## Bossbots <a name="atk-acc-boss"></a>
 [[back to top](#contents)]
 
 <table>
@@ -3194,1019 +4223,3 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 		
 \* The Big Cheese was coded with three unused attacks. They were CigarSmoke, FloodTheMarket and SongAnd Dance. However, when the game selected one of these attacks, The Big Cheese would instead use his programmed default attack, which was Glower Power. Despite this, the game would still use the accuracy and damage values of the move that was internally selected (see [Cog Attack Accuracy](#cog-atk-acc) for more information), thus allowing Glower Power to have varying damage and accuracy values for the same level.
 		
-<table>
-		<tr>
-			<th colspan="6">Lawbots</th>
-		</tr>
-		<tr>
-			<th>Bottom Feeder</th>
-			<th>Level 1</th>
-			<th>Level 2</th>
-			<th>Level 3</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-		</tr>
-		<tr>
-			<td align="center">Rubber Stamp</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-			<td align="center">95</td>
-		</tr>
-		<tr>
-			<td align="center">Shred</td>
-			<td align="center">50</td>
-			<td align="center">55</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
-		</tr>
-		<tr>
-			<td align="center">Watercooler</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-		</tr>
-		<tr>
-			<td align="center">Pick Pocket</td>
-			<td align="center">25</td>
-			<td align="center">30</td>
-			<td align="center">35</td>
-			<td align="center">40</td>
-			<td align="center">45</td>
-		</tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-		<tr>
-			<th>Blood Sucker</th>
-			<th>Level 2</th>
-			<th>Level 3</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-		</tr>
-		<tr>
-			<td align="center">Eviction Notice</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-		</tr>
-		<tr>
-			<td align="center">Red Tape</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-		</tr>
-		<tr>
-			<td align="center">Withdrawal</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-		</tr>
-		<tr>
-			<td align="center">Liquidate</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-		<tr>
-			<th>Double Talker</th>
-			<th>Level 3</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-		</tr>
-		<tr>
-			<td align="center">Rubber Stamp</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Bounce Check</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Buzz Word</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Double Talk</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Jargon</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Mumbo Jumbo</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-		<tr>
-			<th>Ambulance Chaser</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-		</tr>
-		<tr>
-			<td align="center">Shake</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-		</tr>
-		<tr>
-			<td align="center">Red Tape</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-		</tr>
-		<tr>
-			<td align="center">Rolodex</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-		</tr>
-		<tr>
-			<td align="center">Hang Up</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-		</tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-		<tr>
-			<th>Back Stabber</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-		</tr>
-		<tr>
-			<td align="center">Guilt Trip</td>
-			<td align="center">60</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Restraining Order</td>
-			<td align="center">50</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Finger Wag</td>
-			<td align="center">50</td>
-			<td align="center">55</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-		</tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-		<tr>
-			<th>Spin Doctor</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-			<th>Level 10</th>
-		</tr>
-		<tr>
-			<td align="center">Paradigm Shift</td>
-			<td align="center">60</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Quake</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-		</tr>
-		<tr>
-			<td align="center">Spin</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Write Off</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Rolodex</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-		</tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-		<tr>
-			<th>Legal Eagle</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-			<th>Level 10</th>
-			<th>Level 11</th>
-		</tr>
-		<tr>
-			<td align="center">Evil Eye</td>
-			<td align="center">60</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Jargon</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-		</tr>
-		<tr>
-			<td align="center">Legalese</td>
-			<td align="center">55</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">85</td>
-			<td align="center">95</td>
-		</tr>
-		<tr>
-			<td align="center">Pecking Order</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">95</td>
-		</tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-		<tr>
-			<th>Big Wig</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-			<th>Level 10</th>
-			<th>Level 11</th>
-			<th>Level 12</th>
-		</tr>
-		<tr>
-			<td align="center">Power Trip</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-			<td align="center">95</td>
-		</tr>
-		<tr>
-			<td align="center">Finger Wag</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">85</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-		</tr>
-        </table>	
-<table>
-	        <tr>
-			<th colspan="6">Cashbots</th>
-		</tr>
-		<tr>
-			<th>Short Change</th>
-			<th>Level 1</th>
-			<th>Level 2</th>
-			<th>Level 3</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-	        </tr>
-	        <tr>
-			<td align="center">Watercooler</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-	        </tr>
-	        <tr>
-			<td align="center">Bounce Check</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<td align="center">Clip-On Tie</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-	        </tr>
-	        <tr>
-			<td align="center">Pick Pocket</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-	        </tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Penny Pincher</th>
-			<th>Level 2</th>
-			<th>Level 3</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-	        </tr>
-	        <tr>
-			<td align="center">Bounce Check</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-	        </tr>
-	        <tr>
-			<td align="center">Freeze Assets</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-	        </tr>
-	        <tr>
-			<td align="center">Finger Wag</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-	        </tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Tightwad</th>
-			<th>Level 3</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-	        </tr>
-	        <tr>
-			<td align="center">Fired</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-	        </tr>
-	        <tr>
-			<td align="center">Glower Power</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<td align="center">Finger Wag</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-	        </tr>
-	        <tr>
-			<td align="center">Freeze Assets</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-	        </tr>
-	        <tr>
-			<td align="center">Bounce Check</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-	        </tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Bean Counter</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-	        </tr>
-	        <tr>
-			<td align="center">Audit</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<td align="center">Calculate</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-	        </tr>
-	        <tr>
-			<td align="center">Tabulate</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-	        </tr>
-	        <tr>
-			<td align="center">Write-Off</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-	        </tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Number Cruncher</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-	        </tr>
-	        <tr>
-			<td align="center">Audit</td>
-			<td align="center">60</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<td align="center">Calculate</td>
-			<td align="center">50</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-	        </tr>
-	        <tr>
-			<td align="center">Crunch</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-	        </tr>
-	        <tr>
-			<td align="center">Tabulate</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-	        </tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Money Bags</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-			<th>Level 10</th>
-	        </tr>
-	        <tr>
-			<td align="center">Liquidate</td>
-			<td align="center">60</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<td align="center">Market Crash</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-	        </tr>
-	        <tr>
-			<td align="center">Power Tie</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-	        </tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Loan Shark</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-			<th>Level 10</th>
-			<th>Level 11</th>
-	        </tr>
-	        <tr>
-			<td align="center">Bite</td>
-			<td align="center">60</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<td align="center">Chomp</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<td align="center">Play Hardball</td>
-			<td align="center">55</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">85</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<td align="center">Write-Off</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">95</td>
-	        </tr>
-		<tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Robber Baron</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-			<th>Level 10</th>
-			<th>Level 11</th>
-			<th>Level 12</th>
-	        </tr>
-	        <tr>
-			<td align="center">Power Trip</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-	        </tr>
-	        <tr>
-			<td align="center">Tee-Off</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-	        </tr>
-	        </table>
-<table>
-	        <tr>
-			<th colspan="6">Sellbots</th>
-		</tr>
-		<tr>
-			<th>Cold Caller</th>
-			<th>Level 1</th>
-			<th>Level 2</th>
-			<th>Level 3</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-	        </tr>
-	        <tr>
-			<td align="center">Freeze Assets</td>
-			<td align="center">90</td>
-			<td align="center">90</td>
-			<td align="center">90</td>
-			<td align="center">90</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<td align="center">Pound Key</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<td align="center">Double Talk</td>
-			<td align="center">50</td>
-			<td align="center">55</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
-	        </tr>
-	        <tr>
-			<td align="center">Hot Air</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-	        </tr>
-	        <tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Telemarketer</th>
-			<th>Level 2</th>
-			<th>Level 3</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-	        </tr>
-	        <tr>
-			<td align="center">Clip-on Tie</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-	        </tr>
-	        <tr>
-			<td align="center">Pick Pocket</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-			<td align="center">75</td>
-	        </tr>
-	        <tr>
-			<td align="center">Rolodex</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-	        </tr>
-	        <tr>
-			<td align="center">Double Talk</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Name Dropper</th>
-			<th>Level 3</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-	        </tr>
-	        <tr>
-			<td align="center">Razzle Dazzle</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<td align="center">Rolodex</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<td align="center">Synergy</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-	        </tr>
-	        <tr>
-			<td align="center">Pick Pocket</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Glad Hander</th>
-			<th>Level 4</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-	        </tr>
-	        <tr>
-			<td align="center">Rubber Stamp</td>
-			<td align="center">90</td>
-			<td align="center">70</td>
-			<td align="center">50</td>
-			<td align="center">30</td>
-			<td align="center">10</td>
-	        </tr>
-	        <tr>
-			<td align="center">Fountain Pen</td>
-			<td align="center">70</td>
-			<td align="center">60</td>
-			<td align="center">50</td>
-			<td align="center">40</td>
-			<td align="center">30</td>
-	        </tr>
-	        <tr>
-			<td align="center">Filibuster</td>
-			<td align="center">30</td>
-			<td align="center">40</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-	        </tr>
-	        <tr>
-			<td align="center">Schmooze</td>
-			<td align="center">55</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">85</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Mover & Shaker</th>
-			<th>Level 5</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-	        </tr>
-	        <tr>
-			<td align="center">Brain Storm</td>
-			<td align="center">60</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<td align="center">Half Windsor</td>
-			<td align="center">50</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-	        </tr>
-	        <tr>
-			<td align="center">Quake</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-	        </tr>
-	        <tr>
-			<td align="center">Shake</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<td align="center">Tremor</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-			<td align="center">50</td>
-	        </tr>
-	        <tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Two-Face</th>
-			<th>Level 6</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-			<th>Level 10</th>
-	        </tr>
-	        <tr>
-			<td align="center">Evil Eye</td>
-			<td align="center">60</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<td align="center">Hang-up</td>
-			<td align="center">50</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<td align="center">Razzle Dazzle</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-	        </tr>
-	        <tr>
-			<td align="center">Red Tape</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>The Mingler</th>
-			<th>Level 7</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-			<th>Level 10</th>
-			<th>Level 11</th>
-	        </tr>
-	        <tr>
-			<td align="center">Buzzword</td>
-			<td align="center">60</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<td align="center">Paradigm Shift</td>
-			<td align="center">60</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">90</td>
-	        </tr>
-	        <tr>
-			<td align="center">Power Trip</td>
-			<td align="center">60</td>
-			<td align="center">65</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-	        </tr>
-	        <tr>
-			<td align="center">Schmooze</td>
-			<td align="center">55</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">85</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<td align="center">Tee Off</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">80</td>
-			<td align="center">85</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<th colspan="6"> </th>
-		</tr>
-	        <tr>
-			<th>Mr. Hollywood</th>
-			<th>Level 8</th>
-			<th>Level 9</th>
-			<th>Level 10</th>
-			<th>Level 11</th>
-			<th>Level 12</th>
-	        </tr>
-	        <tr>
-			<td align="center">Power Trip</td>
-			<td align="center">55</td>
-			<td align="center">65</td>
-			<td align="center">75</td>
-			<td align="center">85</td>
-			<td align="center">95</td>
-	        </tr>
-	        <tr>
-			<td align="center">Razzle Dazzle</td>
-			<td align="center">70</td>
-			<td align="center">75</td>
-			<td align="center">85</td>
-			<td align="center">90</td>
-			<td align="center">95</td>
-	        </tr>
-	        
-	        
-</table>
