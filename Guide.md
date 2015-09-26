@@ -68,7 +68,6 @@
 	- [Bossbots](#atk-acc-boss)
 
 # Introduction <a name="intro"></a>
-[[back to top](#contents)]
 
 ## Goals
 
@@ -2420,6 +2419,416 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 
 ## Lawbots <a name="atk-dmg-law"></a>
 [[back to top](#contents)]
+
+<table>
+		<tr>
+    			<th colspan="7">Lawbots</th>
+  		</tr>
+  		<tr>
+    			<th colspan="2">Bottom Feeder</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 1</th>
+    			<th>Level 2</th>
+    			<th>Level 3</th>
+    			<th>Level 4</th>
+    			<th>Level 5</th>
+  		</tr>
+		<tr>
+    			<td align="center">Rubber Stamp</td>
+    			<td align="center">Single</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Shred</td>
+    			<td align="center">Single</td>
+    			<td align="center">2</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">8</td>
+    			<td align="center">10</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Watercooler</td>
+    			<td align="center">Single</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Pick Pocket</td>
+    			<td align="center">Single</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+    			<td align="center">2</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+    			<th colspan="2">Bloodsucker</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 2</th>
+    			<th>Level 3</th>
+    			<th>Level 4</th>
+    			<th>Level 5</th>
+    			<th>Level 6</th>
+  		</tr>
+		<tr>
+    			<td align="center">Eviction Notice</td>
+    			<td align="center">Single</td>
+    			<td align="center">1</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Red Tape</td>
+    			<td align="center">Single</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">9</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Withdrawal</td>
+    			<td align="center">Single</td>
+    			<td align="center">6</td>
+    			<td align="center">8</td>
+    			<td align="center">10</td>
+    			<td align="center">12</td>
+    			<td align="center">14</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Liquidate</td>
+    			<td align="center">Single</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">9</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+    			<th colspan="2">Double Talker</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 3</th>
+    			<th>Level 4</th>
+    			<th>Level 5</th>
+    			<th>Level 6</th>
+    			<th>Level 7</th>
+  		</tr>
+		<tr>
+    			<td align="center">Rubber Stamp</td>
+    			<td align="center">Single</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Bounce Check</td>
+    			<td align="center">Single</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+    			<td align="center">1</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Buzz Word</td>
+    			<td align="center">Group</td>
+    			<td align="center">1</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Double Talk</td>
+    			<td align="center">Single</td>
+    			<td align="center">6</td>
+    			<td align="center">6</td>
+    			<td align="center">9</td>
+    			<td align="center">13</td>
+    			<td align="center">18</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Jargon</td>
+    			<td align="center">Single</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">9</td>
+    			<td align="center">12</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Mumbo Jumbo</td>
+    			<td align="center">Single</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">9</td>
+    			<td align="center">12</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+    			<th colspan="2">Ambulance Chaser</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 4</th>
+    			<th>Level 5</th>
+    			<th>Level 6</th>
+    			<th>Level 7</th>
+    			<th>Level 8</th>
+  		</tr>
+		<tr>
+    			<td align="center">Shake</td>
+    			<td align="center">Group</td>
+    			<td align="center">4</td>
+    			<td align="center">6</td>
+    			<td align="center">9</td>
+    			<td align="center">12</td>
+    			<td align="center">15</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Red Tape</td>
+    			<td align="center">Single</td>
+    			<td align="center">6</td>
+    			<td align="center">8</td>
+    			<td align="center">12</td>
+    			<td align="center">15</td>
+    			<td align="center">19</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Rolodex</td>
+    			<td align="center">Single</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Hang Up</td>
+    			<td align="center">Single</td>
+    			<td align="center">2</td>
+    			<td align="center">3</td>
+    			<td align="center">4</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+    			<th colspan="2">Back Stabber</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 5</th>
+    			<th>Level 6</th>
+    			<th>Level 7</th>
+    			<th>Level 8</th>
+    			<th>Level 9</th>
+  		</tr>
+		<tr>
+    			<td align="center">Guilt Trip</td>
+    			<td align="center">Group</td>
+    			<td align="center">8</td>
+    			<td align="center">11</td>
+    			<td align="center">13</td>
+    			<td align="center">15</td>
+    			<td align="center">18</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Restraining Order</td>
+    			<td align="center">Single</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
+    			<td align="center">9</td>
+    			<td align="center">11</td>
+    			<td align="center">13</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Finger Wag</td>
+    			<td align="center">Single</td>
+    			<td align="center">5</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
+    			<td align="center">8</td>
+    			<td align="center">9</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+    			<th colspan="2">Spin Doctor</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 6</th>
+    			<th>Level 7</th>
+    			<th>Level 8</th>
+    			<th>Level 9</th>
+    			<th>Level 10</th>
+  		</tr>
+		<tr>
+    			<td align="center">Paradigm Shift</td>
+    			<td align="center">Group</td>
+    			<td align="center">9</td>
+    			<td align="center">10</td>
+    			<td align="center">13</td>
+    			<td align="center">16</td>
+    			<td align="center">17</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Quake</td>
+    			<td align="center">Group</td>
+    			<td align="center">8</td>
+    			<td align="center">10</td>
+    			<td align="center">12</td>
+    			<td align="center">14</td>
+    			<td align="center">16</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Spin</td>
+    			<td align="center">Single</td>
+    			<td align="center">10</td>
+    			<td align="center">12</td>
+    			<td align="center">15</td>
+    			<td align="center">18</td>
+    			<td align="center">20</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Write Off</td>
+    			<td align="center">Single</td>
+    			<td align="center">6</td>
+    			<td align="center">7</td>
+    			<td align="center">8</td>
+    			<td align="center">9</td>
+    			<td align="center">10</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+    			<th colspan="2">Legal Eagle</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 7</th>
+    			<th>Level 8</th>
+    			<th>Level 9</th>
+    			<th>Level 10</th>
+    			<th>Level 11</th>
+  		</tr>
+		<tr>
+    			<td align="center">Evil Eye</td>
+    			<td align="center">Single</td>
+    			<td align="center">10</td>
+    			<td align="center">11</td>
+    			<td align="center">13</td>
+    			<td align="center">15</td>
+    			<td align="center">16</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Jargon</td>
+    			<td align="center">Single</td>
+    			<td align="center">7</td>
+    			<td align="center">9</td>
+    			<td align="center">11</td>
+    			<td align="center">13</td>
+    			<td align="center">15</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Legalese</td>
+    			<td align="center">Single</td>
+    			<td align="center">11</td>
+    			<td align="center">13</td>
+    			<td align="center">16</td>
+    			<td align="center">19</td>
+    			<td align="center">21</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Pecking Order</td>
+    			<td align="center">Single</td>
+    			<td align="center">12</td>
+    			<td align="center">15</td>
+    			<td align="center">17</td>
+    			<td align="center">19</td>
+    			<td align="center">22</td>
+  		</tr>
+		<tr>
+			<th colspan="7"> </th>
+		</tr>
+		<tr>
+    			<th colspan="2">Big Wig</th>
+    			<th colspan="5">Damage</th>
+  		</tr>
+		<tr>
+    			<th>Attack</th>
+    			<th>Type</th>
+    			<th>Level 8</th>
+    			<th>Level 9</th>
+    			<th>Level 10</th>
+    			<th>Level 11</th>
+    			<th>Level 12</th>
+  		</tr>
+		<tr>
+    			<td align="center">Power Trip</td>
+    			<td align="center">Group</td>
+    			<td align="center">10</td>
+    			<td align="center">11</td>
+    			<td align="center">13</td>
+    			<td align="center">15</td>
+    			<td align="center">16</td>
+  		</tr>
+  		<tr>
+    			<td align="center">Finger Wag</td>
+    			<td align="center">Single</td>
+    			<td align="center">13</td>
+    			<td align="center">15</td>
+    			<td align="center">17</td>
+    			<td align="center">19</td>
+    			<td align="center">21</td>
+  		</tr>
+</table>
 
 ## Bossbots <a name="atk-dmg-boss"></a>
 [[back to top](#contents)]
