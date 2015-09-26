@@ -107,23 +107,117 @@ atkAcc = propAcc + trackExp + tgtDef + bonus
 
 #### `propAcc` <a name="toon-atk-acc-3"></a>
 
-**AvPropAccuracy (Gag track vs. Gag level):**
+<table>
+  <tr>
+    <th colspan="9">AvPropAccuracy</th>
+  </tr>
+  <tr>
+    <th colspan="2">Track</th>
+    <th>Level 1</th>
+    <th>Level 2</th>
+    <th>Level 3</th>
+    <th>Level 4</th>
+    <th>Level 5</th>
+    <th>Level 6</th>
+    <th>Level 7</th>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">Toon-up</td>
+    <td align="center">70</td>
+    <td align="center">70</td>
+    <td align="center">70</td>
+    <td align="center">70</td>
+    <td align="center">70</td>
+    <td align="center">70</td>
+    <td align="center">100</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">Trap</td>
+    <td align="center">0</td>
+    <td align="center">0</td>
+    <td align="center">0</td>
+    <td align="center">0</td>
+    <td align="center">0</td>
+    <td align="center">0</td>
+    <td align="center">0</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">Lure</td>
+    <td align="center">50</td>
+    <td align="center">50</td>
+    <td align="center">60</td>
+    <td align="center">60</td>
+    <td align="center">70</td>
+    <td align="center">70</td>
+    <td align="center">100</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">Sound</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">Throw</td>
+    <td align="center">75</td>
+    <td align="center">75</td>
+    <td align="center">75</td>
+    <td align="center">75</td>
+    <td align="center">75</td>
+    <td align="center">75</td>
+    <td align="center">75</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">Squirt</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+    <td align="center">95</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">Drop</td>
+    <td align="center">50</td>
+    <td align="center">50</td>
+    <td align="center">50</td>
+    <td align="center">50</td>
+    <td align="center">50</td>
+    <td align="center">50</td>
+    <td align="center">50</td>
+  </tr>
+</table>
 
-|         |  1 |  2 |  3 |  4 |  5 |  6 |  7  |
-|:---------:|:--:|:--:|:--:|:--:|:--:|:--:|:---:|
-| Toon-up |  - |  - |  - |  - |  - | 70 | 100 |
-| Trap    |  - | -  | -  | -  | -  | -  |  0  |
-| Lure    | 50 | 50 | 60 | 60 | 70 | 70 | 100 |
-| Sound   | -  | -  | -  | -  | -  | -  | 95  |
-| Throw   | -  | -  | -  | -  | -  | -  | 75  |
-| Squirt  | -  | -  | -  | -  | -  | -  | 95  |
-| Drop    | -  | -  | -  | -  | -  | -  | 50  |
-
-**AvLureBonusAccuracy:** <a name="AvLureBonusAccuracy"></a>
-
-|      |  1 |  2 |  3 |  4 |  5 |  6 |  7  |
-|------|:--:|:--:|:--:|:--:|:--:|:--:|:---:|
-| Lure | 60 | 60 | 70 | 70 | 80 | 80 | 100 |
+<table>
+  <tr>
+    <th colspan="9"><a name="AvLureBonusAccuracy">AvLureBonusAccuracy</a></th>
+  </tr>
+  <tr>
+    <th colspan="2">Track</th>
+    <th>Level 1</th>
+    <th>Level 2</th>
+    <th>Level 3</th>
+    <th>Level 4</th>
+    <th>Level 5</th>
+    <th>Level 6</th>
+    <th>Level 7</th>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">Lure</td>
+    <td align="center">60</td>
+    <td align="center">60</td>
+    <td align="center">70</td>
+    <td align="center">70</td>
+    <td align="center">80</td>
+    <td align="center">80</td>
+    <td align="center">100</td>
+  </tr>
+</table>
 
 For all non-Lure gags, `propAcc` was simply the above pre-defined `AvPropAccuracy` value.
 
