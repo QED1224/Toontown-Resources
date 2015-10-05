@@ -5713,7 +5713,7 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 		</tr>
 		<tr>
 			<td align="center">Anne Ville *</td>
-			<td align="center">Sound</td>
+			<td align="center">Drop</td>
 			<td align="center"></td>
 			<td align="center">Did 20 damage to all unlured cogs</td>
 		</tr>
