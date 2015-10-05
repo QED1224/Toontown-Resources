@@ -150,7 +150,7 @@ For all gags, `propAcc` was assigned a value from `AvPropAccuracy`. For Lure gag
     <td align="center">60</td>
     <td align="center">70</td>
     <td align="center">70</td>
-    <td align="center">100</td>
+    <td align="center">95</td>
   </tr>
   <tr>
     <td colspan="2" align="center">Sound</td>
