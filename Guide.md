@@ -65,6 +65,7 @@
 	- [Cashbots](#atk-acc-cash)
 	- [Lawbots](#atk-acc-law)
 	- [Bossbots](#atk-acc-boss)
+- [Appendix D: SOS Toons](#appendix-d)
 
 # Introduction <a name="intro"></a>
 
@@ -815,6 +816,8 @@ While it's impossible to give a definitive answer without insider knowledge, her
 ## How were the SOS toons chosen?  <a name="vp-7"></a>
 
 Upon entering the elevator, the game would return a list of all VP SOS toons via the .keys() method. The game would then use `random.choice` to pick an SOS from that list. In other words, the stars on the SOS card would not affect the chances of it being selected.
+
+A list of all SOS toons obtained in both the VP and Field Offices can be seen [here](#appendix-d).
 
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
@@ -5529,3 +5532,191 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 		
 \* The Big Cheese was coded with three unused attacks. They were CigarSmoke, FloodTheMarket and SongAnd Dance. However, when the game selected one of these attacks, The Big Cheese would instead use his programmed default attack, which was Glower Power. Despite this, the game would still use the accuracy and damage values of the move that was internally selected (see [Cog Attack Accuracy](#cog-atk-acc) for more information), thus allowing Glower Power to have varying damage and accuracy values for the same level.
 		
+# Appendix D: SOS Toons <a name="appendix-d"></a>
+<table>
+<tr>
+			<th colspan="4"> </th>
+		</tr>
+		<tr>
+			<th>NPC</th>
+			<th>Track</th>
+			<th>Stars</th>
+			<th>Effect</th>
+		</tr>
+		<tr>
+			<td align="center">Flippy</td>
+			<td align="center">Toon-up</td>
+			<td align="center">★★★★★</td>
+			<td align="center">Healed 136 laff / # of total active toons</td>
+		</tr>
+		<tr>
+			<td align="center">Daffy Don</td>
+			<td align="center">Toon-up</td>
+			<td align="center">★★★★</td>
+			<td align="center">Healed 70 laff / # of total active toons</td>
+		</tr>
+		<tr>
+			<td align="center">Madame Chuckle</td>
+			<td align="center">Toon-up</td>
+			<td align="center">★★★</td>
+			<td align="center">Healed 45 laff / # of total active toons</td>
+		</tr>
+		<tr>
+			<td align="center">Gigglemesh *</td>
+			<td align="center">Toon-up</td>
+			<td align="center">★★</td>
+			<td align="center">Healed 30 laff / # of total active toons</td>
+		</tr>
+		<tr>
+			<td align="center">Emma Phatic *</td>
+			<td align="center">Toon-up</td>
+			<td align="center">★</td>
+			<td align="center">Healed 20 laff / # of total active toons</td>
+		</tr>
+		<tr>
+			<td align="center">Phil Bettur *</td>
+			<td align="center">Toon-up</td>
+			<td align="center"></td>
+			<td align="center">Healed 10 laff / # of total active toons</td>
+		</tr>
+		
+		<th colspan="4"> </th>
+		
+		<tr>
+			<td align="center">Clerk Clara</td>
+			<td align="center">Trap</td>
+			<td align="center">★★★★★</td>
+			<td align="center">Did 180 damage to lured cogs</td>
+		</tr>
+		<tr>
+			<td align="center">Clerk Penny</td>
+			<td align="center">Trap</td>
+			<td align="center">★★★★</td>
+			<td align="center">Did 70 damage to lured cogs</td>
+		</tr>
+		<tr>
+			<td align="center">Clerk Will</td>
+			<td align="center">Trap</td>
+			<td align="center">★★★</td>
+			<td align="center">Did 50 damage to lured cogs</td>
+		</tr>
+		
+			<th colspan="4"> </th>
+		
+		<tr>
+			<td align="center">Lil Oldman</td>
+			<td align="center">Lure</td>
+			<td align="center">★★★★★</td>
+			<td align="center">Lured cogs for a maximum of 4 rounds</td>
+		</tr>
+		<tr>
+			<td align="center">Stinky Ned</td>
+			<td align="center">Lure</td>
+			<td align="center">★★★</td>
+			<td align="center">Lured cogs for a maximum of 4 rounds</td>
+		</tr>
+		<tr>
+			<td align="center">Nancy Gas</td>
+			<td align="center">Lure</td>
+			<td align="center">★★★</td>
+			<td align="center">Lured cogs for a maximum of 4 rounds</td>
+		</tr>
+		<tr>
+			<td align="center">Bo Nanapeel *</td>
+			<td align="center">Lure</td>
+			<td align="center">★★</td>
+			<td align="center">Lured cogs for a maximum of 3 rounds</td>
+		</tr>
+		<tr>
+			<td align="center">Dee Version *</td>
+			<td align="center">Lure</td>
+			<td align="center">★</td>
+			<td align="center">Lured cogs for a maximum of 2 rounds</td>
+		</tr>
+		<tr>
+			<td align="center">Des Traction *</td>
+			<td align="center">Lure</td>
+			<td align="center"></td>
+			<td align="center">Lured cogs for a maximum of 2 rounds</td>
+		</tr>
+		
+		<th colspan="4"> </th>
+		
+		<tr>
+			<td align="center">Moe Zart</td>
+			<td align="center">Sound</td>
+			<td align="center">★★★★★</td>
+			<td align="center">Did 80 damage to all cogs</td>
+		</tr>
+		<tr>
+			<td align="center">Sid Sonata</td>
+			<td align="center">Sound</td>
+			<td align="center">★★★★</td>
+			<td align="center">Did 50 damage to all cogs</td>
+		</tr>
+		<tr>
+			<td align="center">Barbara Seville</td>
+			<td align="center">Sound</td>
+			<td align="center">★★★</td>
+			<td align="center">Did 40 damage to all cogs</td>
+		</tr>
+		<tr>
+			<td align="center">Al Capella *</td>
+			<td align="center">Sound</td>
+			<td align="center">★★</td>
+			<td align="center">Did 30 damage to all cogs</td>
+		</tr>
+		<tr>
+			<td align="center">Otto Toon *</td>
+			<td align="center">Sound</td>
+			<td align="center">★</td>
+			<td align="center">Did 20 damage to all cogs</td>
+		</tr>
+		<tr>
+			<td align="center">Bea Sharpe *</td>
+			<td align="center">Sound</td>
+			<td align="center"></td>
+			<td align="center">Did 10 damage to all cogs</td>
+		</tr>
+		
+		<th colspan="4"> </th>
+		
+		<tr>
+			<td align="center">Barnacle Bessie</td>
+			<td align="center">Drop</td>
+			<td align="center">★★★★★</td>
+			<td align="center">Did 180 damage to all unlured cogs</td>
+		</tr>
+		<tr>
+			<td align="center">Franz Neckvein</td>
+			<td align="center">Drop</td>
+			<td align="center">★★★★</td>
+			<td align="center">Did 100 damage to all unlured cogs</td>
+		</tr>
+		<tr>
+			<td align="center">Clumsy Ned</td>
+			<td align="center">Drop</td>
+			<td align="center">★★★</td>
+			<td align="center">Did 60 damage to all unlured cogs</td>
+		</tr>
+		<tr>
+			<td align="center">J.S. Bark *</td>
+			<td align="center">Drop</td>
+			<td align="center">★★</td>
+			<td align="center">Did 50 damage to all unlured cogs</td>
+		</tr>
+		<tr>
+			<td align="center">Bud Erfingerz *</td>
+			<td align="center">Drop</td>
+			<td align="center">★</td>
+			<td align="center">Did 35 damage to all unlured cogs</td>
+		</tr>
+		<tr>
+			<td align="center">Anne Ville *</td>
+			<td align="center">Sound</td>
+			<td align="center"></td>
+			<td align="center">Did 20 damage to all unlured cogs</td>
+		</tr>
+</table>
+
+* * = This card was obtainable via Field Offices.
