@@ -5685,7 +5685,7 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">Barnacle Bessie</td>
 			<td align="center">Drop</td>
 			<td align="center">★★★★★</td>
-			<td align="center">Did 180 damage to all unlured cogs</td>
+			<td align="center">Did 170 damage to all unlured cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Franz Neckvein</td>
