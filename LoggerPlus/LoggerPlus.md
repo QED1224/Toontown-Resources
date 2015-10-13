@@ -8,6 +8,8 @@ A simple logging utility for Toontown.
 2. Place the debug directory top-level in your Toontown directory (i.e., the same level as config).
 3. See the Configuration and Usage sections below
 
+\* Only tested on OS X, but it *should* support Windows and Linux too.
+
 ## Configuration
 
 There are two steps to configuring `LoggerPlus`.
