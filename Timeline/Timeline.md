@@ -227,7 +227,6 @@
 - Beautifully Broken - 07/17/2007
 - Tub O Lard - 07/26/2007
 
-Doctor Frizzy soloed the CJ with 131 LP at BW50 on Dec 2nd '07 - Dropless
 ## Fastest to Max
 
 ## Fastest Solo
