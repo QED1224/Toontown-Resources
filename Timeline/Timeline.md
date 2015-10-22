@@ -123,6 +123,15 @@
 ## First to Solo
 
 - Miss Trixie Jabbermouth - 05/14/2005
+- andrew - 10/19/2005
+- Maisy - 10/22/2005
+- Loopy Goopy Zooblefingers - 07/05/2006
+- Miss Clover Doggendoodle - 07/06/2006
+- Cool Corny Electrofoot Blak - 07/28/2006
+- Beautifully Broken - 07/28/2006
+- Good ol' Lefty - 08/08/2006
+- Knight Time - 08/12/2006
+- Charles 08/31/2006
 
 ## Most Unites Collected
 
