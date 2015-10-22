@@ -131,7 +131,7 @@
 - Beautifully Broken - 07/28/2006
 - Good ol' Lefty - 08/08/2006
 - Knight Time - 08/12/2006
-- Charles 08/31/2006
+- Charles - 08/31/2006
 
 ## Most Unites Collected
 
@@ -217,7 +217,17 @@
 ## First to Solo
 
 - Blinky Trickyspinner - 03/26/2007
+- Winter Solstice (Knight Time) - 04/29/2007
+- Cool Corny Electrofoot Blak - 06/01/2007
+- Lady Luck (Miss Trixie Jabbermouth) - 06/22/2007
+- The Dogfather - 07/01/2007
+- Good ol' Lefty - 07/08/2007
+- Crazy Sourgoober - 07/10/2007
+- Loopy Goopy Zooblefingers - 07/17/2007
+- Beautifully Broken - 07/17/2007
+- Tub O Lard - 07/26/2007
 
+Doctor Frizzy soloed the CJ with 131 LP at BW50 on Dec 2nd '07 - Dropless
 ## Fastest to Max
 
 ## Fastest Solo
