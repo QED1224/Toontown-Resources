@@ -53,6 +53,15 @@
 ## First to Solo
 
 - Miss Trixie Jabbermouth - 05/28/2005
+- andrew - 11/16/2005
+- Loopy Goopy Zooblefingers - 01/01/2006
+- Leviticus Maximus - 01/28/2006
+- Melissa - 03/18/2006
+- Miss Clover Doggendoodle - 04/17/2006
+- Cool Corny Electrofoot Blak - 04/22/2006
+- Rainbow - 05/07/2006
+- Crazy Orville Bumbleberry - 05/15/2006
+- Beautifully Broken - 06/22/2006
 
 ## First to Max SOS Cards
 
