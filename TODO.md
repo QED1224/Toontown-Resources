@@ -1,7 +1,6 @@
 
 ## In Progress
 
-- [ ] Convert guide to Bootstrap 3
 - [ ] Add a JavaScript-based simulator to the Attack Mismatch section 
 
 ## On Deck
