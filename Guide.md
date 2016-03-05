@@ -6,6 +6,7 @@
     - [Cog Attack Accuracy](#cog-atk-acc)
     - [Doodle Training and Tricks](#doodle-t&t)
     - [Fishing](#fishing-main)
+    - [Toontasks](#toontasks-main)
 - [Toon-up](#toon-up)
     - [Did using Toon-up have any impact on other gag's damage or accuracy?](#toon-up-1)
 - [Trap](#trap)
@@ -617,6 +618,9 @@ In this case, Jellybeans were awarded according to the following table.
 ### `BootItem`
 
 In this case, a boot was caught.
+
+## Toontasks <a name="toontasks-main"></a>
+[[back to top](#contents)]
 
 # Toon-up <a name="toon-up"></a>
 [[back to top](#contents)]
