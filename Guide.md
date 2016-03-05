@@ -939,9 +939,9 @@ Since `rarity` was determined before picking a fish (and the fish being picked f
 
 ## Wall-riding <a name="racing-1"></a>
 
-"Wall-riding" was a racing technique that maximize the amount of time spent accelerating during a race. This was accomplished by decreasing the need to turn — and consequently decelerate — by allowing racers to accelerate into the bounds of the track. This technique gained widespread notoriety after it was used to win a contest during Toontown’s first Grand Prix Weekend in November of 2006. Many deemed it to be cheating as it was (likely) an unintended means of gaining an advantage. However, it will be covered in this guide because it was an entirely in-game technique (in contrast to others like the "clock speed glitch").
+"Wall-riding" was a racing technique that maximized the amount of time spent accelerating during a race. This was accomplished by decreasing the need to turn — and consequently decelerate — by allowing racers to drive into the bounds of the track. This technique gained widespread notoriety after it was used to win a contest during Toontown’s first Grand Prix Weekend in November of 2006. Many deemed it to be cheating as it was (likely) an unintended means of gaining an advantage.
 
-This technique was most commonly seen on Blizzard Boulevard, but it was possible on all tracks and strategically beneficial on all but rural tracks. In the following sections, we will cover how to apply this technique optimally on a track-by-track basis.
+Wall-riding was most common on Blizzard Boulevard, but it was possible on all tracks and strategically beneficial on all but rural tracks. In the following sections, we will cover how to apply this technique optimally on a track-by-track basis.
 
 **Screwball Stadium**:
 
