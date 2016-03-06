@@ -361,6 +361,10 @@
 
 ## Unlimited Trap SOS Cards
 
+[release notes](http://www.disneysonlineworlds.com/index.php/Toontown_Release_Notes:_2004)
+
+[discussion](http://www.mmocentralforums.com/forums/showthread.php?t=20664)
+
 ## Goofy Speedway Trophies
 
 [Note: toons who gained extra Laff..](http://www.mmocentralforums.com/forums/showpost.php?p=1926488&postcount=14)
@@ -577,4 +581,3 @@ Bewteen 2007 and 2008, many Toontown developers were spotted in-game. Here are a
 
 - Soloed all 4 bosses
 - Author of 19 widely used Toontown guides
-
