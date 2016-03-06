@@ -359,6 +359,8 @@
 
 ## Fishing Trophies
 
+[Loosy Goosy](http://www.mmocentralforums.com/forums/member.php?u=1409)
+
 ## Unlimited Trap SOS Cards
 
 [release notes](http://www.disneysonlineworlds.com/index.php/Toontown_Release_Notes:_2004)
