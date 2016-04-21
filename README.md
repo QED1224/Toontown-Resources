@@ -5730,6 +5730,99 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center"></td>
 			<td align="center">Did 20 damage to all unlured cogs</td>
 		</tr>
+		
+		<th colspan="4"> </th>
+		
+		<tr>
+			<td align="center">Soggy Neil</td>
+			<td align="center">Toons Hit</td>
+			<td align="center">★★★★</td>
+			<td align="center">Guaranteed all toon attacks hit for 1 round</td>
+		</tr>
+		<tr>
+			<td align="center">Soggy Bottom</td>
+			<td align="center">Toons Hit</td>
+			<td align="center">★★★★</td>
+			<td align="center">Guaranteed all toon attacks hit for 1 round</td>
+		</tr>
+		<tr>
+			<td align="center">Sticky Lou</td>
+			<td align="center">Toons Hit</td>
+			<td align="center">★★★★</td>
+			<td align="center">Guaranteed all toon attacks hit for 1 round</td>
+		</tr>
+		
+		<th colspan="4"> </th>
+		
+		<tr>
+			<td align="center">Flim Flam</td>
+			<td align="center">Cogs Miss</td>
+			<td align="center">★★★★</td>
+			<td align="center">Guaranteed that all cog attacks miss for 1 round</td>
+		</tr>
+		<tr>
+			<td align="center">Julius Wheezer</td>
+			<td align="center">Cogs Miss</td>
+			<td align="center">★★★★</td>
+			<td align="center">Guaranteed that all cog attacks miss for 1 round</td>
+		</tr>
+		<tr>
+			<td align="center">Mr. Freeze</td>
+			<td align="center">Cogs Miss</td>
+			<td align="center">★★★★</td>
+			<td align="center">Guaranteed that all cog attacks miss for 1 round</td>
+		</tr>
+		
+		<th colspan="4"> </th>
+		
+		<tr>
+			<td align="center">Professor Pete</td>
+			<td align="center">Restock All</td>
+			<td align="center">★★★★★</td>
+			<td align="center">Restocked all tracks from highest level to lowest level</td>
+		</tr>
+		<tr>
+			<td align="center">Professor Guffaw</td>
+			<td align="center">Restock Toon-Up</td>
+			<td align="center">★★★</td>
+			<td align="center">Restocked Toon-Up gags from highest level to lowest level</td>
+		</tr>
+		<tr>
+			<td align="center">Clerk Ray</td>
+			<td align="center">Restock Trap</td>
+			<td align="center">★★★</td>
+			<td align="center">Restocked Trap gags from highest level to lowest level</td>
+		</tr>
+		<tr>
+			<td align="center">Doctor Drift</td>
+			<td align="center">Restock Lure</td>
+			<td align="center">★★★</td>
+			<td align="center">Restocked Lure gags from highest level to lowest level</td>
+		</tr>
+		<tr>
+			<td align="center">Melody Wavers</td>
+			<td align="center">Restock Sound</td>
+			<td align="center">★★★</td>
+			<td align="center">Restocked Sound gags from highest level to lowest level</td>
+		</tr>
+		<tr>
+			<td align="center">Baker Bridget</td>
+			<td align="center">Restock Throw</td>
+			<td align="center">★★★</td>
+			<td align="center">Restocked Throw gags from highest level to lowest level</td>
+		</tr>
+		<tr>
+			<td align="center">Sofie Squirt</td>
+			<td align="center">Restock Squirt</td>
+			<td align="center">★★★</td>
+			<td align="center">Restocked Squirt gags from highest level to lowest level</td>
+		</tr>
+		<tr>
+			<td align="center">Shelly Seaweed</td>
+			<td align="center">Restock Drop</td>
+			<td align="center">★★★</td>
+			<td align="center">Restocked Drop gags from highest level to lowest level</td>
+		</tr>
 </table>
 
 * * = This card was obtainable via Field Offices.
