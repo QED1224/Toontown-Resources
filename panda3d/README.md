@@ -41,3 +41,5 @@ boss.setPos(-10, 10, 1.6)
 base.trackball.node().setPos(7, 55, -10)
 run()
 ```
+
+![Result](http://i.imgur.com/9OfmPws.png)
