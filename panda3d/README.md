@@ -13,7 +13,7 @@ import direct.directbase.DirectStart
 import toontown
 
 # Creating a cog ...
-cog = toontown.load_cog('Mr. Hollywoood')
+cog = toontown.load_cog('Mr. Hollywood')
 cog.loop('walk')
 cog.setPos(-14, -20, 1.6)
 cog.setH(-180)
