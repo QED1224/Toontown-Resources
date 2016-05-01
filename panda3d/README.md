@@ -27,7 +27,7 @@ skelecog.setH(-180)
 # Creating a toon ...
 toon = toontown.Toon('horse', 'm', 'n', 'n', 'l', 'm')
 toon.set_color('Blue')
-toon.set_shirt('phase_4/maps/ContestFishtankShirt1.jpg')
+toon.set_shirt('phase_3/maps/desat_shirt_4.jpg', 'phase_3/maps/desat_sleeve_4.jpg')
 toon.set_bottom('phase_3/maps/desat_shorts_10.jpg')
 toon.loop('neutral')
 toon.setPos(-2, -20, 1.6)
