@@ -17,6 +17,8 @@
 # 6. toon_animation - Returns two (torso and leg) animation dictionaries for a
 #    toon.
 # 7. cog_animation - Returns an animation dictionary for a cog.
+#
+# TODO: Fix path issues on Windows (Maybe drop sleeve-matching altogether?).
 ###############################################################################
 
 from __future__ import with_statement
