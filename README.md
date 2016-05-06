@@ -601,6 +601,18 @@ randWeight = minWeight + (maxWeight - minWeight) * randNum
 randWeight = int(round(randWeight * 16))
 ```
 
+Once the fish's weight was determined, its overall Jellybean value was calculated with the following function:
+
+```python
+rarity = getRarity(genus, species)
+rarityValue = pow(RARITY_VALUE_SCALE * rarity, 1.5)
+weightValue = pow(WEIGHT_VALUE_SCALE * weight, 1.1)
+value = OVERALL_VALUE_SCALE * (rarityValue + weightValue)
+finalValue = int(ceil(value))
+```
+
+Where `RARITY_VALUE_SCALE` = 0.2, `WEIGHT_VALUE_SCALE` = 0.05 / 16.0, and `OVERALL_VALUE_SCALE` = 15. 
+
 If no `fishList` was associated with the calculated `rarity` value, a Balloon Fish weighing 0lbs was caught.
 
 ### `JellybeanItem`
