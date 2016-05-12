@@ -68,6 +68,7 @@
 	- [Lawbots](#atk-acc-law)
 	- [Bossbots](#atk-acc-boss)
 - [Appendix D: SOS Toons](#appendix-d)
+- [Notes](#ttr)
 
 # Introduction <a name="intro"></a>
 
@@ -77,7 +78,7 @@ This guide started out as an attempt to answer some long-standing questions abou
 
 ## Private Servers
 
-The information used in this guide is primarily based on the source code of Toontown Online and, as such, it neither guarantees accuracy with regard to any private servers that have modified any of the coding, nor aims to keep up with any of their future changes.
+The information used in this guide is primarily based on the source code of Toontown Online. While the majority of the information in this guide is accurate to the Toontown Rewritten private server, there are some modifications made between the two. As a result, any changes between Toontown Online and Toontown Rewritten will be noted in [this section](#ttr).
 
 ## About the Authors
 
@@ -5575,7 +5576,7 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">Healed 136 laff / # of total active toons</td>
 		</tr>
 		<tr>
-			<td align="center">Daffy Don</td>
+			<td align="center">Daffy Don4,</td>
 			<td align="center">Toon-up</td>
 			<td align="center">★★★★</td>
 			<td align="center">Healed 70 laff / # of total active toons</td>
@@ -5770,19 +5771,19 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 			<td align="center">Flim Flam</td>
 			<td align="center">Cogs Miss</td>
 			<td align="center">★★★★</td>
-			<td align="center">Guaranteed that all cog attacks miss for 1 round</td>
+			<td align="center">Guaranteed all cog attacks miss for 1 round</td>
 		</tr>
 		<tr>
 			<td align="center">Julius Wheezer</td>
 			<td align="center">Cogs Miss</td>
 			<td align="center">★★★★</td>
-			<td align="center">Guaranteed that all cog attacks miss for 1 round</td>
+			<td align="center">Guaranteed all cog attacks miss for 1 round</td>
 		</tr>
 		<tr>
 			<td align="center">Mr. Freeze</td>
 			<td align="center">Cogs Miss</td>
 			<td align="center">★★★★</td>
-			<td align="center">Guaranteed that all cog attacks miss for 1 round</td>
+			<td align="center">Guaranteed all cog attacks miss for 1 round</td>
 		</tr>
 		
 		<th colspan="4"> </th>
@@ -5838,3 +5839,35 @@ Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-ta
 </table>
 
 * * = This card was obtainable via Field Offices.
+
+# Notes <a name="ttr"></a>
+
+-The GlobalRarityDialBase value for fishing was lowered as part of the February 1st, 2015 update. It has decreased from 4.3 to between 3.5-3.8.
+
+-In the May 10th, 2016 update, several modifications were made to certain SOS cards.
+
+* Daffy Don and Madame Chuckle now use Bamboo Cane, instead of Juggling Cubes.
+* Clerk Will and Clerk Penny now use Quicksand, instead of Trapdoor.
+* Stinky Ned now uses Big Magnet, luring the cogs for up to a maximum of 3 rounds.
+* Nancy Gas is now a 4 star card, otherwise remaining unchanged.
+* Lil Oldman now uses Presentation, luring the cogs for up to a maximum of 15 rounds.
+* Barbara Seville and Sid Sonata now use Elephant Trunk, instead of Foghorn.
+* Clumsy Ned now use Big Weight, instead of Grand Piano.
+* Franz Neckvein now use Safe, instead of Grand Piano.
+* The Toons Hit cards were modifed as follows:
+ * Sticky Lou is now a 5 star card, and guaranteed that all toon attacks will hit for 3 rounds.
+ * Soggy Nell now guaranteed that all toon attacks will hit for 2 rounds.
+ * Soggy Bottom is now a 3 star card, otherwise remaining unchanged.
+* The Cogs Miss cards were modified as follows:
+ * Julius Wheezer is now a 5 star card, and guaranteed that all cog attacks will miss for 3 rounds.
+ * Mr. Freeze now guaranteed that all cog attacks will miss for 2 rounds.
+ * Flim Flam is now a 3 star card, otherwise remaining unchanged.
+
+
+
+
+
+
+
+
+
