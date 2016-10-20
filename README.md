@@ -91,18 +91,18 @@ The information used in this guide is primarily based on the source code of Toon
 
 ## Toon Attack Accuracy <a name="toon-atk-acc"></a>
 
-`atkAcc` was a percentage which represented the likelihood of an attack performing to its highest degree. This was used in two ways:
+`atkAcc` represents the likelihood of an attack performing to its highest degree. This is used in two ways:
 
-1. For Lure SOS cards, it was used when calculating the odds that cogs "wake up" early each round.
-2. It was used when calculating the value of `atkHit`, which was a boolean value that represented whether or not an attack hit.
+1. For Lure SOS cards, it is used when calculating the odds that cogs will "wake up" early each round.
+2. It is used when calculating the value of `atkHit`, which is a boolean (true or false) value that represents whether or not an attack hit.
 
 ### Special Cases <a name="toon-atk-acc-1"></a>
 
-Fires and Trap had 95% and 100% accuracy respectively. In addition, both were always assigned an `atkHit` of 1, which meant they were *guaranteed* to hit.
+Fires and Trap have 95% and 100% accuracy respectively. In addition, both are always assigned an `atkHit` of 1, which means they are *guaranteed* to hit.
 
 ## Equation <a name="toon-atk-acc-2"></a>
 
-A gag's overall accuracy was calculated using the following equation:
+A gag's overall accuracy is calculated using the following equation:
 
 ```python
 atkAcc = propAcc + trackExp + tgtDef + bonus
@@ -110,7 +110,7 @@ atkAcc = propAcc + trackExp + tgtDef + bonus
 
 ### `propAcc` <a name="toon-atk-acc-3"></a>
 
-For all gags, `propAcc` was assigned a value from `AvPropAccuracy`. For Lure gags, `propAcc` was re-assigned a value from `AvLureBonusAccuracy` if the toon had Lure trees planted at a level equal to (or greater than) the gag level being used or there was an active Lure interactive prop. See the tables below for all possible values.
+For all gags, `propAcc` is assigned a value from `AvPropAccuracy`. For Lure gags, `propAcc` is re-assigned a value from `AvLureBonusAccuracy` if the toon has Lure trees planted at a level equal to (or greater than) the gag level being used or there is an active Lure interactive prop. See the tables below for all possible values.
 
 <table>
   <tr>
@@ -226,19 +226,19 @@ For all gags, `propAcc` was assigned a value from `AvPropAccuracy`. For Lure gag
 
 ### `trackExp` <a name="toon-atk-acc-4"></a>
 
-`trackExp` was calculated according to the following:
+`trackExp` is calculated according to the following:
 
 ```
  trackExp = [highest gag level in track - 1] * 10
 ```
 
-If the track was Toon-up, the above result was halved. 
+If the track is Toon-up, the above result is halved. 
 
-This was repeated for every gag within a particular track. So, if multiple toons used the *same gag track* (outside of Toon-up and Trap) on the *same target*, the highest `trackExp` was used in the `atkAcc` calculations for all of them. The latter requirement is particularly important: In order for weaker gags to inherit an increased `trackExp`, the target(s) of the weaker and stronger gags had to be the same. 
+This is repeated for every gag within a particular track. So, if multiple toons use the *same gag track* (outside of Toon-up and Trap) on the *same target*, the highest `trackExp` is used in the `atkAcc` calculations for all of them. The latter requirement is particularly important: In order for weaker gags to inherit an increased `trackExp`, the target(s) of the weaker and stronger gags must be the same. 
 
 ### `tgtDef` <a name="toon-atk-acc-5"></a>
 
-In Toon-up calculations, `tgtDef` was always 0. For the other tracks, it was assigned the defense value of the strongest cog among the attack's `targetList`. In other words, multi-cog attacks always faced the strongest `tgtDef` available since every active cog was in their `targetList`. For single-cog attacks it was based on the specific cog the attack had targeted.
+In Toon-up calculations, `tgtDef` is always 0. For the other tracks, it is assigned the defense value of the strongest cog among the attack's `targetList`. In other words, multi-cog attacks always face the strongest `tgtDef` available since every active cog is in their `targetList`. For single-cog attacks it is based on the specific cog the attack targeted.
 
 Here's a summary of all possible defense values:
 
@@ -246,13 +246,13 @@ Here's a summary of all possible defense values:
 |:---------:|:--:|:--:|:---:|:-------:|:-------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | **tgtDef** | -2 | -5 | -10 | -12/-15* | -15/-20* | -25 | -30 | -35 | -40 | -45 | -50 | -55 |
 
-*Tier 1 cogs (i.e., Cold Callers and Flunkies) had the less negative value.
+*Tier 1 cogs (e.g., Cold Callers and Flunkies) have the less negative value.
 
 ### `bonus` <a name="toon-atk-acc-6"></a>
 
-There were two possible sources of bonus: PrevHits and the Lured Ratio. 
+There are two possible sources of bonus: PrevHits and the Lured Ratio. 
 
-In order for PrevHits to be applied, the followings conditions had to be met
+In order for PrevHits to be applied, the followings conditions have to be met
 
 - The previous attack hit; **and**
 - The previous attack was not the same track as the current; **and**
@@ -260,13 +260,13 @@ In order for PrevHits to be applied, the followings conditions had to be met
 - The current attack affects the group; **or**
 - The current and previous attacks affect the same target.
 
-Assuming the above was met, PrevHits was calculated like so:
+Assuming the above conditions are met, PrevHits is calculated like so:
 
 ```
 20 * [number of previous hits to a given cog in the current round] 
 ```
 
-The Lured Ratio was calculated like so:
+The Lured Ratio bonus is calculated like so:
 
 ```
 luredRatio = ([number of cogs lured] / [total cogs]) * 100
@@ -275,34 +275,34 @@ luredRatio = ([number of cogs lured] / [total cogs]) * 100
 
 ## Hit or Miss: the impact of `randChoice` <a name="toon-atk-acc-7"></a>
 
-Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This was decided by the value of `randChoice`, which was simply a pseudorandom integer between 0 and 99.
+Once we've calculated an attacks accuracy (`atkAcc`), we need to determine whether or not it will hit its intended target. This is decided by the value of `randChoice`, which is simply a pseudorandom integer between 0 and 99.
 
-If `randChoice` was less than `atkAcc`, the attack hit. Otherwise, the attack missed. It's important to note, however, that `atkAcc` was capped at 95 -- so, any gag which wasn't mentioned in the [Special Cases section](#toon-atk-acc-1) could miss.
+If `randChoice` is less than `atkAcc`, the attack hit. Otherwise, the attack missed. It's important to note, however, that `atkAcc` is capped at 95 -- so, any gag which wasn't mentioned in the [Special Cases section](#toon-atk-acc-1) could in fact miss.
 
 #### Special Cases <a name="toon-atk-acc-8"></a>
 
-For all SOS Cards, `randChoice` was assigned 0.
+For all SOS Cards, `randChoice` is assigned 0.
 
 ## Toon Attack Damage <a name="toon-atk-dmg"></a>
 [[back to top](#contents)]
 
 ## Gag Damage
 
-Gag damage was based on the amount of experience earned in a particular track. The following three steps outline the process that was used to convert from experience earned to damage.
+Gag damage is based on the amount of experience earned in a particular track. The following three steps outline the process that is used to convert from experience earned to damage.
 
 - `expVal`:
 
 ```python
 expVal = min(exp, maxE)
 ```
-`exp` and `maxE` represented the amount of experience earned and the maximum amount of experience possible for the gag being used, respectively.
+`exp` and `maxE` represents the amount of experience earned and the maximum amount of experience possible for the gag being used, respectively.
 
 - `expPerHp`:
 
 ```python
 expPerHp = float(maxE - minE + 1) / float(maxD - minD + 1)
 ```
-`minE` was the minimum amount of experience necessary to gain access to the gag being used. `minD` and `maxD` were the minimum and maximum amount of damage for the gag being used, respectively.
+`minE` is the minimum amount of experience necessary to gain access to the gag being used. `minD` and `maxD` are the minimum and maximum amount of damage for the gag being used, respectively.
 
 - Finally, `damage`:
 
@@ -313,16 +313,16 @@ damage = floor((expVal - minE) / expPerHp) + minD
 
 ## `hpBonus`
 
-`hpBonus` applied in any case where multiple gags of the same track were used in the same round, on the same target. It was calculated as follows.
+`hpBonus` is applied in any case where multiple gags of the same track are used in the same round, on the same target. It is calculated as follows.
 
 ```python
 hpBonus = ceil(totalDmgs * 0.20)
 ```
 ([See definition of `ceil` here](https://docs.python.org/2/library/math.html#math.ceil))
 
-Where `totalDmgs` represented the total amount of damage done by the particular track, on the particular target.
+Where `totalDmgs` represents the total amount of damage done by the particular track, on the particular target.
 
-`hpBonus` did not apply to Lure or Trap gags.
+`hpBonus` does not apply to Lure or Trap gags.
 
 ## `kbBonus`
 
@@ -333,7 +333,7 @@ kbBonus = totalDmgs * 0.50
 ```
 Where `totalDmgs` represented the total amount of damage done on the particular lured target.
 
-However `kbBonus` was affected by a long-standing bug, which was essentially caused by the fact that `kbBonus` was assigned based on cog position instead of cog ID. This meant that `kbBonus` was dependent on consistent ordering. For example, consider the following situation:
+However `kbBonus` was affected by a long-standing bug which was caused by the fact that `kbBonus` was assigned based on cog position instead of cog ID. This meant that `kbBonus` was dependent on consistent ordering. For example, consider the following situation:
 
 ```
 D C B A
@@ -363,7 +363,7 @@ As you can see, it used the index of cog C from `suits` on the cog at the same i
 
 ## Carryover
 
-"Carryover" damage only applied to version 2.0 cogs. Every time an instance of damage was done, the game checked to see if the cog was dead. Once the first layer was destroyed, any further instances of damage done would bleed through to the skelecog layer. For all calculation purposes, the game calculated the instances of damages in the order of gag damage (Red), `hpBonus` (Yellow) and then `kbBonus` (Orange). 
+"Carryover" damage only applies to version 2.0 cogs. Every time an instance of damage is done, the game checks to see if the cog is dead. Once the first layer is destroyed, any further instances of damage bleed through to the skelecog layer. The game calculates the instances of damage in the order of gag damage (Red), `hpBonus` (Yellow) and then `kbBonus` (Orange). 
 
 Suppose we have 3 toons use maxed Storm Clouds against a lured Level 12 The Big Cheese V2.0.
 
@@ -378,22 +378,22 @@ kbBonus is calculated (240 * 0.5 = 120). Is the skelecog destroyed? No, HP = 32.
 ## Cog Attack Accuracy <a name="cog-atk-acc"></a>
 [[back to top](#contents)]
 
-The following three sections outline the calculations that were performed for each active cog in battle.
+The following three sections outline the calculations that are performed for each active cog in battle.
 
 ### Which attack will be used? <a name="cog-atk-acc-1"></a>
 
-There were two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represented the cog being used in the calculation, while the latter was a tuple containing the information for each of `theSuit`'s possible attacks. Also note that a "relative" cog level was used for frequency calculation purposes. This was calculated as follows.
+There are two variables used in the calculation of `atk` (the attack to be used): `theSuit` and `attacks`. The former represents the cog being used in the calculation, while the latter was a tuple containing the information for each of `theSuit`'s possible attacks. Also note that a "relative" cog level is used for frequency calculation purposes. This was calculated as follows.
 ```
 relative level = cog level - base level
 ```
-Where "cog level" was the actual level and "base level" was the lowest possible level. From here, the `pickSuitAttack` function used the following process to determine which attack would be used:
+Where "cog level" is the actual level and "base level" is the lowest possible level. From here, the `pickSuitAttack` function uses the following process to determine which attack to use:
 
-1. A pseudorandom integer `randNum` was generated such that 0 <= `randNum` <= 99.
-2. The attack frequencies associated with `theSuit`'s relative level were then iteratively summed. This sum was stored in a variable `count`.
-3. On each iteration, `randNum` was compared to `count`.
-    - if `randNum` was less than `count`, `attackNum` was assigned an integer representing the number of completed iterations (starting at 0).
-    - if `randNum` was greater than or equal to `count`, the loop continued.
-4. `attackNum` was returned.
+1. A pseudorandom integer `randNum` is generated such that 0 <= `randNum` <= 99.
+2. The attack frequencies associated with `theSuit`'s relative level are then iteratively summed. This sum is stored in a variable `count`.
+3. On each iteration, `randNum` is compared to `count`.
+    - if `randNum` is less than `count`, `attackNum` is assigned an integer representing the number of completed iterations (starting at 0).
+    - if `randNum` is greater than or equal to `count`, the loop continued.
+4. `attackNum` is returned.
 
 Let's look at an example. Here's the output of a simulation of the above algorithm for a Level 3 Yesman:
 
@@ -431,7 +431,7 @@ As you can see above,
 - `Synergy` had a 5% chance of being selected (60 <= `randNum` < 65)
 - `TeeOff` had a 35% chance of being selected (65 <= `randNum` < 99)
 
-In addition, since `randNum` had an equal chance to be any integer between 0 and 99, we would have expected to see (roughly) the above percentages as the number of trials got sufficiently large. Here are the results of simulating a Level 3 Yesman choosing an attack 5000000 times:
+In addition, since `randNum` has an equal chance to be any integer between 0 and 99, we expected to see (roughly) the above percentages as the number of trials got sufficiently large. Here are the results of simulating a Level 3 Yesman choosing an attack 5000000 times:
 
 ```
 Cog: Yesman
@@ -449,25 +449,25 @@ So, for any cog, the probability that a given attack will be chosen is equal to 
 
 Each active cog uses to following process to determine its target(s).
 
-- If the selected cog attack was a group attack, all active toons were attacked (see previous section).
-- If the current cog hadn't taken any damage or `randNum` was greater than 75, a toon was selected at random.
+- If the selected cog attack is a group attack, all active toons are attacked (see previous section).
+- If the current cog hasn't taken any damage or `randNum` is greater than 75, a toon is selected at random.
 
-If neither of the above were true, the following algorithm was used to select a toon:
+If neither of the above are true, the following algorithm is used to select a toon:
 
-1. The total amount of damage done to the current cog was stored in a variable `totalDamage`.
-2. The relative contributions by each toon, (contributed / `totalDamage`) * 100, were stored in a list `dmgs`.
-3. A pseudorandom integer `randNum` was generated such that 0 <= `randNum` <= 99.
-4. The values in `dmgs` were then iteratively summed. This sum was stored in a variable `count`.
-5. On each iteration, `randNum` was compared to `count`.
-    - if `randNum` was less than `count`, an integer representing the number of completed iterations was returned (starting at 0). 
-    - if `randNum` was greater than or equal to `count`, the loop continued.
-6. If no toon was found by the above, a toon was selected at random.
+1. The total amount of damage done to the current cog is stored in a variable `totalDamage`.
+2. The relative contributions by each toon, (contributed / `totalDamage`) * 100, are stored in a list `dmgs`.
+3. A pseudorandom integer `randNum` is generated such that 0 <= `randNum` <= 99.
+4. The values in `dmgs` are then iteratively summed. This sum is stored in a variable `count`.
+5. On each iteration, `randNum` is compared to `count`.
+    - if `randNum` is less than `count`, an integer representing the number of completed iterations is returned (starting at 0). 
+    - if `randNum` is greater than or equal to `count`, the loop continued.
+6. If no toon is found by the above, a toon is selected at random.
 
-`totalDamage` and `dmgs` were reset every round.
+`totalDamage` and `dmgs` are reset every round.
 
 ### Will the attack hit? <a name="cog-atk-acc-3"></a>
 
-For every targeted toon, a pseudorandom integer `randChoice` was generated such that 0 <= `randChoice` <= 99. If `randChoice` was less than the cog attack's accuracy, the cog attack hit. Otherwise it missed.
+For every targeted toon, a pseudorandom integer `randChoice` is generated such that 0 <= `randChoice` <= 99. If `randChoice` is less than the cog attack's accuracy, the cog attack will hit. Otherwise it will miss.
 
 A list of attack accuracy values can be seen at [Appendix C](#appendix-c).
 
@@ -476,9 +476,9 @@ A list of attack accuracy values can be seen at [Appendix C](#appendix-c).
 
 ### How was Doodle trick experience calculated? <a name="doodle-t&t-1"></a>
 
-Doodle tricks had similarities to how gags gained experience. Each time a successful trick was performed, that trick would gain +20 experience points. Each trick required 10000 experience points to fully max the trick. 10000 / 20 would require the Doodle to perform 500 successful tricks, in order to max that particular trick. To max all tricks, it would require an overall total of 3500 successful tricks.
+Doodle tricks have similarities to how gags gain experience. Each time a successful trick is performed, that trick gains +20 experience points. Each trick requires 10000 experience points to fully max. 10000 / 20 requires the Doodle to perform 500 successful tricks, in order to max that particular trick. To max all tricks, an overall total of 3500 successful tricks are required.
 
-In addition, performing a successful trick would increase the `aptitiude` value of that trick by 0.002. When a trick was fully maxed, `aptitude` capped out at 1.0. To determine the `aptitude` value a doodle has, the following equation could be used.
+In addition, performing a successful trick increases the `aptitiude` value of that trick by 0.002. When a trick is fully maxed, `aptitude` capped out at 1.0. To determine the `aptitude` value a doodle has, the following equation can be used.
 
 ```python
 aptitude = trick experience / 10000
@@ -486,7 +486,7 @@ aptitude = trick experience / 10000
 
 ### Did Doodle tricks have base accuracy values to them? <a name="doodle-t&t-2"></a>
 
-Yes, Doodle tricks had individual accuracy values for each trick. These values were used in determining the final accuracy value of the trick, referred to as `cutoff`. Below is a list of the base accuracy values for each trick. 
+Yes, Doodle tricks have individual accuracy values for each trick. These values are used in determining the final accuracy value of the trick, referred to as `cutoff`. Below is a list of the base accuracy values for each trick. 
 
 | Trick  | Base accuracy value | 
 |:------:|:-------------:|
@@ -500,23 +500,23 @@ Yes, Doodle tricks had individual accuracy values for each trick. These values w
 
 ### How did the game determine if the Doodle would successfully perform the trick? <a name="doodle-t&t-3"></a>
 
-To determine if a trick would be successful or not, the following equation could be used.
+To determine if a trick will be successful or not, the following equation can be used.
 
 ```python
 cutoff = trickAcc * (minApt + ((maxApt - minApt) * aptitude))
 ```
 
-`cutoff` is the end result of the following variables being calculated. `trickAcc` referred to the base accuracy value of the trick being used (see previous question). `minApt` and `maxApt` were predetermined values set by the Doodle's mood. If the Doodle was neutral, excited, playful or affectionate, `minApt = 0.5` and `maxApt = 0.97`. However, if the Doodle was bored, restless, lonely, sad, tired, hungry or angry, `minApt = 0.1` and `maxApt = 0.6`. `aptitude` was the value determined by taking the trick's experience / 10000.  
+`cutoff` is the end result of the following variables being calculated. `trickAcc` referred to the base accuracy value of the trick being used (see previous question). `minApt` and `maxApt` are predetermined values set by the Doodle's mood. If the Doodle is neutral, excited, playful or affectionate, `minApt = 0.5` and `maxApt = 0.97`. However, if the Doodle is bored, restless, lonely, sad, tired, hungry or angry, `minApt = 0.1` and `maxApt = 0.6`. `aptitude` is determined by taking the trick's experience / 10000.  
 
-If the Doodle was tired either at the Estate or the battle selection screen, `cutoff` was multiplied by 0.5. 
+If the Doodle is tired either at the Estate or the battle selection screen, `cutoff` is multiplied by 0.5. 
 
-If the Doodle had a negative mood at the Estate, but had a positive mood on the battle selection screen, `minApt` and `maxApt` would still equal 0.5 and 0.97 respectively. 
+If the Doodle has a negative mood at the Estate, but a positive mood on the battle selection screen, `minApt` and `maxApt` are still equal 0.5 and 0.97 respectively. 
 
-If the Doodle had negative moods in both the Estate and the battle selection screen, `minApt = 0.1` and `maxApt = 0.6`. However, `cutoff` would not be multiplied by 0.5 unless one of the negative moods was tired.
+If the Doodle has negative moods in both the Estate and the battle selection screen, `minApt = 0.1` and `maxApt = 0.6`. However, `cutoff` is not multiplied by 0.5 unless one of the negative moods is tired.
 
-Once the final value of `cutoff` was determined, a pseudorandom number, `randVal`, was generated such that 0.0 <= `randVal` < 1.0. If `cutoff` was greater than `randVal`, the Doodle would successfully perform the trick. Otherwise, the Doodle would not perform the trick.
+Once the final value of `cutoff` is determined, a pseudorandom number, `randVal`, is generated such that 0.0 <= `randVal` < 1.0. If `cutoff` is greater than `randVal`, the Doodle will successfully perform the trick. Otherwise, the Doodle will not perform the trick.
 
-Below is a table that shows the final `cutoff` value for each trick, assuming the doodle was maxed in said trick, and had no negative emotions on both the battle selection screen and the Estate.
+Below is a table that shows the final `cutoff` value for each trick, assuming the doodle was maxed in said trick, and have no negative emotions on both the battle selection screen and the Estate.
 
 | Trick  | `cutoff` value | 
 |:------:|:-------------:|
@@ -541,20 +541,20 @@ Expected Laff = cutoff * Laff Given
 0.485 * 20 = 9.7000 Laff (Dance)
 0.388 * 22 = 8.5360 Laff (Speak)
 ```
-As you can see, maxed Play Dead and Rollover were the most efficient tricks. Therefore Play Dead was likely the only trick worth training, since it maximized the work-reward ratio.
+As you can see, maxed Play Dead and Rollover are the most efficient tricks. Therefore Play Dead is likely the only trick worth training, since it maximizes the work-reward ratio.
 
 ## Fishing <a name="fishing-main"></a>
 [[back to top](#contents)]
 
 ### `itemType`
 
-`itemType` was the primary factor in determining the result of a successful cast. The possible types were `JellybeanItem` (1%), `FishItem` (2%), `BootItem` (5%) and `QuestItem` (92%).
+`itemType` is the primary factor in determining the result of a successful cast. The possible types are `JellybeanItem` (1%), `FishItem` (2%), `BootItem` (5%) and `QuestItem` (92%).
 
 ### `QuestItem`
 
-`QuestItem` served two purposes:
+`QuestItem` serves two purposes:
 
-- If there was an active Fishing quest, the following calculation was done to determine if the quest item would be found:
+- If there is an active Fishing quest, the following calculation is done to determine if the quest item will be found:
 
     ```python
    questItemFound = False
@@ -563,11 +563,11 @@ As you can see, maxed Play Dead and Rollover were the most efficient tricks. The
    if chance <= minChance:
        questItemFound = True
     ```
-- If there was not an active Fishing quest or the quest item was not found,  `QuestItem` used the same process as `FishItem` (see next section).
+- If there is not an active Fishing quest or the quest item was not found,  `QuestItem` uses the same process as `FishItem` (see the next section).
 
 ### `FishItem`
 
-Every fish had three components: genus, species and weight. Genus and species were randomly selected from a list, `fishList`, which was formed as follows.
+Every fish has three components: genus, species and weight. Genus and species are randomly selected from a list, `fishList`, which is formed as follows.
 
 - `rarity`:
 
@@ -576,7 +576,7 @@ rarity = int(ceil(10 * (1 - pow(diceRoll, RodRarityFactor))))
 if rarity <= 0:
     rarity = 1
 ```
-Where `diceRoll` was a pseudorandom real number such that 0.0 <= `diceRoll` < 1.0 and `RodRarityFactor` was given by the following table.
+Where `diceRoll` is a pseudorandom real number such that 0.0 <= `diceRoll` < 1.0 and `RodRarityFactor` is given by the following table.
 
 |   Rod    | `RodRarityFactor` | 
 |:--------:|:-----------------:|
@@ -588,9 +588,9 @@ Where `diceRoll` was a pseudorandom real number such that 0.0 <= `diceRoll` < 1.
 
 - `fishList`: 
 
-After the calculation of `rarity`, the possible fish were narrowed by pond location and rod used. Then, the possible fish were further subdivided into multiple `fishList`s, each associated with a particular `rarity` value. All possible combinations can be [seen here](http://pastebin.com/as4BKA3E). 
+After the calculation of `rarity`, the possible fish are narrowed by pond location and rod used. Then, the possible fish are further subdivided into multiple `fishList`s, each associated with a particular `rarity` value. All possible combinations can be [seen here](http://pastebin.com/as4BKA3E). 
 
-After selecting a genus and species, the fish's weight was calculated according to the following process:
+After selecting a genus and species, the fish's weight is calculated according to the following process:
 
 ```python
 minWeight = max(minFishWeight, minRodWeight)
@@ -602,7 +602,7 @@ randWeight = minWeight + (maxWeight - minWeight) * randNum
 randWeight = int(round(randWeight * 16))
 ```
 
-Once the fish's weight was determined, its overall Jellybean value was calculated with the following function:
+Once the fish's weight is determined, its overall Jellybean value is calculated with the following function:
 
 ```python
 rarity = getRarity(genus, species)
@@ -614,11 +614,11 @@ finalValue = int(ceil(value))
 
 Where `RARITY_VALUE_SCALE` = 0.2, `WEIGHT_VALUE_SCALE` = 0.05 / 16.0, and `OVERALL_VALUE_SCALE` = 15. 
 
-If no `fishList` was associated with the calculated `rarity` value, a Balloon Fish weighing 0lbs was caught.
+If no `fishList` is associated with the calculated `rarity` value, a Balloon Fish weighing 0lbs will be caught.
 
 ### `JellybeanItem`
 
-In this case, Jellybeans were awarded according to the following table.
+In this case, Jellybeans are awarded according to the following table.
  
 |   Rod    | Jellybeans | 
 |:--------:|:----------:|
@@ -630,7 +630,7 @@ In this case, Jellybeans were awarded according to the following table.
 
 ### `BootItem`
 
-In this case, a boot was caught.
+In this case, a boot will be caught.
 
 ## Toontasks <a name="toontasks-main"></a>
 [[back to top](#contents)]
@@ -640,20 +640,20 @@ In this case, a boot was caught.
 
 ## Did using Toon-up have any impact on other gag's accuracy? <a name="toon-up-1"></a>
 
-Yes, considering the conditions outlined in the [bonus section](#toon-atk-acc-6), Toon-up would increase another gag's accuracy when one of the following was true:
+Yes, considering the conditions outlined in the [bonus section](#toon-atk-acc-6), Toon-up increases another gag's accuracy when one of the following is true:
 
 - The Toon-up gag affected the group; or
 - The attack gag affected the group; or
 - Both gags affected the group.
 
-(Note: it appears that needing Laff was not a prerequisite for a Toon-up accuracy bonus.)
+(Note: Needing Laff is not a prerequisite for a Toon-up accuracy bonus.)
 
 # Trap <a name="trap"></a>
 [[back to top](#contents)]
 
 ## Did using Trap give Lure an accuracy boost? <a name="trap-1"></a>
 
-Yes, Trap gags always counted as a hit on the cog for the round it was used on, regardless if the Trap was actually triggered or not. If one again considers the conditions in the [bonus section](#toon-atk-acc-6), Trap met the following conditions.
+Yes, Trap gags always count as a hit on the cog for the round it is used on, regardless if the Trap is actually triggered or not. If one again considers the conditions in the [bonus section](#toon-atk-acc-6), Trap met the following conditions.
 
 - It is not the same track as Lure;
 - It always counts as a hit on the target
@@ -664,9 +664,9 @@ Now, one of the following also needed to be true:
 - The Trap was multi-cog.
 - The Lure was multi-cog.
 
-So, the only scenario in which Trap did not give Lure an accuracy boost was if both Lure and Trap were single-cog, and the target was different.
+So, the only scenario in which Trap will not give Lure an accuracy boost is if both Lure and Trap are single-cog, and the target differ.
 
-Multiple Traps did give multiple boosts, with an accuracy boost of up to +60 to the Lure being possible. Of course, this required multiple cogs to be in play for the Traps to be layed out.
+Multiple Traps give multiple boosts, with an accuracy boost of up to +60 to the Lure being possible. Of course, this requires multiple cogs to be in play for the Traps to be layed out.
 
 ### Battle Simulations
 
@@ -676,7 +676,7 @@ Multiple Traps did give multiple boosts, with an accuracy boost of up to +60 to 
 
 ## Did Trap provide an accuracy bonus to other gag tracks, even when not activated? <a name="trap-2"></a>
 
-Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not activated, Trap always counted as a hit on the cog. It would still meet the conditions given in the [bonus section](#toon-atk-acc-6), thus a +20 accuracy boost to the next gag targeting the cog. 
+Yes, Trap gives an accuracy boost to other gag tracks as well. Even when not activated, Trap always counts as a hit on the cog. It still meets the conditions given in the [bonus section](#toon-atk-acc-6), thus a +20 accuracy boost to the next gag targeting the cog. 
 
 ### Battle Simulations
 
@@ -684,7 +684,7 @@ Yes, Trap did give an accuracy boost to other gag tracks as well. Even when not 
 
 ## Did Trap's accuracy bonus and Organic Lure stack up? <a name="trap-3"></a>
 
-Yes, Organic Lure and the accuracy boost Trap provides did stack up. As listed in the [`AvLureBonusAccuracy`](#AvLureBonusAccuracy) chart, each Organic Lure gag gains +10 propAcc points compared to its original values. In combination with the +20 a single Trap would provide, this would combine for a total of +30 overall accuracy points.
+Yes, Organic Lure and the accuracy boost Trap provides stack up. As listed in the [`AvLureBonusAccuracy`](#AvLureBonusAccuracy) chart, each Organic Lure gag gains +10 propAcc points compared to its original values. In combination with the +20 a single Trap would provide, this combines for a total of +30 overall accuracy points.
 
 ### Battle Simulations
 
@@ -696,15 +696,15 @@ Yes, Organic Lure and the accuracy boost Trap provides did stack up. As listed i
 
 ## What was the impact of using multiple Lure gags? <a name="lure-1"></a>
 
-When two or more Lure gags were picked, the result of the weakest was calculated first using the highest possible value for `trackExp` according to the details outlined in [its section](#toon-atk-acc-4). From here, there were two options for all subsequent Lure gags:
+When two or more Lure gags are picked, the result of the weakest is calculated first using the highest possible value for `trackExp` according to the details outlined in [its section](#toon-atk-acc-4). From here, there are two options for all subsequent Lure gags:
 
-1. If the current Lure gag was single-cog and the previous hit or the current Lure gag was multi-cog, the previous Lure's result was applied to the current.
+1. If the current Lure gag is single-cog and the previous hit or the current Lure gag is multi-cog, the previous Lure's result is applied to the current.
 
-2. If the current Lure gag was single-cog, the previous was multi-cog *and* the previous missed, the current was calculated independently. In other words, this was this only case in which sequential Lure gags could have different results.
+2. If the current Lure gag is single-cog, the previous was multi-cog *and* the previous missed, the current is calculated independently. In other words, this is this only case in which sequential Lure gags may have different results.
 
-In either case, rounds were stacked based on the Lure's target. So, multiple single-cog Lures only stacked rounds if they had the same target, while multiple multi-cog Lures always stacked across all cogs. If a combination of single- and multi-cog Lures were used, rounds only stacked on the target(s) which overlapped.
+In either case, rounds are stacked based on the Lure's target. So, multiple single-cog Lures only stack rounds if they have the same target, while multiple multi-cog Lures always stack across all cogs. If a combination of single- and multi-cog Lures is used, rounds only stack on the target(s) which overlap.
 
-If multiple toons with the same experience level in Lure (i.e., maxed) used the same Lure gag, there was no impact on accuracy.
+If multiple toons with the same experience level in Lure (e.g., maxed) use the same Lure gag, there is no impact on accuracy.
 
 See the [section on multiple gag usage](#misc-2) for more general information.
 
@@ -737,7 +737,7 @@ See the [section on multiple gag usage](#misc-2) for more general information.
 
 ## Did being Lureless impact the accuracy of Lure SOS cards? <a name="vp-1"></a>
 
-Yes, a value of 0 was used for `trackExp` in all Lure SOS card accuracy calculations for Lureless toons (see [Toon Attack Accuracy](#toon-atk-acc) for more information). In practice, this was only relevant for Des Traction and Dee Version, which *always* missed against level 11 and 12 cogs as seen below.
+Yes, a value of 0 is used for `trackExp` in all Lure SOS card accuracy calculations for Lureless toons (see [Toon Attack Accuracy](#toon-atk-acc) for more information). In practice, this is only relevant for Des Traction and Dee Version, which *always* miss against level 11 and 12 cogs as seen below.
 
 ```
 Level 11: atkAcc = 50 + 0 + (-50) = 0
@@ -746,22 +746,14 @@ Level 12: atkAcc = 50 + 0 + (-55) = -5
 
 ## Did being Lureless impact the number of rounds Lure SOS cards would hold for? <a name="vp-2"></a>
 
-Yes, cogs were more likely to "wake up" early if the caller was Lureless. The probability associated with this event is called a cog's `wakeupChance`, which is calculated as follows:
+Yes, cogs are more likely to "wake up" early if the caller is Lureless. The probability associated with this event is called a cog's `wakeupChance`, which is calculated as follows:
 
 ```python
 wakeupChance = 100 - atkAcc * 2
 ```
 (See [Toon Attack Accuracy](#toon-atk-acc) for information on `atkAcc`.)
 
-With the above in mind, it can also be useful to think in terms of `wakeupChance`'s probabilistic complement: The probability that a given SOS card will hold for a specific number of rounds. In order to do so, we must apply the Rule of Multiplication:
-
-> If events A and B come from the same sample space, the probability that both A and B occur is equal to the probability the event A occurs times the probability that B occurs, given that A has occurred.
-> 
-> P(A ∩ B) = P(A) P(B|A)
-
-   (Source: [Probability Rules](http://stattrek.com/statistics/dictionary.aspx?definition=Multiplication_rule).)
-
-However, given that each round is calculated independent of any prior results, we note that P(B|A) = P(B). Thus, the following equation can be used to determine the probability that a single cog will stay lured for N rounds:
+With the above in mind, it can also be useful to think in terms of `wakeupChance`'s probabilistic complement: The probability that a given SOS card will hold for a specific number of rounds. The following equation can be used to determine the probability that a single cog will stay lured for N rounds:
 
 ```
 Given (Max rounds - N) >= 0,
@@ -800,17 +792,17 @@ b.
 
 ## How did the V.P. choose which attack to use? <a name="vp-3"></a>
 
-Excluding the undercarriage which had different logic (see two questions below), the V.P. had three attacks: Throw Gears, Gear Shower and Jump with usage odds of 4/6, 1/6 and 1/6 respectively. During normal mode, the V.P. would choose at random from these three.
+Excluding the undercarriage which has different logic (see two questions below), the V.P. had three attacks: Throw Gears, Gear Shower and Jump with usage odds of 4/6, 1/6 and 1/6 respectively. During normal mode, the V.P. chooses at random from these three.
 
-Following dizziness, the V.P. would always use Gear Shower.
+Following dizziness, the V.P. always uses Gear Shower.
 
 ## How did the V.P. choose which toon to attack? <a name="vp-4"></a>
 
-Throw Gears is the only attack which targeted a specific toon and the toon was selected at random.
+Throw Gears is the only attack which targets a specific toon and the toon is selected at random.
 
 ## Was there a way to predict when the undercarriage would open? <a name="vp-5"></a>
 
-Yes, the undercarriage would open every 9 seconds that the V.P. was not dizzy. The side it opened on and the direction of the gears were random.
+Yes, the undercarriage opens every 9 seconds that the V.P. is not dizzy. The side it opens on and the direction of the gears are random.
 
 ## Were the gag-related decreases in SOS card performance intentional? <a name="vp-6"></a>
 
@@ -833,7 +825,7 @@ While it's impossible to give a definitive answer without insider knowledge, her
 
 ## How were the SOS toons chosen?  <a name="vp-7"></a>
 
-Upon entering the elevator, the game would return a list of all VP SOS toons via the .keys() method. The game would then use `random.choice` to pick an SOS from that list. In other words, the stars on the SOS card would not affect the chances of it being selected.
+Upon entering the elevator, the game returns a list of all VP SOS toons. The game then picks an SOS at random from that list. In other words, the stars on the SOS card do not affect the chances of it being selected.
 
 A list of all SOS toons obtained in both the VP and Field Offices can be seen [here](#appendix-d).
 
@@ -842,23 +834,23 @@ A list of all SOS toons obtained in both the VP and Field Offices can be seen [h
 
 ## How was the C.F.O. reward chosen? <a name="cfo-1"></a>
 
-Both the overall type (i.e., Toon-up) and the subtype (i.e., +80) of the Unite were selected at random.
+Both the overall type (e.g., Toon-up) and the subtype (e.g., +80) of the Unite are selected at random.
 
 ## How did the C.F.O. choose which toon to attack? <a name="cfo-2"></a>
 
-At the start of the Crane Round, a list named `toonsToAttack` was created which contained the ID of every toon in the C.F.O. battle sorted randomly. Toons were then attacked according to this order: the toon at position 0 was attacked first and then its ID was appended to the end of the list. This cycle repeated for the duration of the battle.
+At the start of the Crane Round, a list named `toonsToAttack` is created which contained the ID of every toon in the C.F.O. battle sorted randomly. Toons are then attacked according to this order: the toon at position 0 is attacked first and then its ID is appended to the end of the list. This cycle repeats for the duration of the battle.
 
 # C.J. <a name="cj"></a>
 [[back to top](#contents)]
 
 ## How was the C.J. reward chosen? <a name="cj-1"></a>
 
-The first step in choosing a Summon was to establish a `preferredSummonType`. This was done in two steps:
+The first step in choosing a Summon was to establish a `preferredSummonType`. This is done in two steps:
 
-- The suit type was selected at random. This was known as the `preferredDept`.
-- The Summon type was selected at random with the following odds: 70% chance for a cog, 27% chance for a building and 3% for an invasion.
+- The suit type is selected at random. This is known as the `preferredDept`.
+- The Summon type is selected at random with the following odds: 70% chance for a cog, 27% chance for a building and 3% for an invasion.
 
-The second step was to check for toons who already had the `preferredSummonType`. For those that did, the following algorithm was used to choose another Summon:
+The second step is to check for toons who already have the `preferredSummonType`. For those that do, the following algorithm is used to choose another Summon:
 
 - Using the `preferredDept` and a cog level based on the battle difficulty, try to give the toon a cog, building or invasion (in that order).
 - Using a cog level based on the battle difficulty, loop over every cog suit and try to give the toon a cog, building or invasion (in that order).
@@ -867,23 +859,23 @@ The second step was to check for toons who already had the `preferredSummonType`
 
 ## How did the C.J. decide when to jump? <a name="cj-2"></a>
 
-Every 15 seconds the C.J. had an 11% chance to jump. 
+Every 15 seconds the C.J. has an 11% chance to jump. 
 
 ## How did the prosecution choose which toon to attack? <a name="cj-3"></a>
 
-Every cycle, each prosecuting cog had a 50/50 chance to either (1) attack a toon or (2) hit the scale. If option 1 was selected, a toon was chosen at random from a list of all toons in the battle. 
+Every cycle, each prosecuting cog has a 50/50 chance to either attack a toon or hit the scale. If option 1 is selected, a toon is chosen at random from a list of all toons in the battle. 
 
 ## How was the scale related to the jury? <a name="cj-4"></a>
 
-When determining how the amount of Toon jurors affected the scale, the following formula was used.
+When determining how the amount of Toon jurors affects the scale, the following formula is used.
 
 ```python
 jurorsOver = numToonJurorsSeated - LawbotBossJurorsForBalancedScale
 dmgAdjust = jurorsOver * LawbotBossDamagePerJuror
 ```
-`jurorsOver` was determined by taking the amount of Toon jurors seated and then subtracting it by the amount needed for a balanced scale (8 for non-modified servers). That amount was then multiplied by the damage amount each Toon juror done, which was set to 68 per toon juror. The result was then referred to as `dmgAdjust`. 
+`jurorsOver` is determined by taking the amount of Toon jurors seated and then subtracting it by the amount needed for a balanced scale (8 for non-modified servers). That amount is then multiplied by the damage amount each Toon juror done, which is set to 68 per toon juror. The result is then referred to as `dmgAdjust`. 
 
-The initial damage of the scale was calculated at 1350. `dmgAdjust` was then added to the initial damage of the scale. Given how the formula is calculated, we can establish the following ratios for the initial amount of evidence in the prosecution and defense pans, based on the amount of Toon jurors seated.
+The initial damage of the scale is calculated at 1350. `dmgAdjust` is then added to the initial damage of the scale. Given how the formula is calculated, we can establish the following ratios for the initial amount of evidence in the prosecution and defense pans, based on the amount of Toon jurors seated.
 
 | # Toon Jurors seated | Initial Toon Evidence | Initial Cog Evidence|
 |:---------------------:|:--------------:|:-------------:|
@@ -914,31 +906,31 @@ Initial Toon Evidence = 2700 - Initial Cog Evidence
 
 ## How did the C.E.O. choose which attack to use? <a name="ceo-1"></a>
 
-Every 5 seconds, the C.E.O. had a 20% chance to use its Fore! attack and an 80% chance to use a directed attack.
+Every 5 seconds, the C.E.O. has a 20% chance to use its Fore! attack and an 80% chance to use a directed attack.
 
 ## How did the C.E.O. choose which toon(s) to attack? <a name="ceo-2"></a>
 
-Every time a toon recorded a hit on the C.E.O., its ID and associated damage were added to `threatDict`, a Python dictionary which tracked the amount damage done by each toon. A golf ball hit was worth 0.1 and a Seltzer Bottle hit was worth the damage indicated in-game.
+Every time a toon records a hit on the C.E.O., its ID and associated damage are added to `threatDict`, a Python dictionary which tracked the amount damage done by each toon. A golf ball hit is worth 0.1 and a Seltzer Bottle hit is worth the damage indicated in-game.
 
-Each time a directed attack was chosen, assuming there were unflattened toons, the C.E.O. had a 10% chance to attack a toon at random. In the other 90% of time, the toon who had inflicted the most damage was chosen. In the case of a tie, a toon was selected at random from a list of toons who had dealt the same amount of damage.
+Each time a directed attack is chosen, assuming there are unflattened toons, the C.E.O. has a 10% chance to attack a toon at random. In the other 90% of time, the toon who inflicted the most damage is chosen. In the case of a tie, a toon is selected at random from a list of toons who had dealt the same amount of damage.
 
-Once a toon was picked, an attack was chosen based on the state of the toon:
+Once a toon is picked, an attack is chosen based on the state of the toon:
 
-- If the toon was roaming, the directed golf attack was used.
-- If the toon was on a table, there was a 25% chance that Throw Gears was used and a 75% chance that the C.E.O. would roll over the occupied table.
+- If the toon is roaming, the directed golf attack is used.
+- If the toon is on a table, there is a 25% chance that Throw Gears is used and a 75% chance that the C.E.O. will roll over the occupied table.
 
-After the attack was completed, the toon's damage total in `threatDict` was reduced by 25%.
+After the attack is completed, the toon's damage total in `threatDict` is reduced by 25%.
 
 ## How did the C.E.O. decide to continue moving or not? <a name="ceo-3"></a>
 
-If the C.E.O. was moving towards a toon on a table, and that particular toon hopped off the table, `random.random()` generated a number between 0.0 and 1.0. If `random.random()` was less than 0.5, the C.E.O. would stop moving towards that table and use his directed golf attack. Otherwise, the C.E.O. would run over that table and stop on top of it.
+If the C.E.O. is moving towards a toon on a table, and that particular toon hopped off the table, `random.random()` generates a number between 0.0 and 1.0. If `random.random()` is less than 0.5, the C.E.O. will stop moving towards that table and use his directed golf attack. Otherwise, the C.E.O. will run over that table and stop on top of it.
 
 # Fishing <a name="fishing"></a>
 [[back to top](#contents)]
 
 ## Was using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod? <a name="fishing-1"></a>
 
-No, infact using a Twig Rod was *less* beneficial to catch light-weight Ultra Rares than a Gold Rod. In order for any rod to obtain an Ultra Rare Fish, the `rarity` value had to equal 10. Given how `rarity` was calculated ([see Fishing for more details](#fishing-main)), we can figure out the bare minimum `diceRoll` number for Twig Rod and Gold Rod to have a `rarity` value of 10. Assume `diceRoll` = X.
+No, infact using a Twig Rod is *less* beneficial to catch light-weight Ultra Rares than a Gold Rod. In order for any rod to obtain an Ultra Rare Fish, the `rarity` value has to equal 10. Given how `rarity` is calculated ([see Fishing for more details](#fishing-main)), we can figure out the minimum `diceRoll` number necessary for Twig Rod and Gold Rod to have a `rarity` value of 10. Assume `diceRoll` = X.
 
 ```
 Twig Rod
@@ -947,18 +939,18 @@ rarity = int(ceil(10 * (1 - pow(X, 1 / 4.3)))) = 9 => X = 0.000050119
 Gold Rod
 rarity = int(ceil(10 * (1 - pow(X, 1 / (4.3 * 0.85))))) = 9 => X = 0.0002213
 ```
-In order for a Twig Rod to have `rarity = 10`, `diceRoll` needed to be less than 0.000050119. But for a Gold Rod to have `rarity = 10`, `diceRoll` needed to be less than 0.0002213. 
+In order for a Twig Rod to have `rarity = 10`, `diceRoll` needs to be less than 0.000050119. But for a Gold Rod to have `rarity = 10`, `diceRoll` needs to be less than 0.0002213. 
 
-Since `rarity` was determined before picking a fish (and the fish being picked from that `fishList` was done randomly), a Twig Rod had a much lower chance to hit a `rarity` value of 10 than a Gold Rod. 
+Since `rarity` is determined before picking a fish (and the fish being picked from that `fishList` is done randomly), a Twig Rod has a much lower chance to hit a `rarity` value of 10 than a Gold Rod. 
 
 # Racing <a name="racing"></a>
 [[back to top](#contents)]
 
 ## Wall-riding <a name="racing-1"></a>
 
-"Wall-riding" was a racing technique that maximized the amount of time spent accelerating during a race. This was accomplished by decreasing the need to turn — and consequently decelerate — by allowing racers to drive into the bounds of the track. This technique gained widespread notoriety after it was used to win a contest during Toontown’s first Grand Prix Weekend in November of 2006. Many deemed it to be cheating as it was (likely) an unintended means of gaining an advantage.
+"Wall-riding" is a racing technique that maximizes the amount of time spent accelerating during a race. This is accomplished by decreasing the need to turn — and consequently decelerate — by allowing racers to drive into the bounds of the track. This technique gained widespread notoriety after it was used to win a contest during Toontown’s first Grand Prix Weekend in November of 2006. Many deemed it to be cheating as it was (likely) an unintended means of gaining an advantage.
 
-Wall-riding was most common on Blizzard Boulevard, but it was possible on all tracks and strategically beneficial on all but rural tracks. In the following sections, we will cover how to apply this technique optimally on a track-by-track basis.
+Wall-riding is most common on Blizzard Boulevard, but it is possible on all tracks and strategically beneficial on all but rural tracks. In the following sections, we will cover how to apply this technique optimally on a track-by-track basis.
 
 **Screwball Stadium**:
 
@@ -977,24 +969,24 @@ No, there's no evidence that Shopkeepers had any impact on gag accuracy.
 
 ## When multiple gags of the same track were used on the same cog, how was accuracy calculated? <a name="misc-2"></a>
 
-The first aspect that must be understood is how toon attacks were ordered, in which there were three steps:
+The first aspect that must be understood is how toon attacks were ordered, in which there are three steps:
 
 1. The position of each toon in battle, from right to left, represents the initial attack order.
 2. Order by track: Toon-up, Trap, Lure, Sound, Throw, Squirt and then Drop.
 3. Order by gag level (lowest to highest) within each track.
 
-From here, for all calculation purposes, attacks were considered in pairs (the previous attack and the current attack) within each track.
+From here, for all calculation purposes, attacks are considered in pairs (the previous attack and the current attack) within each track.
 
 Now, we need to cover four more sub-cases:
 
-1. Toon-up gags were always evaluated independently.
-2. Lure gags were only evaluated independently when using a combination of multi- and single-cog Lures, and a multi-cog Lure was the lowest level ([see the multi-Lure section for details](#lure-1)). In all other cases, the result of the lowest Lure gag was applied to all subsequent Lures.
-3. Sound gags always inherited the result of the lowest Sound gag used. 
-4. For all other tracks, if the previous gag in the particular track had the same target as the current, the current inherited the result of the previous.
+1. Toon-up gags are always evaluated independently.
+2. Lure gags are only evaluated independently when using a combination of multi- and single-cog Lures, and a multi-cog Lure is the lowest level ([see the multi-Lure section for details](#lure-1)). In all other cases, the result of the lowest Lure gag is applied to all subsequent Lures.
+3. Sound gags always inherit the result of the lowest Sound gag used. 
+4. For all other tracks, if the previous gag in the particular track has the same target as the current, the current inherits the result of the previous.
 
 ## Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-3"></a>
 
-Yes, due to how toon attacks were ordered (see previous question), it was possible for "mismatches" to occur. Essentially, this was caused by the fact that attacks were only considered in pairs. For example, consider the following scenario with three Trapless toons with maxed gags (1 - 3) and two level 12 cogs (A and B):
+Yes, due to how toon attacks are ordered (see previous question), it is possible for "mismatches" to occur. Essentially, this is caused by the fact that attacks are only considered in pairs. For example, consider the following scenario with three Trapless toons who have maxed gags (1 - 3) and two level 12 cogs (A and B):
 
 ```
  B A
@@ -1007,11 +999,11 @@ Yes, due to how toon attacks were ordered (see previous question), it was possib
 
 Here, the attack order is 1, 2, 3 which means:
 
-1. Toon 1's Safe was evaluated.
-2. Toon 2's Safe was evaluated, but wasn't assigned the result of 1 because it had a different target.
-3. Toon 3's Safe was evaluated, but wasn't assigned the result of 2 because it had a different target. 
+1. Toon 1's Safe is evaluated.
+2. Toon 2's Safe is evaluated, but isn't assigned the result of 1 because it had a different target.
+3. Toon 3's Safe is evaluated, but isn't assigned the result of 2 because it had a different target. 
 
-So, in this situation, it was possible for only one Safe to hit Cog A.
+So, in this situation, it is possible for only one Safe to hit Cog A.
 
 At first glance this may appear to be rather undesirable, however it's important to fully understand the impact of independent calculations. There are two key areas to consider: expected damage and battle duration.
 
@@ -1033,7 +1025,7 @@ P(Toon 1 and Toon 2 miss) = 1 - P(Toon 1 and Toon 2 hit) = 0.45
 P(at least Toon 1 or Toon 2 hit) = P(Toon 1 and Toon 2 hit) = 0.55
 ```
 
-In this case, there was a 55% chance (both Safes hit) that damage was done to cog A and a 45% chance (both Safes miss) that no damage was done
+In this case, there is a 55% chance (both Safes hit) that damage was done to cog A and a 45% chance (both Safes miss) that no damage is done
 
 Now, let's look at the expected damage on cog A *with an attack mismatch*.
 
@@ -1053,14 +1045,14 @@ P(Toon 1 and Toon 3 miss) = (1 - P(Toon 1 and Toon 3 hit))^2 = 0.2025
 P(at least Toon 1 or Toon 3 hit) = 0.3025 + 0.495 = 0.7975
 ```
 
-You'll note that there was a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease didn't actually constitute an overall loss in expected damage: it was simply more evenly distributed. This is evident in the probability that at least one Safe hit, which was 79.75% vs. 55% *in favor of attack mismatches*. To further clarify the difference, let's take a closer look at the possible outcomes. 
+You'll note that there was a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease didn't actually constitute an overall loss in expected damage: it was simply more evenly distributed. This is evident in the probability that at least one Safe hit, which is 79.75% vs. 55% *in favor of attack mismatches*. To further clarify the difference, let's take a closer look at the possible outcomes. 
 ```
 HH = Both hit
 HM = First hit, second miss
 MH = First miss, second hit
 MM = Both miss
 ```
-As you can see, there were three outcomes which resulted in damage to a cog: HH, HM and MH. However, without attack mismatches, accuracy inheritance eliminated both HM and MH. This loss of opportunity could only be offset by a large increase in the probability of HH. For instance, in the above example there's a difference of 24.75%, which was just enough to make up for the loss (see [Level 12 Big Wig; Safe + Safe](http://pastebin.com/bzugMzEs)). Thus, the key factor was the fact that as the probability of HH increased, the difference between the probability of HH with and without attack mismatches decreased. Take, for example, maxed Storm Cloud:
+As you can see, there are three outcomes which resulted in damage to a cog: HH, HM and MH. However, without attack mismatches, accuracy inheritance eliminated both HM and MH. This loss of opportunity could only be offset by a large increase in the probability of HH. For instance, in the above example there's a difference of 24.75%, which is just enough to make up for the loss (see [Level 12 Big Wig; Safe + Safe](http://pastebin.com/bzugMzEs)). Thus, the key factor is the fact that as the probability of HH increased, the difference between the probability of HH with and without attack mismatches decreased. Take, for example, maxed Storm Cloud:
 
 ```
  B A
@@ -1091,7 +1083,7 @@ P(Toon 1 and Toon 3 miss) = (1 - P(Toon 1 and Toon 3 hit)) ^ 2 = 0.0025
 P(at least Toon 1 or Toon 3 hit) = P(Toon 1 and Toon 3 hit) = 0.9025 + 0.095 = 0.9975
 ```
 
-As shown above, in this case there was only a 4.75% difference in the probability of HH. You might be tempted to point out that we also only saw a 4.75% increase in P(at least Toon 1 or Toon 2 hit), which is true, but there's another factor: one hit was significantly better than no hits. Think about it in terms of the number of possible ways to defeat a cog:
+As shown above, in this case there is only a 4.75% difference in the probability of HH. You might be tempted to point out that we also only saw a 4.75% increase in P(at least Toon 1 or Toon 2 hit), which is true, but there's another factor: one hit was significantly better than no hits. Think about it in terms of the number of possible ways to defeat a cog:
 
 ```
 Cog HP = 200
@@ -1126,10 +1118,10 @@ OR
 1. HM = 80 (P = 0.0475).
 2. 80 + (HH + 32) = 272 (P = 0.042869).
 ```
-As you can see, attack mismatches gave us 5 ways to win vs. only 1 without them. With the above in mind, we can conclude that attack mismatches should have been preferred in any of the following scenarios.
+As you can see, attack mismatches give us 5 ways to win versus only 1 without them. With the above in mind, we can conclude that attack mismatches should be preferred in any of the following scenarios.
 
-- If either gag was capable of defeating the given cog in one round.
-- Assuming maxed gags, when any combination of Throw and Squirt was used.
+- If either gag iss capable of defeating the given cog in one round.
+- Assuming maxed gags, when any combination of Throw and Squirt is used.
 
 ### Battle Simulations
 
@@ -1140,7 +1132,7 @@ As you can see, attack mismatches gave us 5 ways to win vs. only 1 without them.
 
 ## Did doodle tricks count as a stun in battle? <a name="misc-4"></a>
 
-Yes, Doodle tricks counted as a stun in battles, provided that the trick was successful. Tricks counted as their own individual track, meaning they would satisfy the conditions listed in the [bonus section](#toon-atk-acc-6).
+Yes, Doodle tricks count as a stun in battles, provided that the trick is successful. Tricks count as their own individual track, meaning they would satisfy the conditions listed in the [bonus section](#toon-atk-acc-6).
 
 ### Battle Simulations
 
@@ -1148,7 +1140,7 @@ Yes, Doodle tricks counted as a stun in battles, provided that the trick was suc
 
 ## Did Fires count as a stun?<a name="misc-5"></a>
 
-Yes, Fires counted as a stun, so long as the gag(s) used aftewards were multi-target gags. Fires would not count as a stun for single target gags.
+Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-target gags. Fires do not count as a stun for single target gags.
 
 ### Battle Simulations
 
