@@ -906,24 +906,24 @@ Initial Toon Evidence = 2700 - Initial Cog Evidence
 
 ## How did the C.E.O. choose which attack to use? <a name="ceo-1"></a>
 
-Every 5 seconds, the C.E.O. has a 20% chance to use its Fore! attack and an 80% chance to use a directed attack.
+Every 5 seconds, the C.E.O. had a 20% chance to use its Fore! attack and an 80% chance to use a directed attack.
 
 ## How did the C.E.O. choose which toon(s) to attack? <a name="ceo-2"></a>
 
-Every time a toon records a hit on the C.E.O., its ID and associated damage are added to `threatDict`, a Python dictionary which tracked the amount damage done by each toon. A golf ball hit is worth 0.1 and a Seltzer Bottle hit is worth the damage indicated in-game.
+Every time a toon records a hit on the C.E.O., its ID and associated damage were added to `threatDict`, a Python dictionary which tracked the amount damage done by each toon. A golf ball hit is worth 0.1 and a Seltzer Bottle hit is worth the damage indicated in-game.
 
-Each time a directed attack is chosen, assuming there are unflattened toons, the C.E.O. has a 10% chance to attack a toon at random. In the other 90% of time, the toon who inflicted the most damage is chosen. In the case of a tie, a toon is selected at random from a list of toons who had dealt the same amount of damage.
+Each time a directed attack was chosen, assuming there were unflattened toons, the C.E.O. had a 10% chance to attack a toon at random. In the other 90% of time, the toon who inflicted the most damage was chosen. In the case of a tie, a toon was selected at random from a list of toons who dealt the same amount of damage.
 
-Once a toon is picked, an attack is chosen based on the state of the toon:
+Once a toon was picked, an attack was chosen based on the state of the toon:
 
-- If the toon is roaming, the directed golf attack is used.
-- If the toon is on a table, there is a 25% chance that Throw Gears is used and a 75% chance that the C.E.O. will roll over the occupied table.
+- If the toon was roaming, the directed golf attack was used.
+- If the toon was on a table, there was a 25% chance that Throw Gears was used and a 75% chance that the C.E.O. rolled over the occupied table.
 
-After the attack is completed, the toon's damage total in `threatDict` is reduced by 25%.
+After the attack was completed, the toon's damage total in `threatDict` was reduced by 25%.
 
 ## How did the C.E.O. decide to continue moving or not? <a name="ceo-3"></a>
 
-If the C.E.O. is moving towards a toon on a table, and that particular toon hopped off the table, `random.random()` generates a number between 0.0 and 1.0. If `random.random()` is less than 0.5, the C.E.O. will stop moving towards that table and use his directed golf attack. Otherwise, the C.E.O. will run over that table and stop on top of it.
+If the C.E.O. was moving towards a toon on a table, and that particular toon hopped off the table, `random.random()` generated a number between 0.0 and 1.0. If `random.random()` was less than 0.5, the C.E.O. stopped moving towards that table, and used his directed golf attack. Otherwise, the C.E.O. ran over that table and stopped on top of it.
 
 # Fishing <a name="fishing"></a>
 [[back to top](#contents)]
@@ -5565,10 +5565,10 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 			<td align="center">Flippy</td>
 			<td align="center">Toon-up</td>
 			<td align="center">★★★★★</td>
-			<td align="center">Healed 136 laff / # of total active toons</td>
+			<td align="center">Healed 137 laff / # of total active toons</td>
 		</tr>
 		<tr>
-			<td align="center">Daffy Don4,</td>
+			<td align="center">Daffy Don</td>
 			<td align="center">Toon-up</td>
 			<td align="center">★★★★</td>
 			<td align="center">Healed 70 laff / # of total active toons</td>
@@ -5597,9 +5597,6 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 			<td align="center"></td>
 			<td align="center">Healed 10 laff / # of total active toons</td>
 		</tr>
-		
-		<th colspan="4"> </th>
-		
 		<tr>
 			<td align="center">Clerk Clara</td>
 			<td align="center">Trap</td>
@@ -5618,9 +5615,6 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 			<td align="center">★★★</td>
 			<td align="center">Did 50 damage to lured cogs</td>
 		</tr>
-		
-			<th colspan="4"> </th>
-		
 		<tr>
 			<td align="center">Lil Oldman</td>
 			<td align="center">Lure</td>
@@ -5657,9 +5651,6 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 			<td align="center"></td>
 			<td align="center">Lured cogs for a maximum of 2 rounds</td>
 		</tr>
-		
-		<th colspan="4"> </th>
-		
 		<tr>
 			<td align="center">Moe Zart</td>
 			<td align="center">Sound</td>
@@ -5696,9 +5687,6 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 			<td align="center"></td>
 			<td align="center">Did 10 damage to all cogs</td>
 		</tr>
-		
-		<th colspan="4"> </th>
-		
 		<tr>
 			<td align="center">Barnacle Bessie</td>
 			<td align="center">Drop</td>
@@ -5735,9 +5723,6 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 			<td align="center"></td>
 			<td align="center">Did 20 damage to all unlured cogs</td>
 		</tr>
-		
-		<th colspan="4"> </th>
-		
 		<tr>
 			<td align="center">Soggy Neil</td>
 			<td align="center">Toons Hit</td>
@@ -5756,9 +5741,6 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 			<td align="center">★★★★</td>
 			<td align="center">Guaranteed all toon attacks hit for 1 round</td>
 		</tr>
-		
-		<th colspan="4"> </th>
-		
 		<tr>
 			<td align="center">Flim Flam</td>
 			<td align="center">Cogs Miss</td>
@@ -5777,9 +5759,6 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 			<td align="center">★★★★</td>
 			<td align="center">Guaranteed all cog attacks miss for 1 round</td>
 		</tr>
-		
-		<th colspan="4"> </th>
-		
 		<tr>
 			<td align="center">Professor Pete</td>
 			<td align="center">Restock All</td>
@@ -5834,26 +5813,26 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 
 # Notes <a name="ttr"></a>
 
--The GlobalRarityDialBase value for fishing was lowered as part of the February 1st, 2015 update. It has decreased from 4.3 to between 3.5-3.8.
+-The GlobalRarityDialBase value for fishing was lowered as part of the February 1st, 2015 update. It decreased from 4.3 to between 3.5-3.8.
 
--In the May 10th, 2016 update, several modifications were made to certain SOS cards.
+-On the May 10th, 2016 update, several modifications were made to certain SOS cards.
 
-* Daffy Don and Madame Chuckle now use Bamboo Cane, instead of Juggling Cubes.
-* Clerk Will and Clerk Penny now use Quicksand, instead of Trapdoor.
-* Stinky Ned now uses Big Magnet, luring the cogs for up to a maximum of 3 rounds.
-* Nancy Gas is now a 4 star card, otherwise remaining unchanged.
-* Lil Oldman now uses Presentation, luring the cogs for up to a maximum of 15 rounds.
-* Barbara Seville and Sid Sonata now use Elephant Trunk, instead of Foghorn.
-* Clumsy Ned now use Big Weight, instead of Grand Piano.
-* Franz Neckvein now use Safe, instead of Grand Piano.
+* Daffy Don and Madame Chuckle now used Bamboo Cane, instead of Juggling Cubes.
+* Clerk Will and Clerk Penny now used Quicksand, instead of Trapdoor.
+* Stinky Ned now used Big Magnet, and lured the cogs for up to a maximum of 3 rounds.
+* Nancy Gas became a 4 star card, otherwise remaining unchanged.
+* Lil Oldman now used Presentation, and lured the cogs for up to a maximum of 15 rounds.
+* Barbara Seville and Sid Sonata now used Elephant Trunk, instead of Foghorn.
+* Clumsy Ned now used Big Weight, instead of Grand Piano.
+* Franz Neckvein now used Safe, instead of Grand Piano.
 * The Toons Hit cards were modifed as follows:
- * Sticky Lou is now a 5 star card, and guaranteed that all toon attacks will hit for 3 rounds.
- * Soggy Nell now guaranteed that all toon attacks will hit for 2 rounds.
- * Soggy Bottom is now a 3 star card, otherwise remaining unchanged.
+ * Sticky Lou became a 5 star card, and guaranteed that all toon attacks hit for 3 rounds.
+ * Soggy Nell now guaranteed that all toon attacks hit for 2 rounds.
+ * Soggy Bottom became a 3 star card, otherwise remaining unchanged.
 * The Cogs Miss cards were modified as follows:
- * Julius Wheezer is now a 5 star card, and guaranteed that all cog attacks will miss for 3 rounds.
- * Mr. Freeze now guaranteed that all cog attacks will miss for 2 rounds.
- * Flim Flam is now a 3 star card, otherwise remaining unchanged.
+ * Julius Wheezer became a 5 star card, and guaranteed that all cog attacks missed for 3 rounds.
+ * Mr. Freeze now guaranteed that all cog attacks missed for 2 rounds.
+ * Flim Flam became a 3 star card, otherwise remaining unchanged.
 
 
 
