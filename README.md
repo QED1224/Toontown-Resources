@@ -476,13 +476,7 @@ A list of attack accuracy values can be seen at [Appendix C](#appendix-c).
 
 ### How was Doodle trick experience calculated? <a name="doodle-t&t-1"></a>
 
-Doodle tricks have similarities to how gags gain experience. Each time a successful trick is performed, that trick gains +20 experience points. Each trick requires 10000 experience points to fully max. 10000 / 20 requires the Doodle to perform 500 successful tricks, in order to max that particular trick. To max all tricks, an overall total of 3500 successful tricks are required.
-
-In addition, performing a successful trick increases the `aptitiude` value of that trick by 0.002. When a trick is fully maxed, `aptitude` capped out at 1.0. To determine the `aptitude` value a doodle has, the following equation can be used.
-
-```python
-aptitude = trick experience / 10000
-```
+[Under construction]
 
 ### Did Doodle tricks have base accuracy values to them? <a name="doodle-t&t-2"></a>
 
