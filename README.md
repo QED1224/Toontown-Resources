@@ -5563,247 +5563,247 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 			<td align="center">Flippy</td>
 			<td align="center">Toon-up</td>
 			<td align="center">★★★★★</td>
-			<td align="center">Healed 137 laff / # of total active toons</td>
+			<td align="center">Heals 137 laff / # of total active toons</td>
 		</tr>
 		<tr>
 			<td align="center">Daffy Don</td>
 			<td align="center">Toon-up</td>
 			<td align="center">★★★★</td>
-			<td align="center">Healed 70 laff / # of total active toons</td>
+			<td align="center">Heals 70 laff / # of total active toons</td>
 		</tr>
 		<tr>
 			<td align="center">Madame Chuckle</td>
 			<td align="center">Toon-up</td>
 			<td align="center">★★★</td>
-			<td align="center">Healed 45 laff / # of total active toons</td>
+			<td align="center">Heals 45 laff / # of total active toons</td>
 		</tr>
 		<tr>
 			<td align="center">Gigglemesh *</td>
 			<td align="center">Toon-up</td>
 			<td align="center">★★</td>
-			<td align="center">Healed 30 laff / # of total active toons</td>
+			<td align="center">Heals 30 laff / # of total active toons</td>
 		</tr>
 		<tr>
 			<td align="center">Emma Phatic *</td>
 			<td align="center">Toon-up</td>
 			<td align="center">★</td>
-			<td align="center">Healed 20 laff / # of total active toons</td>
+			<td align="center">Heals 20 laff / # of total active toons</td>
 		</tr>
 		<tr>
 			<td align="center">Phil Bettur *</td>
 			<td align="center">Toon-up</td>
 			<td align="center"></td>
-			<td align="center">Healed 10 laff / # of total active toons</td>
+			<td align="center">Heals 10 laff / # of total active toons</td>
 		</tr>
 		<tr>
 			<td align="center">Clerk Clara</td>
 			<td align="center">Trap</td>
 			<td align="center">★★★★★</td>
-			<td align="center">Did 180 damage to lured cogs</td>
+			<td align="center">Does 180 damage to lured cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Clerk Penny</td>
 			<td align="center">Trap</td>
 			<td align="center">★★★★</td>
-			<td align="center">Did 70 damage to lured cogs</td>
+			<td align="center">Does 70 damage to lured cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Clerk Will</td>
 			<td align="center">Trap</td>
 			<td align="center">★★★</td>
-			<td align="center">Did 50 damage to lured cogs</td>
+			<td align="center">Does 50 damage to lured cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Lil Oldman</td>
 			<td align="center">Lure</td>
 			<td align="center">★★★★★</td>
-			<td align="center">Lured cogs for a maximum of 4 rounds</td>
+			<td align="center">Lures cogs for a maximum of 4 rounds</td>
 		</tr>
 		<tr>
 			<td align="center">Stinky Ned</td>
 			<td align="center">Lure</td>
 			<td align="center">★★★</td>
-			<td align="center">Lured cogs for a maximum of 4 rounds</td>
+			<td align="center">Lures cogs for a maximum of 4 rounds</td>
 		</tr>
 		<tr>
 			<td align="center">Nancy Gas</td>
 			<td align="center">Lure</td>
 			<td align="center">★★★</td>
-			<td align="center">Lured cogs for a maximum of 4 rounds</td>
+			<td align="center">Lures cogs for a maximum of 4 rounds</td>
 		</tr>
 		<tr>
 			<td align="center">Bo Nanapeel *</td>
 			<td align="center">Lure</td>
 			<td align="center">★★</td>
-			<td align="center">Lured cogs for a maximum of 3 rounds</td>
+			<td align="center">Lures cogs for a maximum of 3 rounds</td>
 		</tr>
 		<tr>
 			<td align="center">Dee Version *</td>
 			<td align="center">Lure</td>
 			<td align="center">★</td>
-			<td align="center">Lured cogs for a maximum of 2 rounds</td>
+			<td align="center">Lures cogs for a maximum of 2 rounds</td>
 		</tr>
 		<tr>
 			<td align="center">Des Traction *</td>
 			<td align="center">Lure</td>
 			<td align="center"></td>
-			<td align="center">Lured cogs for a maximum of 2 rounds</td>
+			<td align="center">Lures cogs for a maximum of 2 rounds</td>
 		</tr>
 		<tr>
 			<td align="center">Moe Zart</td>
 			<td align="center">Sound</td>
 			<td align="center">★★★★★</td>
-			<td align="center">Did 80 damage to all cogs</td>
+			<td align="center">Does 80 damage to all cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Sid Sonata</td>
 			<td align="center">Sound</td>
 			<td align="center">★★★★</td>
-			<td align="center">Did 50 damage to all cogs</td>
+			<td align="center">Does 50 damage to all cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Barbara Seville</td>
 			<td align="center">Sound</td>
 			<td align="center">★★★</td>
-			<td align="center">Did 40 damage to all cogs</td>
+			<td align="center">Does 40 damage to all cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Al Capella *</td>
 			<td align="center">Sound</td>
 			<td align="center">★★</td>
-			<td align="center">Did 30 damage to all cogs</td>
+			<td align="center">Does 30 damage to all cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Otto Toon *</td>
 			<td align="center">Sound</td>
 			<td align="center">★</td>
-			<td align="center">Did 20 damage to all cogs</td>
+			<td align="center">Does 20 damage to all cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Bea Sharpe *</td>
 			<td align="center">Sound</td>
 			<td align="center"></td>
-			<td align="center">Did 10 damage to all cogs</td>
+			<td align="center">Does 10 damage to all cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Barnacle Bessie</td>
 			<td align="center">Drop</td>
 			<td align="center">★★★★★</td>
-			<td align="center">Did 170 damage to all unlured cogs</td>
+			<td align="center">Does 170 damage to all unlured cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Franz Neckvein</td>
 			<td align="center">Drop</td>
 			<td align="center">★★★★</td>
-			<td align="center">Did 100 damage to all unlured cogs</td>
+			<td align="center">Does 100 damage to all unlured cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Clumsy Ned</td>
 			<td align="center">Drop</td>
 			<td align="center">★★★</td>
-			<td align="center">Did 60 damage to all unlured cogs</td>
+			<td align="center">Does 60 damage to all unlured cogs</td>
 		</tr>
 		<tr>
 			<td align="center">J.S. Bark *</td>
 			<td align="center">Drop</td>
 			<td align="center">★★</td>
-			<td align="center">Did 50 damage to all unlured cogs</td>
+			<td align="center">Does 50 damage to all unlured cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Bud Erfingerz *</td>
 			<td align="center">Drop</td>
 			<td align="center">★</td>
-			<td align="center">Did 35 damage to all unlured cogs</td>
+			<td align="center">Does 35 damage to all unlured cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Anne Ville *</td>
 			<td align="center">Drop</td>
 			<td align="center"></td>
-			<td align="center">Did 20 damage to all unlured cogs</td>
+			<td align="center">Does 20 damage to all unlured cogs</td>
 		</tr>
 		<tr>
 			<td align="center">Soggy Neil</td>
 			<td align="center">Toons Hit</td>
 			<td align="center">★★★★</td>
-			<td align="center">Guaranteed all toon attacks hit for 1 round</td>
+			<td align="center">Guarantees all toon attacks hit for 1 round</td>
 		</tr>
 		<tr>
 			<td align="center">Soggy Bottom</td>
 			<td align="center">Toons Hit</td>
 			<td align="center">★★★★</td>
-			<td align="center">Guaranteed all toon attacks hit for 1 round</td>
+			<td align="center">Guarantees all toon attacks hit for 1 round</td>
 		</tr>
 		<tr>
 			<td align="center">Sticky Lou</td>
 			<td align="center">Toons Hit</td>
 			<td align="center">★★★★</td>
-			<td align="center">Guaranteed all toon attacks hit for 1 round</td>
+			<td align="center">Guarantees all toon attacks hit for 1 round</td>
 		</tr>
 		<tr>
 			<td align="center">Flim Flam</td>
 			<td align="center">Cogs Miss</td>
 			<td align="center">★★★★</td>
-			<td align="center">Guaranteed all cog attacks miss for 1 round</td>
+			<td align="center">Guarantees all cog attacks miss for 1 round</td>
 		</tr>
 		<tr>
 			<td align="center">Julius Wheezer</td>
 			<td align="center">Cogs Miss</td>
 			<td align="center">★★★★</td>
-			<td align="center">Guaranteed all cog attacks miss for 1 round</td>
+			<td align="center">Guarantees all cog attacks miss for 1 round</td>
 		</tr>
 		<tr>
 			<td align="center">Mr. Freeze</td>
 			<td align="center">Cogs Miss</td>
 			<td align="center">★★★★</td>
-			<td align="center">Guaranteed all cog attacks miss for 1 round</td>
+			<td align="center">Guarantees all cog attacks miss for 1 round</td>
 		</tr>
 		<tr>
 			<td align="center">Professor Pete</td>
 			<td align="center">Restock All</td>
 			<td align="center">★★★★★</td>
-			<td align="center">Restocked all tracks from highest level to lowest level</td>
+			<td align="center">Restocks all tracks from highest level to lowest level</td>
 		</tr>
 		<tr>
 			<td align="center">Professor Guffaw</td>
 			<td align="center">Restock Toon-Up</td>
 			<td align="center">★★★</td>
-			<td align="center">Restocked Toon-Up gags from highest level to lowest level</td>
+			<td align="center">Restocks Toon-Up gags from highest level to lowest level</td>
 		</tr>
 		<tr>
 			<td align="center">Clerk Ray</td>
 			<td align="center">Restock Trap</td>
 			<td align="center">★★★</td>
-			<td align="center">Restocked Trap gags from highest level to lowest level</td>
+			<td align="center">Restocks Trap gags from highest level to lowest level</td>
 		</tr>
 		<tr>
 			<td align="center">Doctor Drift</td>
 			<td align="center">Restock Lure</td>
 			<td align="center">★★★</td>
-			<td align="center">Restocked Lure gags from highest level to lowest level</td>
+			<td align="center">Restocks Lure gags from highest level to lowest level</td>
 		</tr>
 		<tr>
 			<td align="center">Melody Wavers</td>
 			<td align="center">Restock Sound</td>
 			<td align="center">★★★</td>
-			<td align="center">Restocked Sound gags from highest level to lowest level</td>
+			<td align="center">Restocks Sound gags from highest level to lowest level</td>
 		</tr>
 		<tr>
 			<td align="center">Baker Bridget</td>
 			<td align="center">Restock Throw</td>
 			<td align="center">★★★</td>
-			<td align="center">Restocked Throw gags from highest level to lowest level</td>
+			<td align="center">Restocks Throw gags from highest level to lowest level</td>
 		</tr>
 		<tr>
 			<td align="center">Sofie Squirt</td>
 			<td align="center">Restock Squirt</td>
 			<td align="center">★★★</td>
-			<td align="center">Restocked Squirt gags from highest level to lowest level</td>
+			<td align="center">Restocks Squirt gags from highest level to lowest level</td>
 		</tr>
 		<tr>
 			<td align="center">Shelly Seaweed</td>
 			<td align="center">Restock Drop</td>
 			<td align="center">★★★</td>
-			<td align="center">Restocked Drop gags from highest level to lowest level</td>
+			<td align="center">Restocks Drop gags from highest level to lowest level</td>
 		</tr>
 </table>
 
