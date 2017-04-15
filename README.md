@@ -474,7 +474,7 @@ A list of attack accuracy values can be seen at [Appendix C](#appendix-c).
 ## Doodle Training and Tricks <a name="doodle-t&t"></a>
 [[back to top](#contents)]
 
-### How was Doodle trick experience calculated? <a name="doodle-t&t-1"></a>
+### How is Doodle trick experience calculated? <a name="doodle-t&t-1"></a>
 
 Doodle tricks have parallels to how gags gain experience. Each time a successful trick is performed, that trick gains +5 experience points. Each trick requires 10000 experience points to fully max out. 10000 / 5 requires the Doodle to perform 2000 successful tricks, in order to max out a particular trick. To max all 7 tricks, a total of 14000 successful tricks are required.
 
@@ -482,7 +482,7 @@ Performing a successful trick increases the `aptitude` value of that trick by 0.
 
 `aptitude = trick experience / 10000`
 
-### Did Doodle tricks have base accuracy values to them? <a name="doodle-t&t-2"></a>
+### Do Doodle tricks have base accuracy values to them? <a name="doodle-t&t-2"></a>
 
 Yes, Doodle tricks have individual accuracy values for each trick. These values are used in determining the final accuracy value of the trick, referred to as `cutoff`. Below is a list of the base accuracy values for each trick. 
 
@@ -496,7 +496,7 @@ Yes, Doodle tricks have individual accuracy values for each trick. These values 
 | Dance | 0.5 |
 | Speak | 0.4 | 
 
-### How did the game determine if the Doodle would successfully perform the trick? <a name="doodle-t&t-3"></a>
+### How does the game determine if the Doodle will successfully perform the trick? <a name="doodle-t&t-3"></a>
 
 To determine if a trick will be successful or not, the following equation can be used.
 
@@ -636,7 +636,7 @@ In this case, a boot will be caught.
 # Toon-up <a name="toon-up"></a>
 [[back to top](#contents)]
 
-## Did using Toon-up have any impact on other gag's accuracy? <a name="toon-up-1"></a>
+## Does using Toon-up have any impact on other gag's accuracy? <a name="toon-up-1"></a>
 
 Yes, considering the conditions outlined in the [bonus section](#toon-atk-acc-6), Toon-up increases another gag's accuracy when one of the following is true:
 
@@ -649,7 +649,7 @@ Yes, considering the conditions outlined in the [bonus section](#toon-atk-acc-6)
 # Trap <a name="trap"></a>
 [[back to top](#contents)]
 
-## Did using Trap give Lure an accuracy boost? <a name="trap-1"></a>
+## Does using Trap give Lure an accuracy boost? <a name="trap-1"></a>
 
 Yes, Trap gags always count as a hit on the cog for the round it is used on, regardless if the Trap is actually triggered or not. If one again considers the conditions in the [bonus section](#toon-atk-acc-6), Trap met the following conditions.
 
@@ -672,7 +672,7 @@ Multiple Traps give multiple boosts, with an accuracy boost of up to +60 to the 
 - [2 Trapdoors & Small Magnet (2 targets)](http://pastebin.com/GaWL1GHT)
 - [1 TNT, 2 Trapdoors & Small Magnet (3 targets)](http://pastebin.com/JSm1Nz9S)
 
-## Did Trap provide an accuracy bonus to other gag tracks, even when not activated? <a name="trap-2"></a>
+## Does Trap provide an accuracy bonus to other gag tracks, even when not activated? <a name="trap-2"></a>
 
 Yes, Trap gives an accuracy boost to other gag tracks as well. Even when not activated, Trap always counts as a hit on the cog. It still meets the conditions given in the [bonus section](#toon-atk-acc-6), thus a +20 accuracy boost to the next gag targeting the cog. 
 
@@ -680,7 +680,7 @@ Yes, Trap gives an accuracy boost to other gag tracks as well. Even when not act
 
 - [Trapdoor & Grand Piano](http://pastebin.com/KUmPsjuS)
 
-## Did Trap's accuracy bonus and Organic Lure stack up? <a name="trap-3"></a>
+## Does Trap's accuracy bonus and Organic Lure stack up? <a name="trap-3"></a>
 
 Yes, Organic Lure and the accuracy boost Trap provides stack up. As listed in the [`AvLureBonusAccuracy`](#AvLureBonusAccuracy) chart, each Organic Lure gag gains +10 propAcc points compared to its original values. In combination with the +20 a single Trap would provide, this combines for a total of +30 overall accuracy points.
 
@@ -692,7 +692,7 @@ Yes, Organic Lure and the accuracy boost Trap provides stack up. As listed in th
 # Lure <a name="lure"></a>
 [[back to top](#contents)]
 
-## What was the impact of using multiple Lure gags? <a name="lure-1"></a>
+## What is the impact of using multiple Lure gags? <a name="lure-1"></a>
 
 When two or more Lure gags are picked, the result of the weakest is calculated first using the highest possible value for `trackExp` according to the details outlined in [its section](#toon-atk-acc-4). From here, there are two options for all subsequent Lure gags:
 
@@ -733,7 +733,7 @@ See the [section on multiple gag usage](#misc-2) for more general information.
 # V.P. <a name="vp"></a>
 [[back to top](#contents)]
 
-## Did being Lureless impact the accuracy of Lure SOS cards? <a name="vp-1"></a>
+## Does being Lureless impact the accuracy of Lure SOS cards? <a name="vp-1"></a>
 
 Yes, a value of 0 is used for `trackExp` in all Lure SOS card accuracy calculations for Lureless toons (see [Toon Attack Accuracy](#toon-atk-acc) for more information). In practice, this is only relevant for Des Traction and Dee Version, which *always* miss against level 11 and 12 cogs as seen below.
 
@@ -742,7 +742,7 @@ Level 11: atkAcc = 50 + 0 + (-50) = 0
 Level 12: atkAcc = 50 + 0 + (-55) = -5
 ```
 
-## Did being Lureless impact the number of rounds Lure SOS cards would hold for? <a name="vp-2"></a>
+## Does being Lureless impact the number of rounds Lure SOS cards would hold for? <a name="vp-2"></a>
 
 Yes, cogs are more likely to "wake up" early if the caller is Lureless. The probability associated with this event is called a cog's `wakeupChance`, which is calculated as follows:
 
@@ -788,21 +788,21 @@ b.
 - [Maxed Lure; Lil' Oldman; Level 12 cog](http://pastebin.com/pr9LVZZ8)
 - [Lureless; Lil' Oldman; Level 12 cog](http://pastebin.com/q8Q51Fm3)
 
-## How did the V.P. choose which attack to use? <a name="vp-3"></a>
+## How does the V.P. choose which attack to use? <a name="vp-3"></a>
 
-Excluding the undercarriage which has different logic (see two questions below), the V.P. had three attacks: Throw Gears, Gear Shower and Jump with usage odds of 4/6, 1/6 and 1/6 respectively. During normal mode, the V.P. chooses at random from these three.
+Excluding the undercarriage which has different logic (see two questions below), the V.P. has three attacks: Throw Gears, Gear Shower and Jump with usage odds of 4/6, 1/6 and 1/6 respectively. During normal mode, the V.P. chooses at random from these three.
 
 Following dizziness, the V.P. always uses Gear Shower.
 
-## How did the V.P. choose which toon to attack? <a name="vp-4"></a>
+## How does the V.P. choose which toon to attack? <a name="vp-4"></a>
 
 Throw Gears is the only attack which targets a specific toon and the toon is selected at random.
 
-## Was there a way to predict when the undercarriage would open? <a name="vp-5"></a>
+## Is there a way to predict when the undercarriage would open? <a name="vp-5"></a>
 
 Yes, the undercarriage opens every 9 seconds that the V.P. is not dizzy. The side it opens on and the direction of the gears are random.
 
-## Were the gag-related decreases in SOS card performance intentional? <a name="vp-6"></a>
+## Are the gag-related decreases in SOS card performance intentional? <a name="vp-6"></a>
 
 While it's impossible to give a definitive answer without insider knowledge, here's what we know:
 
@@ -821,7 +821,7 @@ While it's impossible to give a definitive answer without insider knowledge, her
 
   > ... Some of these Toons, like Professor Pete, will restock your gag supply, while others, like Clumsy Ned, will lend a hand by dropping pianos with near perfect accuracy ...
 
-## How were the SOS toons chosen?  <a name="vp-7"></a>
+## How are the SOS toons chosen?  <a name="vp-7"></a>
 
 Upon entering the elevator, the game returns a list of all VP SOS toons. The game then picks an SOS at random from that list. In other words, the stars on the SOS card do not affect the chances of it being selected.
 
@@ -830,18 +830,18 @@ A list of all SOS toons obtained in both the VP and Field Offices can be seen [h
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
 
-## How was the C.F.O. reward chosen? <a name="cfo-1"></a>
+## How is the C.F.O. reward chosen? <a name="cfo-1"></a>
 
 Both the overall type (e.g., Toon-up) and the subtype (e.g., +80) of the Unite are selected at random.
 
-## How did the C.F.O. choose which toon to attack? <a name="cfo-2"></a>
+## How does the C.F.O. choose which toon to attack? <a name="cfo-2"></a>
 
 At the start of the Crane Round, a list named `toonsToAttack` is created which contained the ID of every toon in the C.F.O. battle sorted randomly. Toons are then attacked according to this order: the toon at position 0 is attacked first and then its ID is appended to the end of the list. This cycle repeats for the duration of the battle.
 
 # C.J. <a name="cj"></a>
 [[back to top](#contents)]
 
-## How was the C.J. reward chosen? <a name="cj-1"></a>
+## How is the C.J. reward chosen? <a name="cj-1"></a>
 
 The first step in choosing a Summon was to establish a `preferredSummonType`. This is done in two steps:
 
@@ -855,15 +855,15 @@ The second step is to check for toons who already have the `preferredSummonType`
 - Give the toon the weakest possible reward, checking suits in the following order: Boss, Law, Cash, Sell.
 - If the toon has all possible Summons, give them nothing.
 
-## How did the C.J. decide when to jump? <a name="cj-2"></a>
+## How does the C.J. decide when to jump? <a name="cj-2"></a>
 
 Every 15 seconds the C.J. has an 11% chance to jump. 
 
-## How did the prosecution choose which toon to attack? <a name="cj-3"></a>
+## How does the prosecution choose which toon to attack? <a name="cj-3"></a>
 
 Every cycle, each prosecuting cog has a 50/50 chance to either attack a toon or hit the scale. If option 1 is selected, a toon is chosen at random from a list of all toons in the battle. 
 
-## How was the scale related to the jury? <a name="cj-4"></a>
+## How is the scale related to the jury? <a name="cj-4"></a>
 
 When determining how the amount of Toon jurors affects the scale, the following formula is used.
 
@@ -902,11 +902,11 @@ Initial Toon Evidence = 2700 - Initial Cog Evidence
 # C.E.O. <a name="ceo"></a>
 [[back to top](#contents)]
 
-## How did the C.E.O. choose which attack to use? <a name="ceo-1"></a>
+## How does the C.E.O. choose which attack to use? <a name="ceo-1"></a>
 
 Every 5 seconds, the C.E.O. has a 20% chance to use its Fore! attack and an 80% chance to use a directed attack.
 
-## How did the C.E.O. choose which toon(s) to attack? <a name="ceo-2"></a>
+## How does the C.E.O. choose which toon(s) to attack? <a name="ceo-2"></a>
 
 Every time a toon records a hit on the C.E.O., its ID and associated damage are added to `threatDict`, a Python dictionary which tracks the amount damage done by each toon. A golf ball hit is worth 0.1 and a Seltzer Bottle hit is worth the damage indicated in-game.
 
@@ -919,14 +919,14 @@ Once a toon is picked, an attack is chosen based on the state of the toon:
 
 After the attack is completed, the toon's damage total in `threatDict` is reduced by 25%.
 
-## How did the C.E.O. decide to continue moving or not? <a name="ceo-3"></a>
+## How does the C.E.O. decide to continue moving or not? <a name="ceo-3"></a>
 
 If the C.E.O. is moving towards a toon on a table, and that particular toon hopped off the table, `random.random()` generates a number between 0.0 and 1.0. If `random.random()` is less than 0.5, the C.E.O. will stop moving towards that table, and use his directed golf attack. Otherwise, the C.E.O. will run over the table and stop on top of it.
 
 # Fishing <a name="fishing"></a>
 [[back to top](#contents)]
 
-## Was using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod? <a name="fishing-1"></a>
+## Is using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod? <a name="fishing-1"></a>
 
 No, infact using a Twig Rod is *less* beneficial to catch light-weight Ultra Rares than a Gold Rod. In order for any rod to obtain an Ultra Rare Fish, the `rarity` value has to equal 10. Given how `rarity` is calculated ([see Fishing for more details](#fishing-main)), we can figure out the minimum `diceRoll` number necessary for Twig Rod and Gold Rod to have a `rarity` value of 10. Assume `diceRoll` = X.
 
@@ -965,7 +965,7 @@ Wall-riding is most common on Blizzard Boulevard, but it is possible on all trac
 
 No, there's no evidence that Shopkeepers had any impact on gag accuracy.
 
-## When multiple gags of the same track were used on the same cog, how was accuracy calculated? <a name="misc-2"></a>
+## When multiple gags of the same track were used on the same cog, how is accuracy calculated? <a name="misc-2"></a>
 
 The first aspect that must be understood is how toon attacks were ordered, in which there are three steps:
 
@@ -982,7 +982,7 @@ Now, we need to cover four more sub-cases:
 3. Sound gags always inherit the result of the lowest Sound gag used. 
 4. For all other tracks, if the previous gag in the particular track has the same target as the current, the current inherits the result of the previous.
 
-## Was it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-3"></a>
+## Is it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-3"></a>
 
 Yes, due to how toon attacks are ordered (see previous question), it is possible for "mismatches" to occur. Essentially, this is caused by the fact that attacks are only considered in pairs. For example, consider the following scenario with three Trapless toons who have maxed gags (1 - 3) and two level 12 cogs (A and B):
 
@@ -1128,7 +1128,7 @@ As you can see, attack mismatches give us 5 ways to win versus only 1 without th
 - [Level 12 Big Wig; Storm Cloud + Storm Cloud](http://pastebin.com/9H3u0B4H)
 - [Level 5 Bottom Feeder; Safe + Safe](http://pastebin.com/DM3tf9eg)
 
-## Did doodle tricks count as a stun in battle? <a name="misc-4"></a>
+## Do doodle tricks count as a stun in battle? <a name="misc-4"></a>
 
 Yes, Doodle tricks count as a stun in battles, provided that the trick is successful. Tricks count as their own individual track, meaning they would satisfy the conditions listed in the [bonus section](#toon-atk-acc-6).
 
@@ -1136,7 +1136,7 @@ Yes, Doodle tricks count as a stun in battles, provided that the trick is succes
 
 - [Jump & Grand Piano](http://pastebin.com/x4g9dZuZ)
 
-## Did Fires count as a stun?<a name="misc-5"></a>
+## Do Fires count as a stun?<a name="misc-5"></a>
 
 Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-target gags. Fires do not count as a stun for single target gags.
 
