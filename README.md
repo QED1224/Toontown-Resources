@@ -792,6 +792,8 @@ b.
 
 Excluding the undercarriage which has different logic (see two questions below), the V.P. has three attacks: Throw Gears, Gear Shower and Jump with usage odds of 4/6, 1/6 and 1/6 respectively. During normal mode, the V.P. chooses at random from these three.
 
+However, if no Toons are within the `nearToons` array, the VP will use his Jump attack.
+
 Following dizziness, the V.P. always uses Gear Shower.
 
 ## How does the V.P. choose which toon to attack? <a name="vp-4"></a>
@@ -836,7 +838,7 @@ Both the overall type (e.g., Toon-up) and the subtype (e.g., +80) of the Unite a
 
 ## How does the C.F.O. choose which toon to attack? <a name="cfo-2"></a>
 
-At the start of the Crane Round, a list named `toonsToAttack` is created which contained the ID of every toon in the C.F.O. battle sorted randomly. Toons are then attacked according to this order: the toon at position 0 is attacked first and then its ID is appended to the end of the list. This cycle repeats for the duration of the battle.
+At the start of the Crane Round, a list named `toonsToAttack` is created which contained the ID of every toon in the C.F.O. battle sorted randomly. Toons are then attacked according to this order: the toon at position 0 is attacked first and then its ID is appended to the end of the list. This cycle repeats for the duration of the battle. As the battle progesses, the C.F.O. will take less time to cycle thru `toonsToAttack`, eventually taking 7.84 seconds between each attack cycle. The attack cycle timer restarts at the beginning of each directed attack, when the C.F.O. begins turning towards the next targeted toon
 
 # C.J. <a name="cj"></a>
 [[back to top](#contents)]
