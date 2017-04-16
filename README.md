@@ -792,7 +792,7 @@ b.
 
 Excluding the undercarriage which has different logic (see two questions below), the V.P. has three attacks: Throw Gears, Gear Shower and Jump with usage odds of 4/6, 1/6 and 1/6 respectively. During normal mode, the V.P. chooses at random from these three.
 
-However, if no Toons are within the `nearToons` array, the VP will use his Jump attack.
+However, if no Toons are within the `nearToons` array, the VP will use his Jump attack. The radius for `nearToons` is shown in this [screenshot.](http://i.imgur.com/CocWUpG.png)
 
 Following dizziness, the V.P. always uses Gear Shower.
 
