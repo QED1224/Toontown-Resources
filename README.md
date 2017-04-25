@@ -52,6 +52,7 @@
     - [Is it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results?](#misc-3)
     - [Do doodle tricks count as a stun in battle?](#misc-4)
     - [Do Fires count as a stun?](#misc-5)
+    - [How does a cog decide to join a battle?](#misc-6)
 - [Appendix A: Cog Attack Frequencies](#appendix-a)
 	- [Sellbots](#atk-freq-sell)
 	- [Cashbots](#atk-freq-cash)
@@ -1145,6 +1146,8 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 ### Battle Simulations
 
 - [1 Fire & Hypno Goggles](http://pastebin.com/yqU1WxdX)
+
+## How does a cog decide to join a battle? <a name="misc-6"></a>
 
 # Appendix A: Cog Attack Frequencies <a name="appendix-a"></a>
 
@@ -5819,7 +5822,7 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 
 * Daffy Don and Madame Chuckle now use Bamboo Cane, instead of Juggling Cubes.
 * Clerk Will and Clerk Penny now use Quicksand, instead of Trapdoor.
-* Stinky Ned now used Big Magnet, and lures the cogs for up to a maximum of 3 rounds.
+* Stinky Ned now uses Big Magnet, and lures the cogs for up to a maximum of 3 rounds.
 * Nancy Gas is now a 4 star card, otherwise remaining unchanged.
 * Lil Oldman now uses Presentation, and lures the cogs for up to a maximum of 15 rounds.
 * Barbara Seville and Sid Sonata now use Elephant Trunk, instead of Foghorn.
