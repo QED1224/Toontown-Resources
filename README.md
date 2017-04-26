@@ -75,7 +75,7 @@
 
 ## Goals
 
-This guide started out as an attempt to answer some long-standing questions about the battle system in Disney's Toontown Online. However, it has since grown far larger than anticipated; it has answered a total of 27 questions, many of which expand beyond the battle system itself. That said, the number one goal remains the same: to offer *accurate* information about Toontown's various mechanics. Suggestions or questions about the quality of our content are always welcome.
+This guide started out as an attempt to answer some long-standing questions about the battle system in Disney's Toontown Online. However, it has since grown far larger than anticipated; it has answered a total of 28 questions, many of which expand beyond the battle system itself. That said, the number one goal remains the same: to offer *accurate* information about Toontown's various mechanics. Suggestions or questions about the quality of our content are always welcome.
 
 ## Private Servers
 
@@ -1148,6 +1148,23 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 - [1 Fire & Hypno Goggles](http://pastebin.com/yqU1WxdX)
 
 ## How does a cog decide to join a battle? <a name="misc-6"></a>
+
+To determine if a cog will join a battle or not, the game uses an array called `JCHANCE`. `JCHANCE` contains an index of probabilities for a cog joining a battle. The values for `JCHANCE` are the same in every zone.
+
+| Index # |  0 |  1 |  2  |  3  |  4  |  5  |
+|:-------:|:--:|:--:|:---:|:---:|:---:|:---:|
+|`JCHANCE`| 1  |  5 |  10 |  40 |  60 |  80 |
+
+To determine the number used for `JCHANCE`, the following formula is used.
+
+```
+(# of Toons currently in battle - # of Cogs that have joined the battle) + 2
+```
+
+Where the result given from the above formula corresponds to the index within the array.
+
+Once the game determines the `JCHANCE` probability, a random number is generated such that 0 <= X <= 99. If X is less than JCHANCE, the cog will join the battle. Otherwise, the cog will fly away. If the battle reaches a point where the index number is <= -1, no further cogs will join the battle. 
+
 
 # Appendix A: Cog Attack Frequencies <a name="appendix-a"></a>
 
