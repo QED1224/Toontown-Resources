@@ -1163,7 +1163,7 @@ To determine the number used for `JCHANCE`, the following formula is used.
 
 Where the result given from the above formula corresponds to the index within the array.
 
-Once the game determines the `JCHANCE` probability, a random number is generated such that 0 <= X <= 99. If X is less than JCHANCE, the cog will join the battle. Otherwise, the cog will fly away. If the battle reaches a point where the index number is <= -1, no further cogs will join the battle. 
+Once the game determines the `JCHANCE` probability, a random number is generated such that 0 <= X <= 99. If X is less than `JCHANCE`, the cog will join the battle. Otherwise, the cog will fly away. If the battle reaches a point where the index number is <= -1, no further cogs will join the battle. 
 
 
 # Appendix A: Cog Attack Frequencies <a name="appendix-a"></a>
