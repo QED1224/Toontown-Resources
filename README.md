@@ -69,6 +69,7 @@
 	- [Lawbots](#atk-acc-law)
 	- [Bossbots](#atk-acc-boss)
 - [Appendix D: SOS Toons](#appendix-d)
+- [Appendix E: Flower Combinations](#appendix-e)
 - [Notes](#ttr)
 
 # Introduction <a name="intro"></a>
@@ -5831,6 +5832,8 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 
 `* = This card is obtainable via Field Offices.`
 
+# Appendix E: Flower Combinations <a name="appendix-e"></a>
+
 # Notes <a name="ttr"></a>
 
 -The GlobalRarityDialBase value for fishing was lowered as part of the February 1st, 2015 update. It decreased from 4.3 to between 3.5-3.8.
@@ -5842,20 +5845,25 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 * Stinky Ned now uses Big Magnet, and lures the cogs for up to a maximum of 3 rounds.
 * Nancy Gas is now a 4 star card, otherwise remaining unchanged.
 * Lil Oldman now uses Presentation, and lures the cogs for up to a maximum of 15 rounds.
+
 * Barbara Seville and Sid Sonata now use Elephant Trunk, instead of Foghorn.
 * Clumsy Ned now uses Big Weight, instead of Grand Piano.
 * Franz Neckvein now uses Safe, instead of Grand Piano.
+
 * The Toons Hit cards were modifed as follows:
- * Sticky Lou is now a 5 star card, and guarantees that all toon attacks hit for 3 rounds.
- * Soggy Nell now guarantees that all toon attacks hit for 2 rounds.
- * Soggy Bottom is now a 3 star card, otherwise remaining unchanged.
+  * Sticky Lou is now a 5 star card, and guarantees that all toon attacks hit for 3 rounds.
+  * Soggy Nell now guarantees that all toon attacks hit for 2 rounds.
+  * Soggy Bottom is now a 3 star card, otherwise remaining unchanged.
+
 * The Cogs Miss cards were modified as follows:
- * Julius Wheezer is now a 5 star card, and guarantees that all cog attacks miss for 3 rounds.
- * Mr. Freeze now guarantees that all cog attacks miss for 2 rounds.
- * Flim Flam is now a 3 star card, otherwise remaining unchanged.
+  * Julius Wheezer is now a 5 star card, and guarantees that all cog attacks miss for 3 rounds.
+  * Mr. Freeze now guarantees that all cog attacks miss for 2 rounds.
+  * Flim Flam is now a 3 star card, otherwise remaining unchanged.
 
-
-
+* Two SOS cards have been added to the game:
+  * Rocky, a 5 star Throw SOS card. This SOS Toon uses a Wedding Cake, and deals 132 damage to all cogs. 
+  * Loopy Loopengloop, a 5 star Squirt SOS card. This SOS Toon uses a Geyser, and deals 115 damage to all cogs.
+  * These two cards do not receive Lure knockback bonus damage.
 
 
 
