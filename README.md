@@ -5790,7 +5790,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 			<td align="center">Professor Guffaw</td>
 			<td align="center">Restock Toon-Up</td>
 			<td align="center">★★★</td>
-			<td align="center">Restocks Toon-Up gags from highest level to lowest level</td>
+			<td align="center">Restocks Toon-up gags from highest level to lowest level</td>
 		</tr>
 		<tr>
 			<td align="center">Clerk Ray</td>
@@ -5840,25 +5840,36 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 
 -On the May 10th, 2016 update, several modifications were made to certain SOS cards.
 
-* Daffy Don and Madame Chuckle now use Bamboo Cane, instead of Juggling Cubes.
-* Clerk Will and Clerk Penny now use Quicksand, instead of Trapdoor.
-* Stinky Ned now uses Big Magnet, and lures the cogs for up to a maximum of 3 rounds.
-* Nancy Gas is now a 4 star card, otherwise remaining unchanged.
-* Lil Oldman now uses Presentation, and lures the cogs for up to a maximum of 15 rounds.
+* Toon-up SOS:
+  * Daffy Don now uses Bamboo Cane, instead of Juggling Cubes.
+  * Madame Chuckle now uses Bamboo Cane, instead of Juggling Cubes.
+  
+* Trap SOS:
+  * Clerk Will now uses Quicksand, instead of Trapdoor.
+  * Clerk Penny now uses Quicksand, instead of Trapdoor.
 
-* Barbara Seville and Sid Sonata now use Elephant Trunk, instead of Foghorn.
-* Clumsy Ned now uses Big Weight, instead of Grand Piano.
-* Franz Neckvein now uses Safe, instead of Grand Piano.
+* Lure SOS:
+  * Stinky Ned now uses Big Magnet, and lures the cogs for up to a maximum of 3 rounds.
+  * Nancy Gas is now a 4 star card, otherwise remaining unchanged.
+  * Lil Oldman now uses Presentation, and lures the cogs for up to a maximum of 15 rounds.
 
-* The Toons Hit cards were modifed as follows:
-  * Sticky Lou is now a 5 star card, and guarantees that all toon attacks hit for 3 rounds.
-  * Soggy Nell now guarantees that all toon attacks hit for 2 rounds.
+* Sound SOS:
+  * Barbara Seville now uses Elephant Trunk, instead of Foghorn.
+  * Sid Sonata now uses Elephant Trunk, instead of Foghorn.
+  
+* Drop SOS:
+  * Clumsy Ned now uses Big Weight, instead of Grand Piano.
+  * Franz Neckvein now uses Safe, instead of Grand Piano.
+
+* Toons Hit SOS:
   * Soggy Bottom is now a 3 star card, otherwise remaining unchanged.
+  * Soggy Nell now guarantees that all toon attacks hit for 2 rounds.
+  * Sticky Lou is now a 5 star card, and guarantees that all toon attacks hit for 3 rounds.
 
-* The Cogs Miss cards were modified as follows:
-  * Julius Wheezer is now a 5 star card, and guarantees that all cog attacks miss for 3 rounds.
-  * Mr. Freeze now guarantees that all cog attacks miss for 2 rounds.
+* Cogs Miss SOS:
   * Flim Flam is now a 3 star card, otherwise remaining unchanged.
+  * Mr. Freeze now guarantees that all cog attacks miss for 2 rounds.
+  * Julius Wheezer is now a 5 star card, and guarantees that all cog attacks miss for 3 rounds.
 
 * Two SOS cards have been added to the game:
   * Rocky, a 5 star Throw SOS card. This SOS Toon uses a Wedding Cake, and deals 132 damage to all cogs. 
