@@ -5833,6 +5833,217 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 `* = This card is obtainable via Field Offices.`
 
 # Appendix E: Flower Combinations <a name="appendix-e"></a>
+<table>
+<tr>
+			<th colspan="3"> </th>
+		</tr>
+		<tr>
+			<th>Flower Name</th>
+			<th># of Beans used</th>
+			<th>Combination</th>
+		</tr>
+		<tr>
+			<td align="center">Laff-O-Dill</td>
+			<td align="center">1</td>
+			<td align="center">Green</td>
+		</tr>
+		<tr>
+			<td align="center">Dandy Pansy</td>
+			<td align="center">1</td>
+			<td align="center">Orange</td>
+		</tr>
+		<tr>
+			<td align="center">What-in Carnation</td>
+			<td align="center">1</td>
+			<td align="center">Pink</td>
+		</tr>
+		<tr>
+			<td align="center">School Daisy</td>
+			<td align="center">1</td>
+			<td align="center">Yellow</td>
+		</tr>
+		<tr>
+			<td align="center">Lily-of-the-Alley</td>
+			<td align="center">1</td>
+			<td align="center">Cyan</td>
+		</tr>
+		<tr>
+			<td align="center">Daffy Dill</td>
+			<td align="center">2</td>
+			<td align="center">Green, Cyan</td>
+		</tr>
+		<tr>
+			<td align="center">Chim Pansy</td>
+			<td align="center">2</td>
+			<td align="center">Orange, Cyan</td>
+		</tr>
+		<tr>
+			<td align="center">Instant Carnation</td>
+			<td align="center">2</td>
+			<td align="center">Pink, Yellow</td>
+		</tr>
+		<tr>
+			<td align="center">Lazy Daisy</td>
+			<td align="center">2</td>
+			<td align="center">Yellow, Red</td>
+		</tr>
+		<tr>
+			<td align="center">Lily Pad</td>
+			<td align="center">2</td>
+			<td align="center">Cyan, Green</td>
+		</tr>
+		<tr>
+			<td align="center">Summer's Last Rose</td>
+			<td align="center">3</td>
+			<td align="center">Red, Red, Red</td>
+		</tr>
+		<tr>
+			<td align="center">Potsen Pansy</td>
+			<td align="center">3</td>
+			<td align="center">Orange, Red, Red</td>
+		</tr>
+		<tr>
+			<td align="center">Hybrid Carnation</td>
+			<td align="center">3</td>
+			<td align="center">Pink, Red, Red</td>
+		</tr>
+		<tr>
+			<td align="center">Midsummer Daisy</td>
+			<td align="center">3</td>
+			<td align="center">Yellow, Red, Green</td>
+		</tr>
+		<tr>
+			<td align="center">Tiger Lily</td>
+			<td align="center">3</td>
+			<td align="center">Cyan, Orange, Orange</td>
+		</tr>
+		<tr>
+			<td align="center">Corn Rose</td>
+			<td align="center">4</td>
+			<td align="center">Red, Yellow, Orange, Yellow</td>
+		</tr>
+		<tr>
+			<td align="center">Giraff-O-Dill</td>
+			<td align="center">4</td>
+			<td align="center">Green, Pink, Yellow, Yellow</td>
+		</tr>
+		<tr>
+			<td align="center">Marzi Pansy</td>
+			<td align="center">4</td>
+			<td align="center">Orange, Yellow, Yellow, Red</td>
+		</tr>
+		<tr>
+			<td align="center">Freshasa Daisy</td>
+			<td align="center">4</td>
+			<td align="center">Yellow, Red, Cyan, Orange</td>
+		</tr>
+		<tr>
+			<td align="center">Livered Lily</td>
+			<td align="center">4</td>
+			<td align="center">Cyan, Orange, Orange, Pink</td>
+		</tr>
+		<tr>
+			<td align="center">Time and a Half-O-Dill</td>
+			<td align="center">5</td>
+			<td align="center">Green, Pink, Blue, Pink, Pink</td>
+		</tr>
+		<tr>
+			<td align="center">Onelip</td>
+			<td align="center">5</td>
+			<td align="center">Purple, Red, Blue, Purple, Purple</td>
+		</tr>
+		<tr>
+			<td align="center">Side Carnation</td>
+			<td align="center">5</td>
+			<td align="center">Pink, Red, Green, Blue, Red</td>
+		</tr>
+		<tr>
+			<td align="center">Whoopsie Daisy</td>
+			<td align="center">5</td>
+			<td align="center">Yellow, Red, Orange, Orange, Orange</td>
+		</tr>
+		<tr>
+			<td align="center">Chili Lily</td>
+			<td align="center">5</td>
+			<td align="center">Cyan, Red, Red, Red, Red</td>
+		</tr>
+		<tr>
+			<td align="center">Tinted Rose</td>
+			<td align="center">6</td>
+			<td align="center">Red, Pink, Orange, Red, Orange, Pink</td>
+		</tr>
+		<tr>
+			<td align="center">Smarty Pansy</td>
+			<td align="center">6</td>
+			<td align="center">Orange, Pink, Pink, Orange, Blue, Pink</td>
+		</tr>
+		<tr>
+			<td align="center">Twolip</td>
+			<td align="center">6</td>
+			<td align="center">Purple, Red, Red, Red, Purple, Purple</td>
+		</tr>
+		<tr>
+			<td align="center">Upsy Daisy</td>
+			<td align="center">6</td>
+			<td align="center">Yellow, Blue, Cyan, Purple, Blue, Blue</td>
+		</tr>
+		<tr>
+			<td align="center">Silly Lily</td>
+			<td align="center">6</td>
+			<td align="center">Cyan, Red, Purple, Purple, Purple, Purple</td>
+		</tr>
+		<tr>
+			<td align="center">Stinking Rose</td>
+			<td align="center">7</td>
+			<td align="center">Red, Cyan, Orange, Pink, Purple, Cyan, Cyan</td>
+		</tr>
+		<tr>
+			<td align="center">Cart Petunia</td>
+			<td align="center">7</td>
+			<td align="center">Blue, Purple, Blue, Purple, Cyan, Blue, Blue</td>
+		</tr>
+		<tr>
+			<td align="center">Model Carnation</td>
+			<td align="center">7</td>
+			<td align="center">Pink, Green, Green, Green, Green, Yellow, Green</td>
+		</tr>
+		<tr>
+			<td align="center">Crazy Daisy</td>
+			<td align="center">7</td>
+			<td align="center">Yellow, Green, Red, Orange, Green, Green, Green</td>
+		</tr>
+		<tr>
+			<td align="center">Indubitab Lily</td>
+			<td align="center">7</td>
+			<td align="center">Cyan, Purple, Cyan, Blue, Cyan, Blue, Blue</td>
+		</tr>
+		<tr>
+			<td align="center">Istilla Rose</td>
+			<td align="center">8</td>
+			<td align="center">Red, Blue, Purple, Purple, Blue, Blue, Pink, Blue</td>
+		</tr>
+		<tr>
+			<td align="center">Threelip</td>
+			<td align="center">8</td>
+			<td align="center">Purple, Yellow, Yellow, Purple, Yellow, Orange, Purple, Yellow</td>
+		</tr>
+		<tr>
+			<td align="center">Platoonia</td>
+			<td align="center">8</td>
+			<td align="center">Blue, Pink, Pink, Blue, Red, Orange, Yellow, Yellow</td>
+		</tr>
+		<tr>
+			<td align="center">Hazy Daisy</td>
+			<td align="center">8</td>
+			<td align="center">Yellow, Blue, Purple, Cyan, Purple, Red, Orange, Purple</td>
+		</tr>
+		<tr>
+			<td align="center">Dilly Lily</td>
+			<td align="center">8</td>
+			<td align="center">Cyan, Blue, Yellow, Yellow, Cyan, Blue, Yellow, Yellow</td>
+		</tr>
+</table>
+
 
 # Notes <a name="ttr"></a>
 
