@@ -6,7 +6,14 @@
     - [Cog Attack Accuracy](#cog-atk-acc)
     - [Doodle Training and Tricks](#doodle-t&t)
     - [Fishing](#fishing-main)
-    - [Toontasks](#toontasks-main)
+- [Toontasks](#toontasks-main)
+    - [Toontask Item Recovery Rates](#questrates)
+    - [Toontown Central](#ttc-rates)
+    - [Donald's Dock](#dd-rates)
+    - [Daisy's Garden](#dg-rates)
+    - [Minnie's Melodyland](#mml-rates)
+    - [The Brrrgh](#tb-rates)
+    - [Donald's Dreamland](#ddl-rates)
 - [Toon-up](#toon-up)
     - [Does using Toon-up have any impact on other gag's damage or accuracy?](#toon-up-1)
 - [Trap](#trap)
@@ -634,6 +641,49 @@ In this case, a boot will be caught.
 
 ## Toontasks <a name="toontasks-main"></a>
 [[back to top](#contents)]
+
+# Toontask Item Recovery Rates <a name="questrates"></a>
+
+Every Toontask that requires the player to recover an item, either from a Cog, or from Fishing, has an assigned difficulty level for recovering the item. The difficulty variables are written as `VeryEasy`, `Easy`, `Medium`, `Hard`, and `VeryHard`. A table below shows the associated probability with each variable.
+
+|   Difficulty     | Percentage | 
+|:----------------:|:----------:|
+| `VeryEasy`       | 100        | 
+| `Easy`           | 75         |
+| `Medium`         | 50         |
+| `Hard`           | 25         |
+| `VeryHard`       | 20         |
+
+For item recovery tasks associated with Cogs, each time the condition for the item recovery is fulfilled, another probability roll for the item is added. 
+
+For item recovery tasks associated with Fishing, if the player rolls QuestItem on a successful cast ([see Fishing for more details](#fishing-main)), the following formula is used to determine if the player will recover the item or not.
+
+```python
+   questItemFound = False
+   minChance = questClass.getPercentChance() 
+   chance = random.randint(minChance - 40, 100)
+   if chance <= minChance:
+       questItemFound = True
+```
+
+Where minChance is the recovery rate of the required item.
+
+A list of item recovery tasks and their associated percentages can be seen below.
+
+# Toontown Central <a name="ttc-rates"></a>
+
+# Donald's Dock <a name="dd-rates"></a>
+
+# Daisy's Garden <a name="dg-rates"></a>
+
+# Minnie's Melodyland <a name="mml-rates"></a>
+
+# The Brrrgh <a name="tb-rates"></a>
+
+# Donald's Dreamland <a name="ddl-rates"></a>
+
+
+
 
 # Toon-up <a name="toon-up"></a>
 [[back to top](#contents)]
