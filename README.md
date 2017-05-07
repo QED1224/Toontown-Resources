@@ -550,6 +550,8 @@ Expected Laff = cutoff * Laff Given
 ```
 As you can see, maxed Play Dead and Rollover are the most efficient tricks. Therefore Play Dead is likely the only trick worth training, since it maximizes the work-reward ratio.
 
+### How does the game determine if a Doodle will become tired after performing a trick? <a name="doodle-t&t-4"></a>
+
 ## Fishing <a name="fishing-main"></a>
 [[back to top](#contents)]
 
@@ -890,7 +892,7 @@ Both the overall type (e.g., Toon-up) and the subtype (e.g., +80) of the Unite a
 
 ## How does the C.F.O. choose which toon to attack? <a name="cfo-2"></a>
 
-At the start of the Crane Round, a list named `toonsToAttack` is created which contained the ID of every toon in the C.F.O. battle sorted randomly. Toons are then attacked according to this order: the toon at position 0 is attacked first and then its ID is appended to the end of the list. This cycle repeats for the duration of the battle. As the battle progesses, the C.F.O. will take less time to cycle thru `toonsToAttack`, eventually taking 7.84 seconds between each attack cycle. The attack cycle timer restarts at the beginning of each directed attack, when the C.F.O. begins turning towards the next targeted toon
+At the start of the Crane Round, a list named `toonsToAttack` is created which contained the ID of every toon in the C.F.O. battle sorted randomly. Toons are then attacked according to this order: the toon at position 0 is attacked first and then its ID is appended to the end of the list. This cycle repeats for the duration of the battle. As the battle progesses, the C.F.O. will take less time to cycle thru `toonsToAttack`, eventually taking 7.84 seconds between each attack cycle. The attack cycle timer restarts at the beginning of each directed attack, when the C.F.O. begins turning towards the next targeted toon.
 
 # C.J. <a name="cj"></a>
 [[back to top](#contents)]
