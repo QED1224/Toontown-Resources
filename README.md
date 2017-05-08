@@ -595,7 +595,7 @@ Each Doodle has a threshold for when certain emotions will activate. Below is an
   setAnger: (400)
 ```
 
-As seen here, the Doodle's `setFatiugeThreshold` = 7809. Each time a Doodle performs a successful trick, `setFatigue` will increase. To determine how much `setFatigue` will increase after each trick, the following equation can be used. 
+As seen here, the Doodle's `setFatigueThreshold` = 7809. Each time a Doodle performs a successful trick, `setFatigue` will increase. To determine how much `setFatigue` will increase after each trick, the following equation can be used. 
 
 ```
 setFatigue = (MinTrickFatigue + ((MaxTrickFatigue - MinTrickFatigue) * aptitude))
