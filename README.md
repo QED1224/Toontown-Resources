@@ -549,6 +549,48 @@ Expected Laff = cutoff * Laff Given
 ```
 As you can see, maxed Play Dead and Rollover are the most efficient tricks. Therefore Play Dead is likely the only trick worth training, since it maximizes the work-reward ratio.
 
+### How does the game determine if a Doodle will become tired after performing a trick? <a name="doodle-t&t-4"></a>
+
+Each Doodle has a threshold for when certain emotions will activate. Below is an example of a Doodle purchased from Donald's Dreamland.
+
+```python
+fields:
+setOwnerId: (100000014)
+setPetName: ("Yukon")
+setTraitSeed: (1801515691)
+setSafeZone: (9000)
+setForgetfulness: (926)
+setBoredomThreshold: (8323)
+setRestlessnessThreshold: (8352)
+setPlayfulnessThreshold: (1503)
+setLonelinessThreshold: (8134)
+setSadnessThreshold: (7954)
+setFatigueThreshold: (7809)
+setHungerThreshold: (7805)
+setConfusionThreshold: (8129)
+setExcitementThreshold: (1646)
+setAngerThreshold: (8392)
+setSurpriseThreshold: (8239)
+setAffectionThreshold: (1963)
+```
+
+As seen here, the Doodle's `setFatigueThreshold` = 7809. Each time a Doodle performs a successful trick, the `setFatigue` value will increase. To determine how much `setFatigue` will increase after each trick, the following equation can be used. 
+
+```
+setFatigue = (MaxTrickFatigue + ((MinTrickFatigue - MaxTrickFatigue) * aptitude))
+```
+
+Where `MinTrickFatigue` = 0.1 and `MaxTrickFatigue` = 0.65. When the Doodle's `setFatigue` is >= `setFatigueThreshold` / 10000 rounded down, the Doodle will become tired. Consider the following example, where a hypothetical Doodle has a `setFatigueThreshold` of 8530, and performs a trick with an `aptitude` of 0.6.
+
+```python
+setFatigueThreshold = 8530 / 10000 = 0.853
+setFatigue = (0.65 + ((0.1 - 0.65) * 0.6))
+setFatigue = (0.65 + (-0.55 * 0.6))
+setFatigue = (0.65 + (-0.33))
+setFatigue = (0.32)
+0.32 >= 0.853? False
+```
+
 ### Do doodle tricks count as a stun in battle? <a name="doodle-t&t-5"></a>
 
 Yes, Doodle tricks count as a stun in battles, provided that the trick is successful. Tricks count as their own individual track, meaning they would satisfy the conditions listed in the [bonus section](#toon-atk-acc-6).
