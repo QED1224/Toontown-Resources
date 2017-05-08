@@ -57,9 +57,8 @@
     - [Do some Shopkeepers sell more accurate gags?](#misc-1)
     - [When multiple gags of the same track are used on the same cog, how is accuracy calculated?](#misc-2)
     - [Is it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results?](#misc-3)
-    - [Do doodle tricks count as a stun in battle?](#misc-4)
-    - [Do Fires count as a stun?](#misc-5)
-    - [How does a cog decide to join a battle?](#misc-6)
+    - [Do Fires count as a stun?](#misc-4)
+    - [How does a cog decide to join a battle?](#misc-5)
 - [Appendix A: Cog Attack Frequencies](#appendix-a)
 	- [Sellbots](#atk-freq-sell)
 	- [Cashbots](#atk-freq-cash)
@@ -551,6 +550,66 @@ Expected Laff = cutoff * Laff Given
 As you can see, maxed Play Dead and Rollover are the most efficient tricks. Therefore Play Dead is likely the only trick worth training, since it maximizes the work-reward ratio.
 
 ### How does the game determine if a Doodle will become tired after performing a trick? <a name="doodle-t&t-4"></a>
+
+Each Doodle has a threshold for when certain emotions will activate. Below is an example of a Doodle purchased from Donald's Dreamland.
+
+```python
+ fields:
+  setOwnerId: (100000014)
+  setPetName: ("Yukon")
+  setTraitSeed: (1801515691)
+  setSafeZone: (9000)
+  setForgetfulness: (926)
+  setBoredomThreshold: (8323)
+  setRestlessnessThreshold: (8352)
+  setPlayfulnessThreshold: (1503)
+  setLonelinessThreshold: (8134)
+  setSadnessThreshold: (7954)
+  setFatigueThreshold: (7809)
+  setHungerThreshold: (7805)
+  setConfusionThreshold: (8129)
+  setExcitementThreshold: (1646)
+  setAngerThreshold: (8392)
+  setSurpriseThreshold: (8239)
+  setAffectionThreshold: (1963)
+  setHead: (-1)
+  setEars: (3)
+  setNose: (-1)
+  setTail: (-1)
+  setBodyTexture: (4)
+  setColor: (6)
+  setColorScale: (0)
+  setEyeColor: (4)
+  setGender: (0)
+  setLastSeenTimestamp: (0)
+  setBoredom: (0)
+  setRestlessness: (0)
+  setPlayfulness: (899)
+  setLoneliness: (0)
+  setSadness: (500)
+  setAffection: (587)
+  setHunger: (0)
+  setConfusion: (50)
+  setExcitement: (998)
+  setFatigue: (637)
+  setAnger: (400)
+```
+
+As seen here, the Doodle's `setFatiugeThreshold` = 7809. Each time a Doodle performs a successful trick, `setFatigue` will increase. To determine how much `setFatigue` will increase after each trick, the following equation can be used. 
+
+```
+setFatigue = (MinTrickFatigue + ((MaxTrickFatigue - MinTrickFatigue) * aptitude))
+```
+
+Where `MinTrickFatigue` = 0.1 and `MaxTrickFatigue` = 0.65. When the Doodle's `setFatigue` is >= `setFatigueThreshold` / 10 rounded down, the Doodle will become tired.
+
+### Do doodle tricks count as a stun in battle? <a name="doodle-t&t-5"></a>
+
+Yes, Doodle tricks count as a stun in battles, provided that the trick is successful. Tricks count as their own individual track, meaning they would satisfy the conditions listed in the [bonus section](#toon-atk-acc-6).
+
+## Battle Simulations
+
+- [Jump & Grand Piano](http://pastebin.com/x4g9dZuZ)
 
 ## Fishing <a name="fishing-main"></a>
 [[back to top](#contents)]
@@ -1174,7 +1233,7 @@ OR
 ```
 As you can see, attack mismatches give us 5 ways to win versus only 1 without them. With the above in mind, we can conclude that attack mismatches should be preferred in any of the following scenarios.
 
-- If either gag iss capable of defeating the given cog in one round.
+- If either gag is capable of defeating the given cog in one round.
 - Assuming maxed gags, when any combination of Throw and Squirt is used.
 
 ### Battle Simulations
@@ -1184,15 +1243,7 @@ As you can see, attack mismatches give us 5 ways to win versus only 1 without th
 - [Level 12 Big Wig; Storm Cloud + Storm Cloud](http://pastebin.com/9H3u0B4H)
 - [Level 5 Bottom Feeder; Safe + Safe](http://pastebin.com/DM3tf9eg)
 
-## Do doodle tricks count as a stun in battle? <a name="misc-4"></a>
-
-Yes, Doodle tricks count as a stun in battles, provided that the trick is successful. Tricks count as their own individual track, meaning they would satisfy the conditions listed in the [bonus section](#toon-atk-acc-6).
-
-### Battle Simulations
-
-- [Jump & Grand Piano](http://pastebin.com/x4g9dZuZ)
-
-## Do Fires count as a stun?<a name="misc-5"></a>
+## Do Fires count as a stun?<a name="misc-4"></a>
 
 Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-target gags. Fires do not count as a stun for single target gags.
 
@@ -1200,7 +1251,7 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 
 - [1 Fire & Hypno Goggles](http://pastebin.com/yqU1WxdX)
 
-## How does a cog decide to join a battle? <a name="misc-6"></a>
+## How does a cog decide to join a battle? <a name="misc-5"></a>
 
 To determine if a cog will join a battle or not, the game uses an array called `JCHANCE`. `JCHANCE` contains an index of probabilities for a cog joining a battle. The values for `JCHANCE` are the same in every zone.
 
