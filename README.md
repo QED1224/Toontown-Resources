@@ -549,60 +549,6 @@ Expected Laff = cutoff * Laff Given
 ```
 As you can see, maxed Play Dead and Rollover are the most efficient tricks. Therefore Play Dead is likely the only trick worth training, since it maximizes the work-reward ratio.
 
-### How does the game determine if a Doodle will become tired after performing a trick? <a name="doodle-t&t-4"></a>
-
-Each Doodle has a threshold for when certain emotions will activate. Below is an example of a Doodle purchased from Donald's Dreamland.
-
-```python
- fields:
-  setOwnerId: (100000014)
-  setPetName: ("Yukon")
-  setTraitSeed: (1801515691)
-  setSafeZone: (9000)
-  setForgetfulness: (926)
-  setBoredomThreshold: (8323)
-  setRestlessnessThreshold: (8352)
-  setPlayfulnessThreshold: (1503)
-  setLonelinessThreshold: (8134)
-  setSadnessThreshold: (7954)
-  setFatigueThreshold: (7809)
-  setHungerThreshold: (7805)
-  setConfusionThreshold: (8129)
-  setExcitementThreshold: (1646)
-  setAngerThreshold: (8392)
-  setSurpriseThreshold: (8239)
-  setAffectionThreshold: (1963)
-  setHead: (-1)
-  setEars: (3)
-  setNose: (-1)
-  setTail: (-1)
-  setBodyTexture: (4)
-  setColor: (6)
-  setColorScale: (0)
-  setEyeColor: (4)
-  setGender: (0)
-  setLastSeenTimestamp: (0)
-  setBoredom: (0)
-  setRestlessness: (0)
-  setPlayfulness: (899)
-  setLoneliness: (0)
-  setSadness: (500)
-  setAffection: (587)
-  setHunger: (0)
-  setConfusion: (50)
-  setExcitement: (998)
-  setFatigue: (637)
-  setAnger: (400)
-```
-
-As seen here, the Doodle's `setFatigueThreshold` = 7809. Each time a Doodle performs a successful trick, `setFatigue` will increase. To determine how much `setFatigue` will increase after each trick, the following equation can be used. 
-
-```
-setFatigue = (MinTrickFatigue + ((MaxTrickFatigue - MinTrickFatigue) * aptitude))
-```
-
-Where `MinTrickFatigue` = 0.1 and `MaxTrickFatigue` = 0.65. When the Doodle's `setFatigue` is >= `setFatigueThreshold` / 10 rounded down, the Doodle will become tired.
-
 ### Do doodle tricks count as a stun in battle? <a name="doodle-t&t-5"></a>
 
 Yes, Doodle tricks count as a stun in battles, provided that the trick is successful. Tricks count as their own individual track, meaning they would satisfy the conditions listed in the [bonus section](#toon-atk-acc-6).
