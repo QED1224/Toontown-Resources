@@ -893,7 +893,7 @@ b.
 
 Excluding the undercarriage which has different logic (see two questions below), the V.P. has three attacks: Throw Gears, Gear Shower and Jump with usage odds of 4/6, 1/6 and 1/6 respectively. During normal mode, the V.P. chooses at random from these three.
 
-However, if no Toons are within the `nearToons` array, the VP will use his Jump attack. The radius for `nearToons` is shown in the following screenshot:
+However, if no Toons are within the `nearToons` array, the V.P. will use his Jump attack. The radius for `nearToons` is shown in the following screenshot:
 
 <p align="center">
   <img src="http://i.imgur.com/CocWUpG.png" width="300" height="300">
@@ -930,9 +930,9 @@ While it's impossible to give a definitive answer without insider knowledge, her
 
 ## How are the SOS toons chosen?  <a name="vp-7"></a>
 
-Upon entering the elevator, the game returns a list of all VP SOS toons. The game then picks an SOS at random from that list. In other words, the stars on the SOS card do not affect the chances of it being selected.
+Upon entering the elevator, the game returns a list of all V.P. SOS toons. The game then picks an SOS at random from that list. In other words, the stars on the SOS card do not affect the chances of it being selected.
 
-A list of all SOS toons obtained in both the VP and Field Offices can be seen [here](#appendix-d).
+A list of all SOS toons obtained in both the V.P. and Field Offices can be seen [here](#appendix-d).
 
 # C.F.O. <a name="cfo"></a>
 [[back to top](#contents)]
