@@ -6182,8 +6182,6 @@ Once the game determines the `JCHANCE` probability, a random number is generated
   * Loopy Loopengloop, a 5 star Squirt SOS card. This SOS Toon uses a Geyser, and deals 115 damage to all cogs.
   * These two cards do not receive Lure knockback bonus damage.
 
-
-
-
+-On the May 16th, 2017 update, the C.E.O. now attacks in a randomly scheduled order. It is unknown what changes this entails to how the C.E.O. will use his attacks, or how it will determine which Toons to target.
 
 
