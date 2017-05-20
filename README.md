@@ -43,6 +43,7 @@
     - [How does the C.J. decide when to jump?](#cj-2)
     - [How does the prosecution choose which toon to attack?](#cj-3)
     - [How is the scale related to the jury?](#cj-4)
+    - [How long can it take a Cog juror to take over a seat?](#cj-5)
 - [C.E.O.](#ceo)
     - [How does the C.E.O. choose which attack to use?](#ceo-1)
     - [How does the C.E.O. choose which toon to attack?](#ceo-2)
@@ -1007,6 +1008,32 @@ Initial Cog Evidence = 1894 - 68 * (# toons seated)
 
 Initial Toon Evidence = 2700 - Initial Cog Evidence
 ```
+
+## How long can it take a Cog juror to take over a seat? <a name="cj-5"></a>
+
+There are two separate functions that determine how long it will take a Cog juror to occupy a seat. They are `requestToonJuror` and `requestEmptyJuror`. Both functions are shown below.
+
+```python
+ def requestToonJuror(self):
+    self.b_setState('ToonJuror')
+    if self.changeToCogTask == None:
+        if self.startCogFlyTask == None:
+            delayTime = random.randrange(9, 19)
+            self.startCogFlyTask = taskMgr.doMethodLater(delayTime, self.cogFlyAndSit, self.uniqueName('startCogFlyTask'))
+    return
+
+ def requestEmptyJuror(self):
+    self.b_setState('EmptyJuror')
+    delayTime = random.randrange(1, 20)
+    self.startCogFlyTask = taskMgr.doMethodLater(delayTime, self.cogFlyAndSit, self.uniqueName('startCogFlyTask'))
+```
+
+`requestToonJuror` is called as soon as a Toon juror takes over a seat. Subsequently, `delayTime` generates a random number such that 9 <= `delayTime` <= 19. This number is the amount of time it will take for a Cog juror to begin flying towards the occupied seat, in seconds. 
+
+`requestEmptyJuror` is called as soon as the cannon round begins. `delayTime` generates a random number such that 1 <= `delayTime` <= 20. This number is the amount of time it will take for a Cog Juror to being flying towards an empty seat, in seconds.
+
+Once `delayTime` has passed for any particular Cog juror, it will take 10 seconds for a Cog to actually fly down to the targeted jury seat. Therefore, it will take a Cog juror anywhere between 19 to 29 seconds to take over an already occupied seat, and 11 to 30 seconds to take over an unoccupied seat.
+
 
 # C.E.O. <a name="ceo"></a>
 [[back to top](#contents)]
