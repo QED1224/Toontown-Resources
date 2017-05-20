@@ -490,6 +490,8 @@ Performing a successful trick increases the `aptitude` value of that trick by 0.
 
 `aptitude = trick experience / 10000`
 
+Note: A Doodle will *not* gain any `aptitude` points if it uses a trick in battle while it is under the effects of a Toons Hit SOS card.
+
 ### Do Doodle tricks have base accuracy values to them? <a name="doodle-t&t-2"></a>
 
 Yes, Doodle tricks have individual accuracy values for each trick. These values are used in determining the final accuracy value of the trick, referred to as `cutoff`. Below is a list of the base accuracy values for each trick. 
