@@ -13,3 +13,9 @@ def doDrift(curValue, timeToMedian, dt = float(dt)):
 ```
 
 -Credit to Yumeko for help with Doodle code and testing
+
+May 21st 2017
+
+-Need to add logfile for Cog total damages
+-Need to clarify variance on doodles in estate
+-Need to actually add list of all toontask recovery rates
