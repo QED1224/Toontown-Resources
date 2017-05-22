@@ -476,31 +476,36 @@ If neither of the above are true, the following algorithm is used to select a to
 An example of the above process can be seen in the following.
 
 ```
-:BattleCalculatorAI(debug): Final Toon attack: [100000003L, 4, 3, 401003853, [27.0, -1], 0, 0, [-1, -1], 0, 0]
-:BattleCalculatorAI(debug): Final Toon attack: [100000002L, 5, 4, 401003853, [30.0, -1], 0, 0, [-1, -1], 0, 0]
+:BattleCalculatorAI(debug): Attack [100000003L, 3, 3, 0, [16.0, -1], 0, 0, [-1, -1], 0, 0] has hit
+:BattleCalculatorAI(debug): 401003878: suit takes 21.0 damage
+:BattleCalculatorAI(debug): Attack [100000002L, 5, 3, 401003878, [21.0, -1], 0, 0, [-1, -1], 0, 0] has hit
+:BattleCalculatorAI(debug): Final Toon attack: [100000003L, 3, 3, 0, [16.0, -1], 0, 0, [-1, -1], 0, 0]
+:BattleCalculatorAI(debug): Final Toon attack: [100000002L, 5, 3, 401003878, [21.0, -1], 0, 0, [-1, -1], 0, 0]
 :BattleCalculatorAI(debug): __updateLureTimeouts()
 :BattleCalculatorAI(debug): Lured suits: {}
 :BattleCalculatorAI(debug): Lured suits: {}
-:SuitBattleGlobals(debug): pickSuitAttack: rolled 76
-:SuitBattleGlobals(debug): picking attack 2
-:BattleCalculatorAI(debug): randNum chance = 24
-:BattleCalculatorAI(debug): randNum = 24 
-:BattleCalculatorAI(debug): totalDamage = 30.0
-:BattleCalculatorAI(debug): totalDamage = 27.0
-:BattleCalculatorAI(debug): Damages = [52.63157894736842, 47.368421052631575]
-:SuitBattleGlobals(debug): randNum for count list = 92
+:SuitBattleGlobals(debug): pickSuitAttack: rolled 21
+:SuitBattleGlobals(debug): picking attack 0
+:BattleCalculatorAI(debug): randNum chance = 36
+:BattleCalculatorAI(debug): randNum = 36
+:BattleCalculatorAI(debug): totalDamage for toon # 100000002 = 21.0
+:BattleCalculatorAI(debug): totalDamage for toon # 100000003 = 16.0
+:BattleCalculatorAI(debug): Toon # 100000002 has contributed 56.7567567568 percent of damage total
+:BattleCalculatorAI(debug): Toon # 100000003 has contributed 43.2432432432 percent of damage total
+:BattleCalculatorAI(debug): Damages = [56.75675675675676, 43.24324324324324]
+:SuitBattleGlobals(debug): randNum for count list = 93
 :SuitBattleGlobals(debug): Index = 0
-:SuitBattleGlobals(debug): Count = 52.6315789474
-:SuitBattleGlobals(debug): randNum of 92 is >= count of 52.6315789474, skipping over toon at index # 0
+:SuitBattleGlobals(debug): Count = 56.7567567568
+:SuitBattleGlobals(debug): randNum of 93 is >= count of 56.7567567568, skipping over toon at index # 0
 :SuitBattleGlobals(debug): Index = 1
 :SuitBattleGlobals(debug): Count = 100.0
-:SuitBattleGlobals(debug): randNum of 92 is < count of 100.0, attacking toon at index # 1
+:SuitBattleGlobals(debug): randNum of 93 is < count of 100.0, attacking toon at index # 1
 :BattleCalculatorAI(debug): Suit attacking back at toon 100000003
 :BattleCalculatorAI(debug): Suit attack is single target
-:BattleCalculatorAI(debug): Suit attack rolled 57 to hit with an accuracy of 85 (attackAcc: 85 suitAcc: 55)
+:BattleCalculatorAI(debug): Suit attack rolled 10 to hit with an accuracy of 75 (attackAcc: 75 suitAcc: 40)
 :BattleCalculatorAI(debug): Suit attack is single target
-:BattleCalculatorAI(debug): Toon 100000003 takes 15 damage
-:BattleCalculatorAI(debug): Toon 100000003 now has 122 health
+:BattleCalculatorAI(debug): Toon 100000003 takes 12 damage
+:BattleCalculatorAI(debug): Toon 100000003 now has 101 health
 ```
 
 `totalDamage` and `dmgs` are reset every round.
