@@ -78,6 +78,7 @@
 - [Appendix D: SOS Toons](#appendix-d)
 - [Appendix E: Flower Combinations](#appendix-e)
 - [Notes](#ttr)
+- [Credits](#credit)
 
 # Introduction <a name="intro"></a>
 
@@ -459,7 +460,7 @@ So, for any cog, the probability that a given attack will be chosen is equal to 
 Each active cog uses to following process to determine its target(s).
 
 - If the selected cog attack is a group attack, all active toons are attacked (see previous section).
-- If the current cog hasn't taken any damage or `randNum` is greater than 75, a toon is selected at random.
+- If the current cog hasn't taken any damage or `randNum` is >= 75, a toon is selected at random.
 
 If neither of the above are true, the following algorithm is used to select a toon:
 
@@ -471,6 +472,36 @@ If neither of the above are true, the following algorithm is used to select a to
     - if `randNum` is less than `count`, an integer representing the number of completed iterations is returned (starting at 0). 
     - if `randNum` is greater than or equal to `count`, the loop continued.
 6. If no toon is found by the above, a toon is selected at random.
+
+An example of the above process can be seen in the following.
+
+```
+:BattleCalculatorAI(debug): Final Toon attack: [100000003L, 4, 3, 401003853, [27.0, -1], 0, 0, [-1, -1], 0, 0]
+:BattleCalculatorAI(debug): Final Toon attack: [100000002L, 5, 4, 401003853, [30.0, -1], 0, 0, [-1, -1], 0, 0]
+:BattleCalculatorAI(debug): __updateLureTimeouts()
+:BattleCalculatorAI(debug): Lured suits: {}
+:BattleCalculatorAI(debug): Lured suits: {}
+:SuitBattleGlobals(debug): pickSuitAttack: rolled 76
+:SuitBattleGlobals(debug): picking attack 2
+:BattleCalculatorAI(debug): randNum chance = 24
+:BattleCalculatorAI(debug): randNum = 24 
+:BattleCalculatorAI(debug): totalDamage = 30.0
+:BattleCalculatorAI(debug): totalDamage = 27.0
+:BattleCalculatorAI(debug): Damages = [52.63157894736842, 47.368421052631575]
+:SuitBattleGlobals(debug): randNum for count list = 92
+:SuitBattleGlobals(debug): Index = 0
+:SuitBattleGlobals(debug): Count = 52.6315789474
+:SuitBattleGlobals(debug): randNum of 92 is >= count of 52.6315789474, skipping over toon at index # 0
+:SuitBattleGlobals(debug): Index = 1
+:SuitBattleGlobals(debug): Count = 100.0
+:SuitBattleGlobals(debug): randNum of 92 is < count of 100.0, attacking toon at index # 1
+:BattleCalculatorAI(debug): Suit attacking back at toon 100000003
+:BattleCalculatorAI(debug): Suit attack is single target
+:BattleCalculatorAI(debug): Suit attack rolled 57 to hit with an accuracy of 85 (attackAcc: 85 suitAcc: 55)
+:BattleCalculatorAI(debug): Suit attack is single target
+:BattleCalculatorAI(debug): Toon 100000003 takes 15 damage
+:BattleCalculatorAI(debug): Toon 100000003 now has 122 health
+```
 
 `totalDamage` and `dmgs` are reset every round.
 
@@ -6214,3 +6245,6 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 -On the May 16th, 2017 update, the C.E.O. now attacks in a randomly scheduled order. Instead of using the process listed in C.E.O. #1, the C.E.O. creates a randomly scheduled list of attacks, which it will then exhaust before creating a new list. No change has been made to how the C.E.O. decides which toon to attack.
 
 
+# Credits <a name="credit"></a>
+
+Credit to Yumeko for contributing to this guide,  with assistance in debugging and testing out several questions.
