@@ -16,6 +16,6 @@ def doDrift(curValue, timeToMedian, dt = float(dt)):
 
 May 21st 2017
 
--Need to add logfile for Cog total damages
 -Need to clarify variance on doodles in estate
+
 -Need to actually add list of all toontask recovery rates
