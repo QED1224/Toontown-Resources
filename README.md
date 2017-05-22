@@ -1057,7 +1057,7 @@ After the attack is completed, the toon's damage total in `threatDict` is reduce
 
 ## How does the C.E.O. decide to continue moving or not? <a name="ceo-3"></a>
 
-If the C.E.O. is moving towards a toon on a table, and that particular toon hopped off the table, `random.random()` generates a number between 0.0 and 1.0. If `random.random()` is less than 0.5, the C.E.O. will stop moving towards that table, and use his directed golf attack. Otherwise, the C.E.O. will run over the table and stop on top of it.
+If the C.E.O. is moving towards a toon on a table, and that particular toon hopped off the table, a random number is generated such that 0.0 <= X < 1.0. If X is less than 0.5, the C.E.O. will stop moving towards that table, and use its directed golf attack. Otherwise, the C.E.O. will run over the table and stop on top of it.
 
 # Fishing <a name="fishing"></a>
 [[back to top](#contents)]
@@ -6211,6 +6211,6 @@ Once the game determines the `JCHANCE` probability, a random number is generated
   * Loopy Loopengloop, a 5 star Squirt SOS card. This SOS Toon uses a Geyser, and deals 115 damage to all cogs.
   * These two cards do not receive Lure knockback bonus damage.
 
--On the May 16th, 2017 update, the C.E.O. now attacks in a randomly scheduled order. It is unknown what changes this entails to how the C.E.O. will use his attacks, or how it will determine which Toons to target.
+-On the May 16th, 2017 update, the C.E.O. now attacks in a randomly scheduled order. Instead of using the process listed in C.E.O. #1, the C.E.O. creates a randomly scheduled list of attacks, which it will then exhaust before creating a new list. No change has been made to how the C.E.O. decides which toon to attack.
 
 
