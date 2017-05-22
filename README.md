@@ -630,13 +630,78 @@ setFatigue = (0.32)
 0.32 >= 0.853? False
 ```
 
-### Do doodle tricks count as a stun in battle? <a name="doodle-t&t-5"></a>
+### Do Doodle tricks count as a stun in battle? <a name="doodle-t&t-5"></a>
 
 Yes, Doodle tricks count as a stun in battles, provided that the trick is successful. Tricks count as their own individual track, meaning they would satisfy the conditions listed in the [bonus section](#toon-atk-acc-6).
 
 ## Battle Simulations
 
 - [Jump & Grand Piano](http://pastebin.com/x4g9dZuZ)
+
+### Doodle trait distributions <a name="doodle-t&t-6"></a>
+
+The range in quality for traits that a Doodle shows at a Pet Shop is determined by the `TraitCutoffs` array, as shown below.
+
+```python
+TraitCutoffs = {TraitTypes.INCREASING: {TraitQuality.VERY_BAD: 0.1,
+                             TraitQuality.BAD: 0.25,
+                             TraitQuality.GOOD: 0.75,
+                             TraitQuality.VERY_GOOD: 0.9},
+     TraitTypes.DECREASING: {TraitQuality.VERY_BAD: 0.9,
+                             TraitQuality.BAD: 0.75,
+                             TraitQuality.GOOD: 0.25,
+                             TraitQuality.VERY_GOOD: 0.1}}
+```
+Depending on the emotion, the threshold to reach that emotion is generated with an increasing or decreasing distribution. Below is a chart that shows which emotions thresholds use increasing and decreasing distributions.
+
+```python
+TraitDescs = (('forgetfulness', ForgetfulnessDistrib(), True),
+     ('boredomThreshold', StdIncDistrib(), True),
+     ('restlessnessThreshold', StdIncDistrib(), True),
+     ('playfulnessThreshold', StdDecDistrib(), True),
+     ('lonelinessThreshold', StdIncDistrib(), True),
+     ('sadnessThreshold', StdIncDistrib(), True),
+     ('fatigueThreshold', StdIncDistrib(), True),
+     ('hungerThreshold', StdIncDistrib(), True),
+     ('confusionThreshold', StdIncDistrib(), True),
+     ('excitementThreshold', StdDecDistrib(), True),
+     ('angerThreshold', StdIncDistrib(), True),
+     ('surpriseThreshold', StdIncDistrib(), False), ### Surprise is generated, but not used in game.
+     ('affectionThreshold', StdDecDistrib(), True))
+```
+
+Each playground Pet Shop has a minimum and maximum range for the distributions. Below are the three classes; one for increasing distributions, one for decreasing distributions, and one for the Forgetfulness trait. 
+
+```python
+class StdIncDistrib(TraitDistribution):
+        TraitType = TraitDistribution.TraitTypes.INCREASING
+        Sz2MinMax = {ToontownGlobals.ToontownCentral: (0.2, 0.65),
+         ToontownGlobals.DonaldsDock: (0.3, 0.7),
+         ToontownGlobals.DaisyGardens: (0.4, 0.75),
+         ToontownGlobals.MinniesMelodyland: (0.5, 0.8),
+         ToontownGlobals.TheBrrrgh: (0.6, 0.85),
+         ToontownGlobals.DonaldsDreamland: (0.7, 0.9)}
+
+    class StdDecDistrib(TraitDistribution):
+        TraitType = TraitDistribution.TraitTypes.DECREASING
+        Sz2MinMax = {ToontownGlobals.ToontownCentral: (0.35, 0.8),
+         ToontownGlobals.DonaldsDock: (0.3, 0.7),
+         ToontownGlobals.DaisyGardens: (0.25, 0.6),
+         ToontownGlobals.MinniesMelodyland: (0.2, 0.5),
+         ToontownGlobals.TheBrrrgh: (0.15, 0.4),
+         ToontownGlobals.DonaldsDreamland: (0.1, 0.3)}
+
+    class ForgetfulnessDistrib(TraitDistribution):
+        TraitType = TraitDistribution.TraitTypes.DECREASING
+        Sz2MinMax = {ToontownGlobals.ToontownCentral: (0.0, 1.0),
+         ToontownGlobals.DonaldsDock: (0.0, 0.9),
+         ToontownGlobals.DaisyGardens: (0.0, 0.8),
+         ToontownGlobals.MinniesMelodyland: (0.0, 0.7),
+         ToontownGlobals.TheBrrrgh: (0.0, 0.6),
+         ToontownGlobals.DonaldsDreamland: (0.0, 0.5)}
+```
+
+For increasing distributions, a higher number is desirable. For decreasing distributions, and the Forgetfulness distribution, a lower number is desirable.
 
 ## Fishing <a name="fishing-main"></a>
 [[back to top](#contents)]
