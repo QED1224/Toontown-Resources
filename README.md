@@ -807,7 +807,7 @@ Every Toontask that requires the player to recover an item, either from a Cog, o
 | `Hard`           | 25         |
 | `VeryHard`       | 20         |
 
-For item recovery tasks associated with Cogs, each time the condition for the item recovery is fulfilled, another probability roll for the item is added. 
+For item recovery tasks associated with Cogs, a random number is generated such that 0.0 <= `test` < 1.0. If `test` * 100 is <= the recovery rate for that item, the Toon will obtain the item. Otherwise, the toon will fail to recover the item. Each time the condition for the item recovery is fulfilled, another probability roll for the item is added.
 
 For item recovery tasks associated with Fishing, if the player rolls QuestItem on a successful cast ([see Fishing for more details](#fishing-main)), the following formula is used to determine if the player will recover the item or not.
 
