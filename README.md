@@ -6283,25 +6283,25 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 		</tr>
 		<tr>
 			<td align="center">Chortle Charlie, Sally Spittake, Tee Hee</td>
-			<td align="center">Recipe Book</td>
+			<td align="center">4 Recipes</td>
 			<td align="center">100</td>
 			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">Woody Nickel</td>
-			<td align="center">Adding Machine</td>
+			<td align="center">5 Adding Machines</td>
 			<td align="center">100</td>
 			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">Feather Duster</td>
-			<td align="center">Cog Gears</td>
+			<td align="center">10 Cog Gears</td>
 			<td align="center">100</td>
 			<td align="center"></td>
 		</tr>
 		<tr>
 			<td align="center">Loony Louis</td>
-			<td align="center">Clown Car Tires</td>
+			<td align="center">4 Clown Car Tires</td>
 			<td align="center">75</td>
 			<td align="center">Obtained from Fishing</td>
 		</tr>
@@ -6343,7 +6343,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 		</tr>
 		<tr>
 			<td align="center">Sharky Jones</td>
-			<td align="center">Goldfish</td>
+			<td align="center">4 Goldfish</td>
 			<td align="center">75</td>
 			<td align="center">Obtained from Fishing</td>
 		</tr>
@@ -6367,7 +6367,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 		</tr>
 		<tr>
 			<td align="center">Professor Pete</td>
-			<td align="center">Cog Gears</td>
+			<td align="center">5 Cog Gears</td>
 			<td align="center">75</td>
 			<td align="center"></td>
 		</tr>
@@ -6376,7 +6376,151 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 
 ## Donald's Dock <a name="dd-rates"></a>
 
+<table>
+	        <tr>
+			<th colspan="4">Donald's Dock</th>
+		</tr>
+		<tr>
+			<th>Shopkeeper</th>
+			<th>Item</th>
+			<th>Recovery Rate</th>
+			<th>Notes</th>
+	        </tr>
+		<tr>
+			<td align="center">Billy Budd</td>
+			<td align="center">Inner Tube</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Doctor Squall</td>
+			<td align="center">Eyeglass Frames</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Barnacle Barbara</td>
+			<td align="center">Big White Wig</td>
+			<td align="center">75</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Art</td>
+			<td align="center">3 Cog Gears</td>
+			<td align="center">25</td>
+			<td align="center"></td>
+		</tr>
+</table>
+
 ## Daisy's Garden <a name="dg-rates"></a>
+
+<table>
+	        <tr>
+			<th colspan="4">Daisy's Garden</th>
+		</tr>
+		<tr>
+			<th>Shopkeeper</th>
+			<th>Item</th>
+			<th>Recovery Rate</th>
+			<th>Notes</th>
+	        </tr>
+		<tr>
+			<td align="center">Judge McIntosh</td>
+			<td align="center">Sellbot HQ Blueprints</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Vince Green</td>
+			<td align="center">Pinstripe Suit</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Barber Bjorn</td>
+			<td align="center">Pair of Scissors</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Postman Felipe</td>
+			<td align="center">10 Postcards</td>
+			<td align="center">100</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">HQ Officer</td>
+			<td align="center">Sprocket</td>
+			<td align="center">100</td>
+			<td align="center">Obtained from defeating a Name Dropper</td>
+		</tr>
+		<tr>
+			<td align="center">HQ Officer</td>
+			<td align="center">Sprocket</td>
+			<td align="center">20</td>
+			<td align="center">Obtained from defeating a Glad Hander</td>
+		</tr>
+		<tr>
+			<td align="center">HQ Officer</td>
+			<td align="center">Sprocket</td>
+			<td align="center">75</td>
+			<td align="center">Obtained from defeating a Mover & Shaker</td>
+		</tr>
+		<tr>
+			<td align="center">HQ Officer</td>
+			<td align="center">Sprocket</td>
+			<td align="center">100</td>
+			<td align="center">Obtained from defeating a Ambulance Chaser</td>
+		</tr>
+		<tr>
+			<td align="center">HQ Officer</td>
+			<td align="center">Sprocket</td>
+			<td align="center">20</td>
+			<td align="center">Obtained from defeating a Back Stabber</td>
+		</tr>
+		<tr>
+			<td align="center">HQ Officer</td>
+			<td align="center">Sprocket</td>
+			<td align="center">20</td>
+			<td align="center">Obtained from defeating a Spin Doctor</td>
+		</tr>
+		<tr>
+			<td align="center">HQ Officer</td>
+			<td align="center">Key</td>
+			<td align="center">100</td>
+			<td align="center">1st Key, obtained from defeating a Legal Eagle or The Mingler</td>
+		</tr>
+		<tr>
+			<td align="center">HQ Officer</td>
+			<td align="center">Key</td>
+			<td align="center">20</td>
+			<td align="center">2nd Key, obtained from defeating a Legal Eagle or The Mingler</td>
+		</tr>
+		<tr>
+			<td align="center">Aunt Hill, Uncle Mudd, Uncle Spudd</td>
+			<td align="center">Sellbot HQ Memo</td>
+			<td align="center">100</td>
+			<td align="center">1st Memo</td>
+		</tr>
+		<tr>
+			<td align="center">Aunt Hill, Uncle Mudd, Uncle Spudd</td>
+			<td align="center">Sellbot HQ Memo</td>
+			<td align="center">75</td>
+			<td align="center">2nd Memo</td>
+		</tr>
+		<tr>
+			<td align="center">Aunt Hill, Uncle Mudd, Uncle Spudd</td>
+			<td align="center">Sellbot HQ Memo</td>
+			<td align="center">75</td>
+			<td align="center">3rd Memo</td>
+		</tr>
+		<tr>
+			<td align="center">Aunt Hill, Uncle Mudd, Uncle Spudd</td>
+			<td align="center">Sellbot HQ Memo</td>
+			<td align="center">50</td>
+			<td align="center">4th Memo</td>
+		</tr>
+</table>
 
 ## Minnie's Melodyland <a name="mml-rates"></a>
 
