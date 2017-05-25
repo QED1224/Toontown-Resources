@@ -7,13 +7,7 @@
     - [Doodle Training and Tricks](#doodle-t&t)
     - [Fishing](#fishing-main)
 - [Toontasks](#toontasks-main)
-    - [Toontask Item Recovery Rates](#questrates)
-    - [Toontown Central](#ttc-rates)
-    - [Donald's Dock](#dd-rates)
-    - [Daisy's Garden](#dg-rates)
-    - [Minnie's Melodyland](#mml-rates)
-    - [The Brrrgh](#tb-rates)
-    - [Donald's Dreamland](#ddl-rates)
+    - [Toontask Item Recovery Process](#taskprocess)
 - [Toon-up](#toon-up)
     - [Does using Toon-up have any impact on other gag's damage or accuracy?](#toon-up-1)
 - [Trap](#trap)
@@ -77,6 +71,15 @@
 	- [Bossbots](#atk-acc-boss)
 - [Appendix D: SOS Toons](#appendix-d)
 - [Appendix E: Flower Combinations](#appendix-e)
+- [Appendix F: Toontask Item Recovery Rates](#appendix-f)
+	- [Toontown Central](#ttc-rates)
+	- [Donald's Dock](#dd-rates)
+	- [Daisy's Garden](#dg-rates)
+	- [Minnie's Melodyland](#mml-rates)
+	- [The Brrrgh](#tb-rates)
+	- [Donald's Dreamland](#ddl-rates)
+	- [Other](#other-rates)
+- [Appendix G: Street Suit Planner Data](#appendix-g)
 - [Notes](#ttr)
 - [Credits](#credit)
 
@@ -527,7 +530,7 @@ Performing a successful trick increases the `aptitude` value of that trick by 0.
 
 `aptitude = trick experience / 10000`
 
-Note: A Doodle will *not* gain any `aptitude` points if it uses a trick in battle while it is under the effects of a Toons Hit SOS card.
+Note: A Doodle will *not* gain any `aptitude` points if it uses a trick in battle, while under the effects of a Toons Hit SOS card.
 
 ### Do Doodle tricks have base accuracy values to them? <a name="doodle-t&t-2"></a>
 
@@ -795,7 +798,7 @@ In this case, a boot will be caught.
 ## Toontasks <a name="toontasks-main"></a>
 [[back to top](#contents)]
 
-# Toontask Item Recovery Rates <a name="questrates"></a>
+# Toontask Item Recovery Process<a name="taskprocess"></a>
 
 Every Toontask that requires the player to recover an item, either from a Cog, or from Fishing, has an assigned difficulty level for recovering the item. The difficulty variables are written as `VeryEasy`, `Easy`, `Medium`, `Hard`, and `VeryHard`. A table below shows the associated probability with each variable.
 
@@ -807,9 +810,9 @@ Every Toontask that requires the player to recover an item, either from a Cog, o
 | `Hard`           | 25         |
 | `VeryHard`       | 20         |
 
-For item recovery tasks associated with Cogs, a random number is generated such that 0.0 <= `test` < 1.0. If `test` * 100 is <= the recovery rate for that item, the Toon will obtain the item. Otherwise, the toon will fail to recover the item. Each time the condition for the item recovery is fulfilled, another probability roll for the item is added.
+For item recovery tasks associated with Cogs, a random number is generated such that 0.0 <= `test` < 1.0. If `test` * 100 is <= the recovery rate, the player will obtain the item. Otherwise, they will fail to recover the item. Each time the condition for the item recovery is fulfilled, another probability roll for the item is added.
 
-For item recovery tasks associated with Fishing, if the player rolls QuestItem on a successful cast ([see Fishing for more details](#fishing-main)), the following formula is used to determine if the player will recover the item or not.
+For item recovery tasks associated with Fishing, if the player rolls `QuestItem` on a successful cast ([see Fishing for more details](#fishing-main)), the following formula is used to determine if the player will recover the item or not.
 
 ```python
    questItemFound = False
@@ -821,21 +824,7 @@ For item recovery tasks associated with Fishing, if the player rolls QuestItem o
 
 Where minChance is the recovery rate of the required item.
 
-A list of item recovery tasks and their associated percentages can be seen below.
-
-# Toontown Central <a name="ttc-rates"></a>
-
-# Donald's Dock <a name="dd-rates"></a>
-
-# Daisy's Garden <a name="dg-rates"></a>
-
-# Minnie's Melodyland <a name="mml-rates"></a>
-
-# The Brrrgh <a name="tb-rates"></a>
-
-# Donald's Dreamland <a name="ddl-rates"></a>
-
-
+A list of item recovery tasks and their associated percentages can be seen at [Appendix F](#appendix-f).
 
 
 # Toon-up <a name="toon-up"></a>
@@ -5797,6 +5786,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 \* The Big Cheese is coded with three unused attacks. They are CigarSmoke, FloodTheMarket and SongAnd Dance. However, when the game selects one of these attacks, The Big Cheese instead uses his programmed default attack, which is Glower Power. Despite this, the game will use the accuracy and damage values of the move that was internally selected (see [Cog Attack Accuracy](#cog-atk-acc) for more information), thus allowing Glower Power to have varying damage and accuracy values for the same level.
 		
 # Appendix D: SOS Toons <a name="appendix-d"></a>
+[[back to top](#contents)]
 <table>
 <tr>
 			<th colspan="4"> </th>
@@ -6058,6 +6048,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 `* = This card is obtainable via Field Offices.`
 
 # Appendix E: Flower Combinations <a name="appendix-e"></a>
+[[back to top](#contents)]
 <table>
 <tr>
 			<th colspan="3"> </th>
@@ -6269,6 +6260,134 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 		</tr>
 </table>
 
+# Appendix F: Toontask Item Recovery Rates <a name="appendix-f"></a>
+[[back to top](#contents)]
+
+## Toontown Central <a name="ttc-rates"></a>
+
+<table>
+	        <tr>
+			<th colspan="4">Toontown Central</th>
+		</tr>
+		<tr>
+			<th>Shopkeeper</th>
+			<th>Item</th>
+			<th>Recovery Rate</th>
+			<th>Notes</th>
+	        </tr>
+		<tr>
+			<td align="center">HQ Officer</td>
+			<td align="center">Eraser</td>
+			<td align="center">100</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Chortle Charlie, Sally Spittake, Tee Hee</td>
+			<td align="center">Recipe Book</td>
+			<td align="center">100</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Woody Nickel</td>
+			<td align="center">Adding Machine</td>
+			<td align="center">100</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Feather Duster</td>
+			<td align="center">Cog Gears</td>
+			<td align="center">100</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Loony Louis</td>
+			<td align="center">Clown Car Tires</td>
+			<td align="center">75</td>
+			<td align="center">Obtained from Fishing</td>
+		</tr>
+		<tr>
+			<td align="center">Professor Wiggle</td>
+			<td align="center">Octopus Ink</td>
+			<td align="center">50</td>
+			<td align="center">Obtained from Fishing</td>
+		</tr>
+		<tr>
+			<td align="center">Postmaster Pete</td>
+			<td align="center">Package</td>
+			<td align="center">50</td>
+			<td align="center">1st Package</td>
+		</tr>
+		<tr>
+			<td align="center">Dr. Tom</td>
+			<td align="center">Package</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Postmaster Pete</td>
+			<td align="center">Package</td>
+			<td align="center">25</td>
+			<td align="center">2nd Package</td>
+		</tr>
+		<tr>
+			<td align="center">Sharky Jones</td>
+			<td align="center">Goldfish Receipt</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Professor Wiggle</td>
+			<td align="center">Goldfish</td>
+			<td align="center">75</td>
+			<td align="center">Obtained from defeating Flunky or Short Change</td>
+		</tr>
+		<tr>
+			<td align="center">Sharky Jones</td>
+			<td align="center">Goldfish</td>
+			<td align="center">75</td>
+			<td align="center">Obtained from Fishing</td>
+		</tr>
+		<tr>
+			<td align="center">Sticky Lou</td>
+			<td align="center">Oil</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Sticky Lou</td>
+			<td align="center">Grease</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Sticky Lou</td>
+			<td align="center">Water</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Professor Pete</td>
+			<td align="center">Cog Gears</td>
+			<td align="center">75</td>
+			<td align="center"></td>
+		</tr>
+		
+</table>
+
+## Donald's Dock <a name="dd-rates"></a>
+
+## Daisy's Garden <a name="dg-rates"></a>
+
+## Minnie's Melodyland <a name="mml-rates"></a>
+
+## The Brrrgh <a name="tb-rates"></a>
+
+## Donald's Dreamland <a name="ddl-rates"></a>
+
+## Other <a name="other-rates"></a>
+
+# Appendix G: Street Suit Planner Data <a name="appendix-g"></a>
+[[back to top](#contents)]
 
 # Notes <a name="ttr"></a>
 
