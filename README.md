@@ -6497,25 +6497,25 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 			<td align="center">2nd Key, obtained from defeating a Legal Eagle or The Mingler</td>
 		</tr>
 		<tr>
-			<td align="center">Aunt Hill, Uncle Mudd, Uncle Spudd</td>
+			<td align="center">Aunt Hill, Uncle Mud, Uncle Spud</td>
 			<td align="center">Sellbot HQ Memo</td>
 			<td align="center">100</td>
 			<td align="center">1st Memo</td>
 		</tr>
 		<tr>
-			<td align="center">Aunt Hill, Uncle Mudd, Uncle Spudd</td>
+			<td align="center">Aunt Hill, Uncle Mud, Uncle Spud</td>
 			<td align="center">Sellbot HQ Memo</td>
 			<td align="center">75</td>
 			<td align="center">2nd Memo</td>
 		</tr>
 		<tr>
-			<td align="center">Aunt Hill, Uncle Mudd, Uncle Spudd</td>
+			<td align="center">Aunt Hill, Uncle Mud, Uncle Spud</td>
 			<td align="center">Sellbot HQ Memo</td>
 			<td align="center">75</td>
 			<td align="center">3rd Memo</td>
 		</tr>
 		<tr>
-			<td align="center">Aunt Hill, Uncle Mudd, Uncle Spudd</td>
+			<td align="center">Aunt Hill, Uncle Mud, Uncle Spud</td>
 			<td align="center">Sellbot HQ Memo</td>
 			<td align="center">50</td>
 			<td align="center">4th Memo</td>
