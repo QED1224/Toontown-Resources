@@ -6524,7 +6524,194 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 
 ## Minnie's Melodyland <a name="mml-rates"></a>
 
+<table>
+	        <tr>
+			<th colspan="4">Minnie's Melodyland</th>
+		</tr>
+		<tr>
+			<th>Shopkeeper</th>
+			<th>Item</th>
+			<th>Recovery Rate</th>
+			<th>Notes</th>
+	        </tr>
+		<tr>
+			<td align="center">Anna</td>
+			<td align="center">Lumber Jack's Ticket</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Anna</td>
+			<td align="center">Tabithia's Ticket</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Anna</td>
+			<td align="center">Barry's Ticket</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Carlos</td>
+			<td align="center">Blue Squid Ink</td>
+			<td align="center">20</td>
+			<td align="center">Obtained from Fishing</td>
+		</tr>
+</table>
+
 ## The Brrrgh <a name="tb-rates"></a>
+
+<table>
+	        <tr>
+			<th colspan="4">The Brrrgh</th>
+		</tr>
+		<tr>
+			<th>Shopkeeper</th>
+			<th>Item</th>
+			<th>Recovery Rate</th>
+			<th>Notes</th>
+	        </tr>
+		<tr>
+			<td align="center">Lil Oldman</td>
+			<td align="center">3 Fuzzy Dice</td>
+			<td align="center">20</td>
+			<td align="center">Obtained from Fishing</td>
+		</tr>
+		<tr>
+			<td align="center">Chicken Boy</td>
+			<td align="center">Soccer Ball</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Toboggan Ted</td>
+			<td align="center">Toboggan</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Bumpy Noggin</td>
+			<td align="center">3 Ice Cubes</td>
+			<td align="center">20</td>
+			<td align="center">Obtained from Fishing</td>
+		</tr>
+		<tr>
+			<td align="center">Vidalia VaVoom</td>
+			<td align="center">Love Letter</td>
+			<td align="center">50, 25</td>
+			<td align="center">The recovery rate is 50 if the player chooses the task when it asks to defeat a Legal Eagle. For Corporate Raider, Loan Shark, and The Mingler, the recovery rate is 25.</td>
+		</tr>
+		<tr>
+			<td align="center">Snooty Sinjin</td>
+			<td align="center">10 Wiener Dogs</td>
+			<td align="center">25</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Fanny Freezes</td>
+			<td align="center">2 Sardine Whiskers</td>
+			<td align="center">25</td>
+			<td align="center">Obtained from Fishing</td>
+		</tr>
+		<tr>
+			<td align="center">Dr. Mumbleface</td>
+			<td align="center">Gold Tooth</td>
+			<td align="center">50, 25</td>
+			<td align="center">The recovery rate is 50 if the player obtains the task when it asks to defeat a Big Wig. For The Big Cheese, Robber Baron, and Mr. Hollywood, the recovery rate is 25.</td>
+		</tr>
+		<tr>
+			<td align="center">Sweaty Pete</td>
+			<td align="center">Cog Gear</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Sweaty Pete</td>
+			<td align="center">Rubber Ducky</td>
+			<td align="center">20</td>
+			<td align="center">Obtained from Fishing</td>
+		</tr>
+		<tr>
+			<td align="center">Lounge Lassard</td>
+			<td align="center">Microphone</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Lounge Lassard</td>
+			<td align="center">Electric Keyboard</td>
+			<td align="center">25, 20</td>
+			<td align="center">The recovery rate is 25 if the player obtains the task when it asks to defeat a Legal Eagle. For Corporate Raider, Loan Shark, and The Mingler, the recovery rate is 20.</td>
+		</tr>
+		<tr>
+			<td align="center">Lounge Lassard</td>
+			<td align="center">Platform Shoes</td>
+			<td align="center">25, 20</td>
+			<td align="center">The recovery rate is 25 if the player obtains the task when it asks to defeat a Big Wig. For The Big Cheese, Robber Baron, and Mr. Hollywood, the recovery rate is 20.</td>
+		</tr>
+		<tr>
+			<td align="center">Johnny Cashmere</td>
+			<td align="center">Yarn</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Johnny Cashmere</td>
+			<td align="center">2 Knitting Needles</td>
+			<td align="center">25</td>
+			<td align="center">Obtained from Fishing</td>
+		</tr>
+		<tr>
+			<td align="center">March Harry</td>
+			<td align="center">2 Alibis</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Lil Oldman</td>
+			<td align="center">6 Lumpy Cheeses</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Lil Oldman</td>
+			<td align="center">6 Caviar</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Lil Oldman</td>
+			<td align="center">Simple Spoon</td>
+			<td align="center">50, 25</td>
+			<td align="center">The recovery rate is 50 if the player obtains the task when it asks to defeat a Big Wig. For Robber Baron, the recovery rate is 25.</td>
+		</tr>
+		<tr>
+			<td align="center">Lil Oldman</td>
+			<td align="center">Talking Toad</td>
+			<td align="center">20</td>
+			<td align="center">1st Talking Toad, obtained from Fishing</td>
+		</tr>
+		<tr>
+			<td align="center">Sticky George</td>
+			<td align="center">10 Ice Cream Cones</td>
+			<td align="center">100</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Lil Oldman</td>
+			<td align="center">Wig Powder</td>
+			<td align="center">25</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Lil Oldman</td>
+			<td align="center">Talking Toad</td>
+			<td align="center">20</td>
+			<td align="center">2nd Talking Toad, obtained from Fishing</td>
+		</tr>
+</table>
+
 
 ## Donald's Dreamland <a name="ddl-rates"></a>
 
