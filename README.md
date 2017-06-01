@@ -714,6 +714,7 @@ For increasing distributions, a higher number is desirable. For decreasing distr
 `itemType` is the primary factor in determining the result of a successful cast. To begin, the game will first check to see if the player has any active fishing quests. If the player does, the game will use the following process.
 
 1: A random number is generated such that 0.0 <= `test` < 1.0 * 100.
+
 2: Obtain the item recovery rate for the current quest, `chance`.
 
 (See [Toontask Item Recovery Process](#taskprocess) and [Appendix F](#appendix-f) for more information.)
@@ -6786,6 +6787,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 			<td align="center">25</td>
 			<td align="center">The recovery rate is the same for every External Temperature Sensor</td>
 		</tr>
+</table>
 
 # Appendix G: Street Suit Planner Data <a name="appendix-g"></a>
 [[back to top](#contents)]
