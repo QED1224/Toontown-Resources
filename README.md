@@ -731,7 +731,7 @@ ProbabilityDict = {93: FishItem,
  100: BootItem}
 ```
 
-Given the above table, the following probabilities for each possible `itemType` is `FishItem` (94%), `JellybeanItem` (1%), and `BootItem` (5%).
+Given the above table, the probabilities for each possible `itemType` are `FishItem` (94%), `JellybeanItem` (1%), and `BootItem` (5%).
 
 ### `FishItem`
 
