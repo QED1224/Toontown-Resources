@@ -711,22 +711,26 @@ For increasing distributions, a higher number is desirable. For decreasing distr
 
 ### `itemType`
 
-`itemType` is the primary factor in determining the result of a successful cast. The possible types are `JellybeanItem` (1%), `FishItem` (2%), `BootItem` (5%) and `QuestItem` (92%).
+`itemType` is the primary factor in determining the result of a successful cast. To begin, the game will first check to see if the player has any active fishing quests. If the player does, the game will use the following process.
 
-### `QuestItem`
+1: A random number is generated such that 0.0 <= `test` < 1.0 * 100.
+2: Obtain the item recovery rate for the current quest, `chance`.
 
-`QuestItem` serves two purposes:
+(See [Toontask Item Recovery Process](#taskprocess) and [Appendix F](#appendix-f) for more information.)
 
-- If there is an active Fishing quest, the following calculation is done to determine if the quest item will be found:
+If `test` is less than or equal to `chance` , the player will obtain the item. If the player does *not* have any active fishing quests, or `test` is greater than `chance`, the game will instead use the following process to determine the `itemType` the player will get.
 
-    ```python
-   questItemFound = False
-   minChance = questClass.getPercentChance() # Quest rarity %
-   chance = random.randint(minChance - 40, 100)
-   if chance <= minChance:
-       questItemFound = True
-    ```
-- If there is not an active Fishing quest or the quest item was not found,  `QuestItem` uses the same process as `FishItem` (see the next section).
+1: A random number is generated such that 0.0 <= `rand` < 1.0 * 100.
+
+2: `rand` is compared to a `cutoff` range shown by the following table.
+
+```python
+ProbabilityDict = {93: FishItem,
+ 94: JellybeanItem,
+ 100: BootItem}
+```
+
+Given the above table, the following probabilities for each possible `itemType` is `FishItem` (94%), `JellybeanItem` (1%), and `BootItem` (5%).
 
 ### `FishItem`
 
@@ -812,20 +816,9 @@ Every Toontask that requires the player to recover an item, either from a Cog, o
 
 For item recovery tasks associated with Cogs, a random number is generated such that 0.0 <= `test` < 1.0. If `test` * 100 is <= the recovery rate, the player will obtain the item. Otherwise, they will fail to recover the item. Each time the condition for the item recovery is fulfilled, another probability roll for the item is added.
 
-For item recovery tasks associated with Fishing, if the player rolls `QuestItem` on a successful cast ([see Fishing for more details](#fishing-main)), the following formula is used to determine if the player will recover the item or not.
-
-```python
-   questItemFound = False
-   minChance = questClass.getPercentChance() 
-   chance = random.randint(minChance - 40, 100)
-   if chance <= minChance:
-       questItemFound = True
-```
-
-Where minChance is the recovery rate of the required item.
+For item recovery tasks associated with Fishing, see the process outlined in [Fishing](#fishing-main) for more details.
 
 A list of item recovery tasks and their associated percentages can be seen at [Appendix F](#appendix-f).
-
 
 # Toon-up <a name="toon-up"></a>
 [[back to top](#contents)]
@@ -6712,10 +6705,87 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 		</tr>
 </table>
 
-
 ## Donald's Dreamland <a name="ddl-rates"></a>
 
+<table>
+	        <tr>
+			<th colspan="4">Donald's Dreamland</th>
+		</tr>
+		<tr>
+			<th>Shopkeeper</th>
+			<th>Item</th>
+			<th>Recovery Rate</th>
+			<th>Notes</th>
+	        </tr>
+		<tr>
+			<td align="center">Lawful Linda</td>
+			<td align="center">3 Rods</td>
+			<td align="center">50</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Lawful Linda</td>
+			<td align="center">Drive Belt</td>
+			<td align="center">25</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Lawful Linda</td>
+			<td align="center">Pair of Pincers</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Nat</td>
+			<td align="center">Cashbot HQ Plans</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">William Teller</td>
+			<td align="center">Reading Lamp</td>
+			<td align="center">20</td>
+			<td align="center"></td>
+		</tr>
+		<tr>
+			<td align="center">Rip</td>
+			<td align="center">Cauliflower Coral</td>
+			<td align="center">25</td>
+			<td align="center">Obtained from Fishing</td>
+		</tr>
+		<tr>
+			<td align="center">Rip</td>
+			<td align="center">Slimy Kelp</td>
+			<td align="center">20</td>
+			<td align="center">Obtained from Fishing</td>
+		</tr>
+		<tr>
+			<td align="center">Rip</td>
+			<td align="center">Pestle</td>
+			<td align="center">25</td>
+			<td align="center"></td>
+		</tr>
+</table>
+
+
 ## Other <a name="other-rates"></a>
+
+<table>
+	        <tr>
+			<th colspan="4">Other</th>
+		</tr>
+		<tr>
+			<th>Shopkeeper</th>
+			<th>Item</th>
+			<th>Recovery Rate</th>
+			<th>Notes</th>
+	        </tr>
+		<tr>
+			<td align="center">Professor Flake</td>
+			<td align="center">External Temperature Sensor</td>
+			<td align="center">25</td>
+			<td align="center">The recovery rate is the same for every External Temperature Sensor</td>
+		</tr>
 
 # Appendix G: Street Suit Planner Data <a name="appendix-g"></a>
 [[back to top](#contents)]
