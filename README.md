@@ -18,4 +18,12 @@ May 21st 2017
 
 -Need to clarify variance on doodles in estate
 
--Need to actually add list of all toontask recovery rates
+June 4th 2017
+
+-Still need to clarify variance on Doodles in estate (unlikely to happen for awhile)
+
+-Check how multiple Traps play out with Trap SOS (ex, Clerk Penny + TNT + Lure)
+
+-Check out how mixing Sound SOS with normal Sound works
+
+-Check if stuns "carry-over" for V2.0 Cogs. For example, suppose you use $10 Bill + Birthday Cake + Grand Piano on a Level 10 V2.0 Cog. Would the Grand Piano have a +40 stun boost?
