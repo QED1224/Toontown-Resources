@@ -1141,7 +1141,7 @@ After the attack is completed, the toon's damage total in `threatDict` is reduce
 
 ## How does the C.E.O. decide to continue moving or not? <a name="ceo-3"></a>
 
-If the C.E.O. is moving towards a toon on a table, and that particular toon hopped off the table, a random number is generated such that 0.0 <= X < 1.0. If X is less than 0.5, the C.E.O. will stop moving towards that table, and use its directed golf attack. Otherwise, the C.E.O. will run over the table and stop on top of it.
+If the C.E.O. is moving towards a toon on a table, and that particular toon hopped off the table, a random number is generated such that 0.0 <= X < 1.0. If X is less than 0.5, the C.E.O. will stop moving towards that table, and choose to do another attack. Otherwise, the C.E.O. will run over the table and stop on top of it.
 
 # Fishing <a name="fishing"></a>
 [[back to top](#contents)]
