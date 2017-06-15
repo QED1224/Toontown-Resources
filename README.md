@@ -645,66 +645,239 @@ Yes, Doodle tricks count as a stun in battles, provided that the trick is succes
 
 ### Doodle trait distributions <a name="doodle-t&t-6"></a>
 
-The range in quality for traits that a Doodle shows at a Pet Shop is determined by the `TraitCutoffs` array, as shown below.
+The range in quality for traits that a Doodle shows at a Pet Shop is determined by the `TraitCutoffs` array, which can be see in the table below.
 
-```python
-TraitCutoffs = {TraitTypes.INCREASING: {TraitQuality.VERY_BAD: 0.1,
-                             TraitQuality.BAD: 0.25,
-                             TraitQuality.GOOD: 0.75,
-                             TraitQuality.VERY_GOOD: 0.9},
-     TraitTypes.DECREASING: {TraitQuality.VERY_BAD: 0.9,
-                             TraitQuality.BAD: 0.75,
-                             TraitQuality.GOOD: 0.25,
-                             TraitQuality.VERY_GOOD: 0.1}}
-```
-Depending on the emotion, the threshold to reach that emotion is generated with an increasing or decreasing distribution. Below is a chart that shows which emotions thresholds use increasing and decreasing distributions.
+<table>
+	        <tr>
+			<th colspan="3">Trait Cutoffs</th>
+		</tr>
+		<tr>
+			<th>Trait Type</th>
+			<th>Trait Quality</th>
+			<th>Cutoff value</th>
+	        </tr>
+		<tr>
+			<td align="center">Increasing</td>
+			<td align="center">Very Bad</td>
+			<td align="center">0.1</td>
+		</tr>
+		<tr>
+			<td align="center">Increasing</td>
+			<td align="center">Bad</td>
+			<td align="center">0.25</td>
+		</tr>
+		<tr>
+			<td align="center">Increasing</td>
+			<td align="center">Good</td>
+			<td align="center">0.75</td>
+		</tr>
+		<tr>
+			<td align="center">Increasing</td>
+			<td align="center">Very Good</td>
+			<td align="center">0.9</td>
+		</tr>
+		<tr>
+			<td align="center">Decreasing</td>
+			<td align="center">Very Bad</td>
+			<td align="center">0.9</td>
+		</tr>
+		<tr>
+			<td align="center">Decreasing</td>
+			<td align="center">Bad</td>
+			<td align="center">0.75</td>
+		</tr>
+		<tr>
+			<td align="center">Decreasing</td>
+			<td align="center">Good</td>
+			<td align="center">0.25</td>
+		</tr>
+		<tr>
+			<td align="center">Decreasing</td>
+			<td align="center">Very Good</td>
+			<td align="center">0.1</td>
+		</tr>
+</table>
 
-```python
-TraitDescs = (('forgetfulness', ForgetfulnessDistrib(), True),
-     ('boredomThreshold', StdIncDistrib(), True),
-     ('restlessnessThreshold', StdIncDistrib(), True),
-     ('playfulnessThreshold', StdDecDistrib(), True),
-     ('lonelinessThreshold', StdIncDistrib(), True),
-     ('sadnessThreshold', StdIncDistrib(), True),
-     ('fatigueThreshold', StdIncDistrib(), True),
-     ('hungerThreshold', StdIncDistrib(), True),
-     ('confusionThreshold', StdIncDistrib(), True),
-     ('excitementThreshold', StdDecDistrib(), True),
-     ('angerThreshold', StdIncDistrib(), True),
-     ('surpriseThreshold', StdIncDistrib(), False), ### Surprise is generated, but not used in game.
-     ('affectionThreshold', StdDecDistrib(), True))
-```
+Depending on the emotion, the threshold to reach that emotion is generated with an increasing or decreasing distribution. Below is a table that shows which emotions thresholds use increasing and decreasing distributions.
+
+<table>
+	        <tr>
+			<th colspan="2">Emotion Distributions</th>
+		</tr>
+		<tr>
+			<th>Emotion</th>
+			<th>Trait Distribution</th>
+	        </tr>
+		<tr>
+			<td align="center">Boredom</td>
+			<td align="center">Increasing</td>
+		</tr>
+		<tr>
+			<td align="center">Restlessness</td>
+			<td align="center">Increasing</td>
+		</tr>
+		<tr>
+			<td align="center">Playfulness</td>
+			<td align="center">Decreasing</td>
+		</tr>
+		<tr>
+			<td align="center">Loneliness</td>
+			<td align="center">Increasing</td>
+		</tr>
+		<tr>
+			<td align="center">Sadness</td>
+			<td align="center">Increasing</td>
+		</tr>
+		<tr>
+			<td align="center">Fatigue</td>
+			<td align="center">Increasing</td>
+		</tr>
+		<tr>
+			<td align="center">Hunger</td>
+			<td align="center">Increasing</td>
+		</tr>
+		<tr>
+			<td align="center">Confusion</td>
+			<td align="center">Increasing</td>
+		</tr>
+		<tr>
+			<td align="center">Excitement</td>
+			<td align="center">Decreasing</td>
+		</tr>
+		<tr>
+			<td align="center">Anger</td>
+			<td align="center">Increasing</td>
+		</tr>
+		<tr>
+			<td align="center">Affection</td>
+			<td align="center">Decreasing</td>
+		</tr>	
+</table>
 
 Each playground Pet Shop has a minimum and maximum range for the distributions. Below are the three classes; one for increasing distributions, one for decreasing distributions, and one for the Forgetfulness trait. 
 
-```python
-class StdIncDistrib(TraitDistribution):
-        TraitType = TraitDistribution.TraitTypes.INCREASING
-        Sz2MinMax = {ToontownGlobals.ToontownCentral: (0.2, 0.65),
-         ToontownGlobals.DonaldsDock: (0.3, 0.7),
-         ToontownGlobals.DaisyGardens: (0.4, 0.75),
-         ToontownGlobals.MinniesMelodyland: (0.5, 0.8),
-         ToontownGlobals.TheBrrrgh: (0.6, 0.85),
-         ToontownGlobals.DonaldsDreamland: (0.7, 0.9)}
+<table>
+	        <tr>
+			<th colspan="3">Increasing Distributions</th>
+		</tr>
+		<tr>
+			<th>Playground</th>
+			<th>Minimum Value</th>
+			<th>Maximum Value</th>
+	        </tr>
+		<tr>
+			<td align="center">Toontown Central</td>
+			<td align="center">0.2</td>
+			<td align="center">0.65</td>
+		</tr>
+		<tr>
+			<td align="center">Donald's Dock</td>
+			<td align="center">0.3</td>
+			<td align="center">0.7</td>
+		</tr>
+		<tr>
+			<td align="center">Daisy's Gardens</td>
+			<td align="center">0.4</td>
+			<td align="center">0.75</td>
+		</tr>
+		<tr>
+			<td align="center">Minnie's Melodyland</td>
+			<td align="center">0.5</td>
+			<td align="center">0.8</td>
+		</tr>
+		<tr>
+			<td align="center">The Brrrgh</td>
+			<td align="center">0.6</td>
+			<td align="center">0.85</td>
+		</tr>
+		<tr>
+			<td align="center">Donald's Dreamland</td>
+			<td align="center">0.7</td>
+			<td align="center">0.9</td>
+		</tr>
+</table>
 
-    class StdDecDistrib(TraitDistribution):
-        TraitType = TraitDistribution.TraitTypes.DECREASING
-        Sz2MinMax = {ToontownGlobals.ToontownCentral: (0.35, 0.8),
-         ToontownGlobals.DonaldsDock: (0.3, 0.7),
-         ToontownGlobals.DaisyGardens: (0.25, 0.6),
-         ToontownGlobals.MinniesMelodyland: (0.2, 0.5),
-         ToontownGlobals.TheBrrrgh: (0.15, 0.4),
-         ToontownGlobals.DonaldsDreamland: (0.1, 0.3)}
+<table>
+	        <tr>
+			<th colspan="3">Decreasing Distributions</th>
+		</tr>
+		<tr>
+			<th>Playground</th>
+			<th>Minimum Value</th>
+			<th>Maximum Value</th>
+	        </tr>
+		<tr>
+			<td align="center">Toontown Central</td>
+			<td align="center">0.35</td>
+			<td align="center">0.8</td>
+		</tr>
+		<tr>
+			<td align="center">Donald's Dock</td>
+			<td align="center">0.3</td>
+			<td align="center">0.7</td>
+		</tr>
+		<tr>
+			<td align="center">Daisy's Gardens</td>
+			<td align="center">0.25</td>
+			<td align="center">0.6</td>
+		</tr>
+		<tr>
+			<td align="center">Minnie's Melodyland</td>
+			<td align="center">0.2</td>
+			<td align="center">0.5</td>
+		</tr>
+		<tr>
+			<td align="center">The Brrrgh</td>
+			<td align="center">0.15</td>
+			<td align="center">0.4</td>
+		</tr>
+		<tr>
+			<td align="center">Donald's Dreamland</td>
+			<td align="center">0.1</td>
+			<td align="center">0.3</td>
+		</tr>
+</table>
 
-    class ForgetfulnessDistrib(TraitDistribution):
-        TraitType = TraitDistribution.TraitTypes.DECREASING
-        Sz2MinMax = {ToontownGlobals.ToontownCentral: (0.0, 1.0),
-         ToontownGlobals.DonaldsDock: (0.0, 0.9),
-         ToontownGlobals.DaisyGardens: (0.0, 0.8),
-         ToontownGlobals.MinniesMelodyland: (0.0, 0.7),
-         ToontownGlobals.TheBrrrgh: (0.0, 0.6),
-         ToontownGlobals.DonaldsDreamland: (0.0, 0.5)}
-```
+<table>
+	        <tr>
+			<th colspan="3">Forgetfulness Distributions</th>
+		</tr>
+		<tr>
+			<th>Playground</th>
+			<th>Minimum Value</th>
+			<th>Maximum Value</th>
+	        </tr>
+		<tr>
+			<td align="center">Toontown Central</td>
+			<td align="center">0.0</td>
+			<td align="center">1.0</td>
+		</tr>
+		<tr>
+			<td align="center">Donald's Dock</td>
+			<td align="center">0.0</td>
+			<td align="center">0.9</td>
+		</tr>
+		<tr>
+			<td align="center">Daisy's Gardens</td>
+			<td align="center">0.0</td>
+			<td align="center">0.8</td>
+		</tr>
+		<tr>
+			<td align="center">Minnie's Melodyland</td>
+			<td align="center">0.0</td>
+			<td align="center">0.7</td>
+		</tr>
+		<tr>
+			<td align="center">The Brrrgh</td>
+			<td align="center">0.0</td>
+			<td align="center">0.6</td>
+		</tr>
+		<tr>
+			<td align="center">Donald's Dreamland</td>
+			<td align="center">0.0</td>
+			<td align="center">0.5</td>
+		</tr>
+</table>
 
 For increasing distributions, a higher number is desirable. For decreasing distributions, and the Forgetfulness distribution, a lower number is desirable.
 
