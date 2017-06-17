@@ -74,7 +74,7 @@
 - [Appendix F: Toontask Item Recovery Rates](#appendix-f)
 	- [Toontown Central](#ttc-rates)
 	- [Donald's Dock](#dd-rates)
-	- [Daisy's Garden](#dg-rates)
+	- [Daisy's Gardens](#dg-rates)
 	- [Minnie's Melodyland](#mml-rates)
 	- [The Brrrgh](#tb-rates)
 	- [Donald's Dreamland](#ddl-rates)
@@ -6581,11 +6581,11 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 		</tr>
 </table>
 
-## Daisy's Garden <a name="dg-rates"></a>
+## Daisy's Gardens <a name="dg-rates"></a>
 
 <table>
 	        <tr>
-			<th colspan="4">Daisy's Garden</th>
+			<th colspan="4">Daisy's Gardens</th>
 		</tr>
 		<tr>
 			<th>Shopkeeper</th>
