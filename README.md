@@ -1159,7 +1159,7 @@ Excluding the undercarriage which has different logic (see two questions below),
 However, if no Toons are within the `nearToons` array, the V.P. will use his Jump attack. The radius for `nearToons` is shown in the following screenshot:
 
 <p align="center">
-  <img src="http://i.imgur.com/CocWUpG.png" width="300" height="300">
+  <img src="http://i.imgur.com/7sJbLE0.jpg" width="300" height="300">
 </p>
 
 Following dizziness, the V.P. always uses Gear Shower.
