@@ -42,6 +42,7 @@
     - [How does the C.E.O. choose which attack to use?](#ceo-1)
     - [How does the C.E.O. choose which toon to attack?](#ceo-2)
     - [How does the C.E.O. decide to continue moving or not?](#ceo-3)
+    - [How long can it take a Cog to consume an oil can?](#ceo-4)
 - [Fishing](#fishing)
 	- [Is using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod?](#fishing-1)
 - [Racing](#racing)
@@ -1317,6 +1318,33 @@ After the attack is completed, the toon's damage total in `threatDict` is reduce
 ## How does the C.E.O. decide to continue moving or not? <a name="ceo-3"></a>
 
 If the C.E.O. is moving towards a toon on a table, and that particular toon hopped off the table, a random number is generated such that 0.0 <= X < 1.0. If X is less than 0.5, the C.E.O. will stop moving towards that table, and choose to do another attack. Otherwise, the C.E.O. will run over the table and stop on top of it.
+
+## How long can it take a Cog to consume an oil can? <a name="ceo-4"></a>
+
+To determine how long it will take for a Cog to fully consume an oil can in the banquet round, a base number called `eatingDuration` is first established based on the difficulty setting of the C.E.O. battle. The values for `eatingDuration` are as follows.
+
+|   Difficulty     | `eatingDuration` | 
+|:----------------:|:----------------:|
+| 1 Fire           | 25               | 
+| 2 Fires          | 26               |
+| 3 Fires          | 27               |
+| 4 Fires          | 28               |
+| 5 Fires          | 29               |
+
+For each Cog in the banquet, a random integer is generated such that -5 <= X <= 5. This number is then added to the `eatingDuration` for that Cog. The final result is how long it will take for a Cog to fully consume an oil can, in seconds.
+
+After a Cog has fully consumed an oil can, the amount of time before the Cog will become angry is determined by a base variable, `hungryDuration`. `hungryDuration` is determined based on the difficulty setting of the C.E.O. battle. The chart below contains all the base values for `hungryDuration`.
+
+|   Difficulty     | `hungryDuration` | 
+|:----------------:|:----------------:|
+| 1 Fire           | 30               | 
+| 2 Fires          | 28               |
+| 3 Fires          | 26               |
+| 4 Fires          | 24               |
+| 5 Fires          | 22               |
+
+
+For each Cog in the banquet, a random integer is generated such that -5 <= X <= 5. This number is then added to the `hungryDuration` for that Cog. The final result is how long it will take for a Cog to become angry after consuming an oil can, in seconds.
 
 # Fishing <a name="fishing"></a>
 [[back to top](#contents)]
