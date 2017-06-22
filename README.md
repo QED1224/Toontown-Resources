@@ -75,7 +75,7 @@
 - [Appendix F: Toontask Item Recovery Rates](#appendix-f)
 	- [Toontown Central](#ttc-rates)
 	- [Donald's Dock](#dd-rates)
-	- [Daisy's Gardens](#dg-rates)
+	- [Daisy Gardens](#dg-rates)
 	- [Minnie's Melodyland](#mml-rates)
 	- [The Brrrgh](#tb-rates)
 	- [Donald's Dreamland](#ddl-rates)
@@ -6536,7 +6536,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 			<td align="center">Professor Wiggle</td>
 			<td align="center">Goldfish</td>
 			<td align="center">75</td>
-			<td align="center">Obtained from defeating Flunky or Short Change</td>
+			<td align="center">Obtained from defeating a Flunky</td>
 		</tr>
 		<tr>
 			<td align="center">Sharky Jones</td>
@@ -6609,11 +6609,11 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 		</tr>
 </table>
 
-## Daisy's Gardens <a name="dg-rates"></a>
+## Daisy Gardens <a name="dg-rates"></a>
 
 <table>
 	        <tr>
-			<th colspan="4">Daisy's Gardens</th>
+			<th colspan="4">Daisy Gardens</th>
 		</tr>
 		<tr>
 			<th>Shopkeeper</th>
