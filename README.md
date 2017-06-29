@@ -1359,7 +1359,7 @@ diceRoll ^ (1 / 4.3) < 0.1 =>
 diceRoll < 0.00005 => P(rarity = 10 | Twig) = P(diceRoll < 0.00005)
 ```
 
-Since Python’s `random` function generates a random float uniformly in the semi-open range [0.0, 1.0), we can approximate the above with `diceRoll ~ U(0,1)`:
+Since Python’s [`random` function](https://docs.python.org/2/library/random.html) generates a random float uniformly in the semi-open range [0.0, 1.0), we can approximate the above with `diceRoll ~ U(0,1)`:
 
 ```
 P(rarity = 10 | Twig) = (0.00005 - 0) / (1 - 0) = 0.00005
@@ -1377,7 +1377,7 @@ Therefore, we can conclude that the odds of getting `rarity = 10` is approximate
 P(ultra rare) = P(rarity = 10 | rod) * P(ultra rare | pond)
 ```
 
-Looking back at our [`fishList`s](http://pastebin.com/as4BKA3E), we see that the highest possbile value for `P(ultra rare | pond)` is 0.5. So, for Twig to be more beneficial than Gold, we need:
+Looking back at our [`fishList`s](http://pastebin.com/as4BKA3E), we see that the highest possbile value for `P(ultra rare | pond)` is 0.5. So, for a Twig rod to be more beneficial than Gold rod, we need:
 
 ```
 0.00005 * 0.5 > 0.000221 * Y => Y < 0.113122
