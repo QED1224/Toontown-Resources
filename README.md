@@ -1334,23 +1334,59 @@ For each Cog in the banquet, a random integer is generated such that -5 <= X <= 
 # Fishing <a name="fishing"></a>
 [[back to top](#contents)]
 
-## Is using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod? <a name="fishing-1"></a>
+## Are you more likely to catch any ultra-rare fish with a Twig rod than a Gold Rod? <a name="fishing-1"></a>
 
-No, infact using a Twig Rod is *less* beneficial to catch light-weight Ultra Rares than a Gold Rod. In order for any rod to obtain an Ultra Rare Fish, the `rarity` value has to equal 10. Given how `rarity` is calculated ([see Fishing for more details](#fishing-main)), we can figure out the minimum `diceRoll` number necessary for Twig Rod and Gold Rod to have a `rarity` value of 10. Assume `diceRoll` = X.
+In order for any fishing rod to obtain an ultra-rare fish, its [rarity value](https://github.com/QED1224/Toontown-Resources/blob/master/README.md#fishitem) must be 10. Given how rarity is calculated, we can solve for the minimum `diceRoll` values necessary for both the Twig and Gold rods.
+
+For the Twig rod, we have:
 
 ```
-Twig Rod
-rarity = int(ceil(10 * (1 - pow(X, 1 / 4.3)))) = 9 => X = 0.000050119
-
-Gold Rod
-rarity = int(ceil(10 * (1 - pow(X, 1 / (4.3 * 0.85))))) = 9 => X = 0.0002213
+rarity = int(ceil(10 * (1 - pow(diceRoll, 1 / 4.3))))
 ```
-In order for a Twig Rod to have `rarity = 10`, `diceRoll` needs to be less than 0.000050119. But for a Gold Rod to have `rarity = 10`, `diceRoll` needs to be less than 0.0002213. 
+We know that `ceil(x) = 10` for any `x` such that `9 < x <= 10`, which implies that:
 
-Since `rarity` is determined before picking a fish (and the fish being picked from that `fishList` is done randomly), a Twig Rod has a much lower chance to hit a `rarity` value of 10 than a Gold Rod. 
+```
+10 * (1 - diceRoll ^ (1 / 4.3)) > 9 =>
+
+1 - diceRoll ^ (1 / 4.3) > 0.9 =>
+
+(-1) * diceRoll ^ (1 / 4.3) > -0.1 =>
+
+diceRoll ^ (1 / 4.3) < 0.1 =>
+
+(diceRoll ^ (1 / 4.3)) ^ 4.3 < 0.1 ^ 4.3 =>
+
+diceRoll < 0.00005 => P(rarity = 10 | Twig) = P(diceRoll < 0.00005)
+```
+
+Since Python’s `random` function generates a random float uniformly in the semi-open range [0.0, 1.0), we can approximate the above with `diceRoll ~ U(0,1)`:
+
+```
+P(rarity = 10 | Twig) = (0.00005 - 0) / (1 - 0) = 0.00005
+```
+
+Using the same technique for the Gold rod, we find that:
+
+```
+P(rarity = 10 | Gold) = 0.000221
+```
+
+Therefore, we can conclude that the odds of getting `rarity = 10` is approximately 0.017131% more likely with a Gold rod. However, we also need to consider the probabilities associated with each pond. In particular, for any pond, we have:
+
+```
+P(ultra rare) = P(rarity = 10 | rod) * P(ultra rare | pond)
+```
+
+Looking back at our [`fishList`s](http://pastebin.com/as4BKA3E), we see that the highest possbile value for `P(ultra rare | pond)` is 0.5. So, for Twig to be more beneficial than Gold, we need:
+
+```
+0.00005 * 0.5 > 0.000221 * Y => Y < 0.113122
+```
+
+Since this is never true, the odds of catching an ultra-rare fish are not better with a Twig rod than a Gold rod at any pond.
 
 # Racing <a name="racing"></a>
-[[back to top](#contents)]
+[[back to top](#contents)]o
 
 ## Wall-riding <a name="racing-1"></a>
 
