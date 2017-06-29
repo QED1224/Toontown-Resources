@@ -1386,7 +1386,7 @@ Looking back at our [`fishList`s](http://pastebin.com/as4BKA3E), we see that the
 Since this is never true, the odds of catching an ultra-rare fish are not better with a Twig rod than a Gold rod at any pond.
 
 # Racing <a name="racing"></a>
-[[back to top](#contents)]o
+[[back to top](#contents)]
 
 ## Wall-riding <a name="racing-1"></a>
 
