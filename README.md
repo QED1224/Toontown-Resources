@@ -1334,7 +1334,7 @@ For each Cog in the banquet, a random integer is generated such that -5 <= X <= 
 # Fishing <a name="fishing"></a>
 [[back to top](#contents)]
 
-## Are you more likely to catch any ultra-rare fish with a Twig rod than a Gold Rod? <a name="fishing-1"></a>
+## Is using a Twig Rod more beneficial to catch light-weight Ultra Rares than a Gold Rod? <a name="fishing-1"></a>
 
 In order for any fishing rod to obtain an ultra-rare fish, its [rarity value](https://github.com/QED1224/Toontown-Resources/blob/master/README.md#fishitem) must be 10. Given how rarity is calculated, we can solve for the minimum `diceRoll` values necessary for both the Twig and Gold rods.
 
