@@ -246,11 +246,11 @@ For all gags, `propAcc` is assigned a value from `AvPropAccuracy`. For Lure gags
  trackExp = [highest gag level in track - 1] * 10
 ```
 
-If the track is Toon-up, the above result is halved. 
+If the track is Toon-up, the above result is halved.
 
 If a toon does not own a track, their `trackExp` is still treated as 0.
 
-This is repeated for every gag within a particular track. So, if multiple toons use the *same gag track* (outside of Toon-up and Trap) on the *same target*, the highest `trackExp` is used in the `atkAcc` calculations for all of them. The latter requirement is particularly important: In order for weaker gags to inherit an increased `trackExp`, the target(s) of the weaker and stronger gags must be the same. 
+This is repeated for every gag within a particular track. So, if multiple toons use the *same gag track* (outside of Toon-up and Trap) on the *same target*, the highest `trackExp` is used in the `atkAcc` calculations for all of them. The latter requirement is particularly important: In order for weaker gags to inherit an increased `trackExp`, the target(s) of the weaker and stronger gags must be the same.
 
 ### `tgtDef` <a name="toon-atk-acc-5"></a>
 
@@ -266,7 +266,7 @@ Here's a summary of all possible defense values:
 
 ### `bonus` <a name="toon-atk-acc-6"></a>
 
-There are two possible sources of bonus: PrevHits and the Lured Ratio. 
+There are two possible sources of bonus: PrevHits and the Lured Ratio.
 
 In order for PrevHits to be applied, the followings conditions have to be met
 
@@ -279,7 +279,7 @@ In order for PrevHits to be applied, the followings conditions have to be met
 Assuming the above conditions are met, PrevHits is calculated like so:
 
 ```
-20 * [number of previous hits to a given cog in the current round] 
+20 * [number of previous hits to a given cog in the current round]
 ```
 
 The Lured Ratio bonus is calculated like so:
@@ -379,7 +379,7 @@ As you can see, it used the index of cog C from `suits` on the cog at the same i
 
 ## Carryover
 
-"Carryover" damage only applies to version 2.0 cogs. Every time an instance of damage is done, the game checks to see if the cog is dead. Once the first layer is destroyed, any further instances of damage bleed through to the skelecog layer. The game calculates the instances of damage in the order of gag damage (Red), `hpBonus` (Yellow) and then `kbBonus` (Orange). 
+"Carryover" damage only applies to version 2.0 cogs. Every time an instance of damage is done, the game checks to see if the cog is dead. Once the first layer is destroyed, any further instances of damage bleed through to the skelecog layer. The game calculates the instances of damage in the order of gag damage (Red), `hpBonus` (Yellow) and then `kbBonus` (Orange).
 
 Suppose we have 3 toons use maxed Storm Clouds against a lured Level 12 The Big Cheese V2.0.
 
@@ -420,20 +420,20 @@ Let's look at an example. Here's the output of a simulation of the above algorit
 :SuitBattleGlobals(LP): RazzleDazzle with freq = 25
 :SuitBattleGlobals(LP): Synergy with freq = 5
 :SuitBattleGlobals(LP): TeeOff with freq = 35
-:SuitBattleGlobals(LP): 
+:SuitBattleGlobals(LP):
 	randNum = 60
 	count = 0
 	index = 0
 :SuitBattleGlobals(LP): Looping through attacks...
-:SuitBattleGlobals(LP): 
+:SuitBattleGlobals(LP):
 	count = 35 (RubberStamp)
 	index = 0
 :SuitBattleGlobals(LP): 60 < 35? => False
-:SuitBattleGlobals(LP): 
+:SuitBattleGlobals(LP):
 	count = 60 (RubberStamp + RazzleDazzle)
 	index = 1
 :SuitBattleGlobals(LP): 60 < 60? => False
-:SuitBattleGlobals(LP): 
+:SuitBattleGlobals(LP):
 	count = 65 (RubberStamp + RazzleDazzle + Synergy)
 	index = 2
 :SuitBattleGlobals(LP): 60 < 65? => True
@@ -475,7 +475,7 @@ If neither of the above are true, the following algorithm is used to select a to
 3. A pseudorandom integer `randNum` is generated such that 0 <= `randNum` <= 99.
 4. The values in `dmgs` are then iteratively summed. This sum is stored in a variable `count`.
 5. On each iteration, `randNum` is compared to `count`.
-    - if `randNum` is less than `count`, an integer representing the number of completed iterations is returned (starting at 0). 
+    - if `randNum` is less than `count`, an integer representing the number of completed iterations is returned (starting at 0).
     - if `randNum` is greater than or equal to `count`, the loop continued.
 6. If no toon is found by the above, a toon is selected at random.
 
@@ -537,17 +537,17 @@ Note: A Doodle will *not* gain any `aptitude` points if it uses a trick in battl
 
 ### Do Doodle tricks have base accuracy values to them? <a name="doodle-t&t-2"></a>
 
-Yes, Doodle tricks have individual accuracy values for each trick. These values are used in determining the final accuracy value of the trick, referred to as `cutoff`. Below is a list of the base accuracy values for each trick. 
+Yes, Doodle tricks have individual accuracy values for each trick. These values are used in determining the final accuracy value of the trick, referred to as `cutoff`. Below is a list of the base accuracy values for each trick.
 
-| Trick  | Base accuracy value | 
+| Trick  | Base accuracy value |
 |:------:|:-------------:|
-| Jump | 1.0 | 
+| Jump | 1.0 |
 | Beg | 0.9 |
 | Play Dead | 0.8 |
 | Rollover | 0.7 |
 | Backflip | 0.6 |
 | Dance | 0.5 |
-| Speak | 0.4 | 
+| Speak | 0.4 |
 
 ### How does the game determine if the Doodle will successfully perform the trick? <a name="doodle-t&t-3"></a>
 
@@ -557,11 +557,11 @@ To determine if a trick will be successful or not, the following equation can be
 cutoff = trickAcc * (minApt + ((maxApt - minApt) * aptitude))
 ```
 
-`cutoff` is the end result of the following variables being calculated. `trickAcc` referred to the base accuracy value of the trick being used (see previous question). `minApt` and `maxApt` are predetermined values set by the Doodle's mood. If the Doodle is neutral, excited, playful or affectionate, `minApt = 0.5` and `maxApt = 0.97`. However, if the Doodle is bored, restless, lonely, sad, tired, hungry or angry, `minApt = 0.1` and `maxApt = 0.6`. `aptitude` is determined by taking the trick's experience / 10000.  
+`cutoff` is the end result of the following variables being calculated. `trickAcc` referred to the base accuracy value of the trick being used (see previous question). `minApt` and `maxApt` are predetermined values set by the Doodle's mood. If the Doodle is neutral, excited, playful or affectionate, `minApt = 0.5` and `maxApt = 0.97`. However, if the Doodle is bored, restless, lonely, sad, tired, hungry or angry, `minApt = 0.1` and `maxApt = 0.6`. `aptitude` is determined by taking the trick's experience / 10000.
 
-If the Doodle is tired either at the Estate or the battle selection screen, `cutoff` is multiplied by 0.5. 
+If the Doodle is tired either at the Estate or the battle selection screen, `cutoff` is multiplied by 0.5.
 
-If the Doodle has a negative mood at the Estate, but a positive mood on the battle selection screen, `minApt` and `maxApt` are still equal 0.5 and 0.97 respectively. 
+If the Doodle has a negative mood at the Estate, but a positive mood on the battle selection screen, `minApt` and `maxApt` are still equal 0.5 and 0.97 respectively.
 
 If the Doodle has negative moods in both the Estate and the battle selection screen, `minApt = 0.1` and `maxApt = 0.6`. However, `cutoff` is not multiplied by 0.5 unless one of the negative moods is tired.
 
@@ -569,9 +569,9 @@ Once the final value of `cutoff` is determined, a pseudorandom number, `randVal`
 
 Below is a table that shows the final `cutoff` value for each trick, assuming the doodle was maxed in said trick, and have no negative emotions on both the battle selection screen and the Estate.
 
-| Trick  | `cutoff` value | 
+| Trick  | `cutoff` value |
 |:------:|:-------------:|
-| Jump | 0.97 | 
+| Jump | 0.97 |
 | Beg | 0.873 |
 | Play Dead | 0.776 |
 | Rollover | 0.679 |
@@ -619,7 +619,7 @@ setSurpriseThreshold: (8239)
 setAffectionThreshold: (1963)
 ```
 
-As seen here, the Doodle's `setFatigueThreshold` = 7809. Each time a Doodle performs a successful trick, the `setFatigue` value will increase. To determine how much `setFatigue` will increase after each trick, the following equation can be used. 
+As seen here, the Doodle's `setFatigueThreshold` = 7809. Each time a Doodle performs a successful trick, the `setFatigue` value will increase. To determine how much `setFatigue` will increase after each trick, the following equation can be used.
 
 ```
 setFatigue = (MaxTrickFatigue + ((MinTrickFatigue - MaxTrickFatigue) * aptitude))
@@ -752,10 +752,10 @@ Depending on the emotion, the threshold to reach that emotion is generated with 
 		<tr>
 			<td align="center">Affection</td>
 			<td align="center">Decreasing</td>
-		</tr>	
+		</tr>
 </table>
 
-Each playground Pet Shop has a minimum and maximum range for the distributions. Below are the three classes; one for increasing distributions, one for decreasing distributions, and one for the Forgetfulness trait. 
+Each playground Pet Shop has a minimum and maximum range for the distributions. Below are the three classes; one for increasing distributions, one for decreasing distributions, and one for the Forgetfulness trait.
 
 <table>
 	        <tr>
@@ -777,7 +777,7 @@ Each playground Pet Shop has a minimum and maximum range for the distributions. 
 			<td align="center">0.7</td>
 		</tr>
 		<tr>
-			<td align="center">Daisy's Gardens</td>
+			<td align="center">Daisy Gardens</td>
 			<td align="center">0.4</td>
 			<td align="center">0.75</td>
 		</tr>
@@ -818,7 +818,7 @@ Each playground Pet Shop has a minimum and maximum range for the distributions. 
 			<td align="center">0.7</td>
 		</tr>
 		<tr>
-			<td align="center">Daisy's Gardens</td>
+			<td align="center">Daisy Gardens</td>
 			<td align="center">0.25</td>
 			<td align="center">0.6</td>
 		</tr>
@@ -859,7 +859,7 @@ Each playground Pet Shop has a minimum and maximum range for the distributions. 
 			<td align="center">0.9</td>
 		</tr>
 		<tr>
-			<td align="center">Daisy's Gardens</td>
+			<td align="center">Daisy Gardens</td>
 			<td align="center">0.0</td>
 			<td align="center">0.8</td>
 		</tr>
@@ -922,17 +922,17 @@ if rarity <= 0:
 ```
 Where `diceRoll` is a pseudorandom real number such that 0.0 <= `diceRoll` < 1.0 and `RodRarityFactor` is given by the following table.
 
-|   Rod    | `RodRarityFactor` | 
+|   Rod    | `RodRarityFactor` |
 |:--------:|:-----------------:|
-| Twig     | 1 / 4.3           | 
+| Twig     | 1 / 4.3           |
 | Bamboo   | 1 / (4.3 * 0.975) |
 | Hardwood | 1 / (4.3 * 0.95)  |
 | Steel    | 1 / (4.3 * 0.90)  |
 | Gold     | 1 / (4.3 * 0.85)  |
 
-- `fishList`: 
+- `fishList`:
 
-After the calculation of `rarity`, the possible fish are narrowed by pond location and rod used. Then, the possible fish are further subdivided into multiple `fishList`s, each associated with a particular `rarity` value. All possible combinations can be [seen here](http://pastebin.com/as4BKA3E). 
+After the calculation of `rarity`, the possible fish are narrowed by pond location and rod used. Then, the possible fish are further subdivided into multiple `fishList`s, each associated with a particular `rarity` value. All possible combinations can be [seen here](http://pastebin.com/as4BKA3E).
 
 After selecting a genus and species, the fish's weight is calculated according to the following process:
 
@@ -956,17 +956,17 @@ value = OVERALL_VALUE_SCALE * (rarityValue + weightValue)
 finalValue = int(ceil(value))
 ```
 
-Where `RARITY_VALUE_SCALE` = 0.2, `WEIGHT_VALUE_SCALE` = 0.05 / 16.0, and `OVERALL_VALUE_SCALE` = 15. 
+Where `RARITY_VALUE_SCALE` = 0.2, `WEIGHT_VALUE_SCALE` = 0.05 / 16.0, and `OVERALL_VALUE_SCALE` = 15.
 
 If no `fishList` is associated with the calculated `rarity` value, a Balloon Fish weighing 0lbs will be caught.
 
 ### `JellybeanItem`
 
 In this case, Jellybeans are awarded according to the following table.
- 
-|   Rod    | Jellybeans | 
+
+|   Rod    | Jellybeans |
 |:--------:|:----------:|
-| Twig     | 10         | 
+| Twig     | 10         |
 | Bamboo   | 20         |
 | Hardwood | 30         |
 | Steel    | 75         |
@@ -983,9 +983,9 @@ In this case, a boot will be caught.
 
 Every Toontask that requires the player to recover an item, either from a Cog, or from Fishing, has an assigned difficulty level for recovering the item. The difficulty variables are written as `VeryEasy`, `Easy`, `Medium`, `Hard`, and `VeryHard`. A table below shows the associated probability with each variable.
 
-|   Difficulty     | Percentage | 
+|   Difficulty     | Percentage |
 |:----------------:|:----------:|
-| `VeryEasy`       | 100        | 
+| `VeryEasy`       | 100        |
 | `Easy`           | 75         |
 | `Medium`         | 50         |
 | `Hard`           | 25         |
@@ -1038,7 +1038,7 @@ Multiple Traps give multiple boosts, with an accuracy boost of up to +60 to the 
 
 ## Does Trap provide an accuracy bonus to other gag tracks, even when not activated? <a name="trap-2"></a>
 
-Yes, Trap gives an accuracy boost to other gag tracks as well. Even when not activated, Trap always counts as a hit on the cog. It still meets the conditions given in the [bonus section](#toon-atk-acc-6), thus a +20 accuracy boost to the next gag targeting the cog. 
+Yes, Trap gives an accuracy boost to other gag tracks as well. Even when not activated, Trap always counts as a hit on the cog. It still meets the conditions given in the [bonus section](#toon-atk-acc-6), thus a +20 accuracy boost to the next gag targeting the cog.
 
 ### Battle Simulations
 
@@ -1128,12 +1128,12 @@ Here are some example calculations:
 ```
 Given: a Lureless toon using Lil' Oldman
 
-Questions: 
+Questions:
 
 a. what is the probability that a level 12 cog will stay lured for 3 rounds?
 b. what is the probability that 4 level 12 cogs will stay lured for 3 rounds?
 
-Answer: 
+Answer:
 
 a.
 
@@ -1143,7 +1143,7 @@ a.
 
 b.
 
-1. The probability that a single level 12 cog will stay lured for 3 rounds is 9.0%. 
+1. The probability that a single level 12 cog will stay lured for 3 rounds is 9.0%.
 2. The probability that all 4 will stay lured for 3 rounds is (.09) ^ 4 = 0.00006561.
 ```
 
@@ -1178,7 +1178,7 @@ While it's impossible to give a definitive answer without insider knowledge, her
 
 - `randChoice` was deliberately set to 0 whenever an attack SOS card was used. This serves as pretty clear evidence that the developers, at the very least, wanted accuracy to be improved for SOS cards.
 - A user on a Toontown fansite reportedly received the following email in response to asking if SOS cards should be able to miss.
-   
+
    > Thank you for your e-mail.
 
    > 1. SOS drop cards are supposed to work 100% of the time. If you should encounter one that doesn't work, please submit a   bug report with a screen report attached so we can look into this for you further.
@@ -1186,7 +1186,7 @@ While it's impossible to give a definitive answer without insider knowledge, her
    > 2. The stars at the bottom of the SOS cards are the potency. The more stars... The stronger the gag. The maximum number   of stars that you should be able to receive is five.
 
    ([Original post can be found here.](https://gyazo.com/38a8efa05345441c711e95420f59cb40))
-   
+
 - The Toontown Player's Guide stated that Drop SOS cards had *near* perfect accuracy.
 
   > ... Some of these Toons, like Professor Pete, will restock your gag supply, while others, like Clumsy Ned, will lend a hand by dropping pianos with near perfect accuracy ...
@@ -1227,11 +1227,11 @@ The second step is to check for toons who already have the `preferredSummonType`
 
 ## How does the C.J. decide when to jump? <a name="cj-2"></a>
 
-Every 15 seconds the C.J. has an 11% chance to jump. 
+Every 15 seconds the C.J. has an 11% chance to jump.
 
 ## How does the prosecution choose which toon to attack? <a name="cj-3"></a>
 
-Every cycle, each prosecuting cog has a 50/50 chance to either attack a toon or hit the scale. If option 1 is selected, a toon is chosen at random from a list of all toons in the battle. 
+Every cycle, each prosecuting cog has a 50/50 chance to either attack a toon or hit the scale. If option 1 is selected, a toon is chosen at random from a list of all toons in the battle.
 
 ## How is the scale related to the jury? <a name="cj-4"></a>
 
@@ -1241,7 +1241,7 @@ When determining how the amount of Toon jurors affects the scale, the following 
 jurorsOver = numToonJurorsSeated - LawbotBossJurorsForBalancedScale
 dmgAdjust = jurorsOver * LawbotBossDamagePerJuror
 ```
-`jurorsOver` is determined by taking the amount of Toon jurors seated and then subtracting it by the amount needed for a balanced scale (8 for non-modified servers). That amount is then multiplied by the damage amount each Toon juror done, which is set to 68 per toon juror. The result is then referred to as `dmgAdjust`. 
+`jurorsOver` is determined by taking the amount of Toon jurors seated and then subtracting it by the amount needed for a balanced scale (8 for non-modified servers). That amount is then multiplied by the damage amount each Toon juror done, which is set to 68 per toon juror. The result is then referred to as `dmgAdjust`.
 
 The initial damage of the scale is calculated at 1350. `dmgAdjust` is then added to the initial damage of the scale. Given how the formula is calculated, we can establish the following ratios for the initial amount of evidence in the prosecution and defense pans, based on the amount of Toon jurors seated.
 
@@ -1273,7 +1273,7 @@ Initial Toon Evidence = 2700 - Initial Cog Evidence
 
 There are two separate functions that determine how long it will take a Cog juror to occupy a seat. They are `requestToonJuror` and `requestEmptyJuror`.
 
-`requestToonJuror` is called as soon as a Toon juror takes over a seat. Subsequently, `delayTime` generates a random number such that 9 <= `delayTime` <= 19. This number is the amount of time it will take for a Cog juror to begin flying towards the occupied seat, in seconds. 
+`requestToonJuror` is called as soon as a Toon juror takes over a seat. Subsequently, `delayTime` generates a random number such that 9 <= `delayTime` <= 19. This number is the amount of time it will take for a Cog juror to begin flying towards the occupied seat, in seconds.
 
 `requestEmptyJuror` is called as soon as the cannon round begins. `delayTime` generates a random number such that 1 <= `delayTime` <= 20. This number is the amount of time it will take for a Cog juror to being flying towards an empty seat, in seconds.
 
@@ -1308,9 +1308,9 @@ If the C.E.O. is moving towards a toon on a table, and that particular toon hopp
 
 To determine how long it will take for a Cog to fully consume an oil can in the banquet round, a base number called `eatingDuration` is first established based on the difficulty setting of the C.E.O. battle. The values for `eatingDuration` are as follows.
 
-|   Difficulty     | `eatingDuration` | 
+|   Difficulty     | `eatingDuration` |
 |:----------------:|:----------------:|
-| 1 Fire           | 25               | 
+| 1 Fire           | 25               |
 | 2 Fires          | 26               |
 | 3 Fires          | 27               |
 | 4 Fires          | 28               |
@@ -1320,9 +1320,9 @@ For each Cog in the banquet, a random integer is generated such that -5 <= X <= 
 
 After a Cog has fully consumed an oil can, the amount of time before the Cog will become angry is determined by a base variable, `hungryDuration`. `hungryDuration` is determined based on the difficulty setting of the C.E.O. battle. The chart below contains all the base values for `hungryDuration`.
 
-|   Difficulty     | `hungryDuration` | 
+|   Difficulty     | `hungryDuration` |
 |:----------------:|:----------------:|
-| 1 Fire           | 30               | 
+| 1 Fire           | 30               |
 | 2 Fires          | 28               |
 | 3 Fires          | 26               |
 | 4 Fires          | 24               |
@@ -1423,7 +1423,7 @@ Now, we need to cover four more sub-cases:
 
 1. Toon-up gags are always evaluated independently.
 2. Lure gags are only evaluated independently when using a combination of multi- and single-cog Lures, and a multi-cog Lure is the lowest level ([see the multi-Lure section for details](#lure-1)). In all other cases, the result of the lowest Lure gag is applied to all subsequent Lures.
-3. Sound gags always inherit the result of the lowest Sound gag used. 
+3. Sound gags always inherit the result of the lowest Sound gag used.
 4. For all other tracks, if the previous gag in the particular track has the same target as the current, the current inherits the result of the previous.
 
 ## Is it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results? <a name="misc-3"></a>
@@ -1443,7 +1443,7 @@ Here, the attack order is 1, 2, 3 which means:
 
 1. Toon 1's Safe is evaluated.
 2. Toon 2's Safe is evaluated, but isn't assigned the result of 1 because it had a different target.
-3. Toon 3's Safe is evaluated, but isn't assigned the result of 2 because it had a different target. 
+3. Toon 3's Safe is evaluated, but isn't assigned the result of 2 because it had a different target.
 
 So, in this situation, it is possible for only one Safe to hit Cog A.
 
@@ -1487,7 +1487,7 @@ P(Toon 1 and Toon 3 miss) = (1 - P(Toon 1 and Toon 3 hit))^2 = 0.2025
 P(at least Toon 1 or Toon 3 hit) = 0.3025 + 0.495 = 0.7975
 ```
 
-You'll note that there was a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease didn't actually constitute an overall loss in expected damage: it was simply more evenly distributed. This is evident in the probability that at least one Safe hit, which is 79.75% vs. 55% *in favor of attack mismatches*. To further clarify the difference, let's take a closer look at the possible outcomes. 
+You'll note that there was a 24.75% decrease (0.3025 vs. 0.55) to the odds that two Safes hit cog A compared to without an attack mismatch. However, this decrease didn't actually constitute an overall loss in expected damage: it was simply more evenly distributed. This is evident in the probability that at least one Safe hit, which is 79.75% vs. 55% *in favor of attack mismatches*. To further clarify the difference, let's take a closer look at the possible outcomes.
 ```
 HH = Both hit
 HM = First hit, second miss
@@ -1596,7 +1596,7 @@ To determine the number used for `JCHANCE`, the following formula is used.
 
 Where the result given from the above formula corresponds to the index within the array.
 
-Once the game determines the `JCHANCE` probability, a random number is generated such that 0 <= X <= 99. If X is less than `JCHANCE`, the cog will join the battle. Otherwise, the cog will fly away. If the battle reaches a point where the index number is <= -1, no further cogs will join the battle. 
+Once the game determines the `JCHANCE` probability, a random number is generated such that 0 <= X <= 99. If X is less than `JCHANCE`, the cog will join the battle. Otherwise, the cog will fly away. If the battle reaches a point where the index number is <= -1, no further cogs will join the battle.
 
 
 # Appendix A: Cog Attack Frequencies <a name="appendix-a"></a>
@@ -2618,7 +2618,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 			<td align="center">50</td>
 			</tr>
 </table>
-	        
+
 ## Bossbots <a name="atk-freq-boss"></a>
 [[back to top](#contents)]
 
@@ -6000,9 +6000,9 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 			<td align="center">95, 95, 80 *</td>
 		</tr>
 </table>
-		
+
 \* The Big Cheese is coded with three unused attacks. They are CigarSmoke, FloodTheMarket and SongAnd Dance. However, when the game selects one of these attacks, The Big Cheese instead uses his programmed default attack, which is Glower Power. Despite this, the game will use the accuracy and damage values of the move that was internally selected (see [Cog Attack Accuracy](#cog-atk-acc) for more information), thus allowing Glower Power to have varying damage and accuracy values for the same level.
-		
+
 # Appendix D: SOS Toons <a name="appendix-d"></a>
 [[back to top](#contents)]
 <table>
@@ -6589,7 +6589,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 			<td align="center">75</td>
 			<td align="center"></td>
 		</tr>
-		
+
 </table>
 
 ## Donald's Dock <a name="dd-rates"></a>
@@ -7025,7 +7025,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 * Toon-up SOS:
   * Daffy Don now uses Bamboo Cane, instead of Juggling Cubes.
   * Madame Chuckle now uses Bamboo Cane, instead of Juggling Cubes.
-  
+
 * Trap SOS:
   * Clerk Will now uses Quicksand, instead of Trapdoor.
   * Clerk Penny now uses Quicksand, instead of Trapdoor.
@@ -7038,7 +7038,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
 * Sound SOS:
   * Barbara Seville now uses Elephant Trunk, instead of Foghorn.
   * Sid Sonata now uses Elephant Trunk, instead of Foghorn.
-  
+
 * Drop SOS:
   * Clumsy Ned now uses Big Weight, instead of Grand Piano.
   * Franz Neckvein now uses Safe, instead of Grand Piano.
@@ -7054,7 +7054,7 @@ Once the game determines the `JCHANCE` probability, a random number is generated
   * Julius Wheezer is now a 5 star card, and guarantees that all cog attacks miss for 3 rounds.
 
 * Two SOS cards have been added to the game:
-  * Rocky, a 5 star Throw SOS card. This SOS Toon uses a Wedding Cake, and deals 132 damage to all cogs. 
+  * Rocky, a 5 star Throw SOS card. This SOS Toon uses a Wedding Cake, and deals 132 damage to all cogs.
   * Loopy Loopengloop, a 5 star Squirt SOS card. This SOS Toon uses a Geyser, and deals 115 damage to all cogs.
   * These two cards do not receive Lure knockback bonus damage.
 
