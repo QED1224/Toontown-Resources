@@ -88,7 +88,7 @@
 
 ## Goals
 
-This guide started out as an attempt to answer some long-standing questions about the battle system in Disney's Toontown Online. However, it has since grown far larger than anticipated; it has answered a total of 28 questions, many of which expand beyond the battle system itself. That said, the number one goal remains the same: to offer *accurate* information about Toontown's various mechanics. Suggestions or questions about the quality of our content are always welcome.
+This guide started out as an attempt to answer some long-standing questions about the battle system in Disney's Toontown Online. However, it has since grown far larger than anticipated; it has answered a total of 29 questions, many of which expand beyond the battle system itself. That said, the number one goal remains the same: to offer *accurate* information about Toontown's various mechanics. Suggestions or questions about the quality of our content are always welcome.
 
 ## Private Servers
 
