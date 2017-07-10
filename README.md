@@ -21,6 +21,7 @@
 - [Squirt](#squirt)
 - [Drop](#drop)
 - [Cogs](#cogs)
+    - [How does a cog decide to join a battle?](#cogs-1)
 - [V.P.](#vp)
     - [Does being Lureless impact the accuracy of Lure SOS cards?](#vp-1)
     - [Does being Lureless impact the number of rounds Lure SOS cards would hold for?](#vp-2)
@@ -54,7 +55,6 @@
     - [When multiple gags of the same track are used on the same cog, how is accuracy calculated?](#misc-2)
     - [Is it possible for two gags of the same track, aiming for the same cog, to have different hit/miss results?](#misc-3)
     - [Do Fires count as a stun?](#misc-4)
-    - [How does a cog decide to join a battle?](#misc-5)
 - [Appendix A: Cog Attack Frequencies](#appendix-a)
 	- [Sellbots](#atk-freq-sell)
 	- [Cashbots](#atk-freq-cash)
@@ -1094,6 +1094,24 @@ See the [section on multiple gag usage](#misc-2) for more general information.
 # Cogs <a name="cogs"></a>
 [[back to top](#contents)]
 
+## How does a cog decide to join a battle? <a name="cogs-1"></a>
+
+To determine if a cog will join a battle or not, the game uses an array called `JCHANCE`. `JCHANCE` contains an index of probabilities for a cog joining a battle. The values for `JCHANCE` are the same in every zone.
+
+| Index # |  0 |  1 |  2  |  3  |  4  |  5  |
+|:-------:|:--:|:--:|:---:|:---:|:---:|:---:|
+|`JCHANCE`| 1  |  5 |  10 |  40 |  60 |  80 |
+
+To determine the number used for `JCHANCE`, the following formula is used.
+
+```
+(# of Toons currently in battle - # of Cogs that have joined the battle) + 2
+```
+
+Where the result given from the above formula corresponds to the index within the array.
+
+Once the game determines the `JCHANCE` probability, a random number is generated such that 0 <= X <= 99. If X is less than `JCHANCE`, the cog will join the battle. Otherwise, the cog will fly away. If the battle reaches a point where the index number is <= -1, no further cogs will join the battle.
+
 # V.P. <a name="vp"></a>
 [[back to top](#contents)]
 
@@ -1579,25 +1597,6 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 ### Battle Simulations
 
 - [1 Fire & Hypno Goggles](http://pastebin.com/yqU1WxdX)
-
-## How does a cog decide to join a battle? <a name="misc-5"></a>
-
-To determine if a cog will join a battle or not, the game uses an array called `JCHANCE`. `JCHANCE` contains an index of probabilities for a cog joining a battle. The values for `JCHANCE` are the same in every zone.
-
-| Index # |  0 |  1 |  2  |  3  |  4  |  5  |
-|:-------:|:--:|:--:|:---:|:---:|:---:|:---:|
-|`JCHANCE`| 1  |  5 |  10 |  40 |  60 |  80 |
-
-To determine the number used for `JCHANCE`, the following formula is used.
-
-```
-(# of Toons currently in battle - # of Cogs that have joined the battle) + 2
-```
-
-Where the result given from the above formula corresponds to the index within the array.
-
-Once the game determines the `JCHANCE` probability, a random number is generated such that 0 <= X <= 99. If X is less than `JCHANCE`, the cog will join the battle. Otherwise, the cog will fly away. If the battle reaches a point where the index number is <= -1, no further cogs will join the battle.
-
 
 # Appendix A: Cog Attack Frequencies <a name="appendix-a"></a>
 
