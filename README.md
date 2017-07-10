@@ -1361,7 +1361,8 @@ For the Twig rod, we have:
 ```
 rarity = int(ceil(10 * (1 - pow(diceRoll, 1 / 4.3))))
 ```
-We know that `ceil(x) = 10` for any `x` such that `9 < x <= 10`, which implies that:
+
+We know that `ceil(X) = 10` for any X such that 9 < X <= 10, which implies that:
 
 ```
 10 * (1 - diceRoll ^ (1 / 4.3)) > 9 =>
