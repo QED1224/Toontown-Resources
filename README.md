@@ -80,7 +80,7 @@
 	- [The Brrrgh](#tb-rates)
 	- [Donald's Dreamland](#ddl-rates)
 	- [Other](#other-rates)
-- [Appendix G: Street Suit Planner Data](#appendix-g)
+- [Appendix G: Cog Level Pools](#appendix-g)
 - [Notes](#ttr)
 - [Credits](#credit)
 
@@ -7013,7 +7013,7 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 		</tr>
 </table>
 
-# Appendix G: Street Suit Planner Data <a name="appendix-g"></a>
+# Appendix G: Cog Level Pools<a name="appendix-g"></a>
 [[back to top](#contents)]
 
 # Notes <a name="ttr"></a>
