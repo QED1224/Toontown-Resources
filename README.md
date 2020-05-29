@@ -7018,47 +7018,49 @@ Yes, Fires count as a stun, so long as the gag(s) used aftewards were multi-targ
 
 # Notes <a name="ttr"></a>
 
--The GlobalRarityDialBase value for fishing was lowered as part of the February 1st, 2015 update. It decreased from 4.3 to between 3.5-3.8.
+- The GlobalRarityDialBase value for fishing was lowered as part of the February 1st, 2015 update. It decreased from 4.3 to between 3.5-3.8.
 
--On the May 10th, 2016 update, several modifications were made to certain SOS cards.
+- On the May 10th, 2016 update, several modifications were made to certain SOS cards.
 
-* Toon-up SOS:
-  * Daffy Don now uses Bamboo Cane, instead of Juggling Cubes.
-  * Madame Chuckle now uses Bamboo Cane, instead of Juggling Cubes.
+  * Toon-up SOS:
+    * Daffy Don now uses Bamboo Cane, instead of Juggling Cubes.
+    * Madame Chuckle now uses Bamboo Cane, instead of Juggling Cubes.
 
-* Trap SOS:
-  * Clerk Will now uses Quicksand, instead of Trapdoor.
-  * Clerk Penny now uses Quicksand, instead of Trapdoor.
+  * Trap SOS:
+    * Clerk Will now uses Quicksand, instead of Trapdoor.
+    * Clerk Penny now uses Quicksand, instead of Trapdoor.
 
-* Lure SOS:
-  * Stinky Ned now uses Big Magnet, and lures the cogs for up to a maximum of 3 rounds.
-  * Nancy Gas is now a 4 star card, otherwise remaining unchanged.
-  * Lil Oldman now uses Presentation, and lures the cogs for up to a maximum of 15 rounds.
+  * Lure SOS:
+    * Stinky Ned now uses Big Magnet, and lures the cogs for up to a maximum of 3 rounds.
+    * Nancy Gas is now a 4 star card, otherwise remaining unchanged.
+    * Lil Oldman now uses Presentation, and lures the cogs for up to a maximum of 15 rounds.
 
-* Sound SOS:
-  * Barbara Seville now uses Elephant Trunk, instead of Foghorn.
-  * Sid Sonata now uses Elephant Trunk, instead of Foghorn.
+  * Sound SOS:
+    * Barbara Seville now uses Elephant Trunk, instead of Foghorn.
+    * Sid Sonata now uses Elephant Trunk, instead of Foghorn.
 
-* Drop SOS:
-  * Clumsy Ned now uses Big Weight, instead of Grand Piano.
-  * Franz Neckvein now uses Safe, instead of Grand Piano.
+  * Drop SOS:
+    * Clumsy Ned now uses Big Weight, instead of Grand Piano.
+    * Franz Neckvein now uses Safe, instead of Grand Piano.
 
-* Toons Hit SOS:
-  * Soggy Bottom is now a 3 star card, otherwise remaining unchanged.
-  * Soggy Nell now guarantees that all toon attacks hit for 2 rounds.
-  * Sticky Lou is now a 5 star card, and guarantees that all toon attacks hit for 3 rounds.
+  * Toons Hit SOS:
+    * Soggy Bottom is now a 3 star card, otherwise remaining unchanged.
+    * Soggy Nell now guarantees that all toon attacks hit for 2 rounds.
+    * Sticky Lou is now a 5 star card, and guarantees that all toon attacks hit for 3 rounds.
 
-* Cogs Miss SOS:
-  * Flim Flam is now a 3 star card, otherwise remaining unchanged.
-  * Mr. Freeze now guarantees that all cog attacks miss for 2 rounds.
-  * Julius Wheezer is now a 5 star card, and guarantees that all cog attacks miss for 3 rounds.
+  * Cogs Miss SOS:
+    * Flim Flam is now a 3 star card, otherwise remaining unchanged.
+    * Mr. Freeze now guarantees that all cog attacks miss for 2 rounds.
+    * Julius Wheezer is now a 5 star card, and guarantees that all cog attacks miss for 3 rounds.
 
-* Two SOS cards have been added to the game:
-  * Rocky, a 5 star Throw SOS card. This SOS Toon uses a Wedding Cake, and deals 132 damage to all cogs.
-  * Loopy Loopengloop, a 5 star Squirt SOS card. This SOS Toon uses a Geyser, and deals 115 damage to all cogs.
-  * These two cards do not receive Lure knockback bonus damage.
+  * Two SOS cards have been added to the game:
+    * Rocky, a 5 star Throw SOS card. This SOS Toon uses a Wedding Cake, and deals 132 damage to all cogs.
+    * Loopy Loopengloop, a 5 star Squirt SOS card. This SOS Toon uses a Geyser, and deals 115 damage to all cogs.
+    * These two cards do not receive Lure knockback bonus damage.
 
--On the May 16th, 2017 update, the C.E.O. now attacks in a randomly scheduled order. Instead of using the process listed in C.E.O. #1, the C.E.O. creates a randomly scheduled list of attacks, which it will then exhaust before creating a new list. No change has been made to how the C.E.O. decides which toon to attack.
+- On the May 16th, 2017 update, the C.E.O. now attacks in a randomly scheduled order. Instead of using the process listed in C.E.O. #1, the C.E.O. creates a randomly scheduled list of attacks, which it will then exhaust before creating a new list. No change has been made to how the C.E.O. decides which toon to attack.
+
+- On July 20, 2018, the "attack mismatch" [bug was reportedly fixed](https://toontownrewritten.fandom.com/wiki/Release_Notes_(2018)#July_20.2C_2018_.5Bttr-live-v2.2.0.5D).
 
 
 # Credits <a name="credit"></a>
