@@ -1,0 +1,1 @@
+# Cog Battle Calculations
