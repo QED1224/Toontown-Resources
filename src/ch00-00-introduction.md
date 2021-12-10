@@ -1,4 +1,4 @@
-# The Toontown Rewritten Strategy Guide
+# Introduction
 
 > **Heads up**: Looking for the old, TTO-focused guide? You can still [find it
 > here][OLD].
