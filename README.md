@@ -16,6 +16,7 @@
     - [Does Trap's accuracy bonus and Organic Lure stack up?](#trap-3)
 - [Lure](#lure)
     - [What is the impact of using multiple Lure gags?](#lure-1)
+    - [Can lured Cogs wake up early?](#lure-2)
 - [Sound](#sound)
 - [Throw](#throw)
 - [Squirt](#squirt)
@@ -107,7 +108,7 @@ The information used in this guide is primarily based on the source code of Toon
 
 `atkAcc` represents the likelihood of an attack performing to its highest degree. This is used in two ways:
 
-1. For Lure SOS cards, it is used when calculating the odds that cogs will "wake up" early each round.
+1. For Lure, it is used when calculating the odds that cogs will "wake up" early each round.
 2. It is used when calculating the value of `atkHit`, which is a boolean (true or false) value that represents whether or not an attack hit.
 
 ### Special Cases <a name="toon-atk-acc-1"></a>
@@ -1079,6 +1080,81 @@ See the [section on multiple gag usage](#misc-2) for more general information.
 - [Small Magnet & Big Magnet (single target)](http://pastebin.com/Saw5PygN)
 - [Small Magnet & Hypno Goggles (single target)](http://pastebin.com/D9f7HZrn)
 
+## Can lured Cogs wake up early? <a name="lure-2"></a>
+
+Yes. When a Lure gag is used, a variable named `wakeupChance` is set:
+
+```python
+wakeupChance = 100 - (atkAcc * 2)
+```
+
+Thus, if your `atkAcc` is below 50%, there is a chance a given Cog will wake up early. This is checked each round for each lured Cog:
+
+```python
+return self.__suitIsLured(suitId) and \
+   self.currentlyLuredSuits[suitId][0] > 0 and \
+   random.randint(0, 99) < \
+   self.currentlyLuredSuits[suitId][2]
+```
+
+If the result of `random.randint(0, 99)` is less than `wakeupChance`, the Cog will unlure early.
+
+It is important to note that the `atkAcc` used here does not include accuracy bonuses; it is instead the result of `atkAccResult` which is written to before accuracy bonuses are calculated:
+
+```python
+def __calcToonAtkHit(self, attackIndex, atkTargets):
+	...
+	atkAccResult = attackAcc
+	if debug:
+	    self.notify.debug("setting atkAccResult to %d" % atkAccResult)
+	acc = attackAcc + self.__calcToonAccBonus(attackIndex)
+	...
+	return (not attack[TOON_ACCBONUS_COL], atkAccResult)
+...
+def __calcToonAtkHp(self, toonId):
+	...
+	atkHit, atkAcc = self.__calcToonAtkHit(toonId, targetList)
+```
+Because of this, `wakeupChance` cannot be offset with accuracy bonuses, and is only affected by `propAcc`, `trackExp`, and `tgtDef`.
+
+With the above in mind, it can also be useful to think in terms of `wakeupChance`'s probabilistic complement: The probability that a given Lure will hold for a specific number of rounds. The following equation can be used to determine the probability that a single cog will stay lured for N rounds:
+
+```
+Given (Max rounds - N) >= 0,
+
+P(N rounds) = [1 - (wakeupChance / 100)] ^ (N - 1)
+```
+
+Here are some example calculations:
+
+```
+Given: a Lureless toon using Lil' Oldman
+
+Questions:
+
+a. what is the probability that a level 12 cog will stay lured for 3 rounds?
+b. what is the probability that 4 level 12 cogs will stay lured for 3 rounds?
+
+Answer:
+
+a.
+
+1. atkAcc = 70 (propAcc) + 0 (trackExp) + (-55) (tgtDef) = 15
+2. wakeupChance = 100 - (15 * 2) = 70
+3. P(3 rounds) = [1 - (70 / 100)] ^ (3 - 1) = 0.09 (Check: 4 - 3 >= 0? Yep.)
+
+b.
+
+1. The probability that a single level 12 cog will stay lured for 3 rounds is 9.0%.
+2. The probability that all 4 will stay lured for 3 rounds is (.09) ^ 4 = 0.00006561.
+```
+
+### Battle Simulations
+
+- [Maxed Lure; Lil' Oldman; Level 12 cog](http://pastebin.com/pr9LVZZ8)
+- [Lureless; Lil' Oldman; Level 12 cog](http://pastebin.com/q8Q51Fm3)
+
+
 # Sound <a name="sound"></a>
 [[back to top](#contents)]
 
@@ -1126,49 +1202,7 @@ Level 12: atkAcc = 50 + 0 + (-55) = -5
 
 ## Does being Lureless impact the number of rounds Lure SOS cards would hold for? <a name="vp-2"></a>
 
-Yes, cogs are more likely to "wake up" early if the caller is Lureless. The probability associated with this event is called a cog's `wakeupChance`, which is calculated as follows:
-
-```python
-wakeupChance = 100 - atkAcc * 2
-```
-(See [Toon Attack Accuracy](#toon-atk-acc) for information on `atkAcc`.)
-
-With the above in mind, it can also be useful to think in terms of `wakeupChance`'s probabilistic complement: The probability that a given SOS card will hold for a specific number of rounds. The following equation can be used to determine the probability that a single cog will stay lured for N rounds:
-
-```
-Given (Max rounds - N) >= 0,
-
-P(N rounds) = [1 - (wakeupChance / 100)] ^ (N - 1)
-```
-
-Here are some example calculations:
-
-```
-Given: a Lureless toon using Lil' Oldman
-
-Questions:
-
-a. what is the probability that a level 12 cog will stay lured for 3 rounds?
-b. what is the probability that 4 level 12 cogs will stay lured for 3 rounds?
-
-Answer:
-
-a.
-
-1. atkAcc = 70 (propAcc) + 0 (trackExp) + (-55) (tgtDef) + 0 (bonus) = 15
-2. wakeupChance = 100 - (15 * 2) = 70
-3. P(3 rounds) = [1 - (70 / 100)] ^ (3 - 1) = 0.09 (Check: 4 - 3 >= 0? Yep.)
-
-b.
-
-1. The probability that a single level 12 cog will stay lured for 3 rounds is 9.0%.
-2. The probability that all 4 will stay lured for 3 rounds is (.09) ^ 4 = 0.00006561.
-```
-
-### Battle Simulations
-
-- [Maxed Lure; Lil' Oldman; Level 12 cog](http://pastebin.com/pr9LVZZ8)
-- [Lureless; Lil' Oldman; Level 12 cog](http://pastebin.com/q8Q51Fm3)
+Yes, cogs are more likely to "wake up" early if the caller is Lureless. See [this question](#lure-2) for information about `wakeupChance`.
 
 ## How does the V.P. choose which attack to use? <a name="vp-3"></a>
 
